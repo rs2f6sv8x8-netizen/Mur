@@ -232,6 +232,17 @@ function renderPlay(id){
   gcard.appendChild(board);
   const palette=el('div','palette'); palette.id='palette';
   gcard.appendChild(palette);
+  if(p.solution){
+    const cr=el('div','check-row');
+    const chk=el('button','btn small','✓ Controleer raster');
+    chk.onclick=checkGrid;
+    const rev=el('button','btn small ghost','Toon oplossing');
+    rev.onclick=()=>{ if(confirm('De volledige oplossing tonen in het raster?')){ revealSolution(); } };
+    cr.append(chk,rev);
+    gcard.appendChild(cr);
+    gcard.appendChild(Object.assign(el('div','mini'),{style:'margin-top:8px',
+      textContent:'Deze zaak heeft een gecontroleerde oplossing: plaats iedereen en controleer je raster.'}));
+  }
   right.appendChild(gcard);
   body.appendChild(right);
 
@@ -305,6 +316,53 @@ function onCell(r,c){
     T.cells[key]=T.selToken;
   }
   renderBoard(); saveState();
+}
+function placementStatus(){
+  // compare T.cells to solution; returns {placed,total,correct,allCorrect}
+  const sol=T.p.solution; if(!sol) return null;
+  const letters=Object.keys(sol);
+  let placed=0, correct=0;
+  const pos={};                          // letter -> "r,c" from player's board
+  for(const k of Object.keys(T.cells)) pos[T.cells[k]]=k;
+  for(const L of letters){
+    if(pos[L]!==undefined){ placed++;
+      const [r,c]=sol[L];
+      if(pos[L]===r+','+c) correct++;
+    }
+  }
+  return {placed, total:letters.length, correct, allCorrect: correct===letters.length};
+}
+function checkGrid(){
+  const sol=T.p.solution; if(!sol) return;
+  const board=$('#board'); if(!board) return;
+  // clear marks
+  board.querySelectorAll('td').forEach(td=>td.classList.remove('ok','bad'));
+  // map solution letter -> [r,c]; mark each filled cell
+  const solPos={}; for(const L in sol) solPos[L]=sol[L][0]+','+sol[L][1];
+  let correct=0, placed=0;
+  board.querySelectorAll('td').forEach(td=>{});
+  // iterate rows/cols
+  const rows=board.querySelectorAll('tr');
+  for(let r=1;r<rows.length;r++){
+    const tds=rows[r].querySelectorAll('td');
+    for(let c=1;c<=tds.length;c++){
+      const td=tds[c-1]; const key=r+','+c; const L=T.cells[key];
+      if(!L) continue; placed++;
+      if(solPos[L]===key){ td.classList.add('ok'); correct++; }
+      else td.classList.add('bad');
+    }
+  }
+  const total=Object.keys(sol).length;
+  if(placed===0) toast('Plaats eerst verdachten in het raster');
+  else if(correct===total) toast('Perfect! Alle '+total+' juist geplaatst ✓');
+  else toast(correct+' van '+total+' juist geplaatst');
+}
+function revealSolution(){
+  const sol=T.p.solution; if(!sol) return;
+  T.cells={};
+  for(const L in sol){ T.cells[sol[L][0]+','+sol[L][1]]=L; }
+  renderBoard(); saveState();
+  setTimeout(checkGrid,30);
 }
 function renderPalette(){
   const pal=$('#palette'); if(!pal) return; pal.innerHTML='';
@@ -422,7 +480,14 @@ function showResult(correct, name, time, known){
   wrap.appendChild(emo);
   if(correct && known){
     wrap.appendChild(Object.assign(el('h2'),{textContent:'Zaak opgelost!'}));
-    wrap.appendChild(Object.assign(el('p'),{innerHTML:`De moordenaar was <b style="color:var(--ink)">${escapeHtml(name)}</b>.<br>Tijd: <b style="color:var(--ink)">${fmtTime(time)}</b> · Hints: ${T.hintsShown}`}));
+    let extra='';
+    const ps = placementStatus();
+    if(ps){
+      extra = ps.allCorrect
+        ? `<br><span class="solved-pill">★ Perfect raster — iedereen juist geplaatst</span>`
+        : `<br><span style="color:var(--muted);font-size:13px">Raster: ${ps.correct}/${ps.total} juist geplaatst</span>`;
+    }
+    wrap.appendChild(Object.assign(el('p'),{innerHTML:`De moordenaar was <b style="color:var(--ink)">${escapeHtml(name)}</b>.<br>Tijd: <b style="color:var(--ink)">${fmtTime(time)}</b> · Hints: ${T.hintsShown}${extra}`}));
   } else if(correct && !known){
     wrap.appendChild(Object.assign(el('h2'),{textContent:'Genoteerd'}));
     wrap.appendChild(Object.assign(el('p'),{innerHTML:`Je beschuldigt <b style="color:var(--ink)">${escapeHtml(name)}</b>. De oplossing van deze zaak staat niet in de digitale gegevens — vergelijk met het boek. De zaak is gemarkeerd als voltooid.`}));

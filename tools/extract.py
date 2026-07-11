@@ -321,6 +321,17 @@ def process_book(oebps, opf, book_id, img_out, prefix):
                                if 'slachto' not in s['clue'].lower())
                        for num, (pp, pc) in clue.items()}
     sols = parse_solutions(pages[sol_start:], titles, suspects_by_num)
+    # build letter-assigned suspect lists (incl. victim as V) for grid matching
+    clue_suspects = {}
+    for num, (pp, pc) in clue.items():
+        vic = next((s for s in pc['suspects'] if 'slachto' in s['clue'].lower()), None)
+        susp = sorted([s for s in pc['suspects'] if s is not vic], key=lambda s: s['name'].lower())
+        lst = [{'name': s['name'], 'letter': chr(ord('A')+i), 'clue': s['clue']} for i, s in enumerate(susp)]
+        if vic:
+            lst.append({'name': vic['name'], 'letter': 'V', 'clue': vic['clue']})
+        clue_suspects[num] = lst
+    from extract_grids import build_solutions
+    solmap = build_solutions(pages[sol_start:], titles, sols, clue_suspects)
     puzzles = []
     for num in sorted(clue.keys()):
         cp, pc = clue[num]
@@ -364,6 +375,8 @@ def process_book(oebps, opf, book_id, img_out, prefix):
             'scene': scene_name,
             'murderer': sol.get('murderer'),
             'hintSteps': sol.get('steps', []),
+            'solution': solmap[num]['cells'] if solmap.get(num, {}).get('trustworthy') else None,
+            'solutionVerified': solmap.get(num, {}).get('verified', False),
             'difficulty': difficulty(num, n, has_special),
         })
     return puzzles
@@ -385,4 +398,20 @@ if __name__ == '__main__':
     print('missing scene:', [p['id'] for p in allp if not p['scene']])
     print('missing hints:', len([p for p in allp if not p['hintSteps']]))
     print('grid sizes:', dict(Counter(p['n'] for p in allp)))
+    # validation: the solution grid must satisfy the puzzle's positional clues
+    from extract_grids import clue_constraints, check_constraints
+    withsol = [p for p in allp if p.get('solution')]
+    print('with solution grid:', len(withsol))
+    perfect = 0; anyviol = 0; nocheck = 0
+    for p in withsol:
+        cells = {k: tuple(v) for k, v in p['solution'].items()}
+        people = p['suspects'] + ([p['victim']] if p['victim'] else [])
+        ok, tot = check_constraints(clue_constraints(people, p['n']), cells)
+        if tot == 0:
+            nocheck += 1
+        elif ok == tot:
+            perfect += 1
+        else:
+            anyviol += 1
+    print(f'solution vs positional clues: {perfect} consistent, {anyviol} violate, {nocheck} unverifiable')
     print('murderer-in-suspects mismatch:', [p['id'] for p in allp if p['murderer'] and p['murderer'] not in [s['name'] for s in p['suspects']]][:40])
