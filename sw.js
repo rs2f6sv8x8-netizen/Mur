@@ -30,7 +30,7 @@ self.addEventListener('fetch', e=>{
     return;
   }
   e.respondWith(caches.match(req).then(hit=> hit || fetch(req).then(r=>{
-    if(r.ok && (url.pathname.includes('/assets/scenes/') || url.pathname.includes('/assets/portraits/') || SHELL.includes('.'+url.pathname))){
+    if(r.ok && (url.pathname.includes('/assets/') || SHELL.includes('.'+url.pathname))){
       const cp=r.clone(); caches.open(VERSION).then(c=>c.put(req,cp));
     }
     return r;

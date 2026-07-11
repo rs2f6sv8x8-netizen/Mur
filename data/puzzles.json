@@ -98,6 +98,53 @@
    "height": 0.5725490196078431,
    "rows": 6,
    "cols": 6
+  },
+  "people": [
+   {
+    "name": "Adam",
+    "letter": "A",
+    "card": "cards/1_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bella",
+    "letter": "B",
+    "card": "cards/1_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cora",
+    "letter": "C",
+    "card": "cards/1_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "David",
+    "letter": "D",
+    "card": "cards/1_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ella",
+    "letter": "E",
+    "card": "cards/1_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vincent",
+    "letter": "V",
+    "card": "cards/1_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Je eerste zaak",
+  "map": "maps/1.jpg",
+  "bg": "#e5d9e7",
+  "mapGrid": {
+   "left": 0.0196078431372549,
+   "top": 0.02910266774454325,
+   "width": 0.9624183006535948,
+   "height": 0.9506871463217461
   }
  },
  {
@@ -172,6 +219,53 @@
    "height": 0.5176470588235295,
    "rows": 6,
    "cols": 6
+  },
+  "people": [
+   {
+    "name": "Arianna",
+    "letter": "A",
+    "card": "cards/2_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brian",
+    "letter": "B",
+    "card": "cards/2_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Colinda",
+    "letter": "C",
+    "card": "cards/2_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daan",
+    "letter": "D",
+    "card": "cards/2_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eddy",
+    "letter": "E",
+    "card": "cards/2_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vito",
+    "letter": "V",
+    "card": "cards/2_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Vakantiehuisje",
+  "map": "maps/2.jpg",
+  "bg": "#e5f2fb",
+  "mapGrid": {
+   "left": 0.021486123545210387,
+   "top": 0.021505376344086023,
+   "width": 0.9579230080572964,
+   "height": 0.956989247311828
   }
  },
  {
@@ -248,6 +342,53 @@
    "height": 0.5186274509803922,
    "rows": 6,
    "cols": 6
+  },
+  "people": [
+   {
+    "name": "Alexander",
+    "letter": "A",
+    "card": "cards/3_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bas",
+    "letter": "B",
+    "card": "cards/3_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clarissa",
+    "letter": "C",
+    "card": "cards/3_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Diana",
+    "letter": "D",
+    "card": "cards/3_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elsa",
+    "letter": "E",
+    "card": "cards/3_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/3_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Engels ontbijt",
+  "map": "maps/3.jpg",
+  "bg": "#d5d7ec",
+  "mapGrid": {
+   "left": 0.02054794520547945,
+   "top": 0.013043478260869565,
+   "width": 0.916095890410959,
+   "height": 0.9065217391304348
   }
  },
  {
@@ -321,6 +462,53 @@
    "height": 0.5166666666666667,
    "rows": 6,
    "cols": 6
+  },
+  "people": [
+   {
+    "name": "Antonio",
+    "letter": "A",
+    "card": "cards/4_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ben",
+    "letter": "B",
+    "card": "cards/4_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Caro",
+    "letter": "C",
+    "card": "cards/4_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dahlia",
+    "letter": "D",
+    "card": "cards/4_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emmy",
+    "letter": "E",
+    "card": "cards/4_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valeria",
+    "letter": "V",
+    "card": "cards/4_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Vier ramen",
+  "map": "maps/4.jpg",
+  "bg": "#fcf0e2",
+  "mapGrid": {
+   "left": 0.03789836347975883,
+   "top": 0.021524663677130046,
+   "width": 0.9198966408268734,
+   "height": 0.957847533632287
   }
  },
  {
@@ -393,6 +581,53 @@
    "height": 0.5196078431372549,
    "rows": 6,
    "cols": 6
+  },
+  "people": [
+   {
+    "name": "Aaron",
+    "letter": "A",
+    "card": "cards/5_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bruno",
+    "letter": "B",
+    "card": "cards/5_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clara",
+    "letter": "C",
+    "card": "cards/5_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Donna",
+    "letter": "D",
+    "card": "cards/5_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eveline",
+    "letter": "E",
+    "card": "cards/5_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/5_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Studiebijeenkomst",
+  "map": "maps/5.jpg",
+  "bg": "#e5d9e7",
+  "mapGrid": {
+   "left": 0.04035087719298246,
+   "top": 0.040315512708150744,
+   "width": 0.9385964912280702,
+   "height": 0.9395267309377738
   }
  },
  {
@@ -470,6 +705,53 @@
    "height": 0.5401960784313725,
    "rows": 6,
    "cols": 6
+  },
+  "people": [
+   {
+    "name": "Aria",
+    "letter": "A",
+    "card": "cards/6_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Benny",
+    "letter": "B",
+    "card": "cards/6_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Casper",
+    "letter": "C",
+    "card": "cards/6_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Don",
+    "letter": "D",
+    "card": "cards/6_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Everwin",
+    "letter": "E",
+    "card": "cards/6_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vicky",
+    "letter": "V",
+    "card": "cards/6_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De plaatselijke boekhandel",
+  "map": "maps/6.jpg",
+  "bg": "#e7d3cc",
+  "mapGrid": {
+   "left": 0.0218303946263644,
+   "top": 0.013562858633281168,
+   "width": 0.9319899244332494,
+   "height": 0.892018779342723
   }
  },
  {
@@ -543,6 +825,53 @@
    "height": 0.5235294117647059,
    "rows": 6,
    "cols": 6
+  },
+  "people": [
+   {
+    "name": "Barbara",
+    "letter": "A",
+    "card": "cards/7_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cassie",
+    "letter": "B",
+    "card": "cards/7_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Duko",
+    "letter": "C",
+    "card": "cards/7_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elias",
+    "letter": "D",
+    "card": "cards/7_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vincent",
+    "letter": "E",
+    "card": "cards/7_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Adelie",
+    "letter": "V",
+    "card": "cards/7_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het koffietentje",
+  "map": "maps/7.jpg",
+  "bg": "#e5f2fb",
+  "mapGrid": {
+   "left": 0.02120141342756184,
+   "top": 0.015957446808510637,
+   "width": 0.9575971731448764,
+   "height": 0.7207446808510638
   }
  },
  {
@@ -622,6 +951,59 @@
    "height": 0.5274509803921569,
    "rows": 7,
    "cols": 7
+  },
+  "people": [
+   {
+    "name": "Alain",
+    "letter": "A",
+    "card": "cards/8_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ben",
+    "letter": "B",
+    "card": "cards/8_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Caroline",
+    "letter": "C",
+    "card": "cards/8_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dafne",
+    "letter": "D",
+    "card": "cards/8_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ellie",
+    "letter": "E",
+    "card": "cards/8_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Falko",
+    "letter": "F",
+    "card": "cards/8_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Violet",
+    "letter": "V",
+    "card": "cards/8_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Jacuzzi in de achtertuin",
+  "map": "maps/8.jpg",
+  "bg": "#deecd3",
+  "mapGrid": {
+   "left": 0.021108179419525065,
+   "top": 0.021145374449339206,
+   "width": 0.9569041336851363,
+   "height": 0.958590308370044
   }
  },
  {
@@ -710,6 +1092,65 @@
    "height": 0.5235294117647059,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Albert-Jan",
+    "letter": "A",
+    "card": "cards/9_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bessel",
+    "letter": "B",
+    "card": "cards/9_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carla",
+    "letter": "C",
+    "card": "cards/9_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Deborah",
+    "letter": "D",
+    "card": "cards/9_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emmely",
+    "letter": "E",
+    "card": "cards/9_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frank",
+    "letter": "F",
+    "card": "cards/9_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gino",
+    "letter": "G",
+    "card": "cards/9_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vasco",
+    "letter": "V",
+    "card": "cards/9_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het laboratorium",
+  "map": "maps/9.jpg",
+  "bg": "#d5d7ec",
+  "mapGrid": {
+   "left": 0.02054794520547945,
+   "top": 0.01284796573875803,
+   "width": 0.9246575342465754,
+   "height": 0.9079229122055674
   }
  },
  {
@@ -835,6 +1276,65 @@
    "height": 0.5254901960784314,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Albert",
+    "letter": "A",
+    "card": "cards/10_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bram",
+    "letter": "B",
+    "card": "cards/10_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Caro",
+    "letter": "C",
+    "card": "cards/10_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Desirée",
+    "letter": "D",
+    "card": "cards/10_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ellen",
+    "letter": "E",
+    "card": "cards/10_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Farouk",
+    "letter": "F",
+    "card": "cards/10_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gijs",
+    "letter": "G",
+    "card": "cards/10_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/10_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het huis van tante Ellen",
+  "map": "maps/10.jpg",
+  "bg": "#fcf0e2",
+  "mapGrid": {
+   "left": 0.037996545768566495,
+   "top": 0.01948627103631532,
+   "width": 0.9412780656303973,
+   "height": 0.95837023914969
   }
  },
  {
@@ -932,7 +1432,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 11
+  "id": 11,
+  "people": [
+   {
+    "name": "Antonio",
+    "letter": "A",
+    "card": "cards/11_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Benjamin",
+    "letter": "B",
+    "card": "cards/11_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carlo",
+    "letter": "C",
+    "card": "cards/11_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dina",
+    "letter": "D",
+    "card": "cards/11_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emiel",
+    "letter": "E",
+    "card": "cards/11_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Finn",
+    "letter": "F",
+    "card": "cards/11_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gemma",
+    "letter": "G",
+    "card": "cards/11_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Haiko",
+    "letter": "H",
+    "card": "cards/11_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Viggo",
+    "letter": "V",
+    "card": "cards/11_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Afvalscheidingsstation",
+  "map": "maps/11.jpg",
+  "bg": "#d5dae0",
+  "mapGrid": {
+   "left": 0.060862214708368556,
+   "top": 0.014317180616740088,
+   "width": 0.8554522400676247,
+   "height": 0.9074889867841409
+  }
  },
  {
   "book": 1,
@@ -1026,6 +1591,71 @@
    "height": 0.5294117647058824,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Adam",
+    "letter": "A",
+    "card": "cards/12_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Belinda",
+    "letter": "B",
+    "card": "cards/12_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cristiano",
+    "letter": "C",
+    "card": "cards/12_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dave",
+    "letter": "D",
+    "card": "cards/12_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Edwin",
+    "letter": "E",
+    "card": "cards/12_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fara",
+    "letter": "F",
+    "card": "cards/12_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "George",
+    "letter": "G",
+    "card": "cards/12_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Helena",
+    "letter": "H",
+    "card": "cards/12_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vincenzo",
+    "letter": "V",
+    "card": "cards/12_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het oude familiehuis",
+  "map": "maps/12.jpg",
+  "bg": "#e7d3cc",
+  "mapGrid": {
+   "left": 0.01875532821824382,
+   "top": 0.012806830309498399,
+   "width": 0.9292412617220801,
+   "height": 0.9082177161152615
   }
  },
  {
@@ -1113,6 +1743,65 @@
    "height": 0.47058823529411764,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Amir",
+    "letter": "A",
+    "card": "cards/13_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bouke",
+    "letter": "B",
+    "card": "cards/13_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Claudio",
+    "letter": "C",
+    "card": "cards/13_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Damien",
+    "letter": "D",
+    "card": "cards/13_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Erik",
+    "letter": "E",
+    "card": "cards/13_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fabio",
+    "letter": "F",
+    "card": "cards/13_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gary",
+    "letter": "G",
+    "card": "cards/13_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vlad",
+    "letter": "V",
+    "card": "cards/13_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De oude herberg",
+  "map": "maps/13.jpg",
+  "bg": "#dfd5d4",
+  "mapGrid": {
+   "left": 0.021486123545210387,
+   "top": 0.013430330162283156,
+   "width": 0.8666069829901522,
+   "height": 0.9076664801343033
   }
  },
  {
@@ -1244,6 +1933,71 @@
    "height": 0.5235294117647059,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Abraham",
+    "letter": "A",
+    "card": "cards/14_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Björn",
+    "letter": "B",
+    "card": "cards/14_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Coralie",
+    "letter": "C",
+    "card": "cards/14_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dina",
+    "letter": "D",
+    "card": "cards/14_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ella",
+    "letter": "E",
+    "card": "cards/14_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Felix",
+    "letter": "F",
+    "card": "cards/14_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gerald",
+    "letter": "G",
+    "card": "cards/14_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Holly",
+    "letter": "H",
+    "card": "cards/14_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vanessa",
+    "letter": "V",
+    "card": "cards/14_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Verjaardagsfeestje",
+  "map": "maps/14.jpg",
+  "bg": "#e5f2fb",
+  "mapGrid": {
+   "left": 0.020530367835757058,
+   "top": 0.012664907651715039,
+   "width": 0.9204448246364414,
+   "height": 0.9298153034300791
   }
  },
  {
@@ -1377,6 +2131,71 @@
    "height": 0.5196078431372549,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Aad",
+    "letter": "A",
+    "card": "cards/15_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bella",
+    "letter": "B",
+    "card": "cards/15_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Camilla",
+    "letter": "C",
+    "card": "cards/15_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dylan",
+    "letter": "D",
+    "card": "cards/15_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eileen",
+    "letter": "E",
+    "card": "cards/15_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fred",
+    "letter": "F",
+    "card": "cards/15_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Grace",
+    "letter": "G",
+    "card": "cards/15_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hayden",
+    "letter": "H",
+    "card": "cards/15_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Velma",
+    "letter": "V",
+    "card": "cards/15_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De buurtwinkel",
+  "map": "maps/15.jpg",
+  "bg": "#f7e3ca",
+  "mapGrid": {
+   "left": 0.03359858532272325,
+   "top": 0.021505376344086023,
+   "width": 0.9460654288240495,
+   "height": 0.956989247311828
   }
  },
  {
@@ -1511,6 +2330,71 @@
    "height": 0.5245098039215687,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Albert-Jan",
+    "letter": "A",
+    "card": "cards/16_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Benny",
+    "letter": "B",
+    "card": "cards/16_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Charlotte",
+    "letter": "C",
+    "card": "cards/16_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dakota",
+    "letter": "D",
+    "card": "cards/16_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ethan",
+    "letter": "E",
+    "card": "cards/16_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fanny",
+    "letter": "F",
+    "card": "cards/16_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gloria",
+    "letter": "G",
+    "card": "cards/16_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hanne",
+    "letter": "H",
+    "card": "cards/16_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/16_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Kingsize bedden",
+  "map": "maps/16.jpg",
+  "bg": "#f1d1d6",
+  "mapGrid": {
+   "left": 0.030379746835443037,
+   "top": 0.012958963282937365,
+   "width": 0.9130801687763713,
+   "height": 0.9092872570194385
   }
  },
  {
@@ -1650,6 +2534,71 @@
    "height": 0.5225490196078432,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Amara",
+    "letter": "A",
+    "card": "cards/17_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Barbara",
+    "letter": "B",
+    "card": "cards/17_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cindy",
+    "letter": "C",
+    "card": "cards/17_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Duncan",
+    "letter": "D",
+    "card": "cards/17_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emiel",
+    "letter": "E",
+    "card": "cards/17_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fay",
+    "letter": "F",
+    "card": "cards/17_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Guido",
+    "letter": "G",
+    "card": "cards/17_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hester",
+    "letter": "H",
+    "card": "cards/17_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vincent",
+    "letter": "V",
+    "card": "cards/17_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Glamoureus landhuis",
+  "map": "maps/17.jpg",
+  "bg": "#efe4b7",
+  "mapGrid": {
+   "left": 0.02054794520547945,
+   "top": 0.012972972972972972,
+   "width": 0.9178082191780822,
+   "height": 0.9091891891891892
   }
  },
  {
@@ -1783,6 +2732,71 @@
    "height": 0.5294117647058824,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Adelie",
+    "letter": "A",
+    "card": "cards/18_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brad",
+    "letter": "B",
+    "card": "cards/18_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carlo",
+    "letter": "C",
+    "card": "cards/18_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Donny",
+    "letter": "D",
+    "card": "cards/18_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ernst",
+    "letter": "E",
+    "card": "cards/18_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fern",
+    "letter": "F",
+    "card": "cards/18_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gabor",
+    "letter": "G",
+    "card": "cards/18_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harry",
+    "letter": "H",
+    "card": "cards/18_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladislav",
+    "letter": "V",
+    "card": "cards/18_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het politiebureau",
+  "map": "maps/18.jpg",
+  "bg": "#d4d8e1",
+  "mapGrid": {
+   "left": 0.020390824129141887,
+   "top": 0.012813667912439935,
+   "width": 0.9243840271877655,
+   "height": 0.9044313934863855
   }
  },
  {
@@ -1914,6 +2928,71 @@
    "height": 0.5235294117647059,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Byron",
+    "letter": "A",
+    "card": "cards/19_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chantal",
+    "letter": "B",
+    "card": "cards/19_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daley",
+    "letter": "C",
+    "card": "cards/19_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eva",
+    "letter": "D",
+    "card": "cards/19_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fedde",
+    "letter": "E",
+    "card": "cards/19_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gerald",
+    "letter": "F",
+    "card": "cards/19_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Helen",
+    "letter": "G",
+    "card": "cards/19_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vidal",
+    "letter": "H",
+    "card": "cards/19_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Albert",
+    "letter": "V",
+    "card": "cards/19_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Doomscrollen",
+  "map": "maps/19.jpg",
+  "bg": "#ece5d5",
+  "mapGrid": {
+   "left": 0.019590382902938557,
+   "top": 0.0213713268032057,
+   "width": 0.9599287622439893,
+   "height": 0.9581478183437222
   }
  },
  {
@@ -2009,6 +3088,71 @@
    "height": 0.5196078431372549,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Adam",
+    "letter": "A",
+    "card": "cards/20_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bastiaan",
+    "letter": "B",
+    "card": "cards/20_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carola",
+    "letter": "C",
+    "card": "cards/20_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dina",
+    "letter": "D",
+    "card": "cards/20_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eden",
+    "letter": "E",
+    "card": "cards/20_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frits",
+    "letter": "F",
+    "card": "cards/20_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gavin",
+    "letter": "G",
+    "card": "cards/20_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henk",
+    "letter": "H",
+    "card": "cards/20_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vera",
+    "letter": "V",
+    "card": "cards/20_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het huis van de bibliothecaris",
+  "map": "maps/20.jpg",
+  "bg": "#d0e2e4",
+  "mapGrid": {
+   "left": 0.020671834625323,
+   "top": 0.013114754098360656,
+   "width": 0.9198966408268734,
+   "height": 0.907103825136612
   }
  },
  {
@@ -2109,6 +3253,53 @@
    "height": 0.5196078431372549,
    "rows": 6,
    "cols": 6
+  },
+  "people": [
+   {
+    "name": "Anthony",
+    "letter": "A",
+    "card": "cards/21_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bianca",
+    "letter": "B",
+    "card": "cards/21_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Charlotte",
+    "letter": "C",
+    "card": "cards/21_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daryl",
+    "letter": "D",
+    "card": "cards/21_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ethan",
+    "letter": "E",
+    "card": "cards/21_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vanna",
+    "letter": "V",
+    "card": "cards/21_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Spelletjesavond",
+  "map": "maps/21.jpg",
+  "bg": "#f4edbf",
+  "mapGrid": {
+   "left": 0.021409455842997322,
+   "top": 0.02142857142857143,
+   "width": 0.9562890276538805,
+   "height": 0.9571428571428572
   }
  },
  {
@@ -2200,6 +3391,65 @@
    "height": 0.5215686274509804,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Ate",
+    "letter": "A",
+    "card": "cards/22_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bella",
+    "letter": "B",
+    "card": "cards/22_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carrie",
+    "letter": "C",
+    "card": "cards/22_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Denise",
+    "letter": "D",
+    "card": "cards/22_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ellie",
+    "letter": "E",
+    "card": "cards/22_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frank",
+    "letter": "F",
+    "card": "cards/22_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gert",
+    "letter": "G",
+    "card": "cards/22_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vernon",
+    "letter": "V",
+    "card": "cards/22_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Twee-onder-een-kap",
+  "map": "maps/22.jpg",
+  "bg": "#e5d9e7",
+  "mapGrid": {
+   "left": 0.021409455842997322,
+   "top": 0.02142857142857143,
+   "width": 0.9562890276538805,
+   "height": 0.9571428571428572
   }
  },
  {
@@ -2322,6 +3572,65 @@
    "height": 0.5215686274509804,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Adam",
+    "letter": "A",
+    "card": "cards/23_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bobby",
+    "letter": "B",
+    "card": "cards/23_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Caroline",
+    "letter": "C",
+    "card": "cards/23_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daniël",
+    "letter": "D",
+    "card": "cards/23_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eli",
+    "letter": "E",
+    "card": "cards/23_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Falko",
+    "letter": "F",
+    "card": "cards/23_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gideon",
+    "letter": "G",
+    "card": "cards/23_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vic",
+    "letter": "V",
+    "card": "cards/23_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De elektronicawinkel",
+  "map": "maps/23.jpg",
+  "bg": "#d4e2e2",
+  "mapGrid": {
+   "left": 0.020530367835757058,
+   "top": 0.011891891891891892,
+   "width": 0.9187339606501284,
+   "height": 0.9091891891891892
   }
  },
  {
@@ -2404,6 +3713,65 @@
    "height": 0.5009803921568627,
    "rows": 7,
    "cols": 7
+  },
+  "people": [
+   {
+    "name": "Alies",
+    "letter": "A",
+    "card": "cards/24_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Betty",
+    "letter": "B",
+    "card": "cards/24_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chantal",
+    "letter": "C",
+    "card": "cards/24_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dorothy",
+    "letter": "D",
+    "card": "cards/24_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elisa",
+    "letter": "E",
+    "card": "cards/24_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Francesca",
+    "letter": "F",
+    "card": "cards/24_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gitte",
+    "letter": "G",
+    "card": "cards/24_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valerie",
+    "letter": "V",
+    "card": "cards/24_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De kapsalon",
+  "map": "maps/24.jpg",
+  "bg": "#eadeea",
+  "mapGrid": {
+   "left": 0.025547445255474453,
+   "top": 0.022263450834879406,
+   "width": 0.9397810218978102,
+   "height": 0.9573283858998145
   }
  },
  {
@@ -2494,7 +3862,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 25
+  "id": 25,
+  "people": [
+   {
+    "name": "Adeline",
+    "letter": "A",
+    "card": "cards/25_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brigitte",
+    "letter": "B",
+    "card": "cards/25_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clarissa",
+    "letter": "C",
+    "card": "cards/25_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dylan",
+    "letter": "D",
+    "card": "cards/25_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ellie",
+    "letter": "F",
+    "card": "cards/25_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Felicity",
+    "letter": "G",
+    "card": "cards/25_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gary",
+    "letter": "H",
+    "card": "cards/25_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hanna",
+    "letter": "I",
+    "card": "cards/25_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Violet",
+    "letter": "V",
+    "card": "cards/25_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De kledingwinkel",
+  "map": "maps/25.jpg",
+  "bg": "#d5d7ec",
+  "mapGrid": {
+   "left": 0.036881810561609385,
+   "top": 0.012752391073326248,
+   "width": 0.9170159262363788,
+   "height": 0.9054197662061636
+  }
  },
  {
   "book": 1,
@@ -2624,6 +4057,71 @@
    "height": 0.5098039215686274,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Alain",
+    "letter": "A",
+    "card": "cards/26_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bianca",
+    "letter": "B",
+    "card": "cards/26_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Courtney",
+    "letter": "C",
+    "card": "cards/26_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dina",
+    "letter": "D",
+    "card": "cards/26_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eugene",
+    "letter": "E",
+    "card": "cards/26_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fabrice",
+    "letter": "F",
+    "card": "cards/26_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gianni",
+    "letter": "G",
+    "card": "cards/26_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hada",
+    "letter": "H",
+    "card": "cards/26_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vanessa",
+    "letter": "V",
+    "card": "cards/26_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Restaurant aan zee",
+  "map": "maps/26.jpg",
+  "bg": "#d0e6da",
+  "mapGrid": {
+   "left": 0.020743301642178046,
+   "top": 0.013296398891966758,
+   "width": 0.9075194468452895,
+   "height": 0.9052631578947369
   }
  },
  {
@@ -2760,6 +4258,71 @@
    "height": 0.5078431372549019,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Annie",
+    "letter": "A",
+    "card": "cards/27_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Berend",
+    "letter": "B",
+    "card": "cards/27_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chris",
+    "letter": "C",
+    "card": "cards/27_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Danika",
+    "letter": "D",
+    "card": "cards/27_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eddy",
+    "letter": "E",
+    "card": "cards/27_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frederik",
+    "letter": "F",
+    "card": "cards/27_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Grace",
+    "letter": "G",
+    "card": "cards/27_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hector",
+    "letter": "H",
+    "card": "cards/27_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Virgil",
+    "letter": "V",
+    "card": "cards/27_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Knock-out!",
+  "map": "maps/27.jpg",
+  "bg": "#e5f2fb",
+  "mapGrid": {
+   "left": 0.02096069868995633,
+   "top": 0.012951969778737183,
+   "width": 0.9065502183406113,
+   "height": 0.9109552077711819
   }
  },
  {
@@ -2882,7 +4445,72 @@
   },
   "solutionVerified": true,
   "difficulty": 3,
-  "id": 28
+  "id": 28,
+  "people": [
+   {
+    "name": "Ayla",
+    "letter": "A",
+    "card": "cards/28_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Beckie",
+    "letter": "B",
+    "card": "cards/28_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cees",
+    "letter": "C",
+    "card": "cards/28_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dominique",
+    "letter": "D",
+    "card": "cards/28_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emilio",
+    "letter": "E",
+    "card": "cards/28_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fatima",
+    "letter": "F",
+    "card": "cards/28_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Grad",
+    "letter": "G",
+    "card": "cards/28_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henry",
+    "letter": "H",
+    "card": "cards/28_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Val",
+    "letter": "V",
+    "card": "cards/28_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De buurtwinkel",
+  "map": "maps/28.jpg",
+  "bg": "#eff7e2",
+  "mapGrid": {
+   "left": 0.05648720211827008,
+   "top": 0.022263450834879406,
+   "width": 0.9090909090909091,
+   "height": 0.9554730983302412
+  }
  },
  {
   "book": 1,
@@ -3013,6 +4641,71 @@
    "height": 0.5235294117647059,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Albert",
+    "letter": "A",
+    "card": "cards/29_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Betty",
+    "letter": "B",
+    "card": "cards/29_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cyrus",
+    "letter": "C",
+    "card": "cards/29_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Donna",
+    "letter": "D",
+    "card": "cards/29_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Esther",
+    "letter": "E",
+    "card": "cards/29_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Falko",
+    "letter": "F",
+    "card": "cards/29_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gianni",
+    "letter": "G",
+    "card": "cards/29_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hanna",
+    "letter": "H",
+    "card": "cards/29_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/29_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Regenachtige dag",
+  "map": "maps/29.jpg",
+  "bg": "#dbdee7",
+  "mapGrid": {
+   "left": 0.02129547471162378,
+   "top": 0.02129547471162378,
+   "width": 0.9565217391304348,
+   "height": 0.9565217391304348
   }
  },
  {
@@ -3113,6 +4806,71 @@
    "height": 0.5235294117647059,
    "rows": 10,
    "cols": 10
+  },
+  "people": [
+   {
+    "name": "Andy",
+    "letter": "A",
+    "card": "cards/30_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bella",
+    "letter": "B",
+    "card": "cards/30_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clark",
+    "letter": "C",
+    "card": "cards/30_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daley",
+    "letter": "D",
+    "card": "cards/30_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elias",
+    "letter": "E",
+    "card": "cards/30_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frankie",
+    "letter": "F",
+    "card": "cards/30_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Greta",
+    "letter": "G",
+    "card": "cards/30_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harriët",
+    "letter": "H",
+    "card": "cards/30_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/30_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het verzorgingstehuis",
+  "map": "maps/30.jpg",
+  "bg": "#ecf5fc",
+  "mapGrid": {
+   "left": 0.021333333333333333,
+   "top": 0.021333333333333333,
+   "width": 0.9564444444444444,
+   "height": 0.9564444444444444
   }
  },
  {
@@ -3202,6 +4960,65 @@
    "height": 0.5186274509803922,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Audrey",
+    "letter": "A",
+    "card": "cards/31_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brad",
+    "letter": "B",
+    "card": "cards/31_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cecilia",
+    "letter": "C",
+    "card": "cards/31_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dominique",
+    "letter": "D",
+    "card": "cards/31_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elton",
+    "letter": "E",
+    "card": "cards/31_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fabian",
+    "letter": "F",
+    "card": "cards/31_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Giuseppe",
+    "letter": "G",
+    "card": "cards/31_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Luigi",
+    "letter": "V",
+    "card": "cards/31_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De beste pizza van de stad",
+  "map": "maps/31.jpg",
+  "bg": "#e8d7bd",
+  "mapGrid": {
+   "left": 0.02063628546861565,
+   "top": 0.01288936627282492,
+   "width": 0.9183147033533964,
+   "height": 0.8990332975295381
   }
  },
  {
@@ -3331,6 +5148,71 @@
    "height": 0.5186274509803922,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Anthony",
+    "letter": "A",
+    "card": "cards/32_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Britt",
+    "letter": "B",
+    "card": "cards/32_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carlijn",
+    "letter": "C",
+    "card": "cards/32_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daan",
+    "letter": "D",
+    "card": "cards/32_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ethan",
+    "letter": "E",
+    "card": "cards/32_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Francesca",
+    "letter": "F",
+    "card": "cards/32_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "George",
+    "letter": "G",
+    "card": "cards/32_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hakan",
+    "letter": "H",
+    "card": "cards/32_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vicky",
+    "letter": "V",
+    "card": "cards/32_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Vicky's nieuwe huis",
+  "map": "maps/32.jpg",
+  "bg": "#edf1f0",
+  "mapGrid": {
+   "left": 0.02990325417766051,
+   "top": 0.029874213836477988,
+   "width": 0.9375549692172384,
+   "height": 0.8380503144654088
   }
  },
  {
@@ -3459,6 +5341,71 @@
    "height": 0.5235294117647059,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Alexander",
+    "letter": "A",
+    "card": "cards/33_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ben",
+    "letter": "B",
+    "card": "cards/33_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carmen",
+    "letter": "C",
+    "card": "cards/33_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Darla",
+    "letter": "D",
+    "card": "cards/33_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Erik",
+    "letter": "E",
+    "card": "cards/33_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Francine",
+    "letter": "F",
+    "card": "cards/33_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gemma",
+    "letter": "G",
+    "card": "cards/33_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harriët",
+    "letter": "H",
+    "card": "cards/33_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/33_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Gemaskerd bal",
+  "map": "maps/33.jpg",
+  "bg": "#d2d3e5",
+  "mapGrid": {
+   "left": 0.032121724429416736,
+   "top": 0.012972972972972972,
+   "width": 0.9095519864750634,
+   "height": 0.9048648648648648
   }
  },
  {
@@ -3589,6 +5536,71 @@
    "height": 0.5274509803921569,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Aliya",
+    "letter": "A",
+    "card": "cards/34_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bastiaan",
+    "letter": "B",
+    "card": "cards/34_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Caroline",
+    "letter": "C",
+    "card": "cards/34_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dave",
+    "letter": "D",
+    "card": "cards/34_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eli",
+    "letter": "E",
+    "card": "cards/34_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Felicity",
+    "letter": "F",
+    "card": "cards/34_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gabriëla",
+    "letter": "G",
+    "card": "cards/34_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harry",
+    "letter": "H",
+    "card": "cards/34_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vernon",
+    "letter": "V",
+    "card": "cards/34_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Valentijnsdag",
+  "map": "maps/34.jpg",
+  "bg": "#efdfd2",
+  "mapGrid": {
+   "left": 0.021238938053097345,
+   "top": 0.021220159151193633,
+   "width": 0.9575221238938053,
+   "height": 0.9566755083996463
   }
  },
  {
@@ -3679,6 +5691,71 @@
    "height": 0.5215686274509804,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Archie",
+    "letter": "A",
+    "card": "cards/35_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bernardo",
+    "letter": "B",
+    "card": "cards/35_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Claire",
+    "letter": "C",
+    "card": "cards/35_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dahlia",
+    "letter": "D",
+    "card": "cards/35_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emilia",
+    "letter": "E",
+    "card": "cards/35_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Franklin",
+    "letter": "F",
+    "card": "cards/35_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gilbert",
+    "letter": "G",
+    "card": "cards/35_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Howie",
+    "letter": "H",
+    "card": "cards/35_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/35_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Winkelcentrum",
+  "map": "maps/35.jpg",
+  "bg": "#d8e6e9",
+  "mapGrid": {
+   "left": 0.021409455842997322,
+   "top": 0.021447721179624665,
+   "width": 0.9562890276538805,
+   "height": 0.9579982126899017
   }
  },
  {
@@ -3768,6 +5845,71 @@
    "height": 0.49019607843137253,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Brent",
+    "letter": "A",
+    "card": "cards/36_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cor",
+    "letter": "B",
+    "card": "cards/36_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dorien",
+    "letter": "C",
+    "card": "cards/36_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elias",
+    "letter": "D",
+    "card": "cards/36_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Francine",
+    "letter": "E",
+    "card": "cards/36_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gwen",
+    "letter": "F",
+    "card": "cards/36_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henk",
+    "letter": "G",
+    "card": "cards/36_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Viviana",
+    "letter": "H",
+    "card": "cards/36_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Adam",
+    "letter": "V",
+    "card": "cards/36_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Pitstop",
+  "map": "maps/36.jpg",
+  "bg": "#d5d8e1",
+  "mapGrid": {
+   "left": 0.029850746268656716,
+   "top": 0.013303769401330377,
+   "width": 0.9303482587064676,
+   "height": 0.9057649667405765
   }
  },
  {
@@ -3842,6 +5984,59 @@
    "height": 0.5098039215686274,
    "rows": 7,
    "cols": 7
+  },
+  "people": [
+   {
+    "name": "Anatoly",
+    "letter": "A",
+    "card": "cards/37_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Boris",
+    "letter": "B",
+    "card": "cards/37_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chantalle",
+    "letter": "C",
+    "card": "cards/37_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dina",
+    "letter": "D",
+    "card": "cards/37_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fabiano",
+    "letter": "E",
+    "card": "cards/37_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Geike",
+    "letter": "F",
+    "card": "cards/37_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vadim",
+    "letter": "V",
+    "card": "cards/37_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het schaaktoernooi",
+  "map": "maps/37.jpg",
+  "bg": "#ece5d5",
+  "mapGrid": {
+   "left": 0.02187784867821331,
+   "top": 0.020054694621695533,
+   "width": 0.9571558796718322,
+   "height": 0.9571558796718322
   }
  },
  {
@@ -3930,7 +6125,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 38
+  "id": 38,
+  "people": [
+   {
+    "name": "Anthony",
+    "letter": "A",
+    "card": "cards/38_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Barbara",
+    "letter": "B",
+    "card": "cards/38_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chris",
+    "letter": "C",
+    "card": "cards/38_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Doris",
+    "letter": "D",
+    "card": "cards/38_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eduardo",
+    "letter": "E",
+    "card": "cards/38_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frances",
+    "letter": "F",
+    "card": "cards/38_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gabriëla",
+    "letter": "H",
+    "card": "cards/38_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henk",
+    "letter": "I",
+    "card": "cards/38_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vico",
+    "letter": "V",
+    "card": "cards/38_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het concert",
+  "map": "maps/38.jpg",
+  "bg": "#d8cae1",
+  "mapGrid": {
+   "left": 0.02553191489361702,
+   "top": 0.014046461372231226,
+   "width": 0.9055319148936171,
+   "height": 0.940032414910859
+  }
  },
  {
   "book": 1,
@@ -4024,6 +6284,71 @@
    "height": 0.5303921568627451,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Alies",
+    "letter": "A",
+    "card": "cards/39_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bowie",
+    "letter": "B",
+    "card": "cards/39_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chenglei",
+    "letter": "C",
+    "card": "cards/39_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dave",
+    "letter": "D",
+    "card": "cards/39_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elias",
+    "letter": "E",
+    "card": "cards/39_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Feng",
+    "letter": "F",
+    "card": "cards/39_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gao",
+    "letter": "G",
+    "card": "cards/39_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Huifang",
+    "letter": "H",
+    "card": "cards/39_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Wang",
+    "letter": "V",
+    "card": "cards/39_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Dimsum",
+  "map": "maps/39.jpg",
+  "bg": "#f3d6c8",
+  "mapGrid": {
+   "left": 0.020253164556962026,
+   "top": 0.011771000535045479,
+   "width": 0.9248945147679325,
+   "height": 0.9106474050294275
   }
  },
  {
@@ -4107,7 +6432,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 40
+  "id": 40,
+  "people": [
+   {
+    "name": "Amir",
+    "letter": "A",
+    "card": "cards/40_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bart",
+    "letter": "B",
+    "card": "cards/40_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carla",
+    "letter": "C",
+    "card": "cards/40_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daniëlle",
+    "letter": "D",
+    "card": "cards/40_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ella",
+    "letter": "E",
+    "card": "cards/40_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Felipe",
+    "letter": "F",
+    "card": "cards/40_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gert",
+    "letter": "G",
+    "card": "cards/40_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hoeda",
+    "letter": "H",
+    "card": "cards/40_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Wassily",
+    "letter": "V",
+    "card": "cards/40_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Zwarte lotus",
+  "map": "maps/40.jpg",
+  "bg": "#dfe2e9",
+  "mapGrid": {
+   "left": 0.0213713268032057,
+   "top": 0.02315227070347284,
+   "width": 0.9545859305431879,
+   "height": 0.9545859305431879
+  }
  },
  {
   "book": 1,
@@ -4202,7 +6592,54 @@
   },
   "solutionVerified": true,
   "difficulty": 4,
-  "id": 41
+  "id": 41,
+  "people": [
+   {
+    "name": "Anastasia",
+    "letter": "A",
+    "card": "cards/41_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Boris",
+    "letter": "B",
+    "card": "cards/41_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Claire",
+    "letter": "C",
+    "card": "cards/41_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "David",
+    "letter": "D",
+    "card": "cards/41_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eddy",
+    "letter": "E",
+    "card": "cards/41_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vibeke",
+    "letter": "V",
+    "card": "cards/41_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Nachttrein",
+  "map": "maps/41.jpg",
+  "bg": "#efdddd",
+  "mapGrid": {
+   "left": 0.02049530315969257,
+   "top": 0.03314917127071823,
+   "width": 0.9581554227156277,
+   "height": 0.9337016574585635
+  }
  },
  {
   "book": 1,
@@ -4330,6 +6767,71 @@
    "height": 0.46862745098039216,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Aad",
+    "letter": "A",
+    "card": "cards/42_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bas",
+    "letter": "B",
+    "card": "cards/42_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cristiano",
+    "letter": "C",
+    "card": "cards/42_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dirk",
+    "letter": "D",
+    "card": "cards/42_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emilio",
+    "letter": "E",
+    "card": "cards/42_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Finn",
+    "letter": "F",
+    "card": "cards/42_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gideon",
+    "letter": "G",
+    "card": "cards/42_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hector",
+    "letter": "H",
+    "card": "cards/42_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vito",
+    "letter": "V",
+    "card": "cards/42_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Ontsnapping uit de bajes",
+  "map": "maps/42.jpg",
+  "bg": "#cad1e4",
+  "mapGrid": {
+   "left": 0.020442930153321975,
+   "top": 0.019037546271813855,
+   "width": 0.9233390119250426,
+   "height": 0.9349550502379693
   }
  },
  {
@@ -4459,6 +6961,71 @@
    "height": 0.5215686274509804,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Aaron",
+    "letter": "A",
+    "card": "cards/43_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brandon",
+    "letter": "B",
+    "card": "cards/43_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cara",
+    "letter": "C",
+    "card": "cards/43_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daniëlle",
+    "letter": "D",
+    "card": "cards/43_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ethan",
+    "letter": "E",
+    "card": "cards/43_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fedde",
+    "letter": "F",
+    "card": "cards/43_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "George",
+    "letter": "G",
+    "card": "cards/43_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Haiko",
+    "letter": "H",
+    "card": "cards/43_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victoria",
+    "letter": "V",
+    "card": "cards/43_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Sloddervossen",
+  "map": "maps/43.jpg",
+  "bg": "#dfe4dd",
+  "mapGrid": {
+   "left": 0.03487358326068003,
+   "top": 0.033480176211453744,
+   "width": 0.932868352223191,
+   "height": 0.9444933920704845
   }
  },
  {
@@ -4588,6 +7155,71 @@
    "height": 0.5225490196078432,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Aad",
+    "letter": "A",
+    "card": "cards/44_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Björn",
+    "letter": "B",
+    "card": "cards/44_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clara",
+    "letter": "C",
+    "card": "cards/44_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Diana",
+    "letter": "D",
+    "card": "cards/44_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eloise",
+    "letter": "E",
+    "card": "cards/44_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Francis",
+    "letter": "F",
+    "card": "cards/44_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Glenn",
+    "letter": "G",
+    "card": "cards/44_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henk",
+    "letter": "H",
+    "card": "cards/44_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vico",
+    "letter": "V",
+    "card": "cards/44_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het casino",
+  "map": "maps/44.jpg",
+  "bg": "#dcece2",
+  "mapGrid": {
+   "left": 0.019383259911894272,
+   "top": 0.03183023872679045,
+   "width": 0.9444933920704845,
+   "height": 0.9478337754199824
   }
  },
  {
@@ -4682,6 +7314,71 @@
    "height": 0.5245098039215687,
    "rows": 10,
    "cols": 10
+  },
+  "people": [
+   {
+    "name": "Alain",
+    "letter": "A",
+    "card": "cards/45_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ben",
+    "letter": "B",
+    "card": "cards/45_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carmen",
+    "letter": "C",
+    "card": "cards/45_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daley",
+    "letter": "D",
+    "card": "cards/45_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eowyn",
+    "letter": "E",
+    "card": "cards/45_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Filips",
+    "letter": "F",
+    "card": "cards/45_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Grace",
+    "letter": "G",
+    "card": "cards/45_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hada",
+    "letter": "H",
+    "card": "cards/45_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/45_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Studentenhuis",
+  "map": "maps/45.jpg",
+  "bg": "#efe9d3",
+  "mapGrid": {
+   "left": 0.033362598770851626,
+   "top": 0.021352313167259787,
+   "width": 0.9446883230904302,
+   "height": 0.9572953736654805
   }
  },
  {
@@ -4774,6 +7471,71 @@
    "height": 0.5235294117647059,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Aletta",
+    "letter": "A",
+    "card": "cards/46_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Becky",
+    "letter": "B",
+    "card": "cards/46_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carice",
+    "letter": "C",
+    "card": "cards/46_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daan",
+    "letter": "D",
+    "card": "cards/46_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eveline",
+    "letter": "E",
+    "card": "cards/46_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frankie",
+    "letter": "F",
+    "card": "cards/46_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Guust",
+    "letter": "G",
+    "card": "cards/46_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Heidi",
+    "letter": "H",
+    "card": "cards/46_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/46_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Familiereünie",
+  "map": "maps/46.jpg",
+  "bg": "#dbd3e8",
+  "mapGrid": {
+   "left": 0.020530367835757058,
+   "top": 0.012834224598930482,
+   "width": 0.9204448246364414,
+   "height": 0.9401069518716577
   }
  },
  {
@@ -4906,6 +7668,71 @@
    "height": 0.5215686274509804,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Albert",
+    "letter": "A",
+    "card": "cards/47_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bea",
+    "letter": "B",
+    "card": "cards/47_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Casper",
+    "letter": "C",
+    "card": "cards/47_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Delia",
+    "letter": "D",
+    "card": "cards/47_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eli",
+    "letter": "E",
+    "card": "cards/47_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fatima",
+    "letter": "F",
+    "card": "cards/47_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "George",
+    "letter": "G",
+    "card": "cards/47_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harriët",
+    "letter": "H",
+    "card": "cards/47_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Veerle",
+    "letter": "V",
+    "card": "cards/47_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het kantoor",
+  "map": "maps/47.jpg",
+  "bg": "#ecf1f7",
+  "mapGrid": {
+   "left": 0.033480176211453744,
+   "top": 0.03353927625772286,
+   "width": 0.9444933920704845,
+   "height": 0.9443954104148279
   }
  },
  {
@@ -5038,6 +7865,71 @@
    "height": 0.5303921568627451,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Alexander",
+    "letter": "A",
+    "card": "cards/48_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bill",
+    "letter": "B",
+    "card": "cards/48_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carlo",
+    "letter": "C",
+    "card": "cards/48_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dagmar",
+    "letter": "D",
+    "card": "cards/48_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eva",
+    "letter": "E",
+    "card": "cards/48_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Franka",
+    "letter": "F",
+    "card": "cards/48_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gordon",
+    "letter": "G",
+    "card": "cards/48_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henriëtte",
+    "letter": "H",
+    "card": "cards/48_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/48_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Boshut",
+  "map": "maps/48.jpg",
+  "bg": "#e8d7bd",
+  "mapGrid": {
+   "left": 0.020390824129141887,
+   "top": 0.03441084462982273,
+   "width": 0.9277824978759558,
+   "height": 0.8790406673618353
   }
  },
  {
@@ -5157,7 +8049,72 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 49
+  "id": 49,
+  "people": [
+   {
+    "name": "Amos",
+    "letter": "A",
+    "card": "cards/49_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Benjamin",
+    "letter": "B",
+    "card": "cards/49_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Charlotte",
+    "letter": "C",
+    "card": "cards/49_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Deborah",
+    "letter": "D",
+    "card": "cards/49_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Evangeline",
+    "letter": "E",
+    "card": "cards/49_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Farouk",
+    "letter": "F",
+    "card": "cards/49_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gerrit",
+    "letter": "G",
+    "card": "cards/49_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Helen",
+    "letter": "H",
+    "card": "cards/49_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Virgil",
+    "letter": "V",
+    "card": "cards/49_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Etentje",
+  "map": "maps/49.jpg",
+  "bg": "#dee5dd",
+  "mapGrid": {
+   "left": 0.021145374449339206,
+   "top": 0.02118270079435128,
+   "width": 0.9568281938325991,
+   "height": 0.9549867608120035
+  }
  },
  {
   "book": 1,
@@ -5259,6 +8216,71 @@
    "height": 0.5313725490196078,
    "rows": 11,
    "cols": 11
+  },
+  "people": [
+   {
+    "name": "Anna",
+    "letter": "A",
+    "card": "cards/50_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Boele",
+    "letter": "B",
+    "card": "cards/50_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Caro",
+    "letter": "C",
+    "card": "cards/50_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dorie",
+    "letter": "D",
+    "card": "cards/50_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ellin",
+    "letter": "E",
+    "card": "cards/50_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fred",
+    "letter": "F",
+    "card": "cards/50_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gwen",
+    "letter": "G",
+    "card": "cards/50_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hans",
+    "letter": "H",
+    "card": "cards/50_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/50_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De bioscoop",
+  "map": "maps/50.jpg",
+  "bg": "#e3dde9",
+  "mapGrid": {
+   "left": 0.03457216940363008,
+   "top": 0.03301476976542137,
+   "width": 0.9403630077787382,
+   "height": 0.945264986967854
   }
  },
  {
@@ -5350,7 +8372,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 51
+  "id": 51,
+  "people": [
+   {
+    "name": "Adriana",
+    "letter": "A",
+    "card": "cards/51_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bernd",
+    "letter": "B",
+    "card": "cards/51_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dylan",
+    "letter": "D",
+    "card": "cards/51_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Edgar",
+    "letter": "E",
+    "card": "cards/51_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Felicity",
+    "letter": "F",
+    "card": "cards/51_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gianna",
+    "letter": "G",
+    "card": "cards/51_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hasse",
+    "letter": "H",
+    "card": "cards/51_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Koen",
+    "letter": "I",
+    "card": "cards/51_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/51_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Kommer en kwel",
+  "map": "maps/51.jpg",
+  "bg": "#dfd7d4",
+  "mapGrid": {
+   "left": 0.022222222222222223,
+   "top": 0.012861736334405145,
+   "width": 0.9145299145299145,
+   "height": 0.8981779206859593
+  }
  },
  {
   "book": 1,
@@ -5480,6 +8567,71 @@
    "height": 0.5294117647058824,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Abel",
+    "letter": "A",
+    "card": "cards/52_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bas",
+    "letter": "B",
+    "card": "cards/52_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Catarina",
+    "letter": "C",
+    "card": "cards/52_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Denise",
+    "letter": "D",
+    "card": "cards/52_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elizabeth",
+    "letter": "E",
+    "card": "cards/52_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fabian",
+    "letter": "F",
+    "card": "cards/52_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gregory",
+    "letter": "G",
+    "card": "cards/52_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Heika",
+    "letter": "H",
+    "card": "cards/52_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Veronica",
+    "letter": "V",
+    "card": "cards/52_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het callcenter",
+  "map": "maps/52.jpg",
+  "bg": "#f7e3ca",
+  "mapGrid": {
+   "left": 0.02118270079435128,
+   "top": 0.019434628975265017,
+   "width": 0.9585172109443955,
+   "height": 0.9593639575971732
   }
  },
  {
@@ -5578,6 +8730,71 @@
    "height": 0.5264705882352941,
    "rows": 10,
    "cols": 10
+  },
+  "people": [
+   {
+    "name": "Arthur",
+    "letter": "A",
+    "card": "cards/53_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Boas",
+    "letter": "B",
+    "card": "cards/53_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chris",
+    "letter": "C",
+    "card": "cards/53_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Darla",
+    "letter": "D",
+    "card": "cards/53_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ellie",
+    "letter": "E",
+    "card": "cards/53_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Franklin",
+    "letter": "F",
+    "card": "cards/53_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gisele",
+    "letter": "G",
+    "card": "cards/53_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henrietta",
+    "letter": "H",
+    "card": "cards/53_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vincent",
+    "letter": "V",
+    "card": "cards/53_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het huis van de tuinman",
+  "map": "maps/53.jpg",
+  "bg": "#d1ddd3",
+  "mapGrid": {
+   "left": 0.01872340425531915,
+   "top": 0.01262493424513414,
+   "width": 0.9208510638297872,
+   "height": 0.9279326670173593
   }
  },
  {
@@ -5673,6 +8890,71 @@
    "height": 0.5254901960784314,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Ashley",
+    "letter": "A",
+    "card": "cards/54_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bella",
+    "letter": "B",
+    "card": "cards/54_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cees",
+    "letter": "C",
+    "card": "cards/54_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dries",
+    "letter": "D",
+    "card": "cards/54_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eloise",
+    "letter": "E",
+    "card": "cards/54_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fred",
+    "letter": "F",
+    "card": "cards/54_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gian",
+    "letter": "G",
+    "card": "cards/54_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hawa",
+    "letter": "H",
+    "card": "cards/54_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valerie",
+    "letter": "V",
+    "card": "cards/54_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De nachtclub",
+  "map": "maps/54.jpg",
+  "bg": "#e9ddeb",
+  "mapGrid": {
+   "left": 0.036617262423714034,
+   "top": 0.02127659574468085,
+   "width": 0.9433304272013949,
+   "height": 0.9574468085106383
   }
  },
  {
@@ -5808,6 +9090,71 @@
    "height": 0.5215686274509804,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Audrey",
+    "letter": "A",
+    "card": "cards/55_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Belinda",
+    "letter": "B",
+    "card": "cards/55_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clarissa",
+    "letter": "C",
+    "card": "cards/55_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dominique",
+    "letter": "D",
+    "card": "cards/55_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emilio",
+    "letter": "E",
+    "card": "cards/55_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frederik",
+    "letter": "F",
+    "card": "cards/55_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gladys",
+    "letter": "G",
+    "card": "cards/55_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harald",
+    "letter": "H",
+    "card": "cards/55_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valentino",
+    "letter": "V",
+    "card": "cards/55_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het museum",
+  "map": "maps/55.jpg",
+  "bg": "#e7dbcb",
+  "mapGrid": {
+   "left": 0.020600858369098713,
+   "top": 0.012651555086979441,
+   "width": 0.9184549356223176,
+   "height": 0.94148655772272
   }
  },
  {
@@ -5937,6 +9284,71 @@
    "height": 0.5205882352941177,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Ava",
+    "letter": "A",
+    "card": "cards/56_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brenda",
+    "letter": "B",
+    "card": "cards/56_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Charlotte",
+    "letter": "C",
+    "card": "cards/56_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dina",
+    "letter": "D",
+    "card": "cards/56_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emily",
+    "letter": "E",
+    "card": "cards/56_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Falko",
+    "letter": "F",
+    "card": "cards/56_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gerlof",
+    "letter": "G",
+    "card": "cards/56_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hada",
+    "letter": "H",
+    "card": "cards/56_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vera",
+    "letter": "V",
+    "card": "cards/56_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De bakkerij",
+  "map": "maps/56.jpg",
+  "bg": "#ead8b4",
+  "mapGrid": {
+   "left": 0.01875532821824382,
+   "top": 0.013918629550321198,
+   "width": 0.9156010230179028,
+   "height": 0.8982869379014989
   }
  },
  {
@@ -6066,6 +9478,71 @@
    "height": 0.5274509803921569,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Alex",
+    "letter": "A",
+    "card": "cards/57_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brad",
+    "letter": "B",
+    "card": "cards/57_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cora",
+    "letter": "C",
+    "card": "cards/57_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dorothy",
+    "letter": "D",
+    "card": "cards/57_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Evangeline",
+    "letter": "E",
+    "card": "cards/57_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Falco",
+    "letter": "F",
+    "card": "cards/57_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gabor",
+    "letter": "G",
+    "card": "cards/57_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henry",
+    "letter": "H",
+    "card": "cards/57_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vadim",
+    "letter": "V",
+    "card": "cards/57_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Broedernijd",
+  "map": "maps/57.jpg",
+  "bg": "#dfe3ec",
+  "mapGrid": {
+   "left": 0.021257750221434897,
+   "top": 0.02127659574468085,
+   "width": 0.95837023914969,
+   "height": 0.9574468085106383
   }
  },
  {
@@ -6163,6 +9640,71 @@
    "height": 0.4666666666666667,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Ayla",
+    "letter": "A",
+    "card": "cards/58_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Barbara",
+    "letter": "B",
+    "card": "cards/58_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clyde",
+    "letter": "C",
+    "card": "cards/58_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Darius",
+    "letter": "D",
+    "card": "cards/58_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eddy",
+    "letter": "E",
+    "card": "cards/58_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Freya",
+    "letter": "F",
+    "card": "cards/58_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gary",
+    "letter": "G",
+    "card": "cards/58_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hilde",
+    "letter": "H",
+    "card": "cards/58_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/58_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "A Night at the Opera",
+  "map": "maps/58.jpg",
+  "bg": "#decbd1",
+  "mapGrid": {
+   "left": 0.023809523809523808,
+   "top": 0.013677012098895318,
+   "width": 0.9251700680272109,
+   "height": 0.884797475013151
   }
  },
  {
@@ -6245,6 +9787,71 @@
    "height": 0.5215686274509804,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Artemis",
+    "letter": "A",
+    "card": "cards/59_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Betsie",
+    "letter": "B",
+    "card": "cards/59_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Claire",
+    "letter": "C",
+    "card": "cards/59_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dave",
+    "letter": "D",
+    "card": "cards/59_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ernst",
+    "letter": "E",
+    "card": "cards/59_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fern",
+    "letter": "F",
+    "card": "cards/59_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gideon",
+    "letter": "G",
+    "card": "cards/59_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henk",
+    "letter": "H",
+    "card": "cards/59_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vernon",
+    "letter": "V",
+    "card": "cards/59_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Zomerhuisje",
+  "map": "maps/59.jpg",
+  "bg": "#f1e8e1",
+  "mapGrid": {
+   "left": 0.03307223672758921,
+   "top": 0.03180212014134275,
+   "width": 0.9329852045256745,
+   "height": 0.9469964664310954
   }
  },
  {
@@ -6332,6 +9939,71 @@
    "height": 0.5186274509803922,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Amy",
+    "letter": "A",
+    "card": "cards/60_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brad",
+    "letter": "B",
+    "card": "cards/60_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cees",
+    "letter": "C",
+    "card": "cards/60_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daniëlle",
+    "letter": "D",
+    "card": "cards/60_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Edith",
+    "letter": "E",
+    "card": "cards/60_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fee",
+    "letter": "F",
+    "card": "cards/60_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gordon",
+    "letter": "G",
+    "card": "cards/60_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Haiko",
+    "letter": "H",
+    "card": "cards/60_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vicky",
+    "letter": "V",
+    "card": "cards/60_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Appartement aan zee",
+  "map": "maps/60.jpg",
+  "bg": "#fcf3d6",
+  "mapGrid": {
+   "left": 0.020654044750430294,
+   "top": 0.01293800539083558,
+   "width": 0.919104991394148,
+   "height": 0.9412398921832884
   }
  },
  {
@@ -6424,6 +10096,71 @@
    "height": 0.5186274509803922,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Aad",
+    "letter": "A",
+    "card": "cards/61_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bregje",
+    "letter": "B",
+    "card": "cards/61_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carlo",
+    "letter": "C",
+    "card": "cards/61_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "David",
+    "letter": "D",
+    "card": "cards/61_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eus",
+    "letter": "E",
+    "card": "cards/61_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Femke",
+    "letter": "F",
+    "card": "cards/61_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gloria",
+    "letter": "G",
+    "card": "cards/61_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Helen",
+    "letter": "H",
+    "card": "cards/61_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Rishi",
+    "letter": "V",
+    "card": "cards/61_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het ziekenhuis",
+  "map": "maps/61.jpg",
+  "bg": "#d4e4da",
+  "mapGrid": {
+   "left": 0.020600858369098713,
+   "top": 0.012924071082390954,
+   "width": 0.9167381974248927,
+   "height": 0.9402261712439418
   }
  },
  {
@@ -6557,6 +10294,71 @@
    "height": 0.5274509803921569,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Anneleen",
+    "letter": "A",
+    "card": "cards/62_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bianca",
+    "letter": "B",
+    "card": "cards/62_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cynthia",
+    "letter": "C",
+    "card": "cards/62_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dries",
+    "letter": "D",
+    "card": "cards/62_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eelco",
+    "letter": "E",
+    "card": "cards/62_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Felicia",
+    "letter": "F",
+    "card": "cards/62_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gerald",
+    "letter": "G",
+    "card": "cards/62_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hiske",
+    "letter": "H",
+    "card": "cards/62_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/62_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Oost west, thuis best",
+  "map": "maps/62.jpg",
+  "bg": "#f9e5da",
+  "mapGrid": {
+   "left": 0.021164021164021163,
+   "top": 0.021164021164021163,
+   "width": 0.9576719576719577,
+   "height": 0.9576719576719577
   }
  },
  {
@@ -6686,6 +10488,71 @@
    "height": 0.5284313725490196,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Bram",
+    "letter": "A",
+    "card": "cards/63_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clara",
+    "letter": "B",
+    "card": "cards/63_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dara",
+    "letter": "C",
+    "card": "cards/63_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ernst",
+    "letter": "D",
+    "card": "cards/63_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fedde",
+    "letter": "E",
+    "card": "cards/63_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gilbert",
+    "letter": "F",
+    "card": "cards/63_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hessel",
+    "letter": "G",
+    "card": "cards/63_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vasco",
+    "letter": "H",
+    "card": "cards/63_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Anthony",
+    "letter": "V",
+    "card": "cards/63_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Veiligheidscertificaat",
+  "map": "maps/63.jpg",
+  "bg": "#e6eff6",
+  "mapGrid": {
+   "left": 0.021071115013169446,
+   "top": 0.021108179419525065,
+   "width": 0.9569798068481123,
+   "height": 0.9586631486367634
   }
  },
  {
@@ -6815,6 +10682,71 @@
    "height": 0.5225490196078432,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Anna",
+    "letter": "A",
+    "card": "cards/64_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Britta",
+    "letter": "B",
+    "card": "cards/64_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Charles",
+    "letter": "C",
+    "card": "cards/64_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dave",
+    "letter": "D",
+    "card": "cards/64_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ethan",
+    "letter": "E",
+    "card": "cards/64_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frida",
+    "letter": "F",
+    "card": "cards/64_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Georgina",
+    "letter": "G",
+    "card": "cards/64_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hilda",
+    "letter": "H",
+    "card": "cards/64_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vico",
+    "letter": "V",
+    "card": "cards/64_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het hotel",
+  "map": "maps/64.jpg",
+  "bg": "#f3d6c8",
+  "mapGrid": {
+   "left": 0.03220338983050847,
+   "top": 0.01162176439513999,
+   "width": 0.911864406779661,
+   "height": 0.9318541996830428
   }
  },
  {
@@ -6946,6 +10878,71 @@
    "height": 0.5235294117647059,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Adriana",
+    "letter": "A",
+    "card": "cards/65_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bodil",
+    "letter": "B",
+    "card": "cards/65_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Colin",
+    "letter": "C",
+    "card": "cards/65_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dana",
+    "letter": "D",
+    "card": "cards/65_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ellen",
+    "letter": "E",
+    "card": "cards/65_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Francesca",
+    "letter": "F",
+    "card": "cards/65_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Grad",
+    "letter": "G",
+    "card": "cards/65_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hester",
+    "letter": "H",
+    "card": "cards/65_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vito",
+    "letter": "V",
+    "card": "cards/65_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De rechter is jarig",
+  "map": "maps/65.jpg",
+  "bg": "#f4e3c7",
+  "mapGrid": {
+   "left": 0.020477815699658702,
+   "top": 0.01288244766505636,
+   "width": 0.9146757679180887,
+   "height": 0.9404186795491143
   }
  },
  {
@@ -7074,6 +11071,71 @@
    "height": 0.5274509803921569,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "André",
+    "letter": "A",
+    "card": "cards/66_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bettine",
+    "letter": "B",
+    "card": "cards/66_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clyde",
+    "letter": "C",
+    "card": "cards/66_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Debbie",
+    "letter": "D",
+    "card": "cards/66_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eduardo",
+    "letter": "E",
+    "card": "cards/66_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Felicia",
+    "letter": "F",
+    "card": "cards/66_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "George",
+    "letter": "G",
+    "card": "cards/66_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Helena",
+    "letter": "H",
+    "card": "cards/66_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vincent",
+    "letter": "V",
+    "card": "cards/66_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Conferentie",
+  "map": "maps/66.jpg",
+  "bg": "#d9d2e2",
+  "mapGrid": {
+   "left": 0.031959629941127,
+   "top": 0.019968470835522858,
+   "width": 0.9201009251471826,
+   "height": 0.9269574356279559
   }
  },
  {
@@ -7207,6 +11269,71 @@
    "height": 0.5225490196078432,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Brandon",
+    "letter": "A",
+    "card": "cards/67_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cora",
+    "letter": "B",
+    "card": "cards/67_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Diana",
+    "letter": "C",
+    "card": "cards/67_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emiko",
+    "letter": "D",
+    "card": "cards/67_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Franklin",
+    "letter": "E",
+    "card": "cards/67_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Guy",
+    "letter": "F",
+    "card": "cards/67_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hada",
+    "letter": "G",
+    "card": "cards/67_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valentijn",
+    "letter": "H",
+    "card": "cards/67_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Adonis",
+    "letter": "V",
+    "card": "cards/67_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De sudoku-moord",
+  "map": "maps/67.jpg",
+  "bg": "#e2e6f2",
+  "mapGrid": {
+   "left": 0.0313588850174216,
+   "top": 0.0213903743315508,
+   "width": 0.9372822299651568,
+   "height": 0.9572192513368984
   }
  },
  {
@@ -7298,6 +11425,71 @@
    "height": 0.5196078431372549,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Aaron",
+    "letter": "A",
+    "card": "cards/68_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bastiaan",
+    "letter": "B",
+    "card": "cards/68_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Celia",
+    "letter": "C",
+    "card": "cards/68_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dina",
+    "letter": "D",
+    "card": "cards/68_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elizabeth",
+    "letter": "E",
+    "card": "cards/68_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ferdinand",
+    "letter": "F",
+    "card": "cards/68_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gavin",
+    "letter": "G",
+    "card": "cards/68_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harry",
+    "letter": "H",
+    "card": "cards/68_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vittorio",
+    "letter": "V",
+    "card": "cards/68_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Bankkluis",
+  "map": "maps/68.jpg",
+  "bg": "#dfecda",
+  "mapGrid": {
+   "left": 0.04736842105263158,
+   "top": 0.03518029903254178,
+   "width": 0.9315789473684211,
+   "height": 0.9340369393139841
   }
  },
  {
@@ -7433,6 +11625,71 @@
    "height": 0.5176470588235295,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Amelia",
+    "letter": "A",
+    "card": "cards/69_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bodil",
+    "letter": "B",
+    "card": "cards/69_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cesar",
+    "letter": "C",
+    "card": "cards/69_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daan",
+    "letter": "D",
+    "card": "cards/69_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eddy",
+    "letter": "E",
+    "card": "cards/69_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fabienne",
+    "letter": "F",
+    "card": "cards/69_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Guus",
+    "letter": "G",
+    "card": "cards/69_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Helena",
+    "letter": "H",
+    "card": "cards/69_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vincent",
+    "letter": "V",
+    "card": "cards/69_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Een overvol huis",
+  "map": "maps/69.jpg",
+  "bg": "#f4e1d0",
+  "mapGrid": {
+   "left": 0.02154398563734291,
+   "top": 0.02154398563734291,
+   "width": 0.9569120287253142,
+   "height": 0.9569120287253142
   }
  },
  {
@@ -7534,6 +11791,71 @@
    "height": 0.5274509803921569,
    "rows": 10,
    "cols": 10
+  },
+  "people": [
+   {
+    "name": "Benny",
+    "letter": "A",
+    "card": "cards/70_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Caroline",
+    "letter": "B",
+    "card": "cards/70_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Donna",
+    "letter": "C",
+    "card": "cards/70_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emilio",
+    "letter": "D",
+    "card": "cards/70_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frits",
+    "letter": "E",
+    "card": "cards/70_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Grace",
+    "letter": "F",
+    "card": "cards/70_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henry",
+    "letter": "G",
+    "card": "cards/70_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Jaap",
+    "letter": "H",
+    "card": "cards/70_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vicky",
+    "letter": "V",
+    "card": "cards/70_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De lege kamer",
+  "map": "maps/70.jpg",
+  "bg": "#fdf4d7",
+  "mapGrid": {
+   "left": 0.03312990409764603,
+   "top": 0.03312990409764603,
+   "width": 0.9450741063644289,
+   "height": 0.9450741063644289
   }
  },
  {
@@ -7661,6 +11983,71 @@
    "height": 0.5303921568627451,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Alain",
+    "letter": "A",
+    "card": "cards/71_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bouke",
+    "letter": "B",
+    "card": "cards/71_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Claire",
+    "letter": "C",
+    "card": "cards/71_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Diana",
+    "letter": "D",
+    "card": "cards/71_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ella",
+    "letter": "E",
+    "card": "cards/71_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fara",
+    "letter": "F",
+    "card": "cards/71_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Glenn",
+    "letter": "G",
+    "card": "cards/71_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hein",
+    "letter": "H",
+    "card": "cards/71_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vladimir",
+    "letter": "V",
+    "card": "cards/71_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Geheime ontmoeting",
+  "map": "maps/71.jpg",
+  "bg": "#d4ced8",
+  "mapGrid": {
+   "left": 0.0338123415046492,
+   "top": 0.019801980198019802,
+   "width": 0.9230769230769231,
+   "height": 0.9286086503387181
   }
  },
  {
@@ -7791,7 +12178,72 @@
   },
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 72
+  "id": 72,
+  "people": [
+   {
+    "name": "Archie",
+    "letter": "A",
+    "card": "cards/72_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brigitte",
+    "letter": "B",
+    "card": "cards/72_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chantal",
+    "letter": "C",
+    "card": "cards/72_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "David",
+    "letter": "D",
+    "card": "cards/72_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ernst",
+    "letter": "E",
+    "card": "cards/72_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fern",
+    "letter": "F",
+    "card": "cards/72_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gloria",
+    "letter": "G",
+    "card": "cards/72_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Haye",
+    "letter": "H",
+    "card": "cards/72_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vernon",
+    "letter": "V",
+    "card": "cards/72_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Lawine",
+  "map": "maps/72.jpg",
+  "bg": "#eceff6",
+  "mapGrid": {
+   "left": 0.0433996383363472,
+   "top": 0.015410016510731976,
+   "width": 0.8209764918625678,
+   "height": 0.906989543203082
+  }
  },
  {
   "book": 1,
@@ -7876,7 +12328,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 73
+  "id": 73,
+  "people": [
+   {
+    "name": "Aria",
+    "letter": "A",
+    "card": "cards/73_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Britta",
+    "letter": "B",
+    "card": "cards/73_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Caro",
+    "letter": "C",
+    "card": "cards/73_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Deborah",
+    "letter": "D",
+    "card": "cards/73_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eveline",
+    "letter": "E",
+    "card": "cards/73_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fernando",
+    "letter": "F",
+    "card": "cards/73_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gavin",
+    "letter": "G",
+    "card": "cards/73_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hessel",
+    "letter": "H",
+    "card": "cards/73_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Viggo",
+    "letter": "V",
+    "card": "cards/73_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het jacht",
+  "map": "maps/73.jpg",
+  "bg": "#dbe2f2",
+  "mapGrid": {
+   "left": 0.020219039595619208,
+   "top": 0.015209125475285171,
+   "width": 0.9570345408593092,
+   "height": 0.5487959442332065
+  }
  },
  {
   "book": 1,
@@ -7940,7 +12457,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 74
+  "id": 74,
+  "people": [
+   {
+    "name": "Arnold",
+    "letter": "A",
+    "card": "cards/74_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brenda",
+    "letter": "B",
+    "card": "cards/74_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cecile",
+    "letter": "C",
+    "card": "cards/74_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Daniël",
+    "letter": "D",
+    "card": "cards/74_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eddie",
+    "letter": "E",
+    "card": "cards/74_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frederik",
+    "letter": "F",
+    "card": "cards/74_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gerald",
+    "letter": "G",
+    "card": "cards/74_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hera",
+    "letter": "H",
+    "card": "cards/74_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vanessa",
+    "letter": "V",
+    "card": "cards/74_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het circus",
+  "map": "maps/74.jpg",
+  "bg": "#e6d0c5",
+  "mapGrid": {
+   "left": 0.021940928270042195,
+   "top": 0.014492753623188406,
+   "width": 0.9316455696202531,
+   "height": 0.9241917502787068
+  }
  },
  {
   "book": 1,
@@ -8049,6 +12631,89 @@
    "height": 0.5264705882352941,
    "rows": 11,
    "cols": 11
+  },
+  "people": [
+   {
+    "name": "Allison",
+    "letter": "A",
+    "card": "cards/75_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Betty",
+    "letter": "B",
+    "card": "cards/75_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cayla",
+    "letter": "C",
+    "card": "cards/75_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Danny",
+    "letter": "D",
+    "card": "cards/75_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Edith",
+    "letter": "E",
+    "card": "cards/75_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fabrice",
+    "letter": "F",
+    "card": "cards/75_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Giovanni",
+    "letter": "G",
+    "card": "cards/75_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henk",
+    "letter": "H",
+    "card": "cards/75_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Isaak",
+    "letter": "I",
+    "card": "cards/75_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Juultje",
+    "letter": "J",
+    "card": "cards/75_J.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Kiko",
+    "letter": "K",
+    "card": "cards/75_K.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/75_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het landgoed",
+  "map": "maps/75.jpg",
+  "bg": "#dceef2",
+  "mapGrid": {
+   "left": 0.0237892948173322,
+   "top": 0.013057671381936888,
+   "width": 0.91928632115548,
+   "height": 0.940152339499456
   }
  },
  {
@@ -8167,6 +12832,89 @@
    "height": 0.5284313725490196,
    "rows": 12,
    "cols": 12
+  },
+  "people": [
+   {
+    "name": "Andy",
+    "letter": "A",
+    "card": "cards/76_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bart",
+    "letter": "B",
+    "card": "cards/76_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clarissa",
+    "letter": "C",
+    "card": "cards/76_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Danika",
+    "letter": "D",
+    "card": "cards/76_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Esther",
+    "letter": "E",
+    "card": "cards/76_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frank",
+    "letter": "F",
+    "card": "cards/76_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gregory",
+    "letter": "G",
+    "card": "cards/76_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hugo",
+    "letter": "H",
+    "card": "cards/76_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Isolde",
+    "letter": "I",
+    "card": "cards/76_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Jeroen",
+    "letter": "J",
+    "card": "cards/76_J.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Kirsten",
+    "letter": "K",
+    "card": "cards/76_K.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vincent",
+    "letter": "V",
+    "card": "cards/76_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Halloweenfeest",
+  "map": "maps/76.jpg",
+  "bg": "#dbdee5",
+  "mapGrid": {
+   "left": 0.021164021164021163,
+   "top": 0.029085872576177285,
+   "width": 0.9576719576719577,
+   "height": 0.8670360110803325
   }
  },
  {
@@ -8277,6 +13025,89 @@
    "height": 0.538235294117647,
    "rows": 12,
    "cols": 12
+  },
+  "people": [
+   {
+    "name": "Anna",
+    "letter": "A",
+    "card": "cards/77_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ben",
+    "letter": "B",
+    "card": "cards/77_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Chris",
+    "letter": "C",
+    "card": "cards/77_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dries",
+    "letter": "D",
+    "card": "cards/77_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eugene",
+    "letter": "E",
+    "card": "cards/77_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Freya",
+    "letter": "F",
+    "card": "cards/77_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gino",
+    "letter": "G",
+    "card": "cards/77_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henk",
+    "letter": "H",
+    "card": "cards/77_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Isabel",
+    "letter": "I",
+    "card": "cards/77_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Julia",
+    "letter": "J",
+    "card": "cards/77_J.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Kim",
+    "letter": "K",
+    "card": "cards/77_K.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vlad",
+    "letter": "V",
+    "card": "cards/77_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Laatste face-off",
+  "map": "maps/77.jpg",
+  "bg": "#e9eef4",
+  "mapGrid": {
+   "left": 0.018596787827557058,
+   "top": 0.012738853503184714,
+   "width": 0.9332206255283179,
+   "height": 0.9002123142250531
   }
  },
  {
@@ -8339,7 +13170,54 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 78
+  "id": 78,
+  "people": [
+   {
+    "name": "Alice",
+    "letter": "A",
+    "card": "cards/78_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bart",
+    "letter": "B",
+    "card": "cards/78_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clementia",
+    "letter": "C",
+    "card": "cards/78_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Duncan",
+    "letter": "D",
+    "card": "cards/78_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elias",
+    "letter": "E",
+    "card": "cards/78_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Victor",
+    "letter": "V",
+    "card": "cards/78_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Herberg De Doortocht",
+  "map": "maps/78.jpg",
+  "bg": "#f5e3e3",
+  "mapGrid": {
+   "left": 0.025134649910233394,
+   "top": 0.021621621621621623,
+   "width": 0.9299820466786356,
+   "height": 0.9333333333333333
+  }
  },
  {
   "book": 2,
@@ -8458,6 +13336,65 @@
    "height": 0.5029411764705882,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Anna",
+    "letter": "A",
+    "card": "cards/79_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Betsy",
+    "letter": "B",
+    "card": "cards/79_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Charles",
+    "letter": "C",
+    "card": "cards/79_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dennis",
+    "letter": "D",
+    "card": "cards/79_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elliot",
+    "letter": "E",
+    "card": "cards/79_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Freya",
+    "letter": "F",
+    "card": "cards/79_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gideon",
+    "letter": "G",
+    "card": "cards/79_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Viggo",
+    "letter": "V",
+    "card": "cards/79_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De watermolen",
+  "map": "maps/79.jpg",
+  "bg": "#e4edf2",
+  "mapGrid": {
+   "left": 0.05486284289276808,
+   "top": 0.014598540145985401,
+   "width": 0.8628428927680798,
+   "height": 0.909601347557552
   }
  },
  {
@@ -8577,6 +13514,71 @@
    "height": 0.3284313725490196,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Anselm",
+    "letter": "A",
+    "card": "cards/80_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ben",
+    "letter": "B",
+    "card": "cards/80_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cecil",
+    "letter": "C",
+    "card": "cards/80_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Darius",
+    "letter": "D",
+    "card": "cards/80_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Egon",
+    "letter": "E",
+    "card": "cards/80_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fidelina",
+    "letter": "F",
+    "card": "cards/80_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Geneviève",
+    "letter": "G",
+    "card": "cards/80_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harry",
+    "letter": "H",
+    "card": "cards/80_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valan",
+    "letter": "V",
+    "card": "cards/80_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De kathedraal",
+  "map": "maps/80.jpg",
+  "bg": "#fffdf0",
+  "mapGrid": {
+   "left": 0.08996539792387544,
+   "top": 0.0392156862745098,
+   "width": 0.8027681660899654,
+   "height": 0.9215686274509803
   }
  },
  {
@@ -8686,7 +13688,66 @@
   },
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 81
+  "id": 81,
+  "people": [
+   {
+    "name": "Aldwin",
+    "letter": "A",
+    "card": "cards/81_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Benedict",
+    "letter": "B",
+    "card": "cards/81_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Claude",
+    "letter": "C",
+    "card": "cards/81_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dominic",
+    "letter": "D",
+    "card": "cards/81_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elias",
+    "letter": "E",
+    "card": "cards/81_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Forrest",
+    "letter": "F",
+    "card": "cards/81_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gordon",
+    "letter": "G",
+    "card": "cards/81_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Viktor",
+    "letter": "V",
+    "card": "cards/81_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De kerkers",
+  "map": "maps/81.jpg",
+  "bg": "#c7cadb",
+  "mapGrid": {
+   "left": 0.06478405315614617,
+   "top": 0.013963480128893663,
+   "width": 0.8388704318936877,
+   "height": 0.8764769065520945
+  }
  },
  {
   "book": 2,
@@ -8816,6 +13877,71 @@
    "height": 0.3872549019607843,
    "rows": 9,
    "cols": 9
+  },
+  "people": [
+   {
+    "name": "Anthony",
+    "letter": "A",
+    "card": "cards/82_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Brianna",
+    "letter": "B",
+    "card": "cards/82_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Conrad",
+    "letter": "C",
+    "card": "cards/82_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Donna",
+    "letter": "D",
+    "card": "cards/82_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ellen",
+    "letter": "E",
+    "card": "cards/82_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ferdinand",
+    "letter": "F",
+    "card": "cards/82_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gary",
+    "letter": "G",
+    "card": "cards/82_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Herbert",
+    "letter": "H",
+    "card": "cards/82_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vitalis",
+    "letter": "V",
+    "card": "cards/82_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het Fort",
+  "map": "maps/82.jpg",
+  "bg": "#ebf2ea",
+  "mapGrid": {
+   "left": 0.02355072463768116,
+   "top": 0.023508137432188065,
+   "width": 0.927536231884058,
+   "height": 0.9258589511754068
   }
  },
  {
@@ -8891,7 +14017,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 83
+  "id": 83,
+  "people": [
+   {
+    "name": "Alfred",
+    "letter": "A",
+    "card": "cards/83_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Balthasar",
+    "letter": "B",
+    "card": "cards/83_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cecilia",
+    "letter": "C",
+    "card": "cards/83_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Diana",
+    "letter": "D",
+    "card": "cards/83_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emma",
+    "letter": "E",
+    "card": "cards/83_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Frederik",
+    "letter": "F",
+    "card": "cards/83_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Godfried",
+    "letter": "G",
+    "card": "cards/83_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hugo",
+    "letter": "H",
+    "card": "cards/83_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valère",
+    "letter": "V",
+    "card": "cards/83_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De Viersprong",
+  "map": "maps/83.jpg",
+  "bg": "#f5f0da",
+  "mapGrid": {
+   "left": 0.0632279534109817,
+   "top": 0.024312896405919663,
+   "width": 0.8386023294509152,
+   "height": 0.9069767441860465
+  }
  },
  {
   "book": 2,
@@ -8975,6 +14166,71 @@
    "height": 0.49411764705882355,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Amelia",
+    "letter": "A",
+    "card": "cards/84_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Benoit",
+    "letter": "B",
+    "card": "cards/84_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cedric",
+    "letter": "C",
+    "card": "cards/84_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dean",
+    "letter": "D",
+    "card": "cards/84_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Evert",
+    "letter": "E",
+    "card": "cards/84_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Felicia",
+    "letter": "F",
+    "card": "cards/84_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gloria",
+    "letter": "G",
+    "card": "cards/84_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Humphrey",
+    "letter": "H",
+    "card": "cards/84_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Virgilius",
+    "letter": "V",
+    "card": "cards/84_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De koninklijke jachtpartij",
+  "map": "maps/84.jpg",
+  "bg": "#e5ddf2",
+  "mapGrid": {
+   "left": 0.02389705882352941,
+   "top": 0.064,
+   "width": 0.9393382352941176,
+   "height": 0.896
   }
  },
  {
@@ -9060,6 +14316,71 @@
    "height": 0.5058823529411764,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "Allan",
+    "letter": "A",
+    "card": "cards/85_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Berend",
+    "letter": "B",
+    "card": "cards/85_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Carissa",
+    "letter": "C",
+    "card": "cards/85_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Denise",
+    "letter": "D",
+    "card": "cards/85_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Elizabeth",
+    "letter": "E",
+    "card": "cards/85_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Falco",
+    "letter": "F",
+    "card": "cards/85_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "George",
+    "letter": "G",
+    "card": "cards/85_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Harry",
+    "letter": "H",
+    "card": "cards/85_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vassili",
+    "letter": "V",
+    "card": "cards/85_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De Ambachtsstraat",
+  "map": "maps/85.jpg",
+  "bg": "#ebf4f9",
+  "mapGrid": {
+   "left": 0.058284762697751874,
+   "top": 0.029508196721311476,
+   "width": 0.8659450457951707,
+   "height": 0.892896174863388
   }
  },
  {
@@ -9140,7 +14461,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 2,
-  "id": 86
+  "id": 86,
+  "people": [
+   {
+    "name": "Alberic",
+    "letter": "A",
+    "card": "cards/86_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Benjamin",
+    "letter": "B",
+    "card": "cards/86_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Camilla",
+    "letter": "C",
+    "card": "cards/86_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dulcie",
+    "letter": "D",
+    "card": "cards/86_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eloise",
+    "letter": "E",
+    "card": "cards/86_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Fabian",
+    "letter": "F",
+    "card": "cards/86_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Giselle",
+    "letter": "G",
+    "card": "cards/86_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hank",
+    "letter": "H",
+    "card": "cards/86_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valeria",
+    "letter": "V",
+    "card": "cards/86_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De taverne",
+  "map": "maps/86.jpg",
+  "bg": "#e7dad1",
+  "mapGrid": {
+   "left": 0.05555555555555555,
+   "top": 0.012868632707774798,
+   "width": 0.8569023569023569,
+   "height": 0.960857908847185
+  }
  },
  {
   "book": 2,
@@ -9237,7 +14623,72 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 2,
-  "id": 87
+  "id": 87,
+  "people": [
+   {
+    "name": "Bernard",
+    "letter": "B",
+    "card": "cards/87_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cyrus",
+    "letter": "C",
+    "card": "cards/87_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Domien",
+    "letter": "D",
+    "card": "cards/87_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Finnegan",
+    "letter": "F",
+    "card": "cards/87_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gilbert",
+    "letter": "G",
+    "card": "cards/87_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Holger",
+    "letter": "H",
+    "card": "cards/87_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Isaline",
+    "letter": "I",
+    "card": "cards/87_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "John",
+    "letter": "J",
+    "card": "cards/87_J.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Virgil",
+    "letter": "V",
+    "card": "cards/87_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het klooster",
+  "map": "maps/87.jpg",
+  "bg": "#e8dee9",
+  "mapGrid": {
+   "left": 0.026572187776793623,
+   "top": 0.0196078431372549,
+   "width": 0.9388839681133747,
+   "height": 0.946524064171123
+  }
  },
  {
   "book": 2,
@@ -9357,7 +14808,72 @@
   },
   "solutionVerified": false,
   "difficulty": 2,
-  "id": 88
+  "id": 88,
+  "people": [
+   {
+    "name": "Aldo",
+    "letter": "A",
+    "card": "cards/88_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bridget",
+    "letter": "B",
+    "card": "cards/88_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Christian",
+    "letter": "C",
+    "card": "cards/88_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Diana",
+    "letter": "D",
+    "card": "cards/88_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ella",
+    "letter": "E",
+    "card": "cards/88_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Francis",
+    "letter": "F",
+    "card": "cards/88_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Grace",
+    "letter": "G",
+    "card": "cards/88_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hagan",
+    "letter": "H",
+    "card": "cards/88_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vince",
+    "letter": "V",
+    "card": "cards/88_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het steekspel",
+  "map": "maps/88.jpg",
+  "bg": "#c9becf",
+  "mapGrid": {
+   "left": 0.058169375534645,
+   "top": 0.08056614044637997,
+   "width": 0.8776732249786142,
+   "height": 0.8263473053892215
+  }
  },
  {
   "book": 2,
@@ -9461,7 +14977,90 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 89
+  "id": 89,
+  "people": [
+   {
+    "name": "Alden",
+    "letter": "A",
+    "card": "cards/89_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Berthild",
+    "letter": "B",
+    "card": "cards/89_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Cassia",
+    "letter": "C",
+    "card": "cards/89_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Damien",
+    "letter": "D",
+    "card": "cards/89_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Edgar",
+    "letter": "E",
+    "card": "cards/89_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Florabelle",
+    "letter": "F",
+    "card": "cards/89_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gunther",
+    "letter": "G",
+    "card": "cards/89_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Herward",
+    "letter": "H",
+    "card": "cards/89_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Irene",
+    "letter": "I",
+    "card": "cards/89_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Jacob",
+    "letter": "J",
+    "card": "cards/89_J.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Kathelijn",
+    "letter": "K",
+    "card": "cards/89_K.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Valdo",
+    "letter": "V",
+    "card": "cards/89_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De markt",
+  "map": "maps/89.jpg",
+  "bg": "#eadcdb",
+  "mapGrid": {
+   "left": 0.08492922564529559,
+   "top": 0.015292190060076462,
+   "width": 0.8492922564529559,
+   "height": 0.8913162206444566
+  }
  },
  {
   "book": 2,
@@ -9573,6 +15172,89 @@
    "height": 0.5117647058823529,
    "rows": 12,
    "cols": 12
+  },
+  "people": [
+   {
+    "name": "Anna",
+    "letter": "A",
+    "card": "cards/90_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Betsy",
+    "letter": "B",
+    "card": "cards/90_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Clarence",
+    "letter": "C",
+    "card": "cards/90_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dean",
+    "letter": "D",
+    "card": "cards/90_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eli",
+    "letter": "E",
+    "card": "cards/90_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Florentina",
+    "letter": "F",
+    "card": "cards/90_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gideon",
+    "letter": "G",
+    "card": "cards/90_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Henriëtte",
+    "letter": "H",
+    "card": "cards/90_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Isolde",
+    "letter": "I",
+    "card": "cards/90_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Jerome",
+    "letter": "J",
+    "card": "cards/90_J.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Katharina",
+    "letter": "K",
+    "card": "cards/90_K.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Viviana",
+    "letter": "V",
+    "card": "cards/90_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het dorpsplein",
+  "map": "maps/90.jpg",
+  "bg": "#f9f2e2",
+  "mapGrid": {
+   "left": 0.060050041701417846,
+   "top": 0.013422818791946308,
+   "width": 0.8690575479566305,
+   "height": 0.9138702460850112
   }
  },
  {
@@ -9725,6 +15407,89 @@
    "height": 0.5107843137254902,
    "rows": 11,
    "cols": 11
+  },
+  "people": [
+   {
+    "name": "Alburg",
+    "letter": "A",
+    "card": "cards/91_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Bertwald",
+    "letter": "B",
+    "card": "cards/91_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Catherine",
+    "letter": "C",
+    "card": "cards/91_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Dulcibel",
+    "letter": "D",
+    "card": "cards/91_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Edward",
+    "letter": "E",
+    "card": "cards/91_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ferald",
+    "letter": "F",
+    "card": "cards/91_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gervais",
+    "letter": "G",
+    "card": "cards/91_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Herwig",
+    "letter": "H",
+    "card": "cards/91_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Ivan",
+    "letter": "I",
+    "card": "cards/91_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Joshua",
+    "letter": "J",
+    "card": "cards/91_J.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Kendrick",
+    "letter": "K",
+    "card": "cards/91_K.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Volkert",
+    "letter": "V",
+    "card": "cards/91_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De belegering",
+  "map": "maps/91.jpg",
+  "bg": "#e7eee7",
+  "mapGrid": {
+   "left": 0.058284762697751874,
+   "top": 0.01335559265442404,
+   "width": 0.8742714404662781,
+   "height": 0.90929326655537
   }
  },
  {
@@ -9819,7 +15584,84 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 92
+  "id": 92,
+  "people": [
+   {
+    "name": "Agnes",
+    "letter": "A",
+    "card": "cards/92_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Blanche",
+    "letter": "B",
+    "card": "cards/92_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Casimir",
+    "letter": "C",
+    "card": "cards/92_C.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "David",
+    "letter": "D",
+    "card": "cards/92_D.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Emiel",
+    "letter": "E",
+    "card": "cards/92_E.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Francesca",
+    "letter": "F",
+    "card": "cards/92_F.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Griffioen",
+    "letter": "G",
+    "card": "cards/92_G.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hilda",
+    "letter": "H",
+    "card": "cards/92_H.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Jordan",
+    "letter": "I",
+    "card": "cards/92_I.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Katrijn",
+    "letter": "J",
+    "card": "cards/92_J.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Vigor",
+    "letter": "V",
+    "card": "cards/92_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Storm in het kasteel",
+  "map": "maps/92.jpg",
+  "bg": "#e2e7ea",
+  "mapGrid": {
+   "left": 0.0567139282735613,
+   "top": 0.012806830309498399,
+   "width": 0.8757297748123436,
+   "height": 0.9178228388473852
+  }
  },
  {
   "book": 2,
@@ -11012,7 +16854,36 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 106
+  "id": 106,
+  "people": [
+   {
+    "name": "BAGAGE",
+    "letter": "A",
+    "card": "cards/106_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "GANGPAD",
+    "letter": "B",
+    "card": "cards/106_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "KLUIS",
+    "letter": "V",
+    "card": "cards/106_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De treinoverval",
+  "map": "maps/106.jpg",
+  "bg": "#dfd9c6",
+  "mapGrid": {
+   "left": 0.061886792452830186,
+   "top": 0.12701829924650163,
+   "width": 0.9041509433962264,
+   "height": 0.8579117330462863
+  }
  },
  {
   "book": 2,
@@ -11772,6 +17643,35 @@
    "height": 0.5,
    "rows": 12,
    "cols": 12
+  },
+  "people": [
+   {
+    "name": "Fluistereiland",
+    "letter": "A",
+    "card": "cards/115_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Kokoseiland",
+    "letter": "B",
+    "card": "cards/115_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Genade",
+    "letter": "V",
+    "card": "cards/115_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Onbekende eilanden",
+  "map": "maps/115.jpg",
+  "bg": "#ecf5fc",
+  "mapGrid": {
+   "left": 0.02097902097902098,
+   "top": 0.012779552715654952,
+   "width": 0.9003496503496503,
+   "height": 0.8615548455804047
   }
  },
  {
@@ -11851,7 +17751,36 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 116
+  "id": 116,
+  "people": [
+   {
+    "name": "Eva",
+    "letter": "A",
+    "card": "cards/116_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gerolf",
+    "letter": "B",
+    "card": "cards/116_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Hij",
+    "letter": "V",
+    "card": "cards/116_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het garnizoen",
+  "map": "maps/116.jpg",
+  "bg": "#e7ebee",
+  "mapGrid": {
+   "left": 0.02276707530647986,
+   "top": 0.01410743353228432,
+   "width": 0.9019264448336253,
+   "height": 0.8844275637547477
+  }
  },
  {
   "book": 2,
@@ -11942,6 +17871,35 @@
    "height": 0.4980392156862745,
    "rows": 11,
    "cols": 11
+  },
+  "people": [
+   {
+    "name": "Matrozengrot",
+    "letter": "A",
+    "card": "cards/117_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Voorraadgrot",
+    "letter": "B",
+    "card": "cards/117_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Kapiteinsgrot",
+    "letter": "V",
+    "card": "cards/117_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De Smokkelbaai",
+  "map": "maps/117.jpg",
+  "bg": "#e7ded7",
+  "mapGrid": {
+   "left": 0.07029288702928871,
+   "top": 0.014008620689655173,
+   "width": 0.8602510460251046,
+   "height": 0.8771551724137931
   }
  },
  {
@@ -12090,6 +18048,35 @@
    "height": 0.5,
    "rows": 11,
    "cols": 11
+  },
+  "people": [
+   {
+    "name": "Boris",
+    "letter": "A",
+    "card": "cards/119_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Zij",
+    "letter": "B",
+    "card": "cards/119_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Greet",
+    "letter": "V",
+    "card": "cards/119_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De blokkade",
+  "map": "maps/119.jpg",
+  "bg": "#f5e7e6",
+  "mapGrid": {
+   "left": 0.021505376344086023,
+   "top": 0.0354924578527063,
+   "width": 0.9265232974910395,
+   "height": 0.9157054125998225
   }
  },
  {
@@ -12193,7 +18180,36 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 120
+  "id": 120,
+  "people": [
+   {
+    "name": "Was",
+    "letter": "A",
+    "card": "cards/120_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Wasop",
+    "letter": "B",
+    "card": "cards/120_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Wasin",
+    "letter": "V",
+    "card": "cards/120_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De haven",
+  "map": "maps/120.jpg",
+  "bg": "#d7eae8",
+  "mapGrid": {
+   "left": 0.02610966057441253,
+   "top": 0.01910828025477707,
+   "width": 0.896431679721497,
+   "height": 0.8715498938428875
+  }
  },
  {
   "book": 2,
@@ -12649,6 +18665,35 @@
    "height": 0.4980392156862745,
    "rows": 8,
    "cols": 8
+  },
+  "people": [
+   {
+    "name": "De",
+    "letter": "A",
+    "card": "cards/125_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Een",
+    "letter": "B",
+    "card": "cards/125_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Was",
+    "letter": "V",
+    "card": "cards/125_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De Jacht",
+  "map": "maps/125.jpg",
+  "bg": "#c8dfc5",
+  "mapGrid": {
+   "left": 0.05852842809364549,
+   "top": 0.018338727076591153,
+   "width": 0.8612040133779264,
+   "height": 0.7734627831715211
   }
  },
  {
@@ -13425,6 +19470,35 @@
    "height": 0.5029411764705882,
    "rows": 11,
    "cols": 11
+  },
+  "people": [
+   {
+    "name": "Goruk",
+    "letter": "A",
+    "card": "cards/135_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Niemand",
+    "letter": "B",
+    "card": "cards/135_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Twee",
+    "letter": "V",
+    "card": "cards/135_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De Bottencanyon",
+  "map": "maps/135.jpg",
+  "bg": "#dedad7",
+  "mapGrid": {
+   "left": 0.02070750647109577,
+   "top": 0.01288244766505636,
+   "width": 0.8973252804141502,
+   "height": 0.5571658615136876
   }
  },
  {
@@ -13515,6 +19589,35 @@
    "height": 0.5058823529411764,
    "rows": 11,
    "cols": 11
+  },
+  "people": [
+   {
+    "name": "Eén",
+    "letter": "A",
+    "card": "cards/136_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Gomak",
+    "letter": "B",
+    "card": "cards/136_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Enga",
+    "letter": "V",
+    "card": "cards/136_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Diep In Het Bos",
+  "map": "maps/136.jpg",
+  "bg": "#e8f0db",
+  "mapGrid": {
+   "left": 0.021409455842997322,
+   "top": 0.04869565217391304,
+   "width": 0.9313113291703836,
+   "height": 0.9078260869565218
   }
  },
  {
@@ -13615,6 +19718,35 @@
    "height": 0.503921568627451,
    "rows": 13,
    "cols": 13
+  },
+  "people": [
+   {
+    "name": "Ishak",
+    "letter": "A",
+    "card": "cards/137_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Twee",
+    "letter": "B",
+    "card": "cards/137_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eén",
+    "letter": "V",
+    "card": "cards/137_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De Ijstijd",
+  "map": "maps/137.jpg",
+  "bg": "#f8fcff",
+  "mapGrid": {
+   "left": 0.02566295979469632,
+   "top": 0.012854847348687734,
+   "width": 0.8862275449101796,
+   "height": 0.9619710765934655
   }
  },
  {
@@ -14476,6 +20608,35 @@
    "height": 0.503921568627451,
    "rows": 15,
    "cols": 15
+  },
+  "people": [
+   {
+    "name": "Ra-",
+    "letter": "A",
+    "card": "cards/148_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Romein",
+    "letter": "B",
+    "card": "cards/148_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Anubis-vak",
+    "letter": "V",
+    "card": "cards/148_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Romeinse afgezanten",
+  "map": "maps/148.jpg",
+  "bg": "#faf2ce",
+  "mapGrid": {
+   "left": 0.022298456260720412,
+   "top": 0.01284796573875803,
+   "width": 0.8902229845626072,
+   "height": 0.9582441113490364
   }
  },
  {
@@ -14904,7 +21065,36 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 152
+  "id": 152,
+  "people": [
+   {
+    "name": "Anubis-vak",
+    "letter": "A",
+    "card": "cards/152_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Kamila",
+    "letter": "B",
+    "card": "cards/152_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Eneru",
+    "letter": "V",
+    "card": "cards/152_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "Het paleis van de farao",
+  "map": "maps/152.jpg",
+  "bg": "#ede2c6",
+  "mapGrid": {
+   "left": 0.02249134948096886,
+   "top": 0.03304904051172708,
+   "width": 0.903114186851211,
+   "height": 0.5575692963752665
+  }
  },
  {
   "book": 2,
@@ -15142,7 +21332,36 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 154
+  "id": 154,
+  "people": [
+   {
+    "name": "Iemand",
+    "letter": "A",
+    "card": "cards/154_A.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Was",
+    "letter": "B",
+    "card": "cards/154_B.jpg",
+    "isVictim": false
+   },
+   {
+    "name": "Het",
+    "letter": "V",
+    "card": "cards/154_V.jpg",
+    "isVictim": true
+   }
+  ],
+  "pageTitle": "De sfinx",
+  "map": "maps/154.jpg",
+  "bg": "#f2f1dd",
+  "mapGrid": {
+   "left": 0.031122031122031123,
+   "top": 0.014806980433632998,
+   "width": 0.8370188370188371,
+   "height": 0.8133262823902697
+  }
  },
  {
   "book": 2,

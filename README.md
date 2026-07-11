@@ -18,6 +18,15 @@ Capacitor for a native App Store build.
 - **155 cases** extracted from the two books (titles, suspects, clues, room
   labels, special rules, murderer, step‑by‑step hints, difficulty, and the
   original crime‑scene illustration for each case).
+- **Book‑faithful puzzle pages (105 cases).** Rather than re‑typesetting the
+  clues, the pipeline renders the book's own fixed‑layout pages with headless
+  Chromium (exact fonts + artwork) and cuts out the pieces: one card per suspect
+  (portrait + name + clue, straight from the page) and the crime‑scene map on
+  its own (answer grid and murderer box removed). Each puzzle page then adopts
+  that case's real background colour, lays the cut‑out cards down the side and
+  the map — with an aligned interactive grid — beside them, mirroring
+  murdoku.com. All 77 book‑1 cases and 28 book‑2 cases are converted; the rest
+  (irregular themed book‑2 layouts) fall back to the earlier clue‑text cards.
 - **Case‑file home**, styled after murdoku.com: every case is a sealed kraft
   **envelope** ("CASE AVAILABLE! — click to reveal") that flips to a file card
   showing the crime‑scene peek, title, difficulty tier badge, grid size and
@@ -66,13 +75,17 @@ css/style.css         styles (iPad‑first, theme‑aware)
 js/app.js             app logic (router, play, hints, accuse, settings)
 sw.js                 service worker (offline)
 manifest.webmanifest  PWA manifest
-data/puzzles.json     all 155 cases (incl. per‑suspect portrait paths)
-assets/scenes/*.jpg   crime‑scene illustrations
-assets/portraits/*.jpg  per‑suspect portrait crops (<id>_<letter>.jpg)
+data/puzzles.json     all 155 cases (+ cards / map / bg / grid for 105)
+assets/scenes/*.jpg   crime‑scene illustrations (full book page)
+assets/cards/*.jpg    per‑suspect cut‑out cards (portrait+name+clue) <id>_<letter>.jpg
+assets/maps/*.jpg     cropped crime‑scene map only (no answer grid) <id>.jpg
+assets/portraits/*.jpg  per‑suspect portrait crops (legacy fallback)
 icons/                app icons
 tools/extract.py      the EPUB → puzzles.json extraction pipeline
 tools/extract_grids.py  solution-grid recovery from the Oplossingen pages
-tools/extract_portraits.py  crops each suspect's portrait from the clue‑page art
+tools/render_pages.cjs  renders book xhtml pages to PNG (headless Chromium)
+tools/build_assets.py   renders each page pair, cuts out the suspect cards +
+                        the map, samples the background colour, detects the grid
 tools/detect_grid.py  detects each scene's grid box for on-scene placement
 ```
 

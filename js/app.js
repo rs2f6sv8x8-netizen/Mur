@@ -156,7 +156,9 @@ function caseCard(p){
 
   // the crime-scene peek (top of the card / behind the flap)
   const peek = el('div','peek');
-  const img = el('img'); img.loading='lazy'; img.alt=''; img.src='assets/scenes/'+(p.scene||'');
+  const img = el('img'); img.loading='lazy'; img.alt='';
+  img.src = p.map ? 'assets/'+p.map : 'assets/scenes/'+(p.scene||'');
+  if(p.bg) peek.style.background = p.bg;
   peek.appendChild(img);
   card.appendChild(peek);
 
@@ -234,8 +236,11 @@ function renderPlay(id){
     xMode: false,
     eraseMode: false,
   };
+  T.people = playPeople(p);
+  T.grid = playGrid(p);
   const app=$('#app'); app.innerHTML='';
-  const view = el('div','play');
+  const view = el('div','play'+(p.bg?' book':''));
+  if(p.bg) view.style.setProperty('--puzzle-bg', p.bg);
 
   /* top bar */
   const bar = el('div','pbar');
@@ -280,39 +285,40 @@ function renderPlay(id){
   tools.append(tlabel,xBtn,eraseBtn,undoBtn);
   right.appendChild(tools);
 
-  if(p.scene){
+  const sceneImg = (p.map ? 'assets/'+p.map : (p.scene ? 'assets/scenes/'+p.scene : null));
+  if(sceneImg){
     const sw=el('div','scene-wrap'); sw.id='sceneboard';
     const clip=el('div','imgclip');
-    const img=el('img'); img.src='assets/scenes/'+p.scene; img.alt='Plaats delict '+p.title; img.loading='lazy';
+    const img=el('img'); img.src=sceneImg; img.alt='Plaats delict '+p.title; img.loading='lazy';
     clip.appendChild(img); sw.appendChild(clip);
-    if(p.grid){
-      const g=p.grid;
+    if(T.grid){
+      const g=T.grid.box;
       const colLbl=el('div','axis-labels cols');
       colLbl.style.left=(g.left*100)+'%'; colLbl.style.width=(g.width*100)+'%';
       colLbl.style.top='2px'; colLbl.style.height=(g.top*100)+'%';
       colLbl.style.alignItems='flex-end';
-      for(let c=1;c<=g.cols;c++){ const sp=el('span'); sp.dataset.n=c; colLbl.appendChild(sp); }
+      for(let c=1;c<=T.grid.cols;c++){ const sp=el('span'); sp.dataset.n=c; colLbl.appendChild(sp); }
       sw.appendChild(colLbl);
       const rowLbl=el('div','axis-labels rows');
       rowLbl.style.top=(g.top*100)+'%'; rowLbl.style.height=(g.height*100)+'%';
       rowLbl.style.left='2px'; rowLbl.style.width=(g.left*100)+'%';
-      for(let r=1;r<=g.rows;r++){ const sp=el('span'); sp.dataset.n=r; rowLbl.appendChild(sp); }
+      for(let r=1;r<=T.grid.rows;r++){ const sp=el('span'); sp.dataset.n=r; rowLbl.appendChild(sp); }
       sw.appendChild(rowLbl);
       const ov=el('div','grid-overlay'); ov.id='gridoverlay'; sw.appendChild(ov);
       const zb=el('button','scene-zoom'); zb.textContent='⤢';
-      zb.onclick=(e)=>{ e.stopPropagation(); openZoom('assets/scenes/'+p.scene); };
+      zb.onclick=(e)=>{ e.stopPropagation(); openZoom(sceneImg); };
       sw.appendChild(zb);
       img.addEventListener('load', renderSceneOverlay);
     } else {
       img.style.cursor='zoom-in';
-      img.onclick=()=>openZoom('assets/scenes/'+p.scene);
+      img.onclick=()=>openZoom(sceneImg);
       sw.appendChild(Object.assign(el('div','scene-hint'),{textContent:'Tik om te vergroten'}));
     }
     right.appendChild(sw);
   }
 
-  /* scratch grid fallback (only when the scene itself isn't the interactive board) */
-  if(!p.grid){
+  /* scratch grid fallback when no interactive on-scene grid was detected */
+  if(!T.grid){
     const gcard = el('div','scratch-card');
     gcard.appendChild(Object.assign(el('div','grid-tools'),{innerHTML:
       '<span class="mini">Tik op een verdachte, kies dan een vak: tik = notitie, ingedrukt houden = plaatsen.</span>'}));
@@ -349,14 +355,39 @@ function peopleOf(p){
   if(p.victim) arr.push(p.victim);
   return arr;
 }
-function gridDims(p){ return p.grid ? {rows:p.grid.rows, cols:p.grid.cols} : {rows:gridSize(p), cols:gridSize(p)}; }
+/* people to display/place: the page-derived cards when available, else the
+   legacy suspect list */
+function playPeople(p){
+  if(p.people && p.people.length){
+    return p.people.map(pe=>({name:pe.name, letter:pe.letter, card:pe.card,
+      isVictim:!!pe.isVictim, clue:''}));
+  }
+  return peopleOf(p).map(pe=>({name:pe.name, letter:pe.letter, clue:pe.clue,
+    portrait:pe.portrait, isVictim:pe.letter==='V'}));
+}
+/* the interactive board descriptor: the cropped map + detected grid box, else
+   the legacy on-scene grid, else null (scratch board) */
+function playGrid(p){
+  const n = (p.people ? p.people.length : p.n) || peopleOf(p).length || 6;
+  if(p.map && p.mapGrid){
+    return {img:'assets/'+p.map, box:p.mapGrid, rows:n, cols:n};
+  }
+  if(p.scene && p.grid){
+    return {img:'assets/scenes/'+p.scene, box:p.grid, rows:p.grid.rows, cols:p.grid.cols};
+  }
+  return null;
+}
+function gridDims(){
+  if(T.grid) return {rows:T.grid.rows, cols:T.grid.cols};
+  const n = gridSize(T.p); return {rows:n, cols:n};
+}
 function allSuspectsPlaced(){
   const placed = new Set(Object.values(T.cells));
-  return (T.p.suspects||[]).every(s=>placed.has(s.letter));
+  return T.people.filter(x=>!x.isVictim).every(s=>placed.has(s.letter));
 }
 function autoXSet(){
   const s = new Set();
-  const {rows,cols} = gridDims(T.p);
+  const {rows,cols} = gridDims();
   for(const key in T.cells){
     const [r,c] = key.split(',').map(Number);
     for(let cc=1; cc<=cols; cc++){ if(cc!==c) s.add(r+','+cc); }
@@ -444,7 +475,7 @@ function doUndo(){
 }
 
 function updateBoards(){
-  if(T.p.grid) renderSceneOverlay(); else renderBoard();
+  if(T.grid) renderSceneOverlay(); else renderBoard();
   renderSuspectList();
   refreshToolbar();
 }
@@ -484,29 +515,36 @@ function avatarEl(person, color){
 }
 function renderSuspectList(){
   const susp=$('#suspectlist'); if(!susp) return;
+  susp.classList.toggle('cards', T.people.some(s=>s.card));
   susp.innerHTML='';
   const placedLetters = new Set(Object.values(T.cells));
-  peopleOf(T.p).forEach((s,i)=>{
-    const isVictim = s.letter==='V';
+  T.people.forEach((s,i)=>{
+    const isVictim = s.isVictim;
     const isPlaced = placedLetters.has(s.letter);
     const color = suspColor(s.letter,i);
     const row=el('div','susp'
+      +(s.card?' cardmode':'')
       +(isVictim?' victim':' pickable')
       +(T.selToken===s.letter?' selected':'')
       +(isPlaced?' placed':'')
       +(T.accused===s.name?' accused':''));
     row.dataset.name=s.name;
-    const av=avatarEl(s, color);
-    // the victim's clue in the books starts with "Het slachtoffer" — shown here
-    // as a separate role line, so strip it (and repair the missing space) to
-    // avoid duplication.
-    let clue = s.clue || '';
-    if(isVictim) clue = clue.replace(/^\s*Het slachtoffer\.?\s*/i, '').trim();
-    const who=el('div','who');
-    who.innerHTML=`<div class="nm">${escapeHtml(s.name)}</div>`
-      +(isVictim?`<div class="role">Het slachtoffer</div>`:'')
-      +(clue?`<div class="cl">${escapeHtml(clue)}</div>`:'');
-    row.append(av,who);
+    if(s.card){
+      // the whole card (portrait + name + clue) is cut straight from the book
+      const img=el('img','card-img'); img.src='assets/'+s.card; img.alt=s.name; img.loading='lazy';
+      row.appendChild(img);
+      const badge=el('span','card-letter'); badge.style.background=color; badge.textContent=s.letter;
+      row.appendChild(badge);
+    } else {
+      const av=avatarEl(s, color);
+      let clue = s.clue || '';
+      if(isVictim) clue = clue.replace(/^\s*Het slachtoffer\.?\s*/i, '').trim();
+      const who=el('div','who');
+      who.innerHTML=`<div class="nm">${escapeHtml(s.name)}</div>`
+        +(isVictim?`<div class="role">Het slachtoffer</div>`:'')
+        +(clue?`<div class="cl">${escapeHtml(clue)}</div>`:'');
+      row.append(av,who);
+    }
     if(!isVictim){
       row.onclick=()=>{
         T.selToken = T.selToken===s.letter ? null : s.letter;
@@ -530,7 +568,7 @@ function cellView(key){
   return {kind:'empty'};
 }
 function renderBoard(){
-  const p=T.p, {rows,cols}=gridDims(p);
+  const {rows,cols}=gridDims();
   const board=$('#board'); if(!board) return;
   T._auto = autoXSet();
   const avail = Math.min(board.clientWidth||360, 460) - 26;
@@ -539,7 +577,7 @@ function renderBoard(){
   const head=el('tr'); head.appendChild(el('th',''));
   for(let c=1;c<=cols;c++) head.appendChild(el('th','', String(c)));
   tbl.appendChild(head);
-  const people=peopleOf(p);
+  const people=T.people;
   for(let r=1;r<=rows;r++){
     const tr=el('tr'); tr.appendChild(el('th','', String(r)));
     for(let c=1;c<=cols;c++){
@@ -569,16 +607,18 @@ function renderBoard(){
 
 /* ----- on-scene interactive grid (overlaid directly on the illustration) ----- */
 function renderSceneOverlay(){
-  const p=T.p, g=p.grid; const ov=$('#gridoverlay'); if(!ov||!g) return;
+  if(!T.grid) return;
+  const g=T.grid.box, rows=T.grid.rows, cols=T.grid.cols;
+  const ov=$('#gridoverlay'); if(!ov||!g) return;
   T._auto = autoXSet();
   ov.style.left=(g.left*100)+'%'; ov.style.top=(g.top*100)+'%';
   ov.style.width=(g.width*100)+'%'; ov.style.height=(g.height*100)+'%';
-  ov.style.gridTemplateColumns=`repeat(${g.cols}, 1fr)`;
-  ov.style.gridTemplateRows=`repeat(${g.rows}, 1fr)`;
+  ov.style.gridTemplateColumns=`repeat(${cols}, 1fr)`;
+  ov.style.gridTemplateRows=`repeat(${rows}, 1fr)`;
   ov.innerHTML='';
-  const people=peopleOf(p);
-  for(let r=1;r<=g.rows;r++){
-    for(let c=1;c<=g.cols;c++){
+  const people=T.people;
+  for(let r=1;r<=rows;r++){
+    for(let c=1;c<=cols;c++){
       const key=r+','+c; const cell=el('div','gcell'); cell.dataset.key=key;
       const v=cellView(key);
       if(v.kind==='tok'){
@@ -615,7 +655,7 @@ function placementStatus(){
   return {placed, total:letters.length, correct, allCorrect: correct===letters.length};
 }
 function markCellResult(key, cls){
-  const ce = T.p.grid ? document.querySelector(`#gridoverlay .gcell[data-key="${key}"]`)
+  const ce = T.grid ? document.querySelector(`#gridoverlay .gcell[data-key="${key}"]`)
                        : document.querySelector(`#board td[data-key="${key}"]`);
   if(ce) ce.classList.add(cls);
 }
@@ -632,13 +672,16 @@ window.addEventListener('resize', ()=>{ if(T && ($('#board')||$('#gridoverlay'))
 function onSubmit(){
   const p=T.p;
   if(!allSuspectsPlaced()){ toast('Plaats eerst alle verdachten'); return; }
-  if(p.solution){
-    // only the suspects the player can actually place are checked — the
-    // victim's cell is fully determined once every suspect is correctly
-    // placed (a puzzle has exactly one valid solution), so it's implied
-    // rather than requiring separate placement.
+  // the solution grid is a logical n×n permutation, so it validates on either
+  // the scene or the map overlay — provided its letters line up with the people
+  // we're actually showing (page-derived lists can reassign letters) and the
+  // grid really is n×n (map detection may be off for irregular rooms)
+  const n = T.people.length;
+  const solUsable = p.solution && T.grid && T.grid.rows===n && T.grid.cols===n &&
+    Object.keys(p.solution).every(L=>T.people.some(pe=>pe.letter===L));
+  if(solUsable){
     const sol=p.solution; const solPos={}; for(const L in sol) solPos[L]=sol[L][0]+','+sol[L][1];
-    const checkLetters = (p.suspects||[]).map(s=>s.letter).filter(L=>L in sol);
+    const checkLetters = T.people.filter(s=>!s.isVictim).map(s=>s.letter).filter(L=>L in sol);
     document.querySelectorAll('.gcell.ok,.gcell.bad,#board td.ok,#board td.bad').forEach(e=>e.classList.remove('ok','bad'));
     let correct=0; const total=checkLetters.length;
     for(const L of checkLetters){
@@ -851,7 +894,7 @@ function openAccuse(){
   wrap.appendChild(Object.assign(el('h2'),{textContent:'Wie is de moordenaar?'}));
   wrap.appendChild(Object.assign(el('p'),{textContent:'Kies de verdachte die je beschuldigt.'}));
   const list=el('div','pick-list');
-  (p.suspects||[]).forEach((s,i)=>{
+  T.people.filter(s=>!s.isVictim).forEach((s,i)=>{
     const color=suspColor(s.letter,i);
     const b=el('button','susp pickable');
     const av=avatarEl(s, color);

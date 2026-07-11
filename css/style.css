@@ -189,6 +189,26 @@ img{max-width:100%}
   grid-template-columns:1fr;max-width:1240px;margin:0 auto;width:100%;align-items:start}
 @media(min-width:900px){ .play-stage{grid-template-columns:minmax(300px,380px) 1fr} }
 
+/* book mode: the whole page adopts the puzzle's own background colour, and the
+   cut-out cards / map (already on that colour) float seamlessly on it */
+.play.book{background:var(--puzzle-bg)}
+.play.book .pbar,.play.book .actionbar{background:color-mix(in srgb,var(--puzzle-bg) 84%,transparent)}
+.play.book .scene-wrap{background:transparent;border:0;box-shadow:none;padding:0}
+.play.book .scene-wrap .imgclip{border-radius:0;overflow:visible}
+.play.book .ptitle .ttl,.play.book .ptitle .no{color:#2c2620}
+
+/* suspect cards cut straight from the book page */
+.suspects.cards{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));align-items:start}
+.susp.cardmode{position:relative;padding:0;background:transparent;border:0;box-shadow:none;border-radius:10px;overflow:visible}
+.susp.cardmode .card-img{width:100%;display:block;border-radius:8px}
+.susp.cardmode.pickable{cursor:pointer}
+.susp.cardmode.pickable:active{transform:scale(.98)}
+.susp.cardmode.selected{outline:3px solid var(--t5);outline-offset:2px}
+.susp.cardmode.placed{opacity:.42}
+.susp.cardmode.accused{outline:3px solid var(--gold);outline-offset:2px}
+.card-letter{position:absolute;top:6px;left:6px;min-width:21px;height:21px;padding:0 5px;border-radius:6px;
+  display:grid;place-items:center;font-weight:900;font-size:12px;color:#fff;box-shadow:0 1px 4px rgba(0,0,0,.45);z-index:2}
+
 /* left: suspect parchment cards */
 .suspect-panel{display:flex;flex-direction:column;gap:12px}
 .suspects{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
