@@ -84,7 +84,15 @@
   },
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 1
+  "id": 1,
+  "grid": {
+   "left": 0.11479944674965421,
+   "top": 0.1803921568627451,
+   "width": 0.8035961272475796,
+   "height": 0.5725490196078431,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 1,
@@ -144,7 +152,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 2
+  "id": 2,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.07156862745098039,
+   "width": 0.7302904564315352,
+   "height": 0.5176470588235295,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 1,
@@ -206,7 +222,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 3
+  "id": 3,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06862745098039216,
+   "width": 0.7275242047026279,
+   "height": 0.5186274509803922,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 1,
@@ -265,7 +289,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 4
+  "id": 4,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.07156862745098039,
+   "width": 0.7289073305670816,
+   "height": 0.5166666666666667,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 1,
@@ -323,7 +355,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 5
+  "id": 5,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.07647058823529412,
+   "width": 0.7289073305670816,
+   "height": 0.5196078431372549,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 1,
@@ -386,7 +426,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 2,
-  "id": 6
+  "id": 6,
+  "grid": {
+   "left": 0.1355463347164592,
+   "top": 0.04607843137254902,
+   "width": 0.7607192254495159,
+   "height": 0.5401960784313725,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 1,
@@ -445,7 +493,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 7
+  "id": 7,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.06470588235294118,
+   "width": 0.7385892116182573,
+   "height": 0.5235294117647059,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 1,
@@ -509,7 +565,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 8
+  "id": 8,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.058823529411764705,
+   "width": 0.7441217150760719,
+   "height": 0.5274509803921569,
+   "rows": 7,
+   "cols": 7
+  }
  },
  {
   "book": 1,
@@ -581,7 +645,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 9
+  "id": 9,
+  "grid": {
+   "left": 0.1507607192254495,
+   "top": 0.056862745098039215,
+   "width": 0.739972337482711,
+   "height": 0.5235294117647059,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -690,7 +762,15 @@
   },
   "solutionVerified": false,
   "difficulty": 2,
-  "id": 10
+  "id": 10,
+  "grid": {
+   "left": 0.15767634854771784,
+   "top": 0.05588235294117647,
+   "width": 0.7385892116182573,
+   "height": 0.5254901960784314,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -853,7 +933,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 2,
-  "id": 12
+  "id": 12,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.052941176470588235,
+   "width": 0.7468879668049793,
+   "height": 0.5294117647058824,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -924,7 +1012,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 13
+  "id": 13,
+  "grid": {
+   "left": 0.18948824343015214,
+   "top": 0.09313725490196079,
+   "width": 0.6597510373443983,
+   "height": 0.47058823529411764,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -1038,7 +1134,15 @@
   },
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 14
+  "id": 14,
+  "grid": {
+   "left": 0.14937759336099585,
+   "top": 0.06274509803921569,
+   "width": 0.7372060857538036,
+   "height": 0.5235294117647059,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -1154,7 +1258,15 @@
   },
   "solutionVerified": true,
   "difficulty": 2,
-  "id": 15
+  "id": 15,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06862745098039216,
+   "width": 0.7330567081604425,
+   "height": 0.5196078431372549,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -1271,7 +1383,15 @@
   },
   "solutionVerified": false,
   "difficulty": 2,
-  "id": 16
+  "id": 16,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.06372549019607843,
+   "width": 0.7385892116182573,
+   "height": 0.5245098039215687,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -1393,7 +1513,15 @@
   },
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 17
+  "id": 17,
+  "grid": {
+   "left": 0.14937759336099585,
+   "top": 0.06274509803921569,
+   "width": 0.73582295988935,
+   "height": 0.5225490196078432,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -1509,7 +1637,15 @@
   },
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 18
+  "id": 18,
+  "grid": {
+   "left": 0.14384508990318118,
+   "top": 0.052941176470588235,
+   "width": 0.7455048409405256,
+   "height": 0.5294117647058824,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -1623,7 +1759,15 @@
   },
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 19
+  "id": 19,
+  "grid": {
+   "left": 0.15352697095435686,
+   "top": 0.06470588235294118,
+   "width": 0.7372060857538036,
+   "height": 0.5235294117647059,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -1701,7 +1845,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 20
+  "id": 20,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.07254901960784314,
+   "width": 0.7316735822959889,
+   "height": 0.5196078431372549,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -1787,7 +1939,15 @@
   },
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 21
+  "id": 21,
+  "grid": {
+   "left": 0.15352697095435686,
+   "top": 0.06666666666666667,
+   "width": 0.7316735822959889,
+   "height": 0.5196078431372549,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 1,
@@ -1862,7 +2022,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 2,
-  "id": 22
+  "id": 22,
+  "grid": {
+   "left": 0.1507607192254495,
+   "top": 0.060784313725490195,
+   "width": 0.7344398340248963,
+   "height": 0.5215686274509804,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -1968,7 +2136,15 @@
   },
   "solutionVerified": true,
   "difficulty": 2,
-  "id": 23
+  "id": 23,
+  "grid": {
+   "left": 0.14937759336099585,
+   "top": 0.06372549019607843,
+   "width": 0.73582295988935,
+   "height": 0.5215686274509804,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -2035,7 +2211,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 24
+  "id": 24,
+  "grid": {
+   "left": 0.1673582295988935,
+   "top": 0.09901960784313725,
+   "width": 0.706777316735823,
+   "height": 0.5009803921568627,
+   "rows": 7,
+   "cols": 7
+  }
  },
  {
   "book": 1,
@@ -2228,7 +2412,15 @@
   },
   "solutionVerified": true,
   "difficulty": 3,
-  "id": 26
+  "id": 26,
+  "grid": {
+   "left": 0.15767634854771784,
+   "top": 0.08627450980392157,
+   "width": 0.719225449515906,
+   "height": 0.5098039215686274,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -2347,7 +2539,15 @@
   },
   "solutionVerified": true,
   "difficulty": 4,
-  "id": 27
+  "id": 27,
+  "grid": {
+   "left": 0.16597510373443983,
+   "top": 0.060784313725490195,
+   "width": 0.710926694329184,
+   "height": 0.5078431372549019,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -2574,7 +2774,15 @@
   },
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 29
+  "id": 29,
+  "grid": {
+   "left": 0.1479944674965422,
+   "top": 0.060784313725490195,
+   "width": 0.739972337482711,
+   "height": 0.5235294117647059,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -2656,7 +2864,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 30
+  "id": 30,
+  "grid": {
+   "left": 0.14937759336099585,
+   "top": 0.06274509803921569,
+   "width": 0.7385892116182573,
+   "height": 0.5235294117647059,
+   "rows": 10,
+   "cols": 10
+  }
  },
  {
   "book": 1,
@@ -2729,7 +2945,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 31
+  "id": 31,
+  "grid": {
+   "left": 0.15352697095435686,
+   "top": 0.06862745098039216,
+   "width": 0.7316735822959889,
+   "height": 0.5186274509803922,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -2841,7 +3065,15 @@
   },
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 32
+  "id": 32,
+  "grid": {
+   "left": 0.14384508990318118,
+   "top": 0.07156862745098039,
+   "width": 0.7302904564315352,
+   "height": 0.5186274509803922,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -2952,7 +3184,15 @@
   },
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 33
+  "id": 33,
+  "grid": {
+   "left": 0.14937759336099585,
+   "top": 0.06470588235294118,
+   "width": 0.7372060857538036,
+   "height": 0.5235294117647059,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -3065,7 +3305,15 @@
   },
   "solutionVerified": true,
   "difficulty": 4,
-  "id": 34
+  "id": 34,
+  "grid": {
+   "left": 0.1507607192254495,
+   "top": 0.056862745098039215,
+   "width": 0.7413554633471646,
+   "height": 0.5274509803921569,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -3139,7 +3387,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 35
+  "id": 35,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06666666666666667,
+   "width": 0.7330567081604425,
+   "height": 0.5215686274509804,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -3212,7 +3468,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 36
+  "id": 36,
+  "grid": {
+   "left": 0.1313969571230982,
+   "top": 0.08627450980392157,
+   "width": 0.7704011065006916,
+   "height": 0.49019607843137253,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -3271,7 +3535,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 37
+  "id": 37,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.08235294117647059,
+   "width": 0.719225449515906,
+   "height": 0.5098039215686274,
+   "rows": 7,
+   "cols": 7
+  }
  },
  {
   "book": 1,
@@ -3426,7 +3698,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 39
+  "id": 39,
+  "grid": {
+   "left": 0.13831258644536654,
+   "top": 0.054901960784313725,
+   "width": 0.739972337482711,
+   "height": 0.5303921568627451,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -3700,7 +3980,15 @@
   },
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 42
+  "id": 42,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.059803921568627454,
+   "width": 0.7413554633471646,
+   "height": 0.46862745098039216,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -3812,7 +4100,15 @@
   },
   "solutionVerified": true,
   "difficulty": 4,
-  "id": 43
+  "id": 43,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.07058823529411765,
+   "width": 0.7344398340248963,
+   "height": 0.5215686274509804,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -3924,7 +4220,15 @@
   },
   "solutionVerified": true,
   "difficulty": 4,
-  "id": 44
+  "id": 44,
+  "grid": {
+   "left": 0.14384508990318118,
+   "top": 0.06862745098039216,
+   "width": 0.7344398340248963,
+   "height": 0.5225490196078432,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -4000,7 +4304,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 45
+  "id": 45,
+  "grid": {
+   "left": 0.15352697095435686,
+   "top": 0.06372549019607843,
+   "width": 0.7372060857538036,
+   "height": 0.5245098039215687,
+   "rows": 10,
+   "cols": 10
+  }
  },
  {
   "book": 1,
@@ -4075,7 +4387,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 46
+  "id": 46,
+  "grid": {
+   "left": 0.14937759336099585,
+   "top": 0.06470588235294118,
+   "width": 0.73582295988935,
+   "height": 0.5235294117647059,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -4190,7 +4510,15 @@
   },
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 47
+  "id": 47,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.07058823529411765,
+   "width": 0.7330567081604425,
+   "height": 0.5215686274509804,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -4305,7 +4633,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 48
+  "id": 48,
+  "grid": {
+   "left": 0.14384508990318118,
+   "top": 0.060784313725490195,
+   "width": 0.7482710926694329,
+   "height": 0.5303921568627451,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -4498,7 +4834,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 50
+  "id": 50,
+  "grid": {
+   "left": 0.1479944674965422,
+   "top": 0.056862745098039215,
+   "width": 0.7455048409405256,
+   "height": 0.5313725490196078,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 1,
@@ -4692,7 +5036,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 52
+  "id": 52,
+  "grid": {
+   "left": 0.14522821576763487,
+   "top": 0.054901960784313725,
+   "width": 0.7427385892116183,
+   "height": 0.5294117647058824,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -4772,7 +5124,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 53
+  "id": 53,
+  "grid": {
+   "left": 0.14384508990318118,
+   "top": 0.061764705882352944,
+   "width": 0.7413554633471646,
+   "height": 0.5264705882352941,
+   "rows": 10,
+   "cols": 10
+  }
  },
  {
   "book": 1,
@@ -4850,7 +5210,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 54
+  "id": 54,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.056862745098039215,
+   "width": 0.7413554633471646,
+   "height": 0.5254901960784314,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -4968,7 +5336,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 55
+  "id": 55,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.050980392156862744,
+   "width": 0.7330567081604425,
+   "height": 0.5215686274509804,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -5080,7 +5456,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 56
+  "id": 56,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.06666666666666667,
+   "width": 0.7344398340248963,
+   "height": 0.5205882352941177,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -5192,7 +5576,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 57
+  "id": 57,
+  "grid": {
+   "left": 0.1479944674965422,
+   "top": 0.056862745098039215,
+   "width": 0.739972337482711,
+   "height": 0.5274509803921569,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -5272,7 +5664,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 58
+  "id": 58,
+  "grid": {
+   "left": 0.14937759336099585,
+   "top": 0.06274509803921569,
+   "width": 0.7413554633471646,
+   "height": 0.4666666666666667,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -5338,7 +5738,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 59
+  "id": 59,
+  "grid": {
+   "left": 0.15629322268326418,
+   "top": 0.06862745098039216,
+   "width": 0.7344398340248963,
+   "height": 0.5215686274509804,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -5409,7 +5817,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 60
+  "id": 60,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.07156862745098039,
+   "width": 0.7302904564315352,
+   "height": 0.5186274509803922,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 1,
@@ -5484,7 +5900,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 61
+  "id": 61,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.07058823529411765,
+   "width": 0.7316735822959889,
+   "height": 0.5186274509803922,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -5600,7 +6024,15 @@
   },
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 62
+  "id": 62,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.056862745098039215,
+   "width": 0.7455048409405256,
+   "height": 0.5274509803921569,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -5712,7 +6144,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 63
+  "id": 63,
+  "grid": {
+   "left": 0.14384508990318118,
+   "top": 0.056862745098039215,
+   "width": 0.7468879668049793,
+   "height": 0.5284313725490196,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -5824,7 +6264,15 @@
   },
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 64
+  "id": 64,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06274509803921569,
+   "width": 0.73582295988935,
+   "height": 0.5225490196078432,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -5938,7 +6386,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 65
+  "id": 65,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.06666666666666667,
+   "width": 0.73582295988935,
+   "height": 0.5235294117647059,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -6049,7 +6505,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 66
+  "id": 66,
+  "grid": {
+   "left": 0.14522821576763487,
+   "top": 0.060784313725490195,
+   "width": 0.7413554633471646,
+   "height": 0.5274509803921569,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -6165,7 +6629,15 @@
   },
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 67
+  "id": 67,
+  "grid": {
+   "left": 0.15352697095435686,
+   "top": 0.06470588235294118,
+   "width": 0.7372060857538036,
+   "height": 0.5225490196078432,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -6239,7 +6711,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 68
+  "id": 68,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.07450980392156863,
+   "width": 0.7275242047026279,
+   "height": 0.5196078431372549,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -6357,7 +6837,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 69
+  "id": 69,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.0784313725490196,
+   "width": 0.7302904564315352,
+   "height": 0.5176470588235295,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -6440,7 +6928,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 70
+  "id": 70,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.058823529411764705,
+   "width": 0.7427385892116183,
+   "height": 0.5274509803921569,
+   "rows": 10,
+   "cols": 10
+  }
  },
  {
   "book": 1,
@@ -6550,7 +7046,15 @@
   },
   "solutionVerified": true,
   "difficulty": 5,
-  "id": 71
+  "id": 71,
+  "grid": {
+   "left": 0.1507607192254495,
+   "top": 0.052941176470588235,
+   "width": 0.7482710926694329,
+   "height": 0.5303921568627451,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 1,
@@ -6896,7 +7400,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 75
+  "id": 75,
+  "grid": {
+   "left": 0.14661134163208853,
+   "top": 0.0784313725490196,
+   "width": 0.7413554633471646,
+   "height": 0.5264705882352941,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 1,
@@ -6994,7 +7506,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 76
+  "id": 76,
+  "grid": {
+   "left": 0.14107883817427386,
+   "top": 0.0803921568627451,
+   "width": 0.7468879668049793,
+   "height": 0.5284313725490196,
+   "rows": 12,
+   "cols": 12
+  }
  },
  {
   "book": 1,
@@ -7084,7 +7604,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 77
+  "id": 77,
+  "grid": {
+   "left": 0.13831258644536654,
+   "top": 0.056862745098039215,
+   "width": 0.7579529737206085,
+   "height": 0.538235294117647,
+   "rows": 12,
+   "cols": 12
+  }
  },
  {
   "book": 2,
@@ -7243,7 +7771,15 @@
   },
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 79
+  "id": 79,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06372549019607843,
+   "width": 0.710926694329184,
+   "height": 0.5029411764705882,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 2,
@@ -7354,7 +7890,15 @@
   },
   "solutionVerified": true,
   "difficulty": 2,
-  "id": 80
+  "id": 80,
+  "grid": {
+   "left": 0.318118948824343,
+   "top": 0.22549019607843138,
+   "width": 0.4661134163208852,
+   "height": 0.3284313725490196,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 2,
@@ -7568,7 +8112,15 @@
   },
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 82
+  "id": 82,
+  "grid": {
+   "left": 0.24343015214384509,
+   "top": 0.17549019607843136,
+   "width": 0.6224066390041494,
+   "height": 0.3872549019607843,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 2,
@@ -7703,7 +8255,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 84
+  "id": 84,
+  "grid": {
+   "left": 0.17565698478561548,
+   "top": 0.06862745098039216,
+   "width": 0.6984785615491009,
+   "height": 0.49411764705882355,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 2,
@@ -7772,7 +8332,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 85
+  "id": 85,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06470588235294118,
+   "width": 0.7136929460580913,
+   "height": 0.5058823529411764,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 2,
@@ -8224,7 +8792,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 90
+  "id": 90,
+  "grid": {
+   "left": 0.15352697095435686,
+   "top": 0.058823529411764705,
+   "width": 0.715076071922545,
+   "height": 0.5117647058823529,
+   "rows": 12,
+   "cols": 12
+  }
  },
  {
   "book": 2,
@@ -8357,7 +8933,15 @@
   },
   "solutionVerified": true,
   "difficulty": 3,
-  "id": 91
+  "id": 91,
+  "grid": {
+   "left": 0.15352697095435686,
+   "top": 0.05784313725490196,
+   "width": 0.7123098201936376,
+   "height": 0.5107843137254902,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -8519,7 +9103,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 94
+  "id": 94,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.058823529411764705,
+   "width": 0.710926694329184,
+   "height": 0.5049019607843137,
+   "rows": 3,
+   "cols": 3
+  }
  },
  {
   "book": 2,
@@ -8606,7 +9198,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 1,
-  "id": 96
+  "id": 96,
+  "grid": {
+   "left": 0.16597510373443983,
+   "top": 0.059803921568627454,
+   "width": 0.7053941908713693,
+   "height": 0.49901960784313726,
+   "rows": 4,
+   "cols": 4
+  }
  },
  {
   "book": 2,
@@ -8705,7 +9305,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 97
+  "id": 97,
+  "grid": {
+   "left": 0.16597510373443983,
+   "top": 0.06862745098039216,
+   "width": 0.69432918395574,
+   "height": 0.48823529411764705,
+   "rows": 14,
+   "cols": 14
+  }
  },
  {
   "book": 2,
@@ -8831,7 +9439,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 98
+  "id": 98,
+  "grid": {
+   "left": 0.1507607192254495,
+   "top": 0.06470588235294118,
+   "width": 0.7095435684647303,
+   "height": 0.44509803921568625,
+   "rows": 20,
+   "cols": 20
+  }
  },
  {
   "book": 2,
@@ -8928,7 +9544,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 99
+  "id": 99,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.060784313725490195,
+   "width": 0.6998616874135546,
+   "height": 0.4950980392156863,
+   "rows": 14,
+   "cols": 14
+  }
  },
  {
   "book": 2,
@@ -9038,7 +9662,15 @@
   },
   "solutionVerified": true,
   "difficulty": 3,
-  "id": 100
+  "id": 100,
+  "grid": {
+   "left": 0.15629322268326418,
+   "top": 0.060784313725490195,
+   "width": 0.7053941908713693,
+   "height": 0.5,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 2,
@@ -9146,7 +9778,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 101
+  "id": 101,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06568627450980392,
+   "width": 0.6970954356846473,
+   "height": 0.4970588235294118,
+   "rows": 16,
+   "cols": 16
+  }
  },
  {
   "book": 2,
@@ -9392,7 +10032,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 104
+  "id": 104,
+  "grid": {
+   "left": 0.16044260027662519,
+   "top": 0.059803921568627454,
+   "width": 0.7081604426002767,
+   "height": 0.5009803921568627,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -9465,7 +10113,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 105
+  "id": 105,
+  "grid": {
+   "left": 0.16182572614107885,
+   "top": 0.06274509803921569,
+   "width": 0.6984785615491009,
+   "height": 0.4980392156862745,
+   "rows": 9,
+   "cols": 9
+  }
  },
  {
   "book": 2,
@@ -9693,7 +10349,15 @@
   },
   "solutionVerified": true,
   "difficulty": 3,
-  "id": 107
+  "id": 107,
+  "grid": {
+   "left": 0.15767634854771784,
+   "top": 0.05784313725490196,
+   "width": 0.710926694329184,
+   "height": 0.5029411764705882,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -9824,7 +10488,15 @@
   },
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 108
+  "id": 108,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.058823529411764705,
+   "width": 0.7164591977869986,
+   "height": 0.5078431372549019,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -9975,7 +10647,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 111
+  "id": 111,
+  "grid": {
+   "left": 0.1715076071922545,
+   "top": 0.058823529411764705,
+   "width": 0.69432918395574,
+   "height": 0.4980392156862745,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 2,
@@ -10034,7 +10714,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 112
+  "id": 112,
+  "grid": {
+   "left": 0.1715076071922545,
+   "top": 0.07450980392156863,
+   "width": 0.677731673582296,
+   "height": 0.48137254901960785,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 2,
@@ -10096,7 +10784,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 113
+  "id": 113,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06764705882352941,
+   "width": 0.7123098201936376,
+   "height": 0.5029411764705882,
+   "rows": 7,
+   "cols": 7
+  }
  },
  {
   "book": 2,
@@ -10177,7 +10873,15 @@
   },
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 114
+  "id": 114,
+  "grid": {
+   "left": 0.17565698478561548,
+   "top": 0.06372549019607843,
+   "width": 0.640387275242047,
+   "height": 0.4549019607843137,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 2,
@@ -10266,7 +10970,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 115
+  "id": 115,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.058823529411764705,
+   "width": 0.7053941908713693,
+   "height": 0.5,
+   "rows": 12,
+   "cols": 12
+  }
  },
  {
   "book": 2,
@@ -10428,7 +11140,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 117
+  "id": 117,
+  "grid": {
+   "left": 0.16044260027662519,
+   "top": 0.060784313725490195,
+   "width": 0.7053941908713693,
+   "height": 0.4980392156862745,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -10568,7 +11288,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 119
+  "id": 119,
+  "grid": {
+   "left": 0.15629322268326418,
+   "top": 0.058823529411764705,
+   "width": 0.706777316735823,
+   "height": 0.5,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -10801,7 +11529,15 @@
   },
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 121
+  "id": 121,
+  "grid": {
+   "left": 0.16182572614107885,
+   "top": 0.05392156862745098,
+   "width": 0.706777316735823,
+   "height": 0.5823529411764706,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -10913,7 +11649,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 122
+  "id": 122,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.05392156862745098,
+   "width": 0.7164591977869986,
+   "height": 0.5068627450980392,
+   "rows": 16,
+   "cols": 16
+  }
  },
  {
   "book": 2,
@@ -10970,7 +11714,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 123
+  "id": 123,
+  "grid": {
+   "left": 0.15352697095435686,
+   "top": 0.06274509803921569,
+   "width": 0.7081604426002767,
+   "height": 0.5029411764705882,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 2,
@@ -11095,7 +11847,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 125
+  "id": 125,
+  "grid": {
+   "left": 0.1632088520055325,
+   "top": 0.060784313725490195,
+   "width": 0.7026279391424619,
+   "height": 0.4980392156862745,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 2,
@@ -11234,7 +11994,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 4,
-  "id": 127
+  "id": 127,
+  "grid": {
+   "left": 0.1355463347164592,
+   "top": 0.058823529411764705,
+   "width": 0.7219917012448133,
+   "height": 0.5117647058823529,
+   "rows": 8,
+   "cols": 8
+  }
  },
  {
   "book": 2,
@@ -11462,7 +12230,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 130
+  "id": 130,
+  "grid": {
+   "left": 0.1715076071922545,
+   "top": 0.058823529411764705,
+   "width": 0.6984785615491009,
+   "height": 0.49607843137254903,
+   "rows": 10,
+   "cols": 10
+  }
  },
  {
   "book": 2,
@@ -11540,7 +12316,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 131
+  "id": 131,
+  "grid": {
+   "left": 0.14937759336099585,
+   "top": 0.06274509803921569,
+   "width": 0.7206085753803596,
+   "height": 0.5098039215686274,
+   "rows": 10,
+   "cols": 10
+  }
  },
  {
   "book": 2,
@@ -11662,7 +12446,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 133
+  "id": 133,
+  "grid": {
+   "left": 0.16044260027662519,
+   "top": 0.06372549019607843,
+   "width": 0.7040110650069157,
+   "height": 0.49901960784313726,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -11741,7 +12533,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 134
+  "id": 134,
+  "grid": {
+   "left": 0.15629322268326418,
+   "top": 0.06274509803921569,
+   "width": 0.7123098201936376,
+   "height": 0.503921568627451,
+   "rows": 10,
+   "cols": 10
+  }
  },
  {
   "book": 2,
@@ -11823,7 +12623,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 135
+  "id": 135,
+  "grid": {
+   "left": 0.15629322268326418,
+   "top": 0.061764705882352944,
+   "width": 0.7095435684647303,
+   "height": 0.5029411764705882,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -11905,7 +12713,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 136
+  "id": 136,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.06470588235294118,
+   "width": 0.7136929460580913,
+   "height": 0.5058823529411764,
+   "rows": 11,
+   "cols": 11
+  }
  },
  {
   "book": 2,
@@ -11997,7 +12813,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 137
+  "id": 137,
+  "grid": {
+   "left": 0.15214384508990317,
+   "top": 0.058823529411764705,
+   "width": 0.710926694329184,
+   "height": 0.503921568627451,
+   "rows": 13,
+   "cols": 13
+  }
  },
  {
   "book": 2,
@@ -12095,7 +12919,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 138
+  "id": 138,
+  "grid": {
+   "left": 0.1507607192254495,
+   "top": 0.058823529411764705,
+   "width": 0.7206085753803596,
+   "height": 0.5117647058823529,
+   "rows": 13,
+   "cols": 13
+  }
  },
  {
   "book": 2,
@@ -12139,7 +12971,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 3,
-  "id": 139
+  "id": 139,
+  "grid": {
+   "left": 0.16044260027662519,
+   "top": 0.058823529411764705,
+   "width": 0.7053941908713693,
+   "height": 0.5009803921568627,
+   "rows": 4,
+   "cols": 4
+  }
  },
  {
   "book": 2,
@@ -12261,7 +13101,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 141
+  "id": 141,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.0696078431372549,
+   "width": 0.7136929460580913,
+   "height": 0.5068627450980392,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 2,
@@ -12349,7 +13197,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 142
+  "id": 142,
+  "grid": {
+   "left": 0.16459197786998617,
+   "top": 0.060784313725490195,
+   "width": 0.7040110650069157,
+   "height": 0.5,
+   "rows": 12,
+   "cols": 12
+  }
  },
  {
   "book": 2,
@@ -12405,7 +13261,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 143
+  "id": 143,
+  "grid": {
+   "left": 0.1632088520055325,
+   "top": 0.058823529411764705,
+   "width": 0.7053941908713693,
+   "height": 0.503921568627451,
+   "rows": 6,
+   "cols": 6
+  }
  },
  {
   "book": 2,
@@ -12492,7 +13356,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 144
+  "id": 144,
+  "grid": {
+   "left": 0.16044260027662519,
+   "top": 0.06470588235294118,
+   "width": 0.7053941908713693,
+   "height": 0.5,
+   "rows": 12,
+   "cols": 12
+  }
  },
  {
   "book": 2,
@@ -12549,7 +13421,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 145
+  "id": 145,
+  "grid": {
+   "left": 0.15767634854771784,
+   "top": 0.058823529411764705,
+   "width": 0.7053941908713693,
+   "height": 0.5,
+   "rows": 5,
+   "cols": 5
+  }
  },
  {
   "book": 2,
@@ -12627,7 +13507,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 146
+  "id": 146,
+  "grid": {
+   "left": 0.1632088520055325,
+   "top": 0.058823529411764705,
+   "width": 0.7026279391424619,
+   "height": 0.4980392156862745,
+   "rows": 10,
+   "cols": 10
+  }
  },
  {
   "book": 2,
@@ -12786,7 +13674,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 148
+  "id": 148,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.060784313725490195,
+   "width": 0.7095435684647303,
+   "height": 0.503921568627451,
+   "rows": 15,
+   "cols": 15
+  }
  },
  {
   "book": 2,
@@ -12987,7 +13883,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 150
+  "id": 150,
+  "grid": {
+   "left": 0.16044260027662519,
+   "top": 0.061764705882352944,
+   "width": 0.7136929460580913,
+   "height": 0.5049019607843137,
+   "rows": 14,
+   "cols": 14
+  }
  },
  {
   "book": 2,
@@ -13091,7 +13995,15 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 151
+  "id": 151,
+  "grid": {
+   "left": 0.1590594744121715,
+   "top": 0.05784313725490196,
+   "width": 0.7164591977869986,
+   "height": 0.5088235294117647,
+   "rows": 15,
+   "cols": 15
+  }
  },
  {
   "book": 2,
@@ -13500,6 +14412,14 @@
   "solution": null,
   "solutionVerified": false,
   "difficulty": 5,
-  "id": 155
+  "id": 155,
+  "grid": {
+   "left": 0.15491009681881052,
+   "top": 0.060784313725490195,
+   "width": 0.710926694329184,
+   "height": 0.5049019607843137,
+   "rows": 7,
+   "cols": 7
+  }
  }
 ]

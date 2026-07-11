@@ -19,20 +19,25 @@ Capacitor for a native App Store build.
   labels, special rules, murderer, step‑by‑step hints, difficulty, and the
   original crime‑scene illustration for each case).
 - **Crime scene** — the book's real floor‑plan illustration, tap to zoom.
+- **On‑scene placement** — for 115 cases, the interactive grid is overlaid
+  directly on the crime‑scene illustration (like murdoku.com): pick a suspect,
+  tap their cell right on the floor plan. The grid's pixel position is detected
+  automatically from the image (see below). The other 40 cases fall back to a
+  separate scratch grid so every case stays playable.
 - **Clues** in the original Dutch, per suspect, with the victim highlighted.
-- **Scratch grid** — an interactive N×N board (rows/columns match the book's
-  *rij/kolom*) to place suspects while reasoning.
 - **Timer** with a saved best time per case.
 - **Hints** — reveal the book's own solution reasoning one step at a time.
 - **Accuse** — pick the suspect; the app checks against the real murderer.
 - **Full‑grid check** — for the 48 cases (both books) where the solved grid was
-  recovered, a
-  *Controleer raster* button marks each placed suspect green/red, *Toon
-  oplossing* reveals the full solution, and a correct accusation with a correct
-  grid earns a "Perfect raster".
+  recovered, a *Controleer raster* button marks each placed suspect green/red,
+  *Toon oplossing* reveals the full solution, and a correct accusation with a
+  correct grid earns a "Perfect raster".
 - **Difficulty** — a 1–5 skull rating per case.
 - **Progression** — cases unlock in order as you solve them (can be disabled in
   settings); progress, times, and in‑progress boards are saved locally.
+- **First‑run tutorial** and an in‑app **how‑to‑play** reference (rules,
+  controls, keyword glossary: *naast*, *alleen*, *alleen met*, *hoek*, *rij*,
+  *kolom*, …), mirroring the site's onboarding.
 - **Light / dark** themes (auto by system) and offline support.
 
 ## Structure
@@ -47,6 +52,8 @@ data/puzzles.json     all 155 cases
 assets/scenes/*.jpg   crime‑scene illustrations
 icons/                app icons
 tools/extract.py      the EPUB → puzzles.json extraction pipeline
+tools/extract_grids.py  solution-grid recovery from the Oplossingen pages
+tools/detect_grid.py  detects each scene's grid box for on-scene placement
 ```
 
 ## Run locally
@@ -84,6 +91,21 @@ layouts, and maps each case to its murderer and solution steps from the
 - The original Book 2 EPUB (`Manuel_Garand-Murdoku_-_Terug_in_de_tijd.epub`) is
   kept in the repo because the pipeline needs the source fixed‑layout files to
   regenerate the data; it is not used at runtime.
+- **On‑scene grid detection** works for **115/155** cases. It locates the
+  illustration's black grid border via dark‑pixel row/column projections, then
+  divides it evenly by the puzzle's suspect count `n` — validated to ~5px
+  accuracy against precisely‑detected interior lines, and further gated by a
+  corner‑darkness check that rejects irregular/rotated room outlines a plain
+  bounding box can't represent. The remaining 40 cases (non‑square or
+  irregular layouts) use the separate scratch grid instead.
+- **Suspect portrait photos were investigated but not shipped.** The books'
+  clue pages have a background illustration with each suspect's polaroid
+  photo, and photo *regions* can be detected reliably. But there is no
+  extractable signal linking a given photo to a given *name* — the mapping
+  would rest on an unverified assumption about the book's layout convention,
+  and mislabelling faces in a game about identifying suspects is a real
+  correctness risk. Letter badges (already shown, colour‑coded, tested) remain
+  the shipped suspect identifier.
 
 Puzzle content © Manuel Garand / Uitgeverij Lannoo. This app is a personal
 companion for the print books.

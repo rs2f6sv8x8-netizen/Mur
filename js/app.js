@@ -99,6 +99,8 @@ function renderHome(){
   const contBtn = el('button','btn primary','▸ Doorgaan');
   contBtn.onclick=()=>{ location.hash='#/play/'+firstUnsolved(); };
   tb.appendChild(contBtn);
+  const helpBtn = el('button','icon-btn'); helpBtn.innerHTML='?'; helpBtn.title='Hoe te spelen';
+  helpBtn.onclick=openHowTo; tb.appendChild(helpBtn);
   const setBtn = el('button','icon-btn'); setBtn.innerHTML='⚙'; setBtn.title='Instellingen';
   setBtn.onclick=openSettings; tb.appendChild(setBtn);
   wrap.appendChild(tb);
@@ -178,7 +180,9 @@ function renderPlay(id){
   title.innerHTML = `<div class="no">Zaak ${p.id} · Boek ${p.book}</div><div class="ttl">${escapeHtml(p.title)}</div>`;
   const timer = el('div','timer run'); timer.id='timer'; timer.textContent=fmtTime(T.elapsed);
   const sk = el('div','skulls'); sk.style.fontSize='13px'; sk.innerHTML=skulls(p.difficulty);
-  bar.append(back,title,sk,timer);
+  const help = el('button','icon-btn help-fab'); help.innerHTML='?'; help.title='Hoe te spelen';
+  help.onclick=openHowTo;
+  bar.append(back,title,sk,timer,help);
   view.appendChild(bar);
 
   /* body */
@@ -189,11 +193,38 @@ function renderPlay(id){
   const sceneCard = el('div','card');
   sceneCard.appendChild(headEl('Plaats delict'));
   if(p.scene){
-    const sw=el('div','scene-wrap');
+    const sw=el('div','scene-wrap'); sw.id='sceneboard';
     const img=el('img'); img.src='assets/scenes/'+p.scene; img.alt='Plaats delict '+p.title; img.loading='lazy';
-    img.onclick=()=>openZoom('assets/scenes/'+p.scene);
-    sw.appendChild(img); sw.appendChild(Object.assign(el('div','scene-hint'),{textContent:'Tik om te vergroten'}));
+    sw.appendChild(img);
+    if(p.grid){
+      // interactive grid overlaid directly on the crime-scene illustration
+      const ov=el('div','grid-overlay'); ov.id='gridoverlay'; sw.appendChild(ov);
+      const zb=el('button','scene-zoom'); zb.textContent='⤢';
+      zb.onclick=(e)=>{ e.stopPropagation(); openZoom('assets/scenes/'+p.scene); };
+      sw.appendChild(zb);
+      img.addEventListener('load', renderSceneOverlay);
+    } else {
+      img.style.cursor='zoom-in';
+      img.onclick=()=>openZoom('assets/scenes/'+p.scene);
+      sw.appendChild(Object.assign(el('div','scene-hint'),{textContent:'Tik om te vergroten'}));
+    }
     sceneCard.appendChild(sw);
+  }
+  if(p.grid){
+    // suspects are placed by tapping directly on the scene, so the palette
+    // (selector) lives right under the scene image, like on murdoku.com
+    const tools=el('div','grid-tools'); tools.style.marginTop='12px';
+    tools.innerHTML=`<span class="mini">Kies een verdachte en tik op een vak in de plattegrond hierboven.</span>`;
+    sceneCard.appendChild(tools);
+    const palette=el('div','palette'); palette.id='palette';
+    sceneCard.appendChild(palette);
+    if(p.solution){
+      const cr=el('div','check-row');
+      const chk=el('button','btn small','✓ Controleer raster'); chk.onclick=checkGrid;
+      const rev=el('button','btn small ghost','Toon oplossing');
+      rev.onclick=()=>{ if(confirm('De volledige oplossing tonen in het raster?')){ revealSolution(); } };
+      cr.append(chk,rev); sceneCard.appendChild(cr);
+    }
   }
   left.appendChild(sceneCard);
 
@@ -221,30 +252,32 @@ function renderPlay(id){
   left.appendChild(clueCard);
   body.appendChild(left);
 
-  /* RIGHT: scratch grid */
-  const right = el('div');
-  const gcard = el('div','card');
-  gcard.appendChild(headEl('Kladraster'));
-  const tools=el('div','grid-tools');
-  tools.innerHTML=`<span class="mini">Plaats verdachten in rij/kolom om te redeneren. Kies een letter en tik op een vak.</span>`;
-  gcard.appendChild(tools);
-  const board=el('div','board'); board.id='board';
-  gcard.appendChild(board);
-  const palette=el('div','palette'); palette.id='palette';
-  gcard.appendChild(palette);
-  if(p.solution){
-    const cr=el('div','check-row');
-    const chk=el('button','btn small','✓ Controleer raster');
-    chk.onclick=checkGrid;
-    const rev=el('button','btn small ghost','Toon oplossing');
-    rev.onclick=()=>{ if(confirm('De volledige oplossing tonen in het raster?')){ revealSolution(); } };
-    cr.append(chk,rev);
-    gcard.appendChild(cr);
-    gcard.appendChild(Object.assign(el('div','mini'),{style:'margin-top:8px',
-      textContent:'Deze zaak heeft een gecontroleerde oplossing: plaats iedereen en controleer je raster.'}));
+  /* RIGHT: scratch grid (only when the scene itself isn't the interactive board) */
+  if(!p.grid){
+    const right = el('div');
+    const gcard = el('div','card');
+    gcard.appendChild(headEl('Kladraster'));
+    const tools=el('div','grid-tools');
+    tools.innerHTML=`<span class="mini">Plaats verdachten in rij/kolom om te redeneren. Kies een letter en tik op een vak.</span>`;
+    gcard.appendChild(tools);
+    const board=el('div','board'); board.id='board';
+    gcard.appendChild(board);
+    const palette=el('div','palette'); palette.id='palette';
+    gcard.appendChild(palette);
+    if(p.solution){
+      const cr=el('div','check-row');
+      const chk=el('button','btn small','✓ Controleer raster');
+      chk.onclick=checkGrid;
+      const rev=el('button','btn small ghost','Toon oplossing');
+      rev.onclick=()=>{ if(confirm('De volledige oplossing tonen in het raster?')){ revealSolution(); } };
+      cr.append(chk,rev);
+      gcard.appendChild(cr);
+      gcard.appendChild(Object.assign(el('div','mini'),{style:'margin-top:8px',
+        textContent:'Deze zaak heeft een gecontroleerde oplossing: plaats iedereen en controleer je raster.'}));
+    }
+    right.appendChild(gcard);
+    body.appendChild(right);
   }
-  right.appendChild(gcard);
-  body.appendChild(right);
 
   view.appendChild(body);
 
@@ -254,7 +287,7 @@ function renderPlay(id){
   const hintBtn=el('button','btn','💡 Hint');
   hintBtn.onclick=openHints;
   const clearBtn=el('button','btn','⌫ Wis raster');
-  clearBtn.onclick=()=>{ T.cells={}; renderBoard(); saveState(); };
+  clearBtn.onclick=()=>{ T.cells={}; updateBoards(); saveState(); };
   const accuseBtn=el('button','btn primary','⚖ Beschuldig');
   accuseBtn.onclick=openAccuse;
   abw.append(hintBtn,clearBtn,accuseBtn);
@@ -262,9 +295,14 @@ function renderPlay(id){
   view.appendChild(ab);
 
   app.appendChild(view);
-  renderBoard(); renderPalette();
+  updateBoards(); renderPalette();
   if(!store.solved[id]) startTimer();
   window.scrollTo(0,0);
+  if(!store.settings.tutorialDone) openTutorial(0);
+}
+
+function updateBoards(){
+  if(T.p.grid) renderSceneOverlay(); else renderBoard();
 }
 
 function headEl(t){ const h=el('h3'); h.textContent=t; return h; }
@@ -291,6 +329,7 @@ function renderBoard(){
     const tr=el('tr'); tr.appendChild(el('th','', String(r)));
     for(let c=1;c<=n;c++){
       const key=r+','+c; const td=el('td');
+      td.dataset.key=key;
       td.style.setProperty('--cell',cell+'px');
       const letter=T.cells[key];
       if(letter){
@@ -315,7 +354,32 @@ function onCell(r,c){
     for(const k of Object.keys(T.cells)) if(T.cells[k]===T.selToken) delete T.cells[k];
     T.cells[key]=T.selToken;
   }
-  renderBoard(); saveState();
+  updateBoards(); saveState();
+}
+
+/* ----- on-scene interactive grid (overlaid directly on the illustration) ----- */
+function renderSceneOverlay(){
+  const p=T.p, g=p.grid; const ov=$('#gridoverlay'); if(!ov||!g) return;
+  ov.style.left=(g.left*100)+'%'; ov.style.top=(g.top*100)+'%';
+  ov.style.width=(g.width*100)+'%'; ov.style.height=(g.height*100)+'%';
+  ov.style.gridTemplateColumns=`repeat(${g.cols}, 1fr)`;
+  ov.style.gridTemplateRows=`repeat(${g.rows}, 1fr)`;
+  ov.innerHTML='';
+  const people=peopleOf(p);
+  for(let r=1;r<=g.rows;r++){
+    for(let c=1;c<=g.cols;c++){
+      const key=r+','+c; const cell=el('div','gcell'); cell.dataset.key=key;
+      const letter=T.cells[key];
+      if(letter){
+        const idx=people.findIndex(x=>x.letter===letter);
+        const tok=el('div','gtok'); tok.textContent=letter;
+        tok.style.background=suspColor(letter, idx<0?0:idx);
+        cell.appendChild(tok);
+      }
+      cell.onclick=()=>onCell(r,c);
+      ov.appendChild(cell);
+    }
+  }
 }
 function placementStatus(){
   // compare T.cells to solution; returns {placed,total,correct,allCorrect}
@@ -334,24 +398,17 @@ function placementStatus(){
 }
 function checkGrid(){
   const sol=T.p.solution; if(!sol) return;
-  const board=$('#board'); if(!board) return;
-  // clear marks
-  board.querySelectorAll('td').forEach(td=>td.classList.remove('ok','bad'));
-  // map solution letter -> [r,c]; mark each filled cell
   const solPos={}; for(const L in sol) solPos[L]=sol[L][0]+','+sol[L][1];
   let correct=0, placed=0;
-  board.querySelectorAll('td').forEach(td=>{});
-  // iterate rows/cols
-  const rows=board.querySelectorAll('tr');
-  for(let r=1;r<rows.length;r++){
-    const tds=rows[r].querySelectorAll('td');
-    for(let c=1;c<=tds.length;c++){
-      const td=tds[c-1]; const key=r+','+c; const L=T.cells[key];
-      if(!L) continue; placed++;
-      if(solPos[L]===key){ td.classList.add('ok'); correct++; }
-      else td.classList.add('bad');
-    }
-  }
+  const cellEls = T.p.grid
+    ? Array.from(document.querySelectorAll('#gridoverlay .gcell')).map(c=>({key:c.dataset.key, el:c}))
+    : Array.from(document.querySelectorAll('#board td[data-key]')).map(c=>({key:c.dataset.key, el:c}));
+  cellEls.forEach(({key,el:ce})=>{
+    ce.classList.remove('ok','bad');
+    const L=T.cells[key]; if(!L) return; placed++;
+    if(solPos[L]===key){ ce.classList.add('ok'); correct++; }
+    else ce.classList.add('bad');
+  });
   const total=Object.keys(sol).length;
   if(placed===0) toast('Plaats eerst verdachten in het raster');
   else if(correct===total) toast('Perfect! Alle '+total+' juist geplaatst ✓');
@@ -361,7 +418,7 @@ function revealSolution(){
   const sol=T.p.solution; if(!sol) return;
   T.cells={};
   for(const L in sol){ T.cells[sol[L][0]+','+sol[L][1]]=L; }
-  renderBoard(); saveState();
+  updateBoards(); saveState();
   setTimeout(checkGrid,30);
 }
 function renderPalette(){
@@ -377,7 +434,7 @@ function renderPalette(){
   er.onclick=()=>{ T.selToken = T.selToken==='ERASE'?null:'ERASE'; renderPalette(); };
   pal.appendChild(er);
 }
-window.addEventListener('resize', ()=>{ if(T && $('#board')) renderBoard(); });
+window.addEventListener('resize', ()=>{ if(T && ($('#board')||$('#gridoverlay'))) updateBoards(); });
 
 /* ===================== MODALS ===================== */
 function modal(node, cls){
@@ -393,6 +450,107 @@ function closeModal(){ $('#modal-root').innerHTML=''; }
 function openZoom(src){
   const img=el('img'); img.src=src; const s=modal(img,'zoom');
   s.onclick=closeModal;
+}
+
+/* ---------- mini illustration grids ---------- */
+function miniGrid(rows){
+  const t=el('table','mini-grid');
+  rows.forEach(r=>{
+    const tr=el('tr');
+    r.forEach(c=>{
+      const td=el('td', c&&c.cls||''); td.textContent = c&&c.t||'';
+      tr.appendChild(td);
+    });
+    t.appendChild(tr);
+  });
+  const w=el('div','tut-fig'); w.appendChild(t); return w;
+}
+const _X={t:'✕',cls:'x'}, _E={t:''}, _A={t:'A',cls:'a'}, _O={t:'●',cls:'dot'},
+      _OK={t:'✓',cls:'ok'}, _V={t:'●',cls:'dot'}, _B={cls:'blk'}, _G={cls:'grn'};
+
+/* ---------- first-run tutorial ---------- */
+const TUTORIAL=[
+  {emoji:'🔍', title:'Welkom, detective',
+   body:'Er is een moord gepleegd. Eén van deze verdachten is de dader. De aanwijzingen vertellen je wie het was — en waar iedereen zich bevond.'},
+  {emoji:'🧩', title:'Zo los je de zaak op',
+   body:'Het slachtoffer was alleen met de moordenaar. Zoek precies uit waar elk personage stond. Elke kaart toont de aanwijzing van dat personage.'},
+  {emoji:'⚠️', title:'Eén per rij en kolom',
+   body:'Elke rij en elke kolom bevat precies één personage. Als je iemand plaatst, vervallen alle andere vakken in diezelfde rij en kolom.',
+   fig:()=>miniGrid([[_E,_E,_X,_E],[_X,_X,_A,_X],[_E,_E,_X,_E],[_E,_E,_X,_E]])},
+  {emoji:'🧭', title:"Wat 'naast' betekent",
+   body:'Naast betekent direct links, rechts, boven of onder — én in dezelfde ruimte. Niet diagonaal.',
+   fig:()=>miniGrid([[_E,_OK,_E],[_OK,_O,_X],[_E,_OK,_E]])},
+  {emoji:'👆', title:'Plaats de personages',
+   body:'Tik op een verdachte om die te kiezen, en tik dan op een vak in het raster. Tik nog eens op hetzelfde vak om te wissen. Gebruik het raster om te redeneren.'},
+  {emoji:'🕵️', title:'Kraak de zaak',
+   body:'Heb je iedereen geplaatst? Beschuldig dan de moordenaar met de knop ⚖ Beschuldig. Bij zaken met een oplossing kun je je raster ook controleren. Succes!'},
+];
+function openTutorial(step){
+  step = step||0;
+  const s=TUTORIAL[step];
+  const wrap=el('div');
+  wrap.appendChild(Object.assign(el('div','tut-emoji'),{textContent:s.emoji}));
+  wrap.appendChild(Object.assign(el('div','tut-title'),{textContent:s.title}));
+  wrap.appendChild(Object.assign(el('div','tut-body'),{textContent:s.body}));
+  if(s.fig) wrap.appendChild(s.fig());
+  const dots=el('div','tut-dots');
+  TUTORIAL.forEach((_,i)=>{ const d=el('i',i===step?'on':''); dots.appendChild(d); });
+  wrap.appendChild(dots);
+  const nav=el('div','tut-nav');
+  const skip=el('button','skip','Overslaan'); skip.onclick=finishTutorial;
+  nav.appendChild(skip); nav.appendChild(el('div','spacer'));
+  if(step>0){ const b=el('button','btn','Terug'); b.onclick=()=>openTutorial(step-1); nav.appendChild(b); }
+  const next=el('button','btn primary', step===TUTORIAL.length-1?'Spelen!':'Volgende');
+  next.onclick=()=> step===TUTORIAL.length-1 ? finishTutorial() : openTutorial(step+1);
+  nav.appendChild(next);
+  wrap.appendChild(nav);
+  modal(wrap);
+}
+function finishTutorial(){ store.settings.tutorialDone=true; persist(); closeModal(); }
+
+/* ---------- how to play reference ---------- */
+function openHowTo(){
+  const w=el('div','htp');
+  w.appendChild(Object.assign(el('h2'),{textContent:'Hoe te spelen'}));
+  w.appendChild(Object.assign(el('h4'),{textContent:'Doel'}));
+  w.appendChild(Object.assign(el('p'),{textContent:'De moordenaar was alleen met het slachtoffer, in dezelfde ruimte. Gebruik de aanwijzingen om uit te zoeken wie waar was.'}));
+  w.appendChild(Object.assign(el('h4'),{textContent:'Regels'}));
+  const ul1=el('ul');
+  ['Eén persoon per rij en per kolom.',
+   'Verdachten staan alleen op vrije vakken (niet op tafels, planten, enz.).',
+   'Het slachtoffer ligt in het laatst overgebleven vak.'].forEach(t=>ul1.appendChild(Object.assign(el('li'),{textContent:t})));
+  w.appendChild(ul1);
+  w.appendChild(Object.assign(el('h4'),{textContent:'Bediening'}));
+  const ul2=el('ul');
+  ['Tik op een verdachte om die te selecteren.',
+   'Tik op een vak om die verdachte te plaatsen; tik nog eens om te wissen.',
+   'Kies "Wissen" in het palet om vakken leeg te maken.',
+   'Bij zaken met een oplossing: "Controleer raster" of "Toon oplossing".'].forEach(t=>ul2.appendChild(Object.assign(el('li'),{textContent:t})));
+  w.appendChild(ul2);
+  w.appendChild(Object.assign(el('h4'),{textContent:'Trefwoorden'}));
+  const kw=el('div','kw');
+  const K=[
+    ['naast','Links, rechts, boven of onder, én in dezelfde ruimte.', [[_E,_OK,_E],[_OK,_O,_X],[_E,_OK,_E]]],
+    ['alleen','Niemand anders in de ruimte (ook het slachtoffer niet).', [[_X,_X,_G],[_X,_A,_G],[_X,_G,_G]]],
+    ['alleen met','Alleen deze twee personen waren in de ruimte.', [[_X,_X,_G],[_X,_A,_G],[{t:'B',cls:'a'},_G,_G]]],
+    ['hoek','Waar twee muren van een kamer samenkomen.', [[_O,_E,_O],[_E,_E,_E],[_E,_O,_E]]],
+    ['rij','Een horizontale lijn van vakken.', [[_E,_E,_E],[_O,_O,_O],[_E,_E,_E]]],
+    ['kolom','Een verticale lijn van vakken.', [[_E,_O,_E],[_E,_O,_E],[_E,_O,_E]]],
+    ['links van (a)','Elk vak links van (a).', [[_O,_O,_E],[_O,_A,_E],[_O,_O,_E]]],
+    ['rechts van (a)','Elk vak rechts van (a).', [[_E,_O,_O],[_E,_A,_O],[_E,_O,_O]]],
+  ];
+  K.forEach(([name,desc,g])=>{
+    const box=el('div','box');
+    box.appendChild(Object.assign(el('b'),{textContent:name}));
+    box.appendChild(Object.assign(el('small'),{textContent:desc}));
+    box.appendChild(miniGrid(g));
+    kw.appendChild(box);
+  });
+  w.appendChild(kw);
+  const row=el('div','row');
+  const c=el('button','btn primary','Sluiten'); c.onclick=closeModal; row.appendChild(c);
+  w.appendChild(row);
+  modal(w);
 }
 
 function openHints(){
