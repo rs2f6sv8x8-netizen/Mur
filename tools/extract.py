@@ -166,12 +166,16 @@ def parse_clue_page(page_path):
         if len(centers) <= 1:
             return 0
         return min(range(len(centers)), key=lambda k: abs(s['left'] - centers[k]))
+    # Identify suspect spans in DOCUMENT order (the clue-starter follows the name
+    # in reading order); column-sorting for grouping must not change this.
+    suspect_ids = {id(clue_spans[i]) for i in range(len(clue_spans))
+                   if is_suspect(i, clue_spans)}
     indexed = list(enumerate(clue_spans))
     indexed.sort(key=lambda it: (col_of(it[1]), it[0]))
     order = [s for _, s in indexed]
     groups, cur, pre = [], None, []
-    for i, s in enumerate(order):
-        if is_suspect(i, order):
+    for s in order:
+        if id(s) in suspect_ids:
             cur = {'name': repair(s['text'].strip()), 'clue': []}
             groups.append(cur)
         elif cur is not None:
@@ -364,6 +368,12 @@ def process_book(oebps, opf, book_id, img_out, prefix):
             rules += grid['notes']
         rules = [r for r in rules if r and 'hoofdinspecteur' not in r.lower()
                  and not r.lower().startswith('detective')]
+        # a solution is only playable if every solution letter maps to a suspect
+        sol_cells = solmap[num]['cells'] if solmap.get(num, {}).get('trustworthy') else None
+        if sol_cells is not None:
+            want = set(s['letter'] for s in suspects) | ({'V'} if victim else set())
+            if set(sol_cells) != want:
+                sol_cells = None
         puzzles.append({
             'book': book_id, 'num': num, 'title': pc['title'], 'flavor': pc['flavor'],
             'n': n,
@@ -375,8 +385,8 @@ def process_book(oebps, opf, book_id, img_out, prefix):
             'scene': scene_name,
             'murderer': sol.get('murderer'),
             'hintSteps': sol.get('steps', []),
-            'solution': solmap[num]['cells'] if solmap.get(num, {}).get('trustworthy') else None,
-            'solutionVerified': solmap.get(num, {}).get('verified', False),
+            'solution': sol_cells,
+            'solutionVerified': solmap.get(num, {}).get('verified', False) if sol_cells else False,
             'difficulty': difficulty(num, n, has_special),
         })
     return puzzles
@@ -386,7 +396,7 @@ if __name__ == '__main__':
     OUT = os.path.join(S, 'out'); IMG = os.path.join(OUT, 'scenes')
     os.makedirs(IMG, exist_ok=True)
     b1 = process_book(os.path.join(S, 'epub1/OEBPS'), os.path.join(S, 'epub1/OEBPS/package.opf'), 1, IMG, 'b1_')
-    b2 = process_book(os.path.join(S, 'epub2/OEBPS'), os.path.join(S, 'epub2/content.opf'), 2, IMG, 'b2_')
+    b2 = process_book(os.path.join(S, 'epub2orig/OEBPS'), os.path.join(S, 'epub2orig/OEBPS/package.opf'), 2, IMG, 'b2_')
     print('Book1:', len(b1), 'Book2:', len(b2))
     allp = b1 + b2
     for i, p in enumerate(allp):

@@ -15,7 +15,7 @@ Capacitor for a native App Store build.
 
 ## Features
 
-- **154 cases** extracted from the two books (titles, suspects, clues, room
+- **155 cases** extracted from the two books (titles, suspects, clues, room
   labels, special rules, murderer, step‑by‑step hints, difficulty, and the
   original crime‑scene illustration for each case).
 - **Crime scene** — the book's real floor‑plan illustration, tap to zoom.
@@ -25,7 +25,8 @@ Capacitor for a native App Store build.
 - **Timer** with a saved best time per case.
 - **Hints** — reveal the book's own solution reasoning one step at a time.
 - **Accuse** — pick the suspect; the app checks against the real murderer.
-- **Full‑grid check** — for the 54 cases where the solved grid was recovered, a
+- **Full‑grid check** — for the 48 cases (both books) where the solved grid was
+  recovered, a
   *Controleer raster* button marks each placed suspect green/red, *Toon
   oplossing* reveals the full solution, and a correct accusation with a correct
   grid earns a "Perfect raster".
@@ -42,7 +43,7 @@ css/style.css         styles (iPad‑first, theme‑aware)
 js/app.js             app logic (router, play, hints, accuse, settings)
 sw.js                 service worker (offline)
 manifest.webmanifest  PWA manifest
-data/puzzles.json     all 154 cases
+data/puzzles.json     all 155 cases
 assets/scenes/*.jpg   crime‑scene illustrations
 icons/                app icons
 tools/extract.py      the EPUB → puzzles.json extraction pipeline
@@ -70,14 +71,19 @@ layouts, and maps each case to its murderer and solution steps from the
   (154 of 160), and ~15 cases in Book 2's themed sections have an approximate
   grid size or suspect list. The scene image, clues, and answer still work for
   the extracted cases. The pipeline in `tools/` can be refined to close these.
-- Full **placement** checking is available for **54 Book 1 cases**: their solved
-  grids were recovered automatically because each suspect's letter is positioned
-  at its cell in the *Oplossingen* pages, so `(row, col)` falls out of ranking
-  the coordinates (validated against the puzzles' positional clues — zero
-  violations). Book 2's solution pages instead show only coloured figures with a
-  side legend, so those grids need image recognition (future work). Every case
-  where a murderer was extracted still checks the **murderer** — the puzzle's
-  actual answer.
+- Full **placement** checking is available for **48 cases across both books**.
+  Their solved grids were recovered automatically because each suspect's letter
+  is positioned at its cell in the *Oplossingen* pages, so `(row, col)` falls out
+  of ranking the coordinates (every case is a permutation — one person per row
+  and column). Grids are matched to puzzles by title/murderer proximity and
+  validated against the puzzles' positional clues (zero violations); only grids
+  whose letters exactly match the extracted suspects are shipped. The rest are
+  limited by suspect‑list extraction accuracy on irregular layouts. Every case
+  where a murderer was extracted (143/155) still checks the **murderer** — the
+  puzzle's actual answer.
+- The original Book 2 EPUB (`Manuel_Garand-Murdoku_-_Terug_in_de_tijd.epub`) is
+  kept in the repo because the pipeline needs the source fixed‑layout files to
+  regenerate the data; it is not used at runtime.
 
 Puzzle content © Manuel Garand / Uitgeverij Lannoo. This app is a personal
 companion for the print books.

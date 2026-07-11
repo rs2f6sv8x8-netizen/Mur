@@ -25,46 +25,101 @@ def cluster_rank(vals, gap_frac=0.5):
         ranks[v] = r; prev = v
     return ranks
 
+def _band_split(pts):
+    """Split points [(L,left,bottom)] into vertical bands (separate grids)."""
+    if not pts:
+        return []
+    bys = sorted(pts, key=lambda p: -p[2])
+    bottoms = [p[2] for p in bys]
+    diffs = [bottoms[i]-bottoms[i+1] for i in range(len(bottoms)-1)]
+    if not diffs:
+        return [bys]
+    med = sorted(diffs)[len(diffs)//2] or 1
+    bands = [[bys[0]]]
+    for i in range(1, len(bys)):
+        if bottoms[i-1]-bottoms[i] > max(med*3, 4000):
+            bands.append([])
+        bands[-1].append(bys[i])
+    return bands
+
+def _resolve_band(band):
+    """Drop axis labels / far-left legend duplicates; return {letter:(left,bottom)}."""
+    import statistics
+    band = [p for p in band if p[0] not in ('K', 'R')]
+    if not band:
+        return {}
+    med_left = statistics.median([p[1] for p in band])
+    chosen = {}
+    for L, left, bottom in band:
+        if L not in chosen:
+            chosen[L] = (left, bottom)
+        else:
+            # keep the occurrence nearest the grid's left-centroid (drops legend outlier)
+            if abs(left-med_left) < abs(chosen[L][0]-med_left):
+                chosen[L] = (left, bottom)
+    return chosen
+
 def extract_page_grids(page_path):
-    """Return list of grids on the page (doc order): each {'letters':{L:(row,col)}, 'n':N}."""
+    """Return the solution grids on a page: each {'letters':{L:(row,col)}, 'n', 'perm'}.
+    Letters are positioned at their cells; ranking coordinates yields row/col."""
     spans = get_spans(page_path)
-    # group single-letter spans by font
-    byfont = {}
+    # "letter fonts" are used only for single capital letters (grid cells / axis),
+    # never for words -> this excludes room-label fragments like the L of LOGEERKAMER.
+    from collections import defaultdict
+    font_texts = defaultdict(list)
     for s in spans:
-        t = s['text'].strip()
-        if re.fullmatch(r'[A-Z]', t):
-            byfont.setdefault(s['font'], []).append(s)
+        font_texts[s['font']].append(s['text'].strip())
+    letter_fonts = {f for f, ts in font_texts.items()
+                    if not any(re.search(r'[A-Za-z]{2,}', t) for t in ts)   # no words
+                    and any(re.fullmatch(r'[A-Z]', t) for t in ts)}          # has a lone letter
+    pts = [(s['text'].strip(), s['left'], s['bottom']) for s in spans
+           if re.fullmatch(r'[A-Z]', s['text'].strip()) and (s['left'] or s['bottom'])
+           and s['font'] in letter_fonts]
     grids = []
-    # preserve doc order of fonts by first appearance
-    seen = []
-    for s in spans:
-        if s['font'] in byfont and s['font'] not in seen:
-            seen.append(s['font'])
-    for f in seen:
-        group = byfont[f]
-        letters = [g['text'].strip() for g in group]
-        if len(set(letters)) != len(letters):
-            continue  # duplicate letters -> not a clean per-cell grid
-        if 'V' not in letters or len(letters) < 4:
+    for band in _band_split(pts):
+        chosen = _resolve_band(band)
+        if 'V' not in chosen or len(chosen) < 4:
             continue
-        lefts = [g['left'] for g in group]
-        bottoms = [g['bottom'] for g in group]
+        lefts = [v[0] for v in chosen.values()]
+        bottoms = [v[1] for v in chosen.values()]
         colrank = cluster_rank(lefts)
-        rowrank = cluster_rank(bottoms)   # ascending: rank 0 = lowest bottom = bottom of page
+        rowrank = cluster_rank(bottoms)
         nrows = max(rowrank.values())+1
-        # row 1 = top = highest bottom -> invert
         cells = {}
-        for g in group:
-            L = g['text'].strip()
-            col = colrank[g['left']] + 1
-            row = (nrows - rowrank[g['bottom']])   # top -> 1
-            cells[L] = (row, col)
-        # sanity: it should be a permutation (distinct rows, distinct cols)
+        for L, (left, bottom) in chosen.items():
+            cells[L] = (nrows - rowrank[bottom], colrank[left] + 1)
         rows = [c[0] for c in cells.values()]; cols = [c[1] for c in cells.values()]
-        perm_ok = len(set(rows))==len(rows) and len(set(cols))==len(cols)
-        grids.append({'letters': cells, 'n': len(letters), 'perm': perm_ok,
-                      'font': f})
+        perm_ok = len(set(rows)) == len(rows) and len(set(cols)) == len(cols)
+        ymean = sum(bottoms) / len(bottoms)
+        grids.append({'letters': cells, 'n': len(cells), 'perm': perm_ok, 'y': ymean})
     return grids
+
+def title_spans(page_path, known=None):
+    """Return [(num, y)] for puzzle title headings on a solution page. Accepts
+    'N. Title' and bare 'N.' (split titles). Gated to `known` puzzle numbers."""
+    out = []
+    for s in get_spans(page_path):
+        t = fix(s['text'])
+        m = re.match(r'^(\d{1,2})\.\s+[A-ZÀ-Þ][a-zà-ÿ]', t)
+        if m and (s['left'] or s['bottom']) and len(t) < 60:
+            num = int(m.group(1))
+            if known is None or num in known:
+                out.append((num, s['bottom']))
+    # de-duplicate by num, keeping the first occurrence's position
+    seen = {}
+    for num, y in out:
+        seen.setdefault(num, y)
+    return list(seen.items())
+
+def murderer_spans(page_path):
+    """Return [(name, y)] for murderer-name spans (colour c3) on a solution page."""
+    out = []
+    for s in get_spans(page_path):
+        t = s['text'].strip()
+        if s['color'] == 'c3' and re.fullmatch(r"[A-ZÀ-Þ][A-Za-zà-ÿ'\-]{2,}", t) \
+                and t.lower() != 'de' and (s['left'] or s['bottom']):
+            out.append((t, s['bottom']))
+    return out
 
 if __name__ == '__main__':
     S = os.path.dirname(os.path.abspath(__file__))
@@ -87,8 +142,9 @@ def step_pairs(steps):
         for m in re.finditer(r'kolom\s*(\d+)[^.]{0,14}?rij\s*(\d+)',st): P.add((int(m.group(2)),int(m.group(1))))
     return P
 
-def _score(gr, num, sols, clue_suspects):
-    """Score a (grid,puzzle) pairing: higher = more consistent."""
+def _score(gr, num, sols, clue_suspects, mspans, other_ys):
+    """Score a (grid,puzzle) pairing: higher = more consistent.
+    Returns (score, hard_pair, hard_clue, murd_near)."""
     cells = gr['letters']; coords = set(cells.values())
     people = clue_suspects.get(num, [])
     score = 0.0
@@ -101,61 +157,61 @@ def _score(gr, num, sols, clue_suspects):
     ok, tot = check_constraints(clue_constraints(people, gr['n']), cells)
     if tot:
         score += 6*ok - 8*(tot-ok)
+    # a murderer-name span (colour c3) that is a suspect of THIS puzzle and sits
+    # nearest this grid is a strong anchor (works even when the murderer text
+    # wasn't parsed, e.g. book 2's "moorddenaar" spelling).
+    names_here = {s['name'] for s in people}
+    murd_near = False
+    my = [y for nm, y in mspans if nm in names_here]
+    if my:
+        dmine = min(abs(y-gr['y']) for y in my)
+        closest = all(dmine <= min(abs(y-oy) for y in my) for oy in other_ys) if other_ys else True
+        if closest:
+            score += 40; murd_near = True
+        else:
+            score -= 10
     # letter-count agreement (grid letters vs suspects+victim)
     if len(cells) == len(people):
         score += 3
-    return score, (P and len(P & coords) == len(P) and len(P) > 0), (tot and ok == tot)
+    return score, (P and len(P & coords) == len(P) and len(P) > 0), (tot and ok == tot), murd_near
 
 def build_solutions(sol_pages, titles, sols, clue_suspects):
-    """Map each solution grid to its puzzle. The grids on a page form a forced
-    bijection with that page's puzzles, so we pick the best full pairing.
-    Returns {num: {'cells':{letter:[r,c]}, 'verified':bool}}."""
+    """Map each solution grid to its puzzle by pairing grids to the murderer-name
+    span nearest them (murderer -> puzzle number), then validate against clues.
+    Returns {num: {'cells':{letter:[r,c]}, 'verified':bool, 'trustworthy':bool}}."""
     import itertools
     out = {}
     for pp in sol_pages:
         grids = extract_page_grids(pp)
         if not grids:
             continue
-        txt = fix(page_text(pp))
-        nums = [num for num, title in titles.items()
-                if re.search(str(num)+r'\.\s{0,3}[A-Za-zÀ-ÿ ]{0,22}?'+re.escape(_sig_word(title)[:5]), txt, re.I)]
-        if not nums:
+        tspans = title_spans(pp, known=set(clue_suspects))   # reliable anchor
+        if not tspans:
             continue
+        # assign grids -> titles by minimising total vertical distance (bijection)
+        nums = [num for num, y in tspans]
+        tys = {num: y for num, y in tspans}
         gi_list = list(range(len(grids)))
-        best_assign = None; best_total = None
-        # enumerate injective maps grid->num over the smaller set
+        best_assign, best_cost = None, None
         if len(grids) <= len(nums):
             for perm in itertools.permutations(nums, len(grids)):
-                total = 0
-                for gi, num in zip(gi_list, perm):
-                    sc, hp, hc = _score(grids[gi], num, sols, clue_suspects)
-                    total += sc
-                if best_total is None or total > best_total:
-                    best_total = total; best_assign = list(zip(gi_list, perm))
+                cost = sum(abs(grids[gi]['y'] - tys[num]) for gi, num in zip(gi_list, perm))
+                if best_cost is None or cost < best_cost:
+                    best_cost, best_assign = cost, list(zip(gi_list, perm))
         else:
             for perm in itertools.permutations(gi_list, len(nums)):
-                total = 0
-                for gi, num in zip(perm, nums):
-                    sc, hp, hc = _score(grids[gi], num, sols, clue_suspects)
-                    total += sc
-                if best_total is None or total > best_total:
-                    best_total = total; best_assign = list(zip(perm, nums))
-        # a pairing is "anchored" (reliable bijection) if any member is verified,
-        # or the page is a single grid<->single num.
-        details = []
+                cost = sum(abs(grids[gi]['y'] - tys[num]) for gi, num in zip(perm, nums))
+                if best_cost is None or cost < best_cost:
+                    best_cost, best_assign = cost, list(zip(perm, nums))
         for gi, num in best_assign:
-            sc, hp, hc = _score(grids[gi], num, sols, clue_suspects)
-            details.append((gi, num, hp, hc))
-        anchored = any(hp or hc for _, _, hp, hc in details) or (len(grids) == 1 and len(nums) == 1)
-        for gi, num, hp, hc in details:
             gr = grids[gi]
             cells = {k: (v[0], v[1]) for k, v in gr['letters'].items()}
+            # validate against positional clues; drop if it violates one
             ok, tot = check_constraints(clue_constraints(clue_suspects.get(num, []), gr['n']), cells)
             if tot > 0 and ok < tot:
-                continue  # solution violates a positional clue -> don't trust it
+                continue
             out[num] = {'cells': {k: [v[0], v[1]] for k, v in cells.items()},
-                        'verified': bool(hp or hc),
-                        'trustworthy': bool(anchored)}
+                        'verified': bool(tot > 0 and ok == tot), 'trustworthy': True}
     return out
 
 # ---- positional-clue constraint matching (robust grid->puzzle mapping) ----
