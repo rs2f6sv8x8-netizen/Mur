@@ -18,6 +18,11 @@ Capacitor for a native App Store build.
 - **155 cases** extracted from the two books (titles, suspects, clues, room
   labels, special rules, murderer, step‑by‑step hints, difficulty, and the
   original crime‑scene illustration for each case).
+- **Case‑file home**, styled after murdoku.com: every case is a sealed kraft
+  **envelope** ("CASE AVAILABLE! — click to reveal") that flips to a file card
+  showing the crime‑scene peek, title, difficulty tier badge, grid size and
+  suspect count. Filter by difficulty tier (Very Easy → Expert) and sort by
+  difficulty or case number.
 - **Crime scene** — the book's real floor‑plan illustration, tap to zoom.
 - **On‑scene placement** — for 115 cases, the interactive grid is overlaid
   directly on the crime‑scene illustration (like murdoku.com), with row/column
@@ -29,9 +34,10 @@ Capacitor for a native App Store build.
   Placing someone automatically crosses out (✕) the rest of their row and
   column. A manual **✕ tool** marks any cell impossible yourself, **⌫** erases
   one cell (hold to clear the whole grid), and **↺** undoes the last action.
-- **Clues** in the original Dutch, per suspect — the suspect list doubles as
-  the placement selector, with the victim highlighted and placed suspects
-  dimmed.
+- **Clues** in the original Dutch, per suspect — shown on parchment suspect
+  cards (silhouette avatar + colour‑coded letter badge) that double as the
+  placement selector, with the victim highlighted red as *het slachtoffer*, the
+  selected suspect outlined, and placed suspects dimmed.
 - **Timer** with a saved best time per case.
 - **Hints** — a one‑at‑a‑time hint viewer (paged, "Hint N / total") revealing
   the book's own solution reasoning, with suspect letters shown as coloured
@@ -40,9 +46,10 @@ Capacitor for a native App Store build.
   recovered solution grid, it validates the whole board (marking cells
   green/red) and reveals the murderer on a correct solve; for the rest it asks
   you to name the murderer, checked against the extracted answer.
-- **Difficulty** — a 1–5 skull rating per case.
-- **Progression** — cases unlock in order as you solve them (can be disabled in
-  settings); progress, times, and in‑progress boards are saved locally.
+- **Difficulty** — a 1–5 rating per case, shown as a named tier badge
+  (Very Easy, Easy, Medium, Hard, Expert).
+- **Progress** — solved cases, best times, revealed envelopes and in‑progress
+  boards are all saved locally; any case can be opened in any order.
 - **First‑run tutorial** and an in‑app **how‑to‑play** reference (rules,
   controls, keyword glossary: *naast*, *alleen*, *alleen met*, *hoek*, *rij*,
   *kolom*, …), mirroring the site's onboarding.
