@@ -14,15 +14,26 @@ function saveStore(s){ try { localStorage.setItem(STORE, JSON.stringify(s)); } c
 let store = loadStore();
 store.solved  = store.solved  || {};      // id -> {time, hints}
 store.state   = store.state   || {};      // id -> {elapsed, cells, accused}
+store.revealed= store.revealed|| {};      // id -> true  (envelope opened on home)
 store.settings= store.settings|| { theme:'auto', unlockAll:false };
 function persist(){ saveStore(store); }
+
+/* ---------- difficulty tiers (1–5 → named tiers, like murdoku.com) ---------- */
+const DIFF_TIERS = [
+  null,
+  { key:'very-easy', label:'Very Easy', short:'VERY EASY' },
+  { key:'easy',      label:'Easy',      short:'EASY' },
+  { key:'medium',    label:'Medium',    short:'MEDIUM' },
+  { key:'hard',      label:'Hard',      short:'HARD' },
+  { key:'expert',    label:'Expert',    short:'EXPERT' },
+];
+function tierOf(p){ return DIFF_TIERS[Math.max(1,Math.min(5,p.difficulty||1))]; }
 
 /* ---------- helpers ---------- */
 const $  = (s,r=document)=>r.querySelector(s);
 const el = (t,cls,txt)=>{ const e=document.createElement(t); if(cls)e.className=cls; if(txt!=null)e.textContent=txt; return e; };
 function fmtTime(sec){ sec=Math.max(0,Math.floor(sec)); const m=Math.floor(sec/60), s=sec%60;
   return (m<10?'0':'')+m+':'+(s<10?'0':'')+s; }
-function skulls(d){ let out=''; for(let i=1;i<=5;i++) out+= i<=d?'<span>☠</span>':'<span class="off">☠</span>'; return out; }
 function suspColor(letter, idx){ if(letter==='V') return VICTIM_COLOR; return SUSPECT_COLORS[idx % SUSPECT_COLORS.length]; }
 function toast(msg){
   const t=el('div','toast',msg); document.body.appendChild(t);
@@ -36,6 +47,12 @@ function applyTheme(){
   else document.documentElement.setAttribute('data-theme', t);
 }
 applyTheme();
+function cycleTheme(){
+  const effectiveDark = document.documentElement.getAttribute('data-theme')==='dark'
+    || (!document.documentElement.getAttribute('data-theme') && matchMedia('(prefers-color-scheme:dark)').matches);
+  store.settings.theme = effectiveDark ? 'light' : 'dark';
+  persist(); applyTheme();
+}
 
 /* ---------- data ---------- */
 let PUZZLES=[]; let BY_ID={};
@@ -45,15 +62,6 @@ async function loadPuzzles(){
   PUZZLES.forEach(p=>{ BY_ID[p.id]=p; });
 }
 
-function isUnlocked(p){
-  if(store.settings.unlockAll) return true;
-  if(p.id===1) return true;
-  return !!store.solved[p.id-1] || !!store.solved[p.id];
-}
-function firstUnsolved(){
-  for(const p of PUZZLES){ if(!store.solved[p.id]) return p.id; }
-  return PUZZLES.length ? PUZZLES[PUZZLES.length-1].id : 1;
-}
 
 /* ===================== ROUTER ===================== */
 function router(){
@@ -65,75 +73,119 @@ function router(){
 window.addEventListener('hashchange', router);
 
 /* ===================== HOME ===================== */
-let homeFilter = 'all';   // all | book1 | book2
+let homeFilter = 0;          // 0 = all, 1..5 = difficulty tier
+let homeSort   = 'difficulty'; // difficulty | number
+let hideDone   = false;
 function renderHome(){
   stopTimer();
   const app = $('#app'); app.innerHTML='';
   const total = PUZZLES.length;
   const solvedCount = Object.keys(store.solved).filter(id=>BY_ID[id]).length;
-  const times = Object.values(store.solved).map(s=>s.time).filter(t=>t>0);
-  const bestT = times.length ? Math.min(...times) : 0;
 
-  const wrap = el('div','wrap');
+  const page = el('div','home');
 
-  const hero = el('div','home-hero');
-  hero.innerHTML = `<div class="tag">Moordmysterie-puzzels</div>
-    <h1>Mur<span class="knife">☠</span>doku</h1>`;
-  wrap.appendChild(hero);
+  /* ---- site header ---- */
+  const head = el('header','site-head');
+  const brand = el('div','brand');
+  brand.innerHTML = `<span class="logo">MUR<b>DOKU</b></span><span class="byline">by Manuel Garand</span>`;
+  brand.onclick = ()=>{ window.scrollTo({top:0,behavior:'smooth'}); };
+  const acts = el('div','head-actions');
+  const themeBtn = el('button','round-btn'); themeBtn.innerHTML = document.documentElement.getAttribute('data-theme')==='dark'||(!document.documentElement.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches) ? '☀' : '🌙';
+  themeBtn.title='Thema'; themeBtn.onclick=()=>{ cycleTheme(); renderHome(); };
+  const setBtn = el('button','round-btn'); setBtn.innerHTML='⚙'; setBtn.title='Instellingen'; setBtn.onclick=openSettings;
+  const helpBtn = el('button','round-btn'); helpBtn.innerHTML='?'; helpBtn.title='Hoe te spelen'; helpBtn.onclick=openHowTo;
+  acts.append(helpBtn,setBtn,themeBtn);
+  head.append(brand,acts);
+  page.appendChild(head);
 
-  const pc = el('div','progress-card');
-  pc.innerHTML = `
-    <div class="pc-stat"><div class="pc-num">${solvedCount}<span style="color:var(--faint);font-size:16px">/${total}</span></div><div class="pc-lbl">Opgelost</div></div>
-    <div class="pc-stat"><div class="pc-num">${Math.round(solvedCount/total*100)||0}%</div><div class="pc-lbl">Voortgang</div></div>
-    <div class="pc-stat"><div class="pc-num">${bestT?fmtTime(bestT):'—'}</div><div class="pc-lbl">Beste tijd</div></div>
-    <div class="bar"><i style="width:${(solvedCount/total*100)||0}%"></i></div>`;
-  wrap.appendChild(pc);
+  const main = el('div','home-main');
 
-  const tb = el('div','toolbar');
-  const seg = el('div','seg');
-  [['all','Alle'],['book1','Boek 1'],['book2','Boek 2']].forEach(([k,l])=>{
-    const b=el('button',homeFilter===k?'on':'',l); b.onclick=()=>{ homeFilter=k; renderHome(); }; seg.appendChild(b);
+  main.appendChild(Object.assign(el('h1','home-title'),{textContent:'Select a puzzle to play'}));
+
+  const alpha = el('div','alpha-note');
+  alpha.innerHTML = `<span class="alpha-badge">ALPHA</span>
+    <span>Een speelbare companion voor de Murdoku-boeken. Kies een zaak, lees de aanwijzingen en ontmasker de moordenaar.</span>`;
+  main.appendChild(alpha);
+
+  const counts = el('div','counts');
+  counts.innerHTML = `<b>${total}</b> puzzels &nbsp;·&nbsp; <span>${solvedCount} opgelost</span>`;
+  main.appendChild(counts);
+
+  /* ---- difficulty tier tabs ---- */
+  const tabs = el('div','difftabs');
+  const mk = (key,label)=>{ const b=el('button','difftab'+(homeFilter===key?' on':'')+(typeof key==='number'&&key?' t'+key:''),label);
+    b.onclick=()=>{ homeFilter=key; renderHome(); }; return b; };
+  tabs.appendChild(mk(0,'All'));
+  for(let d=1; d<=5; d++) tabs.appendChild(mk(d, DIFF_TIERS[d].label));
+  main.appendChild(tabs);
+
+  /* ---- sort row ---- */
+  const sortRow = el('div','sortrow');
+  const lbl = el('span','sort-lbl','Sorteer op:');
+  const sel = el('select','sort-sel');
+  [['difficulty','Moeilijkheid'],['number','Zaaknummer']].forEach(([v,t])=>{
+    const o=el('option',null,t); o.value=v; if(homeSort===v) o.selected=true; sel.appendChild(o);
   });
-  tb.appendChild(seg);
-  tb.appendChild(el('div','spacer'));
-  const contBtn = el('button','btn primary','▸ Doorgaan');
-  contBtn.onclick=()=>{ location.hash='#/play/'+firstUnsolved(); };
-  tb.appendChild(contBtn);
-  const helpBtn = el('button','icon-btn'); helpBtn.innerHTML='?'; helpBtn.title='Hoe te spelen';
-  helpBtn.onclick=openHowTo; tb.appendChild(helpBtn);
-  const setBtn = el('button','icon-btn'); setBtn.innerHTML='⚙'; setBtn.title='Instellingen';
-  setBtn.onclick=openSettings; tb.appendChild(setBtn);
-  wrap.appendChild(tb);
+  sel.onchange=()=>{ homeSort=sel.value; renderHome(); };
+  const hideBtn = el('button','pill-btn'+(hideDone?' on':''), hideDone?'✓ Opgeloste verborgen':'Verberg opgeloste');
+  hideBtn.onclick=()=>{ hideDone=!hideDone; renderHome(); };
+  sortRow.append(lbl,sel,el('div','spacer'),hideBtn);
+  main.appendChild(sortRow);
 
-  const grid = el('div','grid-cases');
-  let lastBook=null;
-  PUZZLES.filter(p=> homeFilter==='all' || (homeFilter==='book1'&&p.book===1) || (homeFilter==='book2'&&p.book===2))
-    .forEach(p=>{
-      if(homeFilter==='all' && p.book!==lastBook){
-        lastBook=p.book;
-        const bh=el('div','book-head', p.book===1?'Boek 1 — Moordmysteries':'Boek 2 — Terug in de tijd');
-        grid.appendChild(bh);
-      }
-      grid.appendChild(caseCard(p));
-    });
-  wrap.appendChild(grid);
-  app.appendChild(wrap);
+  /* ---- case grid ---- */
+  const grid = el('div','case-grid');
+  let list = PUZZLES.slice();
+  if(homeFilter) list = list.filter(p=>Math.max(1,Math.min(5,p.difficulty))===homeFilter);
+  if(hideDone)   list = list.filter(p=>!store.solved[p.id]);
+  if(homeSort==='difficulty') list.sort((a,b)=> (a.difficulty-b.difficulty) || (a.id-b.id));
+  else list.sort((a,b)=>a.id-b.id);
+  list.forEach(p=> grid.appendChild(caseCard(p)));
+  if(!list.length) grid.appendChild(Object.assign(el('div','empty-note'),{textContent:'Geen zaken in deze selectie.'}));
+  main.appendChild(grid);
+
+  page.appendChild(main);
+  app.appendChild(page);
   window.scrollTo(0,0);
 }
 
 function caseCard(p){
-  const unlocked = isUnlocked(p);
-  const solved = store.solved[p.id];
-  const c = el('button','case'+(solved?' solved':'')+(unlocked?'':' locked'));
-  c.innerHTML = `<div class="no">Zaak ${p.id}</div>
-    <div class="ttl">${escapeHtml(p.title||'Onbekende zaak')}</div>
-    <div class="meta"><span class="skulls">${skulls(p.difficulty)}</span>
-    ${solved&&solved.time?`<span class="best">${fmtTime(solved.time)}</span>`:''}</div>`;
-  c.onclick=()=>{
-    if(!unlocked){ toast('Los eerst zaak '+(p.id-1)+' op'); return; }
-    location.hash='#/play/'+p.id;
-  };
-  return c;
+  const solved = !!store.solved[p.id];
+  const revealed = !!store.revealed[p.id] || solved;
+  const tier = tierOf(p);
+  const card = el('div','case-card'+(revealed?' open':' sealed')+(solved?' done':'')+' '+tier.key);
+
+  // the crime-scene peek (top of the card / behind the flap)
+  const peek = el('div','peek');
+  const img = el('img'); img.loading='lazy'; img.alt=''; img.src='assets/scenes/'+(p.scene||'');
+  peek.appendChild(img);
+  card.appendChild(peek);
+
+  if(!revealed){
+    const flap = el('div','flap');
+    flap.innerHTML = `<div class="flap-text"><span class="ca">CASE AVAILABLE!</span><span class="ctr">KLIK OM TE ONTHULLEN</span></div>`;
+    card.appendChild(flap);
+    card.onclick=()=>{ store.revealed[p.id]=true; persist(); renderHome(); };
+  } else {
+    const info = el('div','case-info');
+    const clueCount = (p.suspects||[]).filter(s=>s.clue).length;
+    info.innerHTML = `
+      <div class="ci-badge"><span class="mag">🔎</span> ${clueCount||p.n}</div>
+      <div class="ci-title">${escapeHtml(p.title||'Onbekende zaak')}</div>
+      <div class="ci-meta">
+        <span class="tier-badge ${tier.key}">${tier.short}</span>
+        <span class="ci-dim">${p.n}×${p.n}</span>
+        <span class="ci-susp">${(p.suspects||[]).length} verdachten</span>
+      </div>`;
+    card.appendChild(info);
+    if(solved){
+      const s = store.solved[p.id];
+      const done = el('div','done-ribbon');
+      done.innerHTML = `✓ Opgelost${s&&s.time?` · ${fmtTime(s.time)}`:''}`;
+      card.appendChild(done);
+    }
+    card.onclick=()=>{ location.hash='#/play/'+p.id; };
+  }
+  return card;
 }
 function escapeHtml(s){ return (s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
 
@@ -187,30 +239,53 @@ function renderPlay(id){
 
   /* top bar */
   const bar = el('div','pbar');
-  const back = el('button','icon-btn'); back.innerHTML='‹'; back.onclick=()=>{ saveState(); location.hash='#/'; };
-  const title = el('div','title');
-  title.innerHTML = `<div class="no">Zaak ${p.id} · Boek ${p.book}</div><div class="ttl">${escapeHtml(p.title)}</div>`;
+  const back = el('button','round-btn'); back.innerHTML='‹'; back.title='Terug'; back.onclick=()=>{ saveState(); location.hash='#/'; };
+  const title = el('div','ptitle');
+  const tier = tierOf(p);
+  title.innerHTML = `<div class="no">Zaak ${p.id} · Boek ${p.book}</div>
+    <div class="ttl">${escapeHtml(p.title)}</div>`;
+  const badge = el('span','tier-badge '+tier.key, tier.short);
   const timer = el('div','timer run'); timer.id='timer'; timer.textContent=fmtTime(T.elapsed);
-  const sk = el('div','skulls'); sk.style.fontSize='13px'; sk.innerHTML=skulls(p.difficulty);
-  const help = el('button','icon-btn help-fab'); help.innerHTML='?'; help.title='Hoe te spelen';
-  help.onclick=openHowTo;
-  bar.append(back,title,sk,timer,help);
+  bar.append(back,title,badge,timer);
   view.appendChild(bar);
 
-  /* body */
-  const body = el('div','play-body');
+  /* stage: suspects (left) + scene (right) */
+  const stage = el('div','play-stage');
 
-  /* LEFT: scene + clues */
-  const left = el('div');
-  const sceneCard = el('div','card');
-  sceneCard.appendChild(headEl('Plaats delict'));
+  /* LEFT: suspect parchment cards (doubles as placement selector) */
+  const left = el('div','suspect-panel');
+  if(p.rules && p.rules.length){
+    p.rules.forEach(r=>{ const rr=el('div','rules'); rr.innerHTML='<b>!</b> '+escapeHtml(r); left.appendChild(rr); });
+  }
+  if(p.clueBlock){
+    left.appendChild(Object.assign(el('div','clueblock'),{textContent:p.clueBlock}));
+  }
+  const susp = el('div','suspects'); susp.id='suspectlist';
+  left.appendChild(susp);
+  left.appendChild(Object.assign(el('div','lang-note'),{textContent:'Aanwijzingen in het Nederlands, zoals in het boek.'}));
+
+  /* RIGHT: crime scene with the interactive grid, + tools rail */
+  const right = el('div','scene-col');
+
+  const tools = el('div','tools-rail');
+  const tlabel = el('div','tools-label','Gereedschap');
+  const xBtn=el('button','tool-btn'); xBtn.id='xtoolbtn'; xBtn.textContent='✕'; xBtn.title='Markeer onmogelijk';
+  xBtn.onclick=()=>{ T.xMode=!T.xMode; T.eraseMode=false; refreshToolbar(); };
+  const eraseBtn=el('button','tool-btn'); eraseBtn.id='erasebtn'; eraseBtn.innerHTML='⌫';
+  eraseBtn.title='Wissen (ingedrukt = alles wissen)';
+  attachHold(eraseBtn, ()=>{ if(confirm('Het hele raster wissen?')){ pushHistory(); T.cells={}; T.notes={}; T.manualMarks={}; updateBoards(); saveState(); } },
+    ()=>{ T.eraseMode=!T.eraseMode; T.xMode=false; refreshToolbar(); }, 550);
+  const undoBtn=el('button','tool-btn'); undoBtn.id='undobtn'; undoBtn.textContent='↺'; undoBtn.title='Ongedaan maken';
+  undoBtn.onclick=doUndo;
+  tools.append(tlabel,xBtn,eraseBtn,undoBtn);
+  right.appendChild(tools);
+
   if(p.scene){
     const sw=el('div','scene-wrap'); sw.id='sceneboard';
     const clip=el('div','imgclip');
     const img=el('img'); img.src='assets/scenes/'+p.scene; img.alt='Plaats delict '+p.title; img.loading='lazy';
     clip.appendChild(img); sw.appendChild(clip);
     if(p.grid){
-      // row/column index labels, drawn in the image's own padding around the grid box
       const g=p.grid;
       const colLbl=el('div','axis-labels cols');
       colLbl.style.left=(g.left*100)+'%'; colLbl.style.width=(g.width*100)+'%';
@@ -223,7 +298,6 @@ function renderPlay(id){
       rowLbl.style.left='2px'; rowLbl.style.width=(g.left*100)+'%';
       for(let r=1;r<=g.rows;r++){ const sp=el('span'); sp.dataset.n=r; rowLbl.appendChild(sp); }
       sw.appendChild(rowLbl);
-      // interactive grid overlaid directly on the crime-scene illustration
       const ov=el('div','grid-overlay'); ov.id='gridoverlay'; sw.appendChild(ov);
       const zb=el('button','scene-zoom'); zb.textContent='⤢';
       zb.onclick=(e)=>{ e.stopPropagation(); openZoom('assets/scenes/'+p.scene); };
@@ -234,56 +308,32 @@ function renderPlay(id){
       img.onclick=()=>openZoom('assets/scenes/'+p.scene);
       sw.appendChild(Object.assign(el('div','scene-hint'),{textContent:'Tik om te vergroten'}));
     }
-    sceneCard.appendChild(sw);
+    right.appendChild(sw);
   }
-  left.appendChild(sceneCard);
 
-  const clueCard = el('div','card'); clueCard.style.marginTop='16px';
-  clueCard.appendChild(headEl('Verdachten'));
-  if(p.rules && p.rules.length){
-    p.rules.forEach(r=>{ const rr=el('div','rules'); rr.innerHTML='<b>!</b> '+escapeHtml(r); clueCard.appendChild(rr); });
-  }
-  if(p.clueBlock){
-    clueCard.appendChild(Object.assign(el('div','clueblock'),{textContent:p.clueBlock}));
-  }
-  clueCard.appendChild(Object.assign(el('div','mini'),{style:'margin-bottom:8px',
-    textContent:'Tik op een verdachte om te kiezen. Tik op een vak voor een klein potloodnotitie; houd ingedrukt om te plaatsen.'}));
-  const susp = el('div','suspects'); susp.id='suspectlist';
-  clueCard.appendChild(susp);
-  clueCard.appendChild(Object.assign(el('div','lang-note'),{textContent:'Aanwijzingen in het Nederlands, zoals in het boek.'}));
-  left.appendChild(clueCard);
-  body.appendChild(left);
-
-  /* RIGHT: scratch grid (only when the scene itself isn't the interactive board) */
+  /* scratch grid fallback (only when the scene itself isn't the interactive board) */
   if(!p.grid){
-    const right = el('div');
-    const gcard = el('div','card');
-    gcard.appendChild(headEl('Raster'));
+    const gcard = el('div','scratch-card');
     gcard.appendChild(Object.assign(el('div','grid-tools'),{innerHTML:
       '<span class="mini">Tik op een verdachte, kies dan een vak: tik = notitie, ingedrukt houden = plaatsen.</span>'}));
     const board=el('div','board'); board.id='board';
     gcard.appendChild(board);
     right.appendChild(gcard);
-    body.appendChild(right);
   }
 
-  view.appendChild(body);
+  stage.append(left,right);
+  view.appendChild(stage);
 
-  /* action bar: X-tool / eraser / undo / hint / submit */
+  /* bottom action bar: Hint / Submit / How to play */
   const ab=el('div','actionbar');
   const abw=el('div','wrapb');
-  const xBtn=el('button','tool-btn'); xBtn.id='xtoolbtn'; xBtn.textContent='✕'; xBtn.title='Markeer onmogelijk';
-  xBtn.onclick=()=>{ T.xMode=!T.xMode; T.eraseMode=false; refreshToolbar(); };
-  const eraseBtn=el('button','tool-btn'); eraseBtn.id='erasebtn'; eraseBtn.innerHTML='⌫'; eraseBtn.title='Wissen (ingedrukt = alles wissen)';
-  attachHold(eraseBtn, ()=>{ if(confirm('Het hele raster wissen?')){ pushHistory(); T.cells={}; T.notes={}; T.manualMarks={}; updateBoards(); saveState(); } },
-    ()=>{ T.eraseMode=!T.eraseMode; T.xMode=false; refreshToolbar(); }, 550);
-  const undoBtn=el('button','tool-btn'); undoBtn.id='undobtn'; undoBtn.textContent='↺'; undoBtn.title='Ongedaan maken';
-  undoBtn.onclick=doUndo;
-  const hintBtn=el('button','hint-btn'); hintBtn.textContent='💡'; hintBtn.title='Hint';
+  const hintBtn=el('button','hint-btn'); hintBtn.innerHTML='💡 Hint'; hintBtn.title='Hint';
   hintBtn.onclick=openHints;
-  const submitBtn=el('button','submit-btn'); submitBtn.id='submitbtn'; submitBtn.textContent='✓ Indienen';
+  const submitBtn=el('button','submit-btn'); submitBtn.id='submitbtn';
+  submitBtn.innerHTML='<b>INDIENEN</b><small>plaats eerst iedereen</small>';
   submitBtn.onclick=onSubmit;
-  abw.append(xBtn,eraseBtn,undoBtn,hintBtn,submitBtn);
+  const howBtn=el('button','how-btn','HOE TE SPELEN'); howBtn.onclick=openHowTo;
+  abw.append(hintBtn,submitBtn,howBtn);
   ab.appendChild(abw);
   view.appendChild(ab);
 
@@ -294,7 +344,6 @@ function renderPlay(id){
   if(!store.settings.tutorialDone) openTutorial(0);
 }
 
-function headEl(t){ const h=el('h3'); h.textContent=t; return h; }
 function peopleOf(p){
   const arr = (p.suspects||[]).slice();
   if(p.victim) arr.push(p.victim);
@@ -404,7 +453,20 @@ function refreshToolbar(){
   if(x) x.classList.toggle('on', T.xMode);
   if(e) e.classList.toggle('on', T.eraseMode);
   if(u) u.disabled = !T.history.length;
-  if(s) s.disabled = !allSuspectsPlaced();
+  if(s){
+    const ready = allSuspectsPlaced();
+    s.disabled = !ready;
+    const small = s.querySelector('small');
+    if(small) small.textContent = ready ? 'klaar — controleer je oplossing' : 'plaats eerst iedereen';
+  }
+}
+/* simple silhouette avatar (no reliable name↔photo mapping exists in the books) */
+function avatarSVG(color){
+  return `<svg viewBox="0 0 40 40" class="av-svg" aria-hidden="true">
+    <rect width="40" height="40" rx="8" fill="${color}"/>
+    <circle cx="20" cy="15.5" r="7.2" fill="rgba(255,255,255,.92)"/>
+    <path d="M6 39c1.6-9.4 8-14 14-14s12.4 4.6 14 14z" fill="rgba(255,255,255,.92)"/>
+  </svg>`;
 }
 function renderSuspectList(){
   const susp=$('#suspectlist'); if(!susp) return;
@@ -413,16 +475,26 @@ function renderSuspectList(){
   peopleOf(T.p).forEach((s,i)=>{
     const isVictim = s.letter==='V';
     const isPlaced = placedLetters.has(s.letter);
+    const color = suspColor(s.letter,i);
     const row=el('div','susp'
       +(isVictim?' victim':' pickable')
       +(T.selToken===s.letter?' selected':'')
       +(isPlaced?' placed':'')
       +(T.accused===s.name?' accused':''));
     row.dataset.name=s.name;
-    const b=el('div','badge'); b.style.background=suspColor(s.letter,i); b.textContent=s.letter;
+    const av=el('div','avatar'); av.innerHTML=avatarSVG(color);
+    const badge=el('span','av-letter'); badge.style.background=color; badge.textContent=s.letter;
+    av.appendChild(badge);
+    // the victim's clue in the books starts with "Het slachtoffer" — shown here
+    // as a separate role line, so strip it (and repair the missing space) to
+    // avoid duplication.
+    let clue = s.clue || '';
+    if(isVictim) clue = clue.replace(/^\s*Het slachtoffer\.?\s*/i, '').trim();
     const who=el('div','who');
-    who.innerHTML=`<div class="nm">${escapeHtml(s.name)}</div>`+(s.clue?`<div class="cl">${escapeHtml(s.clue)}</div>`:'');
-    row.append(b,who);
+    who.innerHTML=`<div class="nm">${escapeHtml(s.name)}</div>`
+      +(isVictim?`<div class="role">Het slachtoffer</div>`:'')
+      +(clue?`<div class="cl">${escapeHtml(clue)}</div>`:'');
+    row.append(av,who);
     if(!isVictim){
       row.onclick=()=>{
         T.selToken = T.selToken===s.letter ? null : s.letter;
@@ -768,10 +840,12 @@ function openAccuse(){
   wrap.appendChild(Object.assign(el('p'),{textContent:'Kies de verdachte die je beschuldigt.'}));
   const list=el('div','pick-list');
   (p.suspects||[]).forEach((s,i)=>{
-    const b=el('button','susp'); b.style.cursor='pointer';
-    const badge=el('div','badge'); badge.style.background=suspColor(s.letter,i); badge.textContent=s.letter;
+    const color=suspColor(s.letter,i);
+    const b=el('button','susp pickable');
+    const av=el('div','avatar'); av.innerHTML=avatarSVG(color);
+    const badge=el('span','av-letter'); badge.style.background=color; badge.textContent=s.letter; av.appendChild(badge);
     const who=el('div','who'); who.innerHTML=`<div class="nm">${escapeHtml(s.name)}</div>`;
-    b.append(badge,who);
+    b.append(av,who);
     b.onclick=()=>{ closeModal(); resolveAccusation(s.name); };
     list.appendChild(b);
   });
@@ -862,17 +936,11 @@ function openSettings(){
     seg.appendChild(b);
   });
   tr.appendChild(seg); wrap.appendChild(tr);
-  // unlock all
-  const ur=el('div','settings-row');
-  ur.appendChild(Object.assign(el('div'),{innerHTML:'Alle zaken ontgrendelen<br><span style="color:var(--muted);font-size:13px">Speel in willekeurige volgorde</span>'}));
-  const tgl=el('button','btn small', store.settings.unlockAll?'Aan':'Uit');
-  tgl.onclick=()=>{ store.settings.unlockAll=!store.settings.unlockAll; persist(); openSettings(); };
-  ur.appendChild(tgl); wrap.appendChild(ur);
   // reset
   const rr=el('div','settings-row');
   rr.appendChild(Object.assign(el('div'),{textContent:'Voortgang wissen'}));
   const rb=el('button','btn small','Wissen');
-  rb.onclick=()=>{ if(confirm('Alle voortgang en tijden wissen?')){ store.solved={}; store.state={}; persist(); closeModal(); renderHome(); } };
+  rb.onclick=()=>{ if(confirm('Alle voortgang, tijden en onthulde zaken wissen?')){ store.solved={}; store.state={}; store.revealed={}; persist(); closeModal(); renderHome(); } };
   rr.appendChild(rb); wrap.appendChild(rr);
   // about
   wrap.appendChild(Object.assign(el('p'),{style:'margin-top:14px;font-size:13px',
