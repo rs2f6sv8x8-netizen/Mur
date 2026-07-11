@@ -460,13 +460,27 @@ function refreshToolbar(){
     if(small) small.textContent = ready ? 'klaar — controleer je oplossing' : 'plaats eerst iedereen';
   }
 }
-/* simple silhouette avatar (no reliable name↔photo mapping exists in the books) */
+/* silhouette fallback for the ~60 irregular cases without a recovered portrait */
 function avatarSVG(color){
   return `<svg viewBox="0 0 40 40" class="av-svg" aria-hidden="true">
     <rect width="40" height="40" rx="8" fill="${color}"/>
     <circle cx="20" cy="15.5" r="7.2" fill="rgba(255,255,255,.92)"/>
     <path d="M6 39c1.6-9.4 8-14 14-14s12.4 4.6 14 14z" fill="rgba(255,255,255,.92)"/>
   </svg>`;
+}
+/* the suspect's portrait cropped from the book's clue-page artwork, or a
+   coloured silhouette when no reliable portrait could be recovered */
+function avatarEl(person, color){
+  const av=el('div','avatar');
+  if(person.portrait){
+    const img=el('img','av-img'); img.src='assets/'+person.portrait; img.alt=person.name; img.loading='lazy';
+    av.appendChild(img);
+  } else {
+    av.innerHTML=avatarSVG(color);
+  }
+  const badge=el('span','av-letter'); badge.style.background=color; badge.textContent=person.letter;
+  av.appendChild(badge);
+  return av;
 }
 function renderSuspectList(){
   const susp=$('#suspectlist'); if(!susp) return;
@@ -482,9 +496,7 @@ function renderSuspectList(){
       +(isPlaced?' placed':'')
       +(T.accused===s.name?' accused':''));
     row.dataset.name=s.name;
-    const av=el('div','avatar'); av.innerHTML=avatarSVG(color);
-    const badge=el('span','av-letter'); badge.style.background=color; badge.textContent=s.letter;
-    av.appendChild(badge);
+    const av=avatarEl(s, color);
     // the victim's clue in the books starts with "Het slachtoffer" — shown here
     // as a separate role line, so strip it (and repair the missing space) to
     // avoid duplication.
@@ -842,8 +854,7 @@ function openAccuse(){
   (p.suspects||[]).forEach((s,i)=>{
     const color=suspColor(s.letter,i);
     const b=el('button','susp pickable');
-    const av=el('div','avatar'); av.innerHTML=avatarSVG(color);
-    const badge=el('span','av-letter'); badge.style.background=color; badge.textContent=s.letter; av.appendChild(badge);
+    const av=avatarEl(s, color);
     const who=el('div','who'); who.innerHTML=`<div class="nm">${escapeHtml(s.name)}</div>`;
     b.append(av,who);
     b.onclick=()=>{ closeModal(); resolveAccusation(s.name); };

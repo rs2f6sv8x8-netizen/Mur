@@ -9,33 +9,39 @@
    {
     "name": "Adam",
     "letter": "A",
-    "clue": "Stond voor een raam. Lag op het bed."
+    "clue": "Stond voor een raam. Lag op het bed.",
+    "portrait": "portraits/1_A.jpg"
    },
    {
     "name": "Bella",
     "letter": "B",
-    "clue": "Bevond zich in de hal."
+    "clue": "Bevond zich in de hal.",
+    "portrait": "portraits/1_B.jpg"
    },
    {
     "name": "Cora",
     "letter": "C",
-    "clue": "Stond op het tapijt."
+    "clue": "Stond op het tapijt.",
+    "portrait": "portraits/1_C.jpg"
    },
    {
     "name": "David",
     "letter": "D",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/1_D.jpg"
    },
    {
     "name": "Ella",
     "letter": "E",
-    "clue": "Stond naast een plant."
+    "clue": "Stond naast een plant.",
+    "portrait": "portraits/1_E.jpg"
    }
   ],
   "victim": {
    "name": "Vincent",
    "letter": "V",
-   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak."
+   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak.",
+   "portrait": "portraits/1_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -104,33 +110,39 @@
    {
     "name": "Arianna",
     "letter": "A",
-    "clue": "Stond naast een tv."
+    "clue": "Stond naast een tv.",
+    "portrait": "portraits/2_A.jpg"
    },
    {
     "name": "Brian",
     "letter": "B",
-    "clue": "Zat in de stoel."
+    "clue": "Zat in de stoel.",
+    "portrait": "portraits/2_B.jpg"
    },
    {
     "name": "Colinda",
     "letter": "C",
-    "clue": "Was in de badkamer."
+    "clue": "Was in de badkamer.",
+    "portrait": "portraits/2_C.jpg"
    },
    {
     "name": "Daan",
     "letter": "D",
-    "clue": "Bevond zich naast een plant en lag op een bed."
+    "clue": "Bevond zich naast een plant en lag op een bed.",
+    "portrait": "portraits/2_D.jpg"
    },
    {
     "name": "Eddy",
     "letter": "E",
-    "clue": "Was naast een bed."
+    "clue": "Was naast een bed.",
+    "portrait": "portraits/2_E.jpg"
    }
   ],
   "victim": {
    "name": "Vito",
    "letter": "V",
-   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak."
+   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak.",
+   "portrait": "portraits/2_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -172,33 +184,39 @@
    {
     "name": "Alexander",
     "letter": "A",
-    "clue": "Zat op een bed."
+    "clue": "Zat op een bed.",
+    "portrait": "portraits/3_A.jpg"
    },
    {
     "name": "Bas",
     "letter": "B",
-    "clue": "Was in de keuken."
+    "clue": "Was in de keuken.",
+    "portrait": "portraits/3_B.jpg"
    },
    {
     "name": "Clarissa",
     "letter": "C",
-    "clue": "Stond naast een tafel."
+    "clue": "Stond naast een tafel.",
+    "portrait": "portraits/3_C.jpg"
    },
    {
     "name": "Diana",
     "letter": "D",
-    "clue": "Bevond zich naast de tv."
+    "clue": "Bevond zich naast de tv.",
+    "portrait": "portraits/3_D.jpg"
    },
    {
     "name": "Elsa",
     "letter": "E",
-    "clue": "Stond voor het raam."
+    "clue": "Stond voor het raam.",
+    "portrait": "portraits/3_E.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak."
+   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak.",
+   "portrait": "portraits/3_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -242,33 +260,39 @@
    {
     "name": "Antonio",
     "letter": "A",
-    "clue": "Stond in een hoek."
+    "clue": "Stond in een hoek.",
+    "portrait": "portraits/4_A.jpg"
    },
    {
     "name": "Ben",
     "letter": "B",
-    "clue": "Zat in een stoel."
+    "clue": "Zat in een stoel.",
+    "portrait": "portraits/4_B.jpg"
    },
    {
     "name": "Caro",
     "letter": "C",
-    "clue": "Stond voor een raam."
+    "clue": "Stond voor een raam.",
+    "portrait": "portraits/4_C.jpg"
    },
    {
     "name": "Dahlia",
     "letter": "D",
-    "clue": "Was niet naasteen muur."
+    "clue": "Was niet naasteen muur.",
+    "portrait": "portraits/4_D.jpg"
    },
    {
     "name": "Emmy",
     "letter": "E",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/4_E.jpg"
    }
   ],
   "victim": {
    "name": "Valeria",
    "letter": "V",
-   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak."
+   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak.",
+   "portrait": "portraits/4_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -309,33 +333,39 @@
    {
     "name": "Aaron",
     "letter": "A",
-    "clue": "Lag op het bed."
+    "clue": "Lag op het bed.",
+    "portrait": "portraits/5_A.jpg"
    },
    {
     "name": "Bruno",
     "letter": "B",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/5_B.jpg"
    },
    {
     "name": "Clara",
     "letter": "C",
-    "clue": "De enige persoon bij een raam."
+    "clue": "De enige persoon bij een raam.",
+    "portrait": "portraits/5_C.jpg"
    },
    {
     "name": "Donna",
     "letter": "D",
-    "clue": "Was in de badkamer."
+    "clue": "Was in de badkamer.",
+    "portrait": "portraits/5_D.jpg"
    },
    {
     "name": "Eveline",
     "letter": "E",
-    "clue": "Stond naast de tv"
+    "clue": "Stond naast de tv",
+    "portrait": "portraits/5_E.jpg"
    }
   ],
   "victim": {
    "name": "Victor",
    "letter": "V",
-   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak. AA"
+   "clue": "Het slachtoffer. Lag in het laatst overgebleven vak. AA",
+   "portrait": "portraits/5_V.jpg"
   },
   "rooms": [
    "WOONKAMERBADKAMER",
@@ -375,33 +405,39 @@
    {
     "name": "Aria",
     "letter": "A",
-    "clue": "Was in de ruimte met de bestsellers"
+    "clue": "Was in de ruimte met de bestsellers",
+    "portrait": "portraits/6_A.jpg"
    },
    {
     "name": "Benny",
     "letter": "B",
-    "clue": "Stond naast de tafel."
+    "clue": "Stond naast de tafel.",
+    "portrait": "portraits/6_B.jpg"
    },
    {
     "name": "Casper",
     "letter": "C",
-    "clue": "Stond niet naast een kast."
+    "clue": "Stond niet naast een kast.",
+    "portrait": "portraits/6_C.jpg"
    },
    {
     "name": "Don",
     "letter": "D",
-    "clue": "Bevond zich onder Aria."
+    "clue": "Bevond zich onder Aria.",
+    "portrait": "portraits/6_D.jpg"
    },
    {
     "name": "Everwin",
     "letter": "E",
-    "clue": "Was in de ruimte met romans."
+    "clue": "Was in de ruimte met romans.",
+    "portrait": "portraits/6_E.jpg"
    }
   ],
   "victim": {
    "name": "Vicky",
    "letter": "V",
-   "clue": "Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar."
+   "clue": "Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar.",
+   "portrait": "portraits/6_V.jpg"
   },
   "rooms": [
    "MISDAADROMANS",
@@ -446,33 +482,39 @@
    {
     "name": "Adelie",
     "letter": "A",
-    "clue": "Bevond zich naast een plant. Zat niet een stoel."
+    "clue": "Bevond zich naast een plant. Zat niet een stoel.",
+    "portrait": "portraits/7_A.jpg"
    },
    {
     "name": "Barbara",
     "letter": "B",
-    "clue": "Stond naast de kassa."
+    "clue": "Stond naast de kassa.",
+    "portrait": "portraits/7_B.jpg"
    },
    {
     "name": "Cassie",
     "letter": "C",
-    "clue": "Bevond zich in de tweede kolom."
+    "clue": "Bevond zich in de tweede kolom.",
+    "portrait": "portraits/7_C.jpg"
    },
    {
     "name": "Duko",
     "letter": "D",
-    "clue": "Bevond zich boven Cassie. Was in de grote ruimte. er staat ‘Lindsey’. op"
+    "clue": "Bevond zich boven Cassie. Was in de grote ruimte. er staat ‘Lindsey’. op",
+    "portrait": "portraits/7_D.jpg"
    },
    {
     "name": "Elias",
     "letter": "E",
-    "clue": "Zat op een stoel Bevond zich niet naast een tafel. We zullen de barista"
+    "clue": "Zat op een stoel Bevond zich niet naast een tafel. We zullen de barista",
+    "portrait": "portraits/7_E.jpg"
    }
   ],
   "victim": {
    "name": "Vincent",
    "letter": "V",
-   "clue": "Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar."
+   "clue": "Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar.",
+   "portrait": "portraits/7_V.jpg"
   },
   "rooms": [
    "TOILET",
@@ -513,38 +555,45 @@
    {
     "name": "Alain",
     "letter": "A",
-    "clue": "Was naast een tafel."
+    "clue": "Was naast een tafel.",
+    "portrait": "portraits/8_A.jpg"
    },
    {
     "name": "Ben",
     "letter": "B",
-    "clue": "Bevond zich in de vijfde kolom."
+    "clue": "Bevond zich in de vijfde kolom.",
+    "portrait": "portraits/8_B.jpg"
    },
    {
     "name": "Caroline",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/8_C.jpg"
    },
    {
     "name": "Dafne",
     "letter": "D",
-    "clue": "Lag op het bed."
+    "clue": "Lag op het bed.",
+    "portrait": "portraits/8_D.jpg"
    },
    {
     "name": "Ellie",
     "letter": "E",
-    "clue": "Bevond zich niet naast een plant. Zat op een stoel."
+    "clue": "Bevond zich niet naast een plant. Zat op een stoel.",
+    "portrait": "portraits/8_E.jpg"
    },
    {
     "name": "Falko",
     "letter": "F",
-    "clue": "Was in de achtertuin. Bevond zich niet naast een plant."
+    "clue": "Was in de achtertuin. Bevond zich niet naast een plant.",
+    "portrait": "portraits/8_F.jpg"
    }
   ],
   "victim": {
    "name": "Violet",
    "letter": "V",
-   "clue": "Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar."
+   "clue": "Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar.",
+   "portrait": "portraits/8_V.jpg"
   },
   "rooms": [
    "JACUZZI",
@@ -585,43 +634,51 @@
    {
     "name": "Albert-Jan",
     "letter": "A",
-    "clue": "Bevond zich in dezelfde ruimte als Emmely Zat op een stoel"
+    "clue": "Bevond zich in dezelfde ruimte als Emmely Zat op een stoel",
+    "portrait": "portraits/9_A.jpg"
    },
    {
     "name": "Bessel",
     "letter": "B",
-    "clue": "Was in de opslagruimte."
+    "clue": "Was in de opslagruimte.",
+    "portrait": "portraits/9_B.jpg"
    },
    {
     "name": "Carla",
     "letter": "C",
-    "clue": "Was naast een tafel. Bevond zich boven Bessel."
+    "clue": "Was naast een tafel. Bevond zich boven Bessel.",
+    "portrait": "portraits/9_C.jpg"
    },
    {
     "name": "Deborah",
     "letter": "D",
-    "clue": "Was in het kantoor"
+    "clue": "Was in het kantoor",
+    "portrait": "portraits/9_D.jpg"
    },
    {
     "name": "Emmely",
     "letter": "E",
-    "clue": "Bevond zich in de eerste kolom."
+    "clue": "Bevond zich in de eerste kolom.",
+    "portrait": "portraits/9_E.jpg"
    },
    {
     "name": "Frank",
     "letter": "F",
-    "clue": "Was naast een tv."
+    "clue": "Was naast een tv.",
+    "portrait": "portraits/9_F.jpg"
    },
    {
     "name": "Gino",
     "letter": "G",
-    "clue": "Was naast een kast."
+    "clue": "Was naast een kast.",
+    "portrait": "portraits/9_G.jpg"
    }
   ],
   "victim": {
    "name": "Vasco",
    "letter": "V",
-   "clue": "Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar."
+   "clue": "Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar.",
+   "portrait": "portraits/9_V.jpg"
   },
   "rooms": [
    "VRIEZER",
@@ -665,43 +722,51 @@
    {
     "name": "Albert",
     "letter": "A",
-    "clue": "Stond naast een kast."
+    "clue": "Stond naast een kast.",
+    "portrait": "portraits/10_A.jpg"
    },
    {
     "name": "Bram",
     "letter": "B",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/10_B.jpg"
    },
    {
     "name": "Caro",
     "letter": "C",
-    "clue": "Bevond zich naast de plant."
+    "clue": "Bevond zich naast de plant.",
+    "portrait": "portraits/10_C.jpg"
    },
    {
     "name": "Desirée",
     "letter": "D",
-    "clue": "Was alleen in de grote slaapkamerZat in een hoek van zijn kamer."
+    "clue": "Was alleen in de grote slaapkamerZat in een hoek van zijn kamer.",
+    "portrait": "portraits/10_D.jpg"
    },
    {
     "name": "Farouk",
     "letter": "E",
-    "clue": "Stond voor een raam."
+    "clue": "Stond voor een raam.",
+    "portrait": "portraits/10_E.jpg"
    },
    {
     "name": "Gijs",
     "letter": "F",
-    "clue": "Stond naast een bed."
+    "clue": "Stond naast een bed.",
+    "portrait": "portraits/10_F.jpg"
    },
    {
     "name": "Victor",
     "letter": "G",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/10_G.jpg"
    }
   ],
   "victim": {
    "name": "Ellen",
    "letter": "V",
-   "clue": "Zat op een stoel. Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar."
+   "clue": "Zat op een stoel. Het slachtoffer. Bevond zich in het laatst overgebleven vak, samen met de moordenaar.",
+   "portrait": "portraits/10_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -782,58 +847,69 @@
    {
     "name": "Antonio",
     "letter": "A",
-    "clue": "Bevond zich naast de kast."
+    "clue": "Bevond zich naast de kast.",
+    "portrait": "portraits/11_A.jpg"
    },
    {
     "name": "Carlo",
     "letter": "B",
-    "clue": "Bevond zich links onder de tv in dezelfde ruimte. De enige persoon op een stoel."
+    "clue": "Bevond zich links onder de tv in dezelfde ruimte. De enige persoon op een stoel.",
+    "portrait": "portraits/11_B.jpg"
    },
    {
     "name": "Dina",
     "letter": "C",
-    "clue": "Bevond zich in de derde kolom"
+    "clue": "Bevond zich in de derde kolom",
+    "portrait": "portraits/11_D.jpg"
    },
    {
     "name": "Dina",
     "letter": "D",
-    "clue": "De tv bevond zich in zijn kolom, in een andere ruimte."
+    "clue": "De tv bevond zich in zijn kolom, in een andere ruimte.",
+    "portrait": "portraits/11_D.jpg"
    },
    {
     "name": "Emiel",
     "letter": "E",
-    "clue": "Stond naast de grote steen."
+    "clue": "Stond naast de grote steen.",
+    "portrait": "portraits/11_E.jpg"
    },
    {
     "name": "Finn",
     "letter": "F",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/11_F.jpg"
    },
    {
     "name": "Gemma",
     "letter": "G",
-    "clue": "Bevond zich in een hoek, onder Benjamin"
+    "clue": "Bevond zich in een hoek, onder Benjamin",
+    "portrait": "portraits/11_G.jpg"
    },
    {
     "name": "Haiko",
     "letter": "H",
-    "clue": "Zat op een bed."
+    "clue": "Zat op een bed.",
+    "portrait": "portraits/11_I.jpg"
    },
    {
     "name": "Haiko",
     "letter": "I",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/11_I.jpg"
    },
    {
     "name": "Viggo",
     "letter": "J",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/11_J.jpg"
    }
   ],
   "victim": {
    "name": "Benjamin",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/11_V.jpg"
   },
   "rooms": [
    "LOGEERKAMER",
@@ -868,48 +944,57 @@
    {
     "name": "Adam",
     "letter": "A",
-    "clue": "Was in de opslagruimte Was niet naasteen kast."
+    "clue": "Was in de opslagruimte Was niet naasteen kast.",
+    "portrait": "portraits/12_A.jpg"
    },
    {
     "name": "Belinda",
     "letter": "B",
-    "clue": "Zat op een stoel in de kelder."
+    "clue": "Zat op een stoel in de kelder.",
+    "portrait": "portraits/12_B.jpg"
    },
    {
     "name": "Cristiano",
     "letter": "C",
-    "clue": "Was in de badkamer."
+    "clue": "Was in de badkamer.",
+    "portrait": "portraits/12_C.jpg"
    },
    {
     "name": "Dave",
     "letter": "D",
-    "clue": "Was in de grote slaapkamer."
+    "clue": "Was in de grote slaapkamer.",
+    "portrait": "portraits/12_D.jpg"
    },
    {
     "name": "Edwin",
     "letter": "E",
-    "clue": "Zat op een bed"
+    "clue": "Zat op een bed",
+    "portrait": "portraits/12_E.jpg"
    },
    {
     "name": "Fara",
     "letter": "F",
-    "clue": "Bevond zich in de logeerkamer.,"
+    "clue": "Bevond zich in de logeerkamer.,",
+    "portrait": "portraits/12_F.jpg"
    },
    {
     "name": "George",
     "letter": "G",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/12_G.jpg"
    },
    {
     "name": "Helena",
     "letter": "H",
-    "clue": "Was in de kelderin een hoek van de ruimte."
+    "clue": "Was in de kelderin een hoek van de ruimte.",
+    "portrait": "portraits/12_H.jpg"
    }
   ],
   "victim": {
    "name": "Vincenzo",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/12_V.jpg"
   },
   "rooms": [
    "BADKAMER",
@@ -953,43 +1038,51 @@
    {
     "name": "Amir",
     "letter": "A",
-    "clue": "Bevond zich in de eerste kolomWas in de toiletruimte."
+    "clue": "Bevond zich in de eerste kolomWas in de toiletruimte.",
+    "portrait": "portraits/13_A.jpg"
    },
    {
     "name": "Bouke",
     "letter": "B",
-    "clue": "Stond naast een tv"
+    "clue": "Stond naast een tv",
+    "portrait": "portraits/13_B.jpg"
    },
    {
     "name": "Claudio",
     "letter": "C",
-    "clue": "Stond naast een kast."
+    "clue": "Stond naast een kast.",
+    "portrait": "portraits/13_C.jpg"
    },
    {
     "name": "Damien",
     "letter": "D",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/13_D.jpg"
    },
    {
     "name": "Erik",
     "letter": "E",
-    "clue": "Zat op een stoel in de toiletruimte."
+    "clue": "Zat op een stoel in de toiletruimte.",
+    "portrait": "portraits/13_E.jpg"
    },
    {
     "name": "Fabio",
     "letter": "F",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/13_F.jpg"
    },
    {
     "name": "Gary",
     "letter": "G",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/13_G.jpg"
    }
   ],
   "victim": {
    "name": "Vlad",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/13_V.jpg"
   },
   "rooms": [
    "GEMEENSCHAPPELIJKE RUIMTE",
@@ -1032,48 +1125,57 @@
    {
     "name": "Abraham",
     "letter": "A",
-    "clue": "Bevond zich in de keuken, naast een tafel."
+    "clue": "Bevond zich in de keuken, naast een tafel.",
+    "portrait": "portraits/14_A.jpg"
    },
    {
     "name": "Björn",
     "letter": "B",
-    "clue": "Was in de eetkamer met Ella en Holly."
+    "clue": "Was in de eetkamer met Ella en Holly.",
+    "portrait": "portraits/14_B.jpg"
    },
    {
     "name": "Coralie",
     "letter": "C",
-    "clue": "Stond naast een tv."
+    "clue": "Stond naast een tv.",
+    "portrait": "portraits/14_C.jpg"
    },
    {
     "name": "Dina",
     "letter": "D",
-    "clue": "Er stond een cadeau in haar kolom, in dezelfde ruimte."
+    "clue": "Er stond een cadeau in haar kolom, in dezelfde ruimte.",
+    "portrait": "portraits/14_D.jpg"
    },
    {
     "name": "Ella",
     "letter": "E",
-    "clue": "Zat op een stoel"
+    "clue": "Zat op een stoel",
+    "portrait": "portraits/14_E.jpg"
    },
    {
     "name": "Felix",
     "letter": "F",
-    "clue": "Zat op een bed."
+    "clue": "Zat op een bed.",
+    "portrait": "portraits/14_F.jpg"
    },
    {
     "name": "Gerald",
     "letter": "G",
-    "clue": "Bevond zich naast een cadeau."
+    "clue": "Bevond zich naast een cadeau.",
+    "portrait": "portraits/14_G.jpg"
    },
    {
     "name": "Holly",
     "letter": "H",
-    "clue": "Bevond zich naast een cadeau."
+    "clue": "Bevond zich naast een cadeau.",
+    "portrait": "portraits/14_H.jpg"
    }
   ],
   "victim": {
    "name": "Vanessa",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/14_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -1154,48 +1256,57 @@
    {
     "name": "Aad",
     "letter": "A",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/15_A.jpg"
    },
    {
     "name": "Bella",
     "letter": "B",
-    "clue": "Bevond zich bij de hapjes. Stond naast een tafel."
+    "clue": "Bevond zich bij de hapjes. Stond naast een tafel.",
+    "portrait": "portraits/15_B.jpg"
    },
    {
     "name": "Camilla",
     "letter": "C",
-    "clue": "Bevond zich in een hoek."
+    "clue": "Bevond zich in een hoek.",
+    "portrait": "portraits/15_C.jpg"
    },
    {
     "name": "Dylan",
     "letter": "D",
-    "clue": "Bevond zich niet naast een kast, tafel of kist."
+    "clue": "Bevond zich niet naast een kast, tafel of kist.",
+    "portrait": "portraits/15_D.jpg"
    },
    {
     "name": "Eileen",
     "letter": "E",
-    "clue": "Bevond zich bij de drankjes. Was niet bij Aad"
+    "clue": "Bevond zich bij de drankjes. Was niet bij Aad",
+    "portrait": "portraits/15_E.jpg"
    },
    {
     "name": "Fred",
     "letter": "F",
-    "clue": "Bevond zich in de laatste kolom."
+    "clue": "Bevond zich in de laatste kolom.",
+    "portrait": "portraits/15_F.jpg"
    },
    {
     "name": "Grace",
     "letter": "G",
-    "clue": "Stond voor een raam."
+    "clue": "Stond voor een raam.",
+    "portrait": "portraits/15_G.jpg"
    },
    {
     "name": "Hayden",
     "letter": "H",
-    "clue": "Stond naast de kassa."
+    "clue": "Stond naast de kassa.",
+    "portrait": "portraits/15_H.jpg"
    }
   ],
   "victim": {
    "name": "Velma",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/15_V.jpg"
   },
   "rooms": [
    "HAPJES",
@@ -1278,48 +1389,57 @@
    {
     "name": "Albert-Jan",
     "letter": "A",
-    "clue": "Zat op een bed"
+    "clue": "Zat op een bed",
+    "portrait": "portraits/16_A.jpg"
    },
    {
     "name": "Benny",
     "letter": "B",
-    "clue": "Bevond zich voor een raam."
+    "clue": "Bevond zich voor een raam.",
+    "portrait": "portraits/16_B.jpg"
    },
    {
     "name": "Charlotte",
     "letter": "C",
-    "clue": "Zat op een stoel in de woonkamer."
+    "clue": "Zat op een stoel in de woonkamer.",
+    "portrait": "portraits/16_C.jpg"
    },
    {
     "name": "Dakota",
     "letter": "D",
-    "clue": "Was alleen in de logeerkamermet Benny."
+    "clue": "Was alleen in de logeerkamermet Benny.",
+    "portrait": "portraits/16_D.jpg"
    },
    {
     "name": "Ethan",
     "letter": "E",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/16_E.jpg"
    },
    {
     "name": "Fanny",
     "letter": "F",
-    "clue": "Stond naast een kast."
+    "clue": "Stond naast een kast.",
+    "portrait": "portraits/16_F.jpg"
    },
    {
     "name": "Gloria",
     "letter": "G",
-    "clue": "Bevond zich naast een tafel."
+    "clue": "Bevond zich naast een tafel.",
+    "portrait": "portraits/16_G.jpg"
    },
    {
     "name": "Hanne",
     "letter": "H",
-    "clue": "Zat niet op een stoel Was niet in de grote slaapkamer"
+    "clue": "Zat niet op een stoel Was niet in de grote slaapkamer",
+    "portrait": "portraits/16_H.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/16_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -1403,48 +1523,57 @@
    {
     "name": "Amara",
     "letter": "A",
-    "clue": "Was in de keuken"
+    "clue": "Was in de keuken",
+    "portrait": "portraits/17_A.jpg"
    },
    {
     "name": "Barbara",
     "letter": "B",
-    "clue": "Was in de studeerkamer."
+    "clue": "Was in de studeerkamer.",
+    "portrait": "portraits/17_B.jpg"
    },
    {
     "name": "Cindy",
     "letter": "C",
-    "clue": "Was in de galerij."
+    "clue": "Was in de galerij.",
+    "portrait": "portraits/17_C.jpg"
    },
    {
     "name": "Duncan",
     "letter": "D",
-    "clue": "Zat op een stoel"
+    "clue": "Zat op een stoel",
+    "portrait": "portraits/17_D.jpg"
    },
    {
     "name": "Emiel",
     "letter": "E",
-    "clue": "Lag op het bed."
+    "clue": "Lag op het bed.",
+    "portrait": "portraits/17_E.jpg"
    },
    {
     "name": "Fay",
     "letter": "F",
-    "clue": "Zat op een stoel naast een plant."
+    "clue": "Zat op een stoel naast een plant.",
+    "portrait": "portraits/17_F.jpg"
    },
    {
     "name": "Guido",
     "letter": "G",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/17_G.jpg"
    },
    {
     "name": "Hester",
     "letter": "H",
-    "clue": "Bevond zich in dezelfde ruimte en kolom als een tv."
+    "clue": "Bevond zich in dezelfde ruimte en kolom als een tv.",
+    "portrait": "portraits/17_H.jpg"
    }
   ],
   "victim": {
    "name": "Vincent",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/17_V.jpg"
   },
   "rooms": [
    "STUDEERKAMER",
@@ -1533,48 +1662,57 @@
    {
     "name": "Adelie",
     "letter": "A",
-    "clue": "Bevond zich in de bewijskamer"
+    "clue": "Bevond zich in de bewijskamer",
+    "portrait": "portraits/18_A.jpg"
    },
    {
     "name": "Brad",
     "letter": "B",
-    "clue": "Was in de ontvangstruimte"
+    "clue": "Was in de ontvangstruimte",
+    "portrait": "portraits/18_B.jpg"
    },
    {
     "name": "Carlo",
     "letter": "C",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/18_C.jpg"
    },
    {
     "name": "Donny",
     "letter": "D",
-    "clue": "Bevond zich naast een tv."
+    "clue": "Bevond zich naast een tv.",
+    "portrait": "portraits/18_D.jpg"
    },
    {
     "name": "Ernst",
     "letter": "E",
-    "clue": "Lag op het bed."
+    "clue": "Lag op het bed.",
+    "portrait": "portraits/18_E.jpg"
    },
    {
     "name": "Fern",
     "letter": "F",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/18_F.jpg"
    },
    {
     "name": "Gabor",
     "letter": "G",
-    "clue": "Was alleen in het kantoor van de commissarisEr waren geen lege ruimtes."
+    "clue": "Was alleen in het kantoor van de commissarisEr waren geen lege ruimtes.",
+    "portrait": "portraits/18_G.jpg"
    },
    {
     "name": "Harry",
     "letter": "H",
-    "clue": "Zat in een hoek van zijn kamer."
+    "clue": "Zat in een hoek van zijn kamer.",
+    "portrait": "portraits/18_H.jpg"
    }
   ],
   "victim": {
    "name": "Vladislav",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/18_V.jpg"
   },
   "rooms": [
    "KANTOOR COMMISSARIS",
@@ -1657,48 +1795,57 @@
    {
     "name": "Albert",
     "letter": "A",
-    "clue": "Stond naast een tv en naast een kast"
+    "clue": "Stond naast een tv en naast een kast",
+    "portrait": "portraits/19_A.jpg"
    },
    {
     "name": "Byron",
     "letter": "B",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/19_B.jpg"
    },
    {
     "name": "Chantal",
     "letter": "C",
-    "clue": "Ze stond naast een tv en naast een stoel."
+    "clue": "Ze stond naast een tv en naast een stoel.",
+    "portrait": "portraits/19_C.jpg"
    },
    {
     "name": "Daley",
     "letter": "D",
-    "clue": "Zat op een bed."
+    "clue": "Zat op een bed.",
+    "portrait": "portraits/19_D.jpg"
    },
    {
     "name": "Eva",
     "letter": "E",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/19_E.jpg"
    },
    {
     "name": "Fedde",
     "letter": "F",
-    "clue": "Bevond zich naast eentv en naast een tafel."
+    "clue": "Bevond zich naast eentv en naast een tafel.",
+    "portrait": "portraits/19_F.jpg"
    },
    {
     "name": "Gerald",
     "letter": "G",
-    "clue": "Stond naast een tv. Stond naast een tv"
+    "clue": "Stond naast een tv. Stond naast een tv",
+    "portrait": "portraits/19_G.jpg"
    },
    {
     "name": "Helen",
     "letter": "H",
-    "clue": "Was alleen in de eetkamer samen met Byron."
+    "clue": "Was alleen in de eetkamer samen met Byron.",
+    "portrait": "portraits/19_H.jpg"
    }
   ],
   "victim": {
    "name": "Vidal",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/19_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -1779,48 +1926,57 @@
    {
     "name": "Adam",
     "letter": "A",
-    "clue": "Was in de keuken"
+    "clue": "Was in de keuken",
+    "portrait": "portraits/20_A.jpg"
    },
    {
     "name": "Bastiaan",
     "letter": "B",
-    "clue": "Zat op een bed."
+    "clue": "Zat op een bed.",
+    "portrait": "portraits/20_B.jpg"
    },
    {
     "name": "Carola",
     "letter": "C",
-    "clue": "Stond naast een kast in de studeerkamer."
+    "clue": "Stond naast een kast in de studeerkamer.",
+    "portrait": "portraits/20_C.jpg"
    },
    {
     "name": "Dina",
     "letter": "D",
-    "clue": "Zat op een stoel in de eetkamer"
+    "clue": "Zat op een stoel in de eetkamer",
+    "portrait": "portraits/20_D.jpg"
    },
    {
     "name": "Eden",
     "letter": "E",
-    "clue": "Bevond zich naast de tv."
+    "clue": "Bevond zich naast de tv.",
+    "portrait": "portraits/20_E.jpg"
    },
    {
     "name": "Frits",
     "letter": "F",
-    "clue": "Was in de badkamer."
+    "clue": "Was in de badkamer.",
+    "portrait": "portraits/20_F.jpg"
    },
    {
     "name": "Gavin",
     "letter": "G",
-    "clue": "Was alleen met een vrouw."
+    "clue": "Was alleen met een vrouw.",
+    "portrait": "portraits/20_G.jpg"
    },
    {
     "name": "Henk",
     "letter": "H",
-    "clue": "Zat op een stoel. Misdaad en straf."
+    "clue": "Zat op een stoel. Misdaad en straf.",
+    "portrait": "portraits/20_H.jpg"
    }
   ],
   "victim": {
    "name": "Vera",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/20_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -1865,33 +2021,39 @@
    {
     "name": "Anthony",
     "letter": "A",
-    "clue": "Stond naast een tafel"
+    "clue": "Stond naast een tafel",
+    "portrait": "portraits/21_A.jpg"
    },
    {
     "name": "Bianca",
     "letter": "B",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/21_B.jpg"
    },
    {
     "name": "Charlotte",
     "letter": "C",
-    "clue": "Bevond zich in de logeerkamer."
+    "clue": "Bevond zich in de logeerkamer.",
+    "portrait": "portraits/21_C.jpg"
    },
    {
     "name": "Daryl",
     "letter": "D",
-    "clue": "Was de enige persoon op een bed.‘ga direct naar de gevangenis’."
+    "clue": "Was de enige persoon op een bed.‘ga direct naar de gevangenis’.",
+    "portrait": "portraits/21_D.jpg"
    },
    {
     "name": "Ethan",
     "letter": "E",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/21_E.jpg"
    }
   ],
   "victim": {
    "name": "Vanna",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/21_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -1959,43 +2121,51 @@
    {
     "name": "Ate",
     "letter": "A",
-    "clue": "Was in een van zijn eigen ruimtes. Zat op een stoel."
+    "clue": "Was in een van zijn eigen ruimtes. Zat op een stoel.",
+    "portrait": "portraits/22_A.jpg"
    },
    {
     "name": "Bella",
     "letter": "B",
-    "clue": "Was in een van haar eigen ruimtes."
+    "clue": "Was in een van haar eigen ruimtes.",
+    "portrait": "portraits/22_B.jpg"
    },
    {
     "name": "Carrie",
     "letter": "C",
-    "clue": "Was alleen in de eetkamer van Ate of Bella."
+    "clue": "Was alleen in de eetkamer van Ate of Bella.",
+    "portrait": "portraits/22_C.jpg"
    },
    {
     "name": "Denise",
     "letter": "D",
-    "clue": "Zat op een stoel in een van de ruimtes van Bella."
+    "clue": "Zat op een stoel in een van de ruimtes van Bella.",
+    "portrait": "portraits/22_D.jpg"
    },
    {
     "name": "Ellie",
     "letter": "E",
-    "clue": "Was in de slaapkamer van Ate."
+    "clue": "Was in de slaapkamer van Ate.",
+    "portrait": "portraits/22_E.jpg"
    },
    {
     "name": "Frank",
     "letter": "F",
-    "clue": "De enige persoon op een bed."
+    "clue": "De enige persoon op een bed.",
+    "portrait": "portraits/22_F.jpg"
    },
    {
     "name": "Gert",
     "letter": "G",
-    "clue": "Bevond zich in de onderste rij."
+    "clue": "Bevond zich in de onderste rij.",
+    "portrait": "portraits/22_G.jpg"
    }
   ],
   "victim": {
    "name": "Vernon",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/22_V.jpg"
   },
   "rooms": [
    "ATE’S EETKAMER",
@@ -2042,43 +2212,51 @@
    {
     "name": "Adam",
     "letter": "A",
-    "clue": "Bevond zich niet naast een tvkast of kassa."
+    "clue": "Bevond zich niet naast een tvkast of kassa.",
+    "portrait": "portraits/23_A.jpg"
    },
    {
     "name": "Bobby",
     "letter": "B",
-    "clue": "Bevond zich naast een tv."
+    "clue": "Bevond zich naast een tv.",
+    "portrait": "portraits/23_B.jpg"
    },
    {
     "name": "Caroline",
     "letter": "C",
-    "clue": "Bevond zich in de laatste kolom. In de stoel in zijn kamer zat iemand anders."
+    "clue": "Bevond zich in de laatste kolom. In de stoel in zijn kamer zat iemand anders.",
+    "portrait": "portraits/23_C.jpg"
    },
    {
     "name": "Daniël",
     "letter": "D",
-    "clue": "Stond naast een tafel. Bevond zich boven Bobby."
+    "clue": "Stond naast een tafel. Bevond zich boven Bobby.",
+    "portrait": "portraits/23_D.jpg"
    },
    {
     "name": "Eli",
     "letter": "E",
-    "clue": "Er was geen kist in zijn kolom, ongeacht in welke kamer."
+    "clue": "Er was geen kist in zijn kolom, ongeacht in welke kamer.",
+    "portrait": "portraits/23_E.jpg"
    },
    {
     "name": "Falko",
     "letter": "F",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/23_F.jpg"
    },
    {
     "name": "Gideon",
     "letter": "G",
-    "clue": "Bevond zich naast een kist. Duidelijk geval van kortsluiting.,"
+    "clue": "Bevond zich naast een kist. Duidelijk geval van kortsluiting.,",
+    "portrait": "portraits/23_G.jpg"
    }
   ],
   "victim": {
    "name": "Vic",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/23_V.jpg"
   },
   "rooms": [
    "COMPUTERS",
@@ -2156,38 +2334,45 @@
    {
     "name": "Betty",
     "letter": "A",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/24_A.jpg"
    },
    {
     "name": "Chantal",
     "letter": "B",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/24_B.jpg"
    },
    {
     "name": "Dorothy",
     "letter": "C",
-    "clue": "Bevond zich naast een tafel."
+    "clue": "Bevond zich naast een tafel.",
+    "portrait": "portraits/24_C.jpg"
    },
    {
     "name": "Elisa",
     "letter": "D",
-    "clue": "Bevond zich in de lobby met iemand die op een stoel zat."
+    "clue": "Bevond zich in de lobby met iemand die op een stoel zat.",
+    "portrait": "portraits/24_D.jpg"
    },
    {
     "name": "Francesca",
     "letter": "E",
-    "clue": "Bevond zich in de derde kolom."
+    "clue": "Bevond zich in de derde kolom.",
+    "portrait": "portraits/24_E.jpg"
    },
    {
     "name": "Gitte",
     "letter": "F",
-    "clue": "Stond op een tapijtIedereen in haar ruimte droeg een bril. Precies één rij onderhaar bevond zich iemand naast een kast"
+    "clue": "Stond op een tapijtIedereen in haar ruimte droeg een bril. Precies één rij onderhaar bevond zich iemand naast een kast",
+    "portrait": "portraits/24_F.jpg"
    }
   ],
   "victim": {
    "name": "Valerie",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/24_V.jpg"
   },
   "rooms": [
    "KAPSALON",
@@ -2231,53 +2416,63 @@
    {
     "name": "Adeline",
     "letter": "A",
-    "clue": "Was in paskamer 1 of 6. Stond naast een stoel."
+    "clue": "Was in paskamer 1 of 6. Stond naast een stoel.",
+    "portrait": "portraits/25_A.jpg"
    },
    {
     "name": "Brigitte",
     "letter": "B",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/25_B.jpg"
    },
    {
     "name": "Clarissa",
     "letter": "C",
-    "clue": "Bevond zich in de vijfde rij."
+    "clue": "Bevond zich in de vijfde rij.",
+    "portrait": "portraits/25_C.jpg"
    },
    {
     "name": "Dylan",
     "letter": "D",
-    "clue": "Bevond zich op een tapijt"
+    "clue": "Bevond zich op een tapijt",
+    "portrait": "portraits/25_D.jpg"
    },
    {
     "name": "Eleanor",
     "letter": "E",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/25_E.jpg"
    },
    {
     "name": "Ellie",
     "letter": "F",
-    "clue": "Bevond zich niet naasteen tafel of een stoel"
+    "clue": "Bevond zich niet naasteen tafel of een stoel",
+    "portrait": "portraits/25_F.jpg"
    },
    {
     "name": "Felicity",
     "letter": "G",
-    "clue": "Was alleen in paskamer 4."
+    "clue": "Was alleen in paskamer 4.",
+    "portrait": "portraits/25_G.jpg"
    },
    {
     "name": "Gary",
     "letter": "H",
-    "clue": "In zijn kamer was hij degene die het verst naar rechts stond."
+    "clue": "In zijn kamer was hij degene die het verst naar rechts stond.",
+    "portrait": "portraits/25_H.jpg"
    },
    {
     "name": "Hanna",
     "letter": "I",
-    "clue": "Er waren twee mannenin haar kamer die zich naast een kast bevonden."
+    "clue": "Er waren twee mannenin haar kamer die zich naast een kast bevonden.",
+    "portrait": "portraits/25_I.jpg"
    }
   ],
   "victim": {
    "name": "Violet",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/25_V.jpg"
   },
   "rooms": [
    "WINKEL",
@@ -2311,48 +2506,57 @@
    {
     "name": "Alain",
     "letter": "A",
-    "clue": "Was op het terrasHij zat niet."
+    "clue": "Was op het terrasHij zat niet.",
+    "portrait": "portraits/26_A.jpg"
    },
    {
     "name": "Bianca",
     "letter": "B",
-    "clue": "Stond naast een kast"
+    "clue": "Stond naast een kast",
+    "portrait": "portraits/26_B.jpg"
    },
    {
     "name": "Courtney",
     "letter": "C",
-    "clue": "Zat op een stoel in de eetkamer."
+    "clue": "Zat op een stoel in de eetkamer.",
+    "portrait": "portraits/26_C.jpg"
    },
    {
     "name": "Dina",
     "letter": "D",
-    "clue": "Bevond zich niet naast een tafel."
+    "clue": "Bevond zich niet naast een tafel.",
+    "portrait": "portraits/26_D.jpg"
    },
    {
     "name": "Eugene",
     "letter": "E",
-    "clue": "Zat op het toilet"
+    "clue": "Zat op het toilet",
+    "portrait": "portraits/26_E.jpg"
    },
    {
     "name": "Fabrice",
     "letter": "F",
-    "clue": "Bevond zich onder Dina."
+    "clue": "Bevond zich onder Dina.",
+    "portrait": "portraits/26_F.jpg"
    },
    {
     "name": "Gianni",
     "letter": "G",
-    "clue": "Was samen met Bianca."
+    "clue": "Was samen met Bianca.",
+    "portrait": "portraits/26_G.jpg"
    },
    {
     "name": "Hada",
     "letter": "H",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/26_H.jpg"
    }
   ],
   "victim": {
    "name": "Vanessa",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/26_V.jpg"
   },
   "rooms": [
    "ZEE",
@@ -2432,48 +2636,57 @@
    {
     "name": "Annie",
     "letter": "A",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/27_A.jpg"
    },
    {
     "name": "Berend",
     "letter": "B",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/27_B.jpg"
    },
    {
     "name": "Chris",
     "letter": "C",
-    "clue": "Hij bevond zich boven Danika en onder Annie."
+    "clue": "Hij bevond zich boven Danika en onder Annie.",
+    "portrait": "portraits/27_C.jpg"
    },
    {
     "name": "Danika",
     "letter": "D",
-    "clue": "Bevond zich rechts van Annie en links van GraceEr stond een tv in haar kamer. Ze was alleen in de ruimte."
+    "clue": "Bevond zich rechts van Annie en links van GraceEr stond een tv in haar kamer. Ze was alleen in de ruimte.",
+    "portrait": "portraits/27_D.jpg"
    },
    {
     "name": "Eddy",
     "letter": "E",
-    "clue": "Bevond zich in de boksring. Stond op het tapijt"
+    "clue": "Bevond zich in de boksring. Stond op het tapijt",
+    "portrait": "portraits/27_E.jpg"
    },
    {
     "name": "Frederik",
     "letter": "F",
-    "clue": "Zat in een hoek van zijn kamer."
+    "clue": "Zat in een hoek van zijn kamer.",
+    "portrait": "portraits/27_F.jpg"
    },
    {
     "name": "Grace",
     "letter": "G",
-    "clue": "Deze arme jongen is uitgeteld. Afgezien van een kluisjewas er nog iemand in zijn kamer."
+    "clue": "Deze arme jongen is uitgeteld. Afgezien van een kluisjewas er nog iemand in zijn kamer.",
+    "portrait": "portraits/27_G.jpg"
    },
    {
     "name": "Hector",
     "letter": "H",
-    "clue": "Er was een vrouw in zijn kamer."
+    "clue": "Er was een vrouw in zijn kamer.",
+    "portrait": "portraits/27_H.jpg"
    }
   ],
   "victim": {
    "name": "Virgil",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/27_V.jpg"
   },
   "rooms": [
    "BOKSRING",
@@ -2559,48 +2772,57 @@
    {
     "name": "Ayla",
     "letter": "A",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/28_A.jpg"
    },
    {
     "name": "Beckie",
     "letter": "B",
-    "clue": "Bevond zich in een hoek van haar ruimte."
+    "clue": "Bevond zich in een hoek van haar ruimte.",
+    "portrait": "portraits/28_B.jpg"
    },
    {
     "name": "Cees",
     "letter": "C",
-    "clue": "Er was iemand in zijn kamer die zich niet naast een tafel of kast bevond."
+    "clue": "Er was iemand in zijn kamer die zich niet naast een tafel of kast bevond.",
+    "portrait": "portraits/28_C.jpg"
    },
    {
     "name": "Dominique",
     "letter": "D",
-    "clue": "Bevond zich in de vijfde rij."
+    "clue": "Bevond zich in de vijfde rij.",
+    "portrait": "portraits/28_D.jpg"
    },
    {
     "name": "Emilio",
     "letter": "E",
-    "clue": "Bevond zich in het gangpad met vlees"
+    "clue": "Bevond zich in het gangpad met vlees",
+    "portrait": "portraits/28_E.jpg"
    },
    {
     "name": "Fatima",
     "letter": "F",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/28_F.jpg"
    },
    {
     "name": "Grad",
     "letter": "G",
-    "clue": "Er waren nog een man en vrouw in zijn kamer. Er was geen lege kamer."
+    "clue": "Er waren nog een man en vrouw in zijn kamer. Er was geen lege kamer.",
+    "portrait": "portraits/28_G.jpg"
    },
    {
     "name": "Henry",
     "letter": "H",
-    "clue": "Was in het gangpad met snacks of in de bakkerij"
+    "clue": "Was in het gangpad met snacks of in de bakkerij",
+    "portrait": "portraits/28_H.jpg"
    }
   ],
   "victim": {
    "name": "Val",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/28_V.jpg"
   },
   "rooms": [
    "GROENTEN EN FRUIT",
@@ -2672,48 +2894,57 @@
    {
     "name": "Albert",
     "letter": "A",
-    "clue": "Was naast een tv"
+    "clue": "Was naast een tv",
+    "portrait": "portraits/29_A.jpg"
    },
    {
     "name": "Betty",
     "letter": "B",
-    "clue": "Was alleen in de keuken."
+    "clue": "Was alleen in de keuken.",
+    "portrait": "portraits/29_B.jpg"
    },
    {
     "name": "Cyrus",
     "letter": "C",
-    "clue": "Was naast een tafel. Was niet in de eetkamer."
+    "clue": "Was naast een tafel. Was niet in de eetkamer.",
+    "portrait": "portraits/29_C.jpg"
    },
    {
     "name": "Donna",
     "letter": "D",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/29_D.jpg"
    },
    {
     "name": "Esther",
     "letter": "E",
-    "clue": "Stond op een tapijt"
+    "clue": "Stond op een tapijt",
+    "portrait": "portraits/29_E.jpg"
    },
    {
     "name": "Falko",
     "letter": "F",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/29_F.jpg"
    },
    {
     "name": "Gianni",
     "letter": "G",
-    "clue": "Zat op een bed."
+    "clue": "Zat op een bed.",
+    "portrait": "portraits/29_G.jpg"
    },
    {
     "name": "Hanna",
     "letter": "H",
-    "clue": "Bevond zich in een hoek"
+    "clue": "Bevond zich in een hoek",
+    "portrait": "portraits/29_H.jpg"
    }
   ],
   "victim": {
    "name": "Victor",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/29_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -2794,53 +3025,63 @@
    {
     "name": "Andy",
     "letter": "A",
-    "clue": "Er was een tv in zijn kamer."
+    "clue": "Er was een tv in zijn kamer.",
+    "portrait": "portraits/30_A.jpg"
    },
    {
     "name": "Bella",
     "letter": "B",
-    "clue": "Bevond zich in de bovenste rij"
+    "clue": "Bevond zich in de bovenste rij",
+    "portrait": "portraits/30_C.jpg"
    },
    {
     "name": "Bella",
     "letter": "C",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/30_C.jpg"
    },
    {
     "name": "Clark",
     "letter": "D",
-    "clue": "Hij was in de gang, alleen met Frankie."
+    "clue": "Hij was in de gang, alleen met Frankie.",
+    "portrait": "portraits/30_D.jpg"
    },
    {
     "name": "Daley",
     "letter": "E",
-    "clue": "Er was geen vrouwin zijn ruimte."
+    "clue": "Er was geen vrouwin zijn ruimte.",
+    "portrait": "portraits/30_E.jpg"
    },
    {
     "name": "Elias",
     "letter": "F",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/30_F.jpg"
    },
    {
     "name": "Frankie",
     "letter": "G",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/30_G.jpg"
    },
    {
     "name": "Greta",
     "letter": "H",
-    "clue": "Bevond zich in de recreatiezaalEr was geen lege kamer."
+    "clue": "Bevond zich in de recreatiezaalEr was geen lege kamer.",
+    "portrait": "portraits/30_H.jpg"
    },
    {
     "name": "Harriët",
     "letter": "I",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/30_I.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/30_V.jpg"
   },
   "rooms": [
    "EETZAAL",
@@ -2884,43 +3125,51 @@
    {
     "name": "Audrey",
     "letter": "A",
-    "clue": "In haar rij en dezelfde ruimte stond een tv."
+    "clue": "In haar rij en dezelfde ruimte stond een tv.",
+    "portrait": "portraits/31_A.jpg"
    },
    {
     "name": "Brad",
     "letter": "B",
-    "clue": "Was op straat, voor een raam."
+    "clue": "Was op straat, voor een raam.",
+    "portrait": "portraits/31_B.jpg"
    },
    {
     "name": "Cecilia",
     "letter": "C",
-    "clue": "Zat achterin een auto."
+    "clue": "Zat achterin een auto.",
+    "portrait": "portraits/31_C.jpg"
    },
    {
     "name": "Dominique",
     "letter": "D",
-    "clue": "Bevond zich in de achtste kolom"
+    "clue": "Bevond zich in de achtste kolom",
+    "portrait": "portraits/31_D.jpg"
    },
    {
     "name": "Elton",
     "letter": "E",
-    "clue": "Was in Giuseppe's keuken."
+    "clue": "Was in Giuseppe's keuken.",
+    "portrait": "portraits/31_E.jpg"
    },
    {
     "name": "Fabian",
     "letter": "F",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/31_F.jpg"
    },
    {
     "name": "Giuseppe",
     "letter": "G",
-    "clue": "Bevond zich precies één rij onder CeciliaOf is een klant te ver gegaan?"
+    "clue": "Bevond zich precies één rij onder CeciliaOf is een klant te ver gegaan?",
+    "portrait": "portraits/31_G.jpg"
    }
   ],
   "victim": {
    "name": "Luigi",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/31_V.jpg"
   },
   "rooms": [
    "STRAAT",
@@ -2965,48 +3214,57 @@
    {
     "name": "Anthony",
     "letter": "A",
-    "clue": "Bevond zich in de logeerkamer, maar naast een muur"
+    "clue": "Bevond zich in de logeerkamer, maar naast een muur",
+    "portrait": "portraits/32_A.jpg"
    },
    {
     "name": "Britt",
     "letter": "B",
-    "clue": "Was in de keuken."
+    "clue": "Was in de keuken.",
+    "portrait": "portraits/32_B.jpg"
    },
    {
     "name": "Carlijn",
     "letter": "C",
-    "clue": "Was alleen in de eetkamer."
+    "clue": "Was alleen in de eetkamer.",
+    "portrait": "portraits/32_C.jpg"
    },
    {
     "name": "Daan",
     "letter": "D",
-    "clue": "Bevond zich naast een plant"
+    "clue": "Bevond zich naast een plant",
+    "portrait": "portraits/32_D.jpg"
    },
    {
     "name": "Ethan",
     "letter": "E",
-    "clue": "Stond voor een raam."
+    "clue": "Stond voor een raam.",
+    "portrait": "portraits/32_E.jpg"
    },
    {
     "name": "Francesca",
     "letter": "F",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/32_F.jpg"
    },
    {
     "name": "George",
     "letter": "G",
-    "clue": "Bevond zich in de lounge Er was nog iemand in de ruimte. Er lag precies één persoon op een bed. niet."
+    "clue": "Bevond zich in de lounge Er was nog iemand in de ruimte. Er lag precies één persoon op een bed. niet.",
+    "portrait": "portraits/32_G.jpg"
    },
    {
     "name": "Hakan",
     "letter": "H",
-    "clue": "Er stond een tv in zijn kamer, in dezelfde rij."
+    "clue": "Er stond een tv in zijn kamer, in dezelfde rij.",
+    "portrait": "portraits/32_H.jpg"
    }
   ],
   "victim": {
    "name": "Vicky",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/32_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -3085,48 +3343,57 @@
    {
     "name": "Alexander",
     "letter": "A",
-    "clue": "Hij was in een kamer samen met drie vrouwen. Hij bevond zich in de meest rechtse kolom van die kamer."
+    "clue": "Hij was in een kamer samen met drie vrouwen. Hij bevond zich in de meest rechtse kolom van die kamer.",
+    "portrait": "portraits/33_A.jpg"
    },
    {
     "name": "Ben",
     "letter": "B",
-    "clue": "Was naast een tafel."
+    "clue": "Was naast een tafel.",
+    "portrait": "portraits/33_B.jpg"
    },
    {
     "name": "Carmen",
     "letter": "C",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/33_C.jpg"
    },
    {
     "name": "Darla",
     "letter": "D",
-    "clue": "Was naast een plant"
+    "clue": "Was naast een plant",
+    "portrait": "portraits/33_D.jpg"
    },
    {
     "name": "Erik",
     "letter": "E",
-    "clue": "Was alleen. Bevond zich niet naast een muur."
+    "clue": "Was alleen. Bevond zich niet naast een muur.",
+    "portrait": "portraits/33_E.jpg"
    },
    {
     "name": "Francine",
     "letter": "F",
-    "clue": "Bevond zich voor een raam."
+    "clue": "Bevond zich voor een raam.",
+    "portrait": "portraits/33_F.jpg"
    },
    {
     "name": "Gemma",
     "letter": "G",
-    "clue": "Bevond zich in dezelfde rij als een stoel en in dezelfde kamer"
+    "clue": "Bevond zich in dezelfde rij als een stoel en in dezelfde kamer",
+    "portrait": "portraits/33_G.jpg"
    },
    {
     "name": "Harriët",
     "letter": "H",
-    "clue": "De enige persoonop een tapijt."
+    "clue": "De enige persoonop een tapijt.",
+    "portrait": "portraits/33_H.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/33_V.jpg"
   },
   "rooms": [
    "GANG",
@@ -3204,48 +3471,57 @@
    {
     "name": "Aliya",
     "letter": "A",
-    "clue": "Was de enige persoon die naast een kast stond."
+    "clue": "Was de enige persoon die naast een kast stond.",
+    "portrait": "portraits/34_A.jpg"
    },
    {
     "name": "Bastiaan",
     "letter": "B",
-    "clue": "Bevond zich in de woonkamer met Harryen een vrouw."
+    "clue": "Bevond zich in de woonkamer met Harryen een vrouw.",
+    "portrait": "portraits/34_B.jpg"
    },
    {
     "name": "Caroline",
     "letter": "C",
-    "clue": "Was alleen met een man. Ze zaten allebei op een stoel."
+    "clue": "Was alleen met een man. Ze zaten allebei op een stoel.",
+    "portrait": "portraits/34_C.jpg"
    },
    {
     "name": "Dave",
     "letter": "D",
-    "clue": "Bevond zich in de vierde rij."
+    "clue": "Bevond zich in de vierde rij.",
+    "portrait": "portraits/34_D.jpg"
    },
    {
     "name": "Eli",
     "letter": "E",
-    "clue": "Bevond zich in de derde kolom"
+    "clue": "Bevond zich in de derde kolom",
+    "portrait": "portraits/34_E.jpg"
    },
    {
     "name": "Felicity",
     "letter": "F",
-    "clue": "Was naast een plant. en hem,."
+    "clue": "Was naast een plant. en hem,.",
+    "portrait": "portraits/34_F.jpg"
    },
    {
     "name": "Gabriëla",
     "letter": "G",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/34_G.jpg"
    },
    {
     "name": "Harry",
     "letter": "H",
-    "clue": "Op het vak één kolom twee rijen links bovenbevond zich een vrouw"
+    "clue": "Op het vak één kolom twee rijen links bovenbevond zich een vrouw",
+    "portrait": "portraits/34_H.jpg"
    }
   ],
   "victim": {
    "name": "Vernon",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/34_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -3325,43 +3601,51 @@
    {
     "name": "Bernardo",
     "letter": "A",
-    "clue": "Bevond zich naast een plant"
+    "clue": "Bevond zich naast een plant",
+    "portrait": "portraits/35_A.jpg"
    },
    {
     "name": "Claire",
     "letter": "B",
-    "clue": "Was alleen in de backoffice."
+    "clue": "Was alleen in de backoffice.",
+    "portrait": "portraits/35_B.jpg"
    },
    {
     "name": "Dahlia",
     "letter": "C",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/35_C.jpg"
    },
    {
     "name": "Emilia",
     "letter": "D",
-    "clue": "Bevond zich in de tweede kolom. Bevond zich boven Archie"
+    "clue": "Bevond zich in de tweede kolom. Bevond zich boven Archie",
+    "portrait": "portraits/35_D.jpg"
    },
    {
     "name": "Franklin",
     "letter": "E",
-    "clue": "Hij zat rechts onder Archie, in dezelfde kamer."
+    "clue": "Hij zat rechts onder Archie, in dezelfde kamer.",
+    "portrait": "portraits/35_E.jpg"
    },
    {
     "name": "Gilbert",
     "letter": "F",
-    "clue": "Bevond zich op de vijfde rij. maar dit slaat nergens op."
+    "clue": "Bevond zich op de vijfde rij. maar dit slaat nergens op.",
+    "portrait": "portraits/35_F.jpg"
    },
    {
     "name": "Howie",
     "letter": "G",
-    "clue": "Bevond zich niet naast een kist."
+    "clue": "Bevond zich niet naast een kist.",
+    "portrait": "portraits/35_G.jpg"
    }
   ],
   "victim": {
    "name": "Victor",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/35_V.jpg"
   },
   "rooms": [
    "BEDDENWINKEL",
@@ -3407,43 +3691,51 @@
    {
     "name": "Adam",
     "letter": "A",
-    "clue": "Zat achter in een auto."
+    "clue": "Zat achter in een auto.",
+    "portrait": "portraits/36_A.jpg"
    },
    {
     "name": "Cor",
     "letter": "B",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/36_B.jpg"
    },
    {
     "name": "Dorien",
     "letter": "C",
-    "clue": "Was in de garage"
+    "clue": "Was in de garage",
+    "portrait": "portraits/36_C.jpg"
    },
    {
     "name": "Elias",
     "letter": "D",
-    "clue": "Bevond zich in de kelder."
+    "clue": "Bevond zich in de kelder.",
+    "portrait": "portraits/36_D.jpg"
    },
    {
     "name": "Francine",
     "letter": "E",
-    "clue": "Stond niet naastde kassa."
+    "clue": "Stond niet naastde kassa.",
+    "portrait": "portraits/36_E.jpg"
    },
    {
     "name": "Gwen",
     "letter": "F",
-    "clue": "Zat in een auto bij de tankzone. Ze was niet samenmet Adam. Er stond precies één persoon op een olievlek. er bleek dit haar laatste stop. BrentIemand anders in zijn kamer stond naast een."
+    "clue": "Zat in een auto bij de tankzone. Ze was niet samenmet Adam. Er stond precies één persoon op een olievlek. er bleek dit haar laatste stop. BrentIemand anders in zijn kamer stond naast een.",
+    "portrait": "portraits/36_F.jpg"
    },
    {
     "name": "Henk",
     "letter": "G",
-    "clue": "Bevond zich op de parkeerplaatskast."
+    "clue": "Bevond zich op de parkeerplaatskast.",
+    "portrait": "portraits/36_G.jpg"
    }
   ],
   "victim": {
    "name": "Viviana",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Deze plaats delict hft n opvaend kenmerk (los van het feit dat hij al jaren niet is schoongemaakt): het feit dat hij al jaren niet is schoongemaakt): het feit dat hij al jaren er is één lege kolom. Hoofdinspecteur Wiems"
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Deze plaats delict hft n opvaend kenmerk (los van het feit dat hij al jaren niet is schoongemaakt): het feit dat hij al jaren niet is schoongemaakt): het feit dat hij al jaren er is één lege kolom. Hoofdinspecteur Wiems",
+   "portrait": "portraits/36_V.jpg"
   },
   "rooms": [
    "TOILETRUIMTE",
@@ -3488,38 +3780,45 @@
    {
     "name": "Anatoly",
     "letter": "A",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/37_A.jpg"
    },
    {
     "name": "Boris",
     "letter": "B",
-    "clue": "Bevond zich één kolomen twee rijen links boven AnatolyEfimBevond zich op dezelfde diagonale als Anatoly of Boris"
+    "clue": "Bevond zich één kolomen twee rijen links boven AnatolyEfimBevond zich op dezelfde diagonale als Anatoly of Boris",
+    "portrait": "portraits/37_B.jpg"
    },
    {
     "name": "Chantalle",
     "letter": "C",
-    "clue": "Was alleen in de toernooizaal met precies twee mannen. as."
+    "clue": "Was alleen in de toernooizaal met precies twee mannen. as.",
+    "portrait": "portraits/37_C.jpg"
    },
    {
     "name": "Dina",
     "letter": "D",
-    "clue": "Was alleen op de tribune."
+    "clue": "Was alleen op de tribune.",
+    "portrait": "portraits/37_D.jpg"
    },
    {
     "name": "Fabiano",
     "letter": "E",
-    "clue": "Bevond zich naast een plant, rechts van Dina."
+    "clue": "Bevond zich naast een plant, rechts van Dina.",
+    "portrait": "portraits/37_E.jpg"
    },
    {
     "name": "Geike",
     "letter": "F",
-    "clue": "Bevond zich in de lounge."
+    "clue": "Bevond zich in de lounge.",
+    "portrait": "portraits/37_F.jpg"
    }
   ],
   "victim": {
    "name": "Vadim",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/37_V.jpg"
   },
   "rooms": [
    "TOERNOOIZAAL",
@@ -3555,53 +3854,63 @@
    {
     "name": "Anthony",
     "letter": "A",
-    "clue": "Was naast een tafel"
+    "clue": "Was naast een tafel",
+    "portrait": "portraits/38_A.jpg"
    },
    {
     "name": "Barbara",
     "letter": "B",
-    "clue": "Bevond zich op de onderste rij."
+    "clue": "Bevond zich op de onderste rij.",
+    "portrait": "portraits/38_B.jpg"
    },
    {
     "name": "Chris",
     "letter": "C",
-    "clue": "Was in toilet A."
+    "clue": "Was in toilet A.",
+    "portrait": "portraits/38_C.jpg"
    },
    {
     "name": "Doris",
     "letter": "D",
-    "clue": "Zat op een stoel"
+    "clue": "Zat op een stoel",
+    "portrait": "portraits/38_D.jpg"
    },
    {
     "name": "Eduardo",
     "letter": "E",
-    "clue": "Hij bevond zich linksvan Anthony en zat op een stoel. Stond op het tapijt"
+    "clue": "Hij bevond zich linksvan Anthony en zat op een stoel. Stond op het tapijt",
+    "portrait": "portraits/38_E.jpg"
    },
    {
     "name": "Frances",
     "letter": "F",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/38_F.jpg"
    },
    {
     "name": "Francesca",
     "letter": "G",
-    "clue": "Ze bevond zich links van Eduardo en zat niet op een stoel."
+    "clue": "Ze bevond zich links van Eduardo en zat niet op een stoel.",
+    "portrait": "portraits/38_G.jpg"
    },
    {
     "name": "Gabriëla",
     "letter": "H",
-    "clue": "Was naast een tvIemand anders wasnaast dezelfde tvEr was geen lege kamer."
+    "clue": "Was naast een tvIemand anders wasnaast dezelfde tvEr was geen lege kamer.",
+    "portrait": "portraits/38_H.jpg"
    },
    {
     "name": "Henk",
     "letter": "I",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/38_I.jpg"
    }
   ],
   "victim": {
    "name": "Vico",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/38_V.jpg"
   },
   "rooms": [
    "TRIBUNE (LINKS)",
@@ -3633,48 +3942,57 @@
    {
     "name": "Alies",
     "letter": "A",
-    "clue": "Was alleen in de lobby."
+    "clue": "Was alleen in de lobby.",
+    "portrait": "portraits/39_A.jpg"
    },
    {
     "name": "Bowie",
     "letter": "B",
-    "clue": "Bevond zich op een tapijt."
+    "clue": "Bevond zich op een tapijt.",
+    "portrait": "portraits/39_B.jpg"
    },
    {
     "name": "Chenglei",
     "letter": "C",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/39_C.jpg"
    },
    {
     "name": "Dave",
     "letter": "D",
-    "clue": "Bevond zich alleen in de kamer, naast een plant"
+    "clue": "Bevond zich alleen in de kamer, naast een plant",
+    "portrait": "portraits/39_D.jpg"
    },
    {
     "name": "Elias",
     "letter": "E",
-    "clue": "Bevond zich voor een raam."
+    "clue": "Bevond zich voor een raam.",
+    "portrait": "portraits/39_E.jpg"
    },
    {
     "name": "Feng",
     "letter": "F",
-    "clue": "Was in het herentoilet."
+    "clue": "Was in het herentoilet.",
+    "portrait": "portraits/39_F.jpg"
    },
    {
     "name": "Gao",
     "letter": "G",
-    "clue": "Was in het damestoilet."
+    "clue": "Was in het damestoilet.",
+    "portrait": "portraits/39_G.jpg"
    },
    {
     "name": "Huifang",
     "letter": "H",
-    "clue": "Bevond zich in een hoek van haar ruimte."
+    "clue": "Bevond zich in een hoek van haar ruimte.",
+    "portrait": "portraits/39_H.jpg"
    }
   ],
   "victim": {
    "name": "Wang",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/39_V.jpg"
   },
   "rooms": [
    "GANG",
@@ -3718,48 +4036,57 @@
    {
     "name": "Amir",
     "letter": "A",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/40_A.jpg"
    },
    {
     "name": "Bart",
     "letter": "B",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/40_B.jpg"
    },
    {
     "name": "Carla",
     "letter": "C",
-    "clue": "Bevond zich in de grote slaapkamer of de logeerkamer."
+    "clue": "Bevond zich in de grote slaapkamer of de logeerkamer.",
+    "portrait": "portraits/40_C.jpg"
    },
    {
     "name": "Daniëlle",
     "letter": "D",
-    "clue": "Stond naast een bed"
+    "clue": "Stond naast een bed",
+    "portrait": "portraits/40_D.jpg"
    },
    {
     "name": "Ella",
     "letter": "E",
-    "clue": "In haar kamer wasnog een vrouw naast een tafel."
+    "clue": "In haar kamer wasnog een vrouw naast een tafel.",
+    "portrait": "portraits/40_E.jpg"
    },
    {
     "name": "Felipe",
     "letter": "F",
-    "clue": "Stond niet op een tapijt."
+    "clue": "Stond niet op een tapijt.",
+    "portrait": "portraits/40_F.jpg"
    },
    {
     "name": "Gert",
     "letter": "G",
-    "clue": "In de hoek van zijn kamer bevond zich iemand die een bril draagt."
+    "clue": "In de hoek van zijn kamer bevond zich iemand die een bril draagt.",
+    "portrait": "portraits/40_G.jpg"
    },
    {
     "name": "Hoeda",
     "letter": "H",
-    "clue": "Bevond zich niet naasteen stoel, plant, bed of tafel."
+    "clue": "Bevond zich niet naasteen stoel, plant, bed of tafel.",
+    "portrait": "portraits/40_H.jpg"
    }
   ],
   "victim": {
    "name": "Wassily",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/40_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -3792,33 +4119,39 @@
    {
     "name": "Anastasia",
     "letter": "A",
-    "clue": "Was in slaapkamer Aof in slaapkamer D"
+    "clue": "Was in slaapkamer Aof in slaapkamer D",
+    "portrait": "portraits/41_A.jpg"
    },
    {
     "name": "Boris",
     "letter": "B",
-    "clue": "Bevond zich naast een plant, links van Eddy"
+    "clue": "Bevond zich naast een plant, links van Eddy",
+    "portrait": "portraits/41_B.jpg"
    },
    {
     "name": "Claire",
     "letter": "C",
-    "clue": "Bevond zich net boven of net onder een bed."
+    "clue": "Bevond zich net boven of net onder een bed.",
+    "portrait": "portraits/41_C.jpg"
    },
    {
     "name": "David",
     "letter": "D",
-    "clue": "De enige persoon op een stoel."
+    "clue": "De enige persoon op een stoel.",
+    "portrait": "portraits/41_D.jpg"
    },
    {
     "name": "Eddy",
     "letter": "E",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/41_E.jpg"
    }
   ],
   "victim": {
    "name": "Vibeke",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/41_V.jpg"
   },
   "rooms": [
    "GANG",
@@ -3881,48 +4214,57 @@
    {
     "name": "Aad",
     "letter": "A",
-    "clue": "Zat in cel C."
+    "clue": "Zat in cel C.",
+    "portrait": "portraits/42_A.jpg"
    },
    {
     "name": "Bas",
     "letter": "B",
-    "clue": "Bevond zich in de gemeen-schappelijke ruimte Stond niet op het tapijt"
+    "clue": "Bevond zich in de gemeen-schappelijke ruimte Stond niet op het tapijt",
+    "portrait": "portraits/42_B.jpg"
    },
    {
     "name": "Cristiano",
     "letter": "C",
-    "clue": "Was de enige persoon op een bed."
+    "clue": "Was de enige persoon op een bed.",
+    "portrait": "portraits/42_C.jpg"
    },
    {
     "name": "Dirk",
     "letter": "D",
-    "clue": "Stond links naast een bed."
+    "clue": "Stond links naast een bed.",
+    "portrait": "portraits/42_D.jpg"
    },
    {
     "name": "Emilio",
     "letter": "E",
-    "clue": "Stond op het tapijt."
+    "clue": "Stond op het tapijt.",
+    "portrait": "portraits/42_E.jpg"
    },
    {
     "name": "Finn",
     "letter": "F",
-    "clue": "Bevond zich in cel D of cel E."
+    "clue": "Bevond zich in cel D of cel E.",
+    "portrait": "portraits/42_F.jpg"
    },
    {
     "name": "Gideon",
     "letter": "G",
-    "clue": "Bevond zich in dezelfde rij als de tvEr was geen lege kamer."
+    "clue": "Bevond zich in dezelfde rij als de tvEr was geen lege kamer.",
+    "portrait": "portraits/42_G.jpg"
    },
    {
     "name": "Hector",
     "letter": "H",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/42_H.jpg"
    }
   ],
   "victim": {
    "name": "Vito",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/42_V.jpg"
   },
   "rooms": [
    "CEL A",
@@ -4000,48 +4342,57 @@
    {
     "name": "Aaron",
     "letter": "A",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/43_A.jpg"
    },
    {
     "name": "Brandon",
     "letter": "B",
-    "clue": "Bevond zich in de laatste kolom."
+    "clue": "Bevond zich in de laatste kolom.",
+    "portrait": "portraits/43_B.jpg"
    },
    {
     "name": "Cara",
     "letter": "C",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/43_C.jpg"
    },
    {
     "name": "Daniëlle",
     "letter": "D",
-    "clue": "Was in de keuken"
+    "clue": "Was in de keuken",
+    "portrait": "portraits/43_D.jpg"
    },
    {
     "name": "Ethan",
     "letter": "E",
-    "clue": "Bevond zich naast een raam."
+    "clue": "Bevond zich naast een raam.",
+    "portrait": "portraits/43_E.jpg"
    },
    {
     "name": "Fedde",
     "letter": "F",
-    "clue": "Stond naast een tv."
+    "clue": "Stond naast een tv.",
+    "portrait": "portraits/43_F.jpg"
    },
    {
     "name": "George",
     "letter": "G",
-    "clue": "Was in een ruimte samen met twee mannenEr was geen lege kamer."
+    "clue": "Was in een ruimte samen met twee mannenEr was geen lege kamer.",
+    "portrait": "portraits/43_G.jpg"
    },
    {
     "name": "Haiko",
     "letter": "H",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/43_H.jpg"
    }
   ],
   "victim": {
    "name": "Victoria",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Iemand bevond zich op het bed."
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Iemand bevond zich op het bed.",
+   "portrait": "portraits/43_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -4120,48 +4471,57 @@
    {
     "name": "Aad",
     "letter": "A",
-    "clue": "Bevond zich in de grote zaal Hij bevond zich rechts Eloise en onder Björn"
+    "clue": "Bevond zich in de grote zaal Hij bevond zich rechts Eloise en onder Björn",
+    "portrait": "portraits/44_A.jpg"
    },
    {
     "name": "Björn",
     "letter": "B",
-    "clue": "Bevond zich naast een plant. Iemand anders wasnaast dezelfde plant"
+    "clue": "Bevond zich naast een plant. Iemand anders wasnaast dezelfde plant",
+    "portrait": "portraits/44_B.jpg"
    },
    {
     "name": "Clara",
     "letter": "C",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/44_C.jpg"
    },
    {
     "name": "Diana",
     "letter": "D",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/44_D.jpg"
    },
    {
     "name": "Eloise",
     "letter": "E",
-    "clue": "Bevond zich in de bovenste rij."
+    "clue": "Bevond zich in de bovenste rij.",
+    "portrait": "portraits/44_E.jpg"
    },
    {
     "name": "Francis",
     "letter": "F",
-    "clue": "Was naast een tv."
+    "clue": "Was naast een tv.",
+    "portrait": "portraits/44_F.jpg"
    },
    {
     "name": "Glenn",
     "letter": "G",
-    "clue": "Bevond zich naast een tafel en een stoelEr was geen lege ruimte. van."
+    "clue": "Bevond zich naast een tafel en een stoelEr was geen lege ruimte. van.",
+    "portrait": "portraits/44_G.jpg"
    },
    {
     "name": "Henk",
     "letter": "H",
-    "clue": "De enige persoon voor een raam."
+    "clue": "De enige persoon voor een raam.",
+    "portrait": "portraits/44_H.jpg"
    }
   ],
   "victim": {
    "name": "Vico",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/44_V.jpg"
   },
   "rooms": [
    "GROTE ZAAL",
@@ -4240,53 +4600,63 @@
    {
     "name": "Alain",
     "letter": "A",
-    "clue": "Was alleen in een slaapkamer"
+    "clue": "Was alleen in een slaapkamer",
+    "portrait": "portraits/45_A.jpg"
    },
    {
     "name": "Ben",
     "letter": "B",
-    "clue": "Zat op een bed."
+    "clue": "Zat op een bed.",
+    "portrait": "portraits/45_B.jpg"
    },
    {
     "name": "Carmen",
     "letter": "C",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/45_C.jpg"
    },
    {
     "name": "Daley",
     "letter": "D",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/45_D.jpg"
    },
    {
     "name": "Eowyn",
     "letter": "E",
-    "clue": "Bevond zich boven Hada. Ze waren in dezelfde ruimte."
+    "clue": "Bevond zich boven Hada. Ze waren in dezelfde ruimte.",
+    "portrait": "portraits/45_E.jpg"
    },
    {
     "name": "Filips",
     "letter": "F",
-    "clue": "Was naast een tafel."
+    "clue": "Was naast een tafel.",
+    "portrait": "portraits/45_F.jpg"
    },
    {
     "name": "Grace",
     "letter": "G",
-    "clue": "Er was nog iemand in de ruimte, die zich voor een raam bevond. In elke slaapkamer was een ander aantal personen."
+    "clue": "Er was nog iemand in de ruimte, die zich voor een raam bevond. In elke slaapkamer was een ander aantal personen.",
+    "portrait": "portraits/45_G.jpg"
    },
    {
     "name": "Hada",
     "letter": "H",
-    "clue": "Stond niet naasteen muur."
+    "clue": "Stond niet naasteen muur.",
+    "portrait": "portraits/45_I.jpg"
    },
    {
     "name": "Hada",
     "letter": "I",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/45_I.jpg"
    }
   ],
   "victim": {
    "name": "Victor",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/45_V.jpg"
   },
   "rooms": [
    "GANGKEUKEN",
@@ -4324,48 +4694,57 @@
    {
     "name": "Aletta",
     "letter": "A",
-    "clue": "Was naast een kast"
+    "clue": "Was naast een kast",
+    "portrait": "portraits/46_A.jpg"
    },
    {
     "name": "Becky",
     "letter": "B",
-    "clue": "Bevond zich in de keuken naast de tafel."
+    "clue": "Bevond zich in de keuken naast de tafel.",
+    "portrait": "portraits/46_B.jpg"
    },
    {
     "name": "Carice",
     "letter": "C",
-    "clue": "Was de enige persoon op een bed."
+    "clue": "Was de enige persoon op een bed.",
+    "portrait": "portraits/46_C.jpg"
    },
    {
     "name": "Daan",
     "letter": "D",
-    "clue": "Bevond zich in de vijfde kolom"
+    "clue": "Bevond zich in de vijfde kolom",
+    "portrait": "portraits/46_D.jpg"
    },
    {
     "name": "Eveline",
     "letter": "E",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/46_E.jpg"
    },
    {
     "name": "Frankie",
     "letter": "F",
-    "clue": "Was alleen in de badkamer."
+    "clue": "Was alleen in de badkamer.",
+    "portrait": "portraits/46_F.jpg"
    },
    {
     "name": "Guust",
     "letter": "G",
-    "clue": "Zat op een stoel net als een vrouw in een andere ruimte. van volgend jaar te skippen."
+    "clue": "Zat op een stoel net als een vrouw in een andere ruimte. van volgend jaar te skippen.",
+    "portrait": "portraits/46_G.jpg"
    },
    {
     "name": "Heidi",
     "letter": "H",
-    "clue": "Was naast een plant."
+    "clue": "Was naast een plant.",
+    "portrait": "portraits/46_H.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/46_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -4407,48 +4786,57 @@
    {
     "name": "Albert",
     "letter": "A",
-    "clue": "In totaal stonden er vier mensen op een tapijt, maar hij was daar niet een van."
+    "clue": "In totaal stonden er vier mensen op een tapijt, maar hij was daar niet een van.",
+    "portrait": "portraits/47_A.jpg"
    },
    {
     "name": "Bea",
     "letter": "B",
-    "clue": "Was alleen, of in kantoor A of in kantoor B."
+    "clue": "Was alleen, of in kantoor A of in kantoor B.",
+    "portrait": "portraits/47_B.jpg"
    },
    {
     "name": "Casper",
     "letter": "C",
-    "clue": "Er stond een tv in zijn kamer, in dezelfde rij."
+    "clue": "Er stond een tv in zijn kamer, in dezelfde rij.",
+    "portrait": "portraits/47_C.jpg"
    },
    {
     "name": "Delia",
     "letter": "D",
-    "clue": "Bevond zich in de onderste rij van haar ruimte."
+    "clue": "Bevond zich in de onderste rij van haar ruimte.",
+    "portrait": "portraits/47_D.jpg"
    },
    {
     "name": "Eli",
     "letter": "E",
-    "clue": "Bevond zich in een hoek van de ruimte. Was niet in de gang."
+    "clue": "Bevond zich in een hoek van de ruimte. Was niet in de gang.",
+    "portrait": "portraits/47_E.jpg"
    },
    {
     "name": "Fatima",
     "letter": "F",
-    "clue": "Stond voor een raam."
+    "clue": "Stond voor een raam.",
+    "portrait": "portraits/47_F.jpg"
    },
    {
     "name": "George",
     "letter": "G",
-    "clue": "Was in kantoor CEr was nog iemand in deze ruimte. Er zat precies één persoon op een stoel."
+    "clue": "Was in kantoor CEr was nog iemand in deze ruimte. Er zat precies één persoon op een stoel.",
+    "portrait": "portraits/47_G.jpg"
    },
    {
     "name": "Harriët",
     "letter": "H",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/47_H.jpg"
    }
   ],
   "victim": {
    "name": "Veerle",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/47_V.jpg"
   },
   "rooms": [
    "KANTOOR A",
@@ -4530,48 +4918,57 @@
    {
     "name": "Alexander",
     "letter": "A",
-    "clue": "Bevond zich naast een tafel"
+    "clue": "Bevond zich naast een tafel",
+    "portrait": "portraits/48_A.jpg"
    },
    {
     "name": "Bill",
     "letter": "B",
-    "clue": "Was in de keuken"
+    "clue": "Was in de keuken",
+    "portrait": "portraits/48_B.jpg"
    },
    {
     "name": "Carlo",
     "letter": "C",
-    "clue": "Bevond zich naast een boom of een plant."
+    "clue": "Bevond zich naast een boom of een plant.",
+    "portrait": "portraits/48_C.jpg"
    },
    {
     "name": "Dagmar",
     "letter": "D",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/48_D.jpg"
    },
    {
     "name": "Eva",
     "letter": "E",
-    "clue": "Was de enige persoon op een bed. tv."
+    "clue": "Was de enige persoon op een bed. tv.",
+    "portrait": "portraits/48_E.jpg"
    },
    {
     "name": "Franka",
     "letter": "F",
-    "clue": "Stond voor een raam."
+    "clue": "Stond voor een raam.",
+    "portrait": "portraits/48_F.jpg"
    },
    {
     "name": "Gordon",
     "letter": "G",
-    "clue": "Bevond zich in de woonkamer, in dezelfde rij of kolom als de Er zat maaréén persoon op een stoel."
+    "clue": "Bevond zich in de woonkamer, in dezelfde rij of kolom als de Er zat maaréén persoon op een stoel.",
+    "portrait": "portraits/48_G.jpg"
    },
    {
     "name": "Henriëtte",
     "letter": "H",
-    "clue": "Was naast een bedBevond zich boven Eva."
+    "clue": "Was naast een bedBevond zich boven Eva.",
+    "portrait": "portraits/48_H.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Er was geen lege ruimte."
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Er was geen lege ruimte.",
+   "portrait": "portraits/48_V.jpg"
   },
   "rooms": [
    "BOS",
@@ -4653,48 +5050,57 @@
    {
     "name": "Amos",
     "letter": "A",
-    "clue": "Bevond zich rechtsvan Virgil."
+    "clue": "Bevond zich rechtsvan Virgil.",
+    "portrait": "portraits/49_A.jpg"
    },
    {
     "name": "Benjamin",
     "letter": "B",
-    "clue": "Bevond zich op een tapijt, rechts van Farouk."
+    "clue": "Bevond zich op een tapijt, rechts van Farouk.",
+    "portrait": "portraits/49_B.jpg"
    },
    {
     "name": "Charlotte",
     "letter": "C",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/49_C.jpg"
    },
    {
     "name": "Deborah",
     "letter": "D",
-    "clue": "Op een tapijt in haar kamer was nog een vrouw"
+    "clue": "Op een tapijt in haar kamer was nog een vrouw",
+    "portrait": "portraits/49_D.jpg"
    },
    {
     "name": "Evangeline",
     "letter": "E",
-    "clue": "Was naast een tv,."
+    "clue": "Was naast een tv,.",
+    "portrait": "portraits/49_E.jpg"
    },
    {
     "name": "Farouk",
     "letter": "F",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/49_F.jpg"
    },
    {
     "name": "Gerrit",
     "letter": "G",
-    "clue": "Hij stond in een hoeken bevond zich onder AmosMinstens één persoon zat op een stoel."
+    "clue": "Hij stond in een hoeken bevond zich onder AmosMinstens één persoon zat op een stoel.",
+    "portrait": "portraits/49_G.jpg"
    },
    {
     "name": "Helen",
     "letter": "H",
-    "clue": "Bevond zich naast een tafel."
+    "clue": "Bevond zich naast een tafel.",
+    "portrait": "portraits/49_H.jpg"
    }
   ],
   "victim": {
    "name": "Virgil",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/49_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -4763,58 +5169,69 @@
    {
     "name": "Anna",
     "letter": "A",
-    "clue": "Bevond zich naast de tafel."
+    "clue": "Bevond zich naast de tafel.",
+    "portrait": "portraits/50_A.jpg"
    },
    {
     "name": "Boele",
     "letter": "B",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/50_B.jpg"
    },
    {
     "name": "Dorie",
     "letter": "C",
-    "clue": "Was alleen en stond voor een raam."
+    "clue": "Was alleen en stond voor een raam.",
+    "portrait": "portraits/50_C.jpg"
    },
    {
     "name": "Ellin",
     "letter": "D",
-    "clue": "Zat niet op een stoel."
+    "clue": "Zat niet op een stoel.",
+    "portrait": "portraits/50_D.jpg"
    },
    {
     "name": "Fred",
     "letter": "E",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/50_F.jpg"
    },
    {
     "name": "Fred",
     "letter": "F",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/50_F.jpg"
    },
    {
     "name": "Gwen",
     "letter": "G",
-    "clue": "Bevond zich in de cabine. lm wel haalt."
+    "clue": "Bevond zich in de cabine. lm wel haalt.",
+    "portrait": "portraits/50_G.jpg"
    },
    {
     "name": "Hans",
     "letter": "H",
-    "clue": "Bevond zich in een hoek van zaal A of B."
+    "clue": "Bevond zich in een hoek van zaal A of B.",
+    "portrait": "portraits/50_I.jpg"
    },
    {
     "name": "Hans",
     "letter": "I",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/50_I.jpg"
    },
    {
     "name": "Victor",
     "letter": "J",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/50_J.jpg"
    }
   ],
   "victim": {
    "name": "Caro",
    "letter": "V",
-   "clue": "Stond op een tapijt. Er was nog een vrouw in haar ruimte. Bevond zich in dezelfde rij en in dezelfde kamer als een tv. Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Stond op een tapijt. Er was nog een vrouw in haar ruimte. Bevond zich in dezelfde rij en in dezelfde kamer als een tv. Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/50_V.jpg"
   },
   "rooms": [
    "ZAAL A",
@@ -4854,53 +5271,63 @@
    {
     "name": "Adriana",
     "letter": "A",
-    "clue": "Er was nog een vrouw in haar kamer die zich op een tapijt bevond."
+    "clue": "Er was nog een vrouw in haar kamer die zich op een tapijt bevond.",
+    "portrait": "portraits/51_A.jpg"
    },
    {
     "name": "Bernd",
     "letter": "B",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/51_B.jpg"
    },
    {
     "name": "Christophe",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/51_C.jpg"
    },
    {
     "name": "Dylan",
     "letter": "D",
-    "clue": "Was de enige persoon op een bed."
+    "clue": "Was de enige persoon op een bed.",
+    "portrait": "portraits/51_D.jpg"
    },
    {
     "name": "Edgar",
     "letter": "E",
-    "clue": "Was alleen in de badkamer."
+    "clue": "Was alleen in de badkamer.",
+    "portrait": "portraits/51_E.jpg"
    },
    {
     "name": "Gianna",
     "letter": "F",
-    "clue": "Bevond zich onder Christophe"
+    "clue": "Bevond zich onder Christophe",
+    "portrait": "portraits/51_G.jpg"
    },
    {
     "name": "Gianna",
     "letter": "G",
-    "clue": "Bevond zich in een ruimte samen met iemand op een stoel"
+    "clue": "Bevond zich in een ruimte samen met iemand op een stoel",
+    "portrait": "portraits/51_G.jpg"
    },
    {
     "name": "Hasse",
     "letter": "H",
-    "clue": "Bevond zich in een kamer met iemand die zich naast een tv bevond."
+    "clue": "Bevond zich in een kamer met iemand die zich naast een tv bevond.",
+    "portrait": "portraits/51_H.jpg"
    },
    {
     "name": "Koen",
     "letter": "I",
-    "clue": "Bevond zich onder Bernd. FelicityIemand anders in haar kamer bevond zich in een hoek."
+    "clue": "Bevond zich onder Bernd. FelicityIemand anders in haar kamer bevond zich in een hoek.",
+    "portrait": "portraits/51_I.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/51_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -4935,48 +5362,57 @@
    {
     "name": "Abel",
     "letter": "A",
-    "clue": "Bevond zich rechts van Elizabeth."
+    "clue": "Bevond zich rechts van Elizabeth.",
+    "portrait": "portraits/52_A.jpg"
    },
    {
     "name": "Bas",
     "letter": "B",
-    "clue": "Bevond zich niet naast een muur."
+    "clue": "Bevond zich niet naast een muur.",
+    "portrait": "portraits/52_B.jpg"
    },
    {
     "name": "Catarina",
     "letter": "C",
-    "clue": "Bevond zich naast een tv. Was alleen."
+    "clue": "Bevond zich naast een tv. Was alleen.",
+    "portrait": "portraits/52_C.jpg"
    },
    {
     "name": "Denise",
     "letter": "D",
-    "clue": "Bevond zich in de eerste kolom"
+    "clue": "Bevond zich in de eerste kolom",
+    "portrait": "portraits/52_D.jpg"
    },
    {
     "name": "Elizabeth",
     "letter": "E",
-    "clue": "Bevond zich in de personeelsruimte"
+    "clue": "Bevond zich in de personeelsruimte",
+    "portrait": "portraits/52_E.jpg"
    },
    {
     "name": "Fabian",
     "letter": "F",
-    "clue": "Zat op een stoel en bevond zich rechts van Abel."
+    "clue": "Zat op een stoel en bevond zich rechts van Abel.",
+    "portrait": "portraits/52_F.jpg"
    },
    {
     "name": "Gregory",
     "letter": "G",
-    "clue": "De enige persoon op een tapijt. Er waren precies twee lege werkhokjes."
+    "clue": "De enige persoon op een tapijt. Er waren precies twee lege werkhokjes.",
+    "portrait": "portraits/52_G.jpg"
    },
    {
     "name": "Heika",
     "letter": "H",
-    "clue": "Was alleen in het toilet."
+    "clue": "Was alleen in het toilet.",
+    "portrait": "portraits/52_H.jpg"
    }
   ],
   "victim": {
    "name": "Veronica",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Precies vier mensen zaten op een stoel."
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Precies vier mensen zaten op een stoel.",
+   "portrait": "portraits/52_V.jpg"
   },
   "rooms": [
    "WERKHOKJE 1",
@@ -5056,53 +5492,63 @@
    {
     "name": "Arthur",
     "letter": "A",
-    "clue": "Er bevonden zich geen vrouwen naast de tafels. Het ruikt hier een beetje vreemd."
+    "clue": "Er bevonden zich geen vrouwen naast de tafels. Het ruikt hier een beetje vreemd.",
+    "portrait": "portraits/53_A.jpg"
    },
    {
     "name": "Boas",
     "letter": "B",
-    "clue": "Bevond zich onder Gisele, in een andere ruimte."
+    "clue": "Bevond zich onder Gisele, in een andere ruimte.",
+    "portrait": "portraits/53_B.jpg"
    },
    {
     "name": "Chris",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/53_C.jpg"
    },
    {
     "name": "Darla",
     "letter": "D",
-    "clue": "Bevond zich in de zesde kolom, in de grote slaapkamer"
+    "clue": "Bevond zich in de zesde kolom, in de grote slaapkamer",
+    "portrait": "portraits/53_D.jpg"
    },
    {
     "name": "Ellie",
     "letter": "E",
-    "clue": "Was in de eetkamer. Bevond zich in een hoek"
+    "clue": "Was in de eetkamer. Bevond zich in een hoek",
+    "portrait": "portraits/53_E.jpg"
    },
    {
     "name": "Franklin",
     "letter": "F",
-    "clue": "Zat op een stoel of op een bed."
+    "clue": "Zat op een stoel of op een bed.",
+    "portrait": "portraits/53_F.jpg"
    },
    {
     "name": "Gisele",
     "letter": "G",
-    "clue": "Bevond zich in een ruimte met exact twee andere verdachtenBevond zich naast een plant."
+    "clue": "Bevond zich in een ruimte met exact twee andere verdachtenBevond zich naast een plant.",
+    "portrait": "portraits/53_G.jpg"
    },
    {
     "name": "Henrietta",
     "letter": "H",
-    "clue": "Was alleen in de badkamer."
+    "clue": "Was alleen in de badkamer.",
+    "portrait": "portraits/53_H.jpg"
    },
    {
     "name": "Vincent",
     "letter": "I",
-    "clue": "Er was geen lege ruimte."
+    "clue": "Er was geen lege ruimte.",
+    "portrait": "portraits/53_V.jpg"
    }
   ],
   "victim": {
    "name": "Vincent",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/53_V.jpg"
   },
   "rooms": [
    "BADKAMER",
@@ -5144,48 +5590,57 @@
    {
     "name": "Ashley",
     "letter": "A",
-    "clue": "Stond op een tapijtWas alleen met Bella"
+    "clue": "Stond op een tapijtWas alleen met Bella",
+    "portrait": "portraits/54_A.jpg"
    },
    {
     "name": "Bella",
     "letter": "B",
-    "clue": "Bevond zich in een hoek."
+    "clue": "Bevond zich in een hoek.",
+    "portrait": "portraits/54_B.jpg"
    },
    {
     "name": "Cees",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/54_C.jpg"
    },
    {
     "name": "Dries",
     "letter": "D",
-    "clue": "Stond naast een tvBevond zich rechts van Ashley. Bevond zich in de derde kolom."
+    "clue": "Stond naast een tvBevond zich rechts van Ashley. Bevond zich in de derde kolom.",
+    "portrait": "portraits/54_D.jpg"
    },
    {
     "name": "Eloise",
     "letter": "E",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/54_E.jpg"
    },
    {
     "name": "Fred",
     "letter": "F",
-    "clue": "Bevond zich in de VIP-ruimte."
+    "clue": "Bevond zich in de VIP-ruimte.",
+    "portrait": "portraits/54_F.jpg"
    },
    {
     "name": "Gian",
     "letter": "G",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/54_G.jpg"
    },
    {
     "name": "Hawa",
     "letter": "H",
-    "clue": "Stond naast een plantWas in de bar. Bevond zich onder Ashley."
+    "clue": "Stond naast een plantWas in de bar. Bevond zich onder Ashley.",
+    "portrait": "portraits/54_H.jpg"
    }
   ],
   "victim": {
    "name": "Valerie",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/54_V.jpg"
   },
   "rooms": [
    "VIP-RUIMTE",
@@ -5230,48 +5685,57 @@
    {
     "name": "Audrey",
     "letter": "A",
-    "clue": "Bevond zich boven Gladys"
+    "clue": "Bevond zich boven Gladys",
+    "portrait": "portraits/55_A.jpg"
    },
    {
     "name": "Belinda",
     "letter": "B",
-    "clue": "Stond naast een stoel Bevond zich in de lobby."
+    "clue": "Stond naast een stoel Bevond zich in de lobby.",
+    "portrait": "portraits/55_B.jpg"
    },
    {
     "name": "Clarissa",
     "letter": "C",
-    "clue": "Bevond zich in de lobby en boven Valentino."
+    "clue": "Bevond zich in de lobby en boven Valentino.",
+    "portrait": "portraits/55_C.jpg"
    },
    {
     "name": "Dominique",
     "letter": "D",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/55_D.jpg"
    },
    {
     "name": "Emilio",
     "letter": "E",
-    "clue": "Bevond zich naast een katapult"
+    "clue": "Bevond zich naast een katapult",
+    "portrait": "portraits/55_E.jpg"
    },
    {
     "name": "Frederik",
     "letter": "F",
-    "clue": "Stond naast een wapenrek."
+    "clue": "Stond naast een wapenrek.",
+    "portrait": "portraits/55_F.jpg"
    },
    {
     "name": "Gladys",
     "letter": "G",
-    "clue": "Stond naast een beeld. wat ze met een katapult aanmoet."
+    "clue": "Stond naast een beeld. wat ze met een katapult aanmoet.",
+    "portrait": "portraits/55_G.jpg"
    },
    {
     "name": "Harald",
     "letter": "H",
-    "clue": "Stond naast een kastexact één persoon op een tapijt."
+    "clue": "Stond naast een kastexact één persoon op een tapijt.",
+    "portrait": "portraits/55_H.jpg"
    }
   ],
   "victim": {
    "name": "Valentino",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. In elke ruimte bevond zich"
+   "clue": "Het slachtoffer. Was samen met de moordenaar. In elke ruimte bevond zich",
+   "portrait": "portraits/55_V.jpg"
   },
   "rooms": [
    "MUSEUMWINKEL",
@@ -5356,48 +5820,57 @@
    {
     "name": "Ava",
     "letter": "A",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/56_A.jpg"
    },
    {
     "name": "Brenda",
     "letter": "B",
-    "clue": "Er stond een kast in haar kamer."
+    "clue": "Er stond een kast in haar kamer.",
+    "portrait": "portraits/56_B.jpg"
    },
    {
     "name": "Charlotte",
     "letter": "C",
-    "clue": "Bevond zich in een hoek van de keuken."
+    "clue": "Bevond zich in een hoek van de keuken.",
+    "portrait": "portraits/56_C.jpg"
    },
    {
     "name": "Dina",
     "letter": "D",
-    "clue": "Bevond zich naast een plant"
+    "clue": "Bevond zich naast een plant",
+    "portrait": "portraits/56_D.jpg"
    },
    {
     "name": "Emily",
     "letter": "E",
-    "clue": "Bevond zich naast een tapijt."
+    "clue": "Bevond zich naast een tapijt.",
+    "portrait": "portraits/56_E.jpg"
    },
    {
     "name": "Falko",
     "letter": "F",
-    "clue": "Bevond zich in de bovenste rij. en."
+    "clue": "Bevond zich in de bovenste rij. en.",
+    "portrait": "portraits/56_F.jpg"
    },
    {
     "name": "Gerlof",
     "letter": "G",
-    "clue": "Stond naast een kastAlles zit al onder de bloem."
+    "clue": "Stond naast een kastAlles zit al onder de bloem.",
+    "portrait": "portraits/56_G.jpg"
    },
    {
     "name": "Hada",
     "letter": "H",
-    "clue": "Bevond zich in de personeelsruimtelinks van Gerlof"
+    "clue": "Bevond zich in de personeelsruimtelinks van Gerlof",
+    "portrait": "portraits/56_H.jpg"
    }
   ],
   "victim": {
    "name": "Vera",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Exact één persoon zat op een stoel."
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Exact één persoon zat op een stoel.",
+   "portrait": "portraits/56_V.jpg"
   },
   "rooms": [
    "WINKELRUIMTE",
@@ -5476,48 +5949,57 @@
    {
     "name": "Alex",
     "letter": "A",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/57_A.jpg"
    },
    {
     "name": "Brad",
     "letter": "B",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/57_B.jpg"
    },
    {
     "name": "Cora",
     "letter": "C",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/57_C.jpg"
    },
    {
     "name": "Dorothy",
     "letter": "D",
-    "clue": "Was alleen in de logeerkamer"
+    "clue": "Was alleen in de logeerkamer",
+    "portrait": "portraits/57_D.jpg"
    },
    {
     "name": "Evangeline",
     "letter": "E",
-    "clue": "Was in de eetkamer samen met een man."
+    "clue": "Was in de eetkamer samen met een man.",
+    "portrait": "portraits/57_E.jpg"
    },
    {
     "name": "Falco",
     "letter": "F",
-    "clue": "Zat op een bed."
+    "clue": "Zat op een bed.",
+    "portrait": "portraits/57_F.jpg"
    },
    {
     "name": "Gabor",
     "letter": "G",
-    "clue": "Bevond zich onder Alex Was in de keukenAlex, Brad en Cora bevonden zich in verschillende ruimtes. Zat op een stoel"
+    "clue": "Bevond zich onder Alex Was in de keukenAlex, Brad en Cora bevonden zich in verschillende ruimtes. Zat op een stoel",
+    "portrait": "portraits/57_G.jpg"
    },
    {
     "name": "Henry",
     "letter": "H",
-    "clue": "Stond naast een kast."
+    "clue": "Stond naast een kast.",
+    "portrait": "portraits/57_H.jpg"
    }
   ],
   "victim": {
    "name": "Vadim",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/57_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -5596,48 +6078,57 @@
    {
     "name": "Ayla",
     "letter": "A",
-    "clue": "Bevond zich precies één rij onder Hilde"
+    "clue": "Bevond zich precies één rij onder Hilde",
+    "portrait": "portraits/58_A.jpg"
    },
    {
     "name": "Barbara",
     "letter": "B",
-    "clue": "Bevond zich in de bovenste rij van haar ruimte."
+    "clue": "Bevond zich in de bovenste rij van haar ruimte.",
+    "portrait": "portraits/58_B.jpg"
    },
    {
     "name": "Clyde",
     "letter": "C",
-    "clue": "Bevond zich in de vijfde kolom. Was alleen."
+    "clue": "Bevond zich in de vijfde kolom. Was alleen.",
+    "portrait": "portraits/58_C.jpg"
    },
    {
     "name": "Darius",
     "letter": "D",
-    "clue": "Bevond zich niet naasteen plant, stoel, tafel of krat en ook niet op een tapijt."
+    "clue": "Bevond zich niet naasteen plant, stoel, tafel of krat en ook niet op een tapijt.",
+    "portrait": "portraits/58_D.jpg"
    },
    {
     "name": "Eddy",
     "letter": "E",
-    "clue": "Hij was op balkon Aof balkon B."
+    "clue": "Hij was op balkon Aof balkon B.",
+    "portrait": "portraits/58_E.jpg"
    },
    {
     "name": "Freya",
     "letter": "F",
-    "clue": "Bevond zich links van Clyde. Stond recht."
+    "clue": "Bevond zich links van Clyde. Stond recht.",
+    "portrait": "portraits/58_F.jpg"
    },
    {
     "name": "Gary",
     "letter": "G",
-    "clue": "Was naast een tafelEr was minstens één vrouw in zijn kamer. Stond recht. Een andere vrouw in haar kamer zat op een stoel."
+    "clue": "Was naast een tafelEr was minstens één vrouw in zijn kamer. Stond recht. Een andere vrouw in haar kamer zat op een stoel.",
+    "portrait": "portraits/58_G.jpg"
    },
    {
     "name": "Hilde",
     "letter": "H",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/58_H.jpg"
    }
   ],
   "victim": {
    "name": "Victor",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/58_V.jpg"
   },
   "rooms": [
    "TONEEL",
@@ -5684,43 +6175,51 @@
    {
     "name": "Artemis",
     "letter": "A",
-    "clue": "Bevond zich in een hoek haar ruimte. Was alleen een andere verdachte"
+    "clue": "Bevond zich in een hoek haar ruimte. Was alleen een andere verdachte",
+    "portrait": "portraits/59_A.jpg"
    },
    {
     "name": "Betsie",
     "letter": "B",
-    "clue": "In haar ruimte bevond zich een mannelijke verdachtenaast een raam"
+    "clue": "In haar ruimte bevond zich een mannelijke verdachtenaast een raam",
+    "portrait": "portraits/59_B.jpg"
    },
    {
     "name": "Claire",
     "letter": "C",
-    "clue": "Was de enige persoon op een bed. Bevond zich naast een tafel en een plant."
+    "clue": "Was de enige persoon op een bed. Bevond zich naast een tafel en een plant.",
+    "portrait": "portraits/59_C.jpg"
    },
    {
     "name": "Dave",
     "letter": "D",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/59_D.jpg"
    },
    {
     "name": "Ernst",
     "letter": "E",
-    "clue": "Er was een tv in zijn kamer."
+    "clue": "Er was een tv in zijn kamer.",
+    "portrait": "portraits/59_E.jpg"
    },
    {
     "name": "Gideon",
     "letter": "F",
-    "clue": "Bevond zich naast een bed. Minstens één persoon zat op een stoel. van met."
+    "clue": "Bevond zich naast een bed. Minstens één persoon zat op een stoel. van met.",
+    "portrait": "portraits/59_F.jpg"
    },
    {
     "name": "Henk",
     "letter": "G",
-    "clue": "Was samen met twee andere verdachten"
+    "clue": "Was samen met twee andere verdachten",
+    "portrait": "portraits/59_G.jpg"
    }
   ],
   "victim": {
    "name": "Vernon",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Fern."
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Fern.",
+   "portrait": "portraits/59_V.jpg"
   },
   "rooms": [
    "KEUKEN",
@@ -5758,43 +6257,51 @@
    {
     "name": "Brad",
     "letter": "A",
-    "clue": "Was alleen in de keuken."
+    "clue": "Was alleen in de keuken.",
+    "portrait": "portraits/60_A.jpg"
    },
    {
     "name": "Cees",
     "letter": "B",
-    "clue": "In zijn ruimte bevond zich een vrouw in dezelfde rij als een tv.,"
+    "clue": "In zijn ruimte bevond zich een vrouw in dezelfde rij als een tv.,",
+    "portrait": "portraits/60_B.jpg"
    },
    {
     "name": "Daniëlle",
     "letter": "C",
-    "clue": "Ze bevond zich drie kolom-men links van Gordon"
+    "clue": "Ze bevond zich drie kolom-men links van Gordon",
+    "portrait": "portraits/60_C.jpg"
    },
    {
     "name": "Edith",
     "letter": "D",
-    "clue": "Zat of op een stoelof op het bed."
+    "clue": "Zat of op een stoelof op het bed.",
+    "portrait": "portraits/60_D.jpg"
    },
    {
     "name": "Fee",
     "letter": "E",
-    "clue": "Bevond zich in de tweede kolom."
+    "clue": "Bevond zich in de tweede kolom.",
+    "portrait": "portraits/60_E.jpg"
    },
    {
     "name": "Gordon",
     "letter": "F",
-    "clue": "Was de enige persoon naast een tafel"
+    "clue": "Was de enige persoon naast een tafel",
+    "portrait": "portraits/60_F.jpg"
    },
    {
     "name": "Haiko",
     "letter": "G",
-    "clue": "Hij en een vrouw lagen op een handdoek"
+    "clue": "Hij en een vrouw lagen op een handdoek",
+    "portrait": "portraits/60_G.jpg"
    }
   ],
   "victim": {
    "name": "Vicky",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/60_V.jpg"
   },
   "rooms": [
    "EETKAMER",
@@ -5837,48 +6344,57 @@
    {
     "name": "Aad",
     "letter": "A",
-    "clue": "Was naast een tv"
+    "clue": "Was naast een tv",
+    "portrait": "portraits/61_A.jpg"
    },
    {
     "name": "Bregje",
     "letter": "B",
-    "clue": "Zat op een stoel."
+    "clue": "Zat op een stoel.",
+    "portrait": "portraits/61_B.jpg"
    },
    {
     "name": "Carlo",
     "letter": "C",
-    "clue": "Bevond zich onder Bregje."
+    "clue": "Bevond zich onder Bregje.",
+    "portrait": "portraits/61_C.jpg"
    },
    {
     "name": "David",
     "letter": "D",
-    "clue": "Was alleen in het toilet."
+    "clue": "Was alleen in het toilet.",
+    "portrait": "portraits/61_D.jpg"
    },
    {
     "name": "Eus",
     "letter": "E",
-    "clue": "Bevond zich in kamer 1."
+    "clue": "Bevond zich in kamer 1.",
+    "portrait": "portraits/61_E.jpg"
    },
    {
     "name": "Femke",
     "letter": "F",
-    "clue": "Bevond zich in de tweede kolom."
+    "clue": "Bevond zich in de tweede kolom.",
+    "portrait": "portraits/61_F.jpg"
    },
    {
     "name": "Gloria",
     "letter": "G",
-    "clue": "Stond op een tapijt."
+    "clue": "Stond op een tapijt.",
+    "portrait": "portraits/61_G.jpg"
    },
    {
     "name": "Helen",
     "letter": "H",
-    "clue": "Was in kamer 1, of Bevond zich niet op een bed."
+    "clue": "Was in kamer 1, of Bevond zich niet op een bed.",
+    "portrait": "portraits/61_H.jpg"
    }
   ],
   "victim": {
    "name": "Rishi",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Op één na waren alle bedden bezet."
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Op één na waren alle bedden bezet.",
+   "portrait": "portraits/61_V.jpg"
   },
   "rooms": [
    "KAMER 1",
@@ -5920,48 +6436,57 @@
    {
     "name": "Anneleen",
     "letter": "A",
-    "clue": "Bevond zich in een hoek."
+    "clue": "Bevond zich in een hoek.",
+    "portrait": "portraits/62_A.jpg"
    },
    {
     "name": "Bianca",
     "letter": "B",
-    "clue": "Bevond zich in dezelfde rij als een en in dezelfde ruimte."
+    "clue": "Bevond zich in dezelfde rij als een en in dezelfde ruimte.",
+    "portrait": "portraits/62_B.jpg"
    },
    {
     "name": "Cynthia",
     "letter": "C",
-    "clue": "Was alleen met Bianca."
+    "clue": "Was alleen met Bianca.",
+    "portrait": "portraits/62_C.jpg"
    },
    {
     "name": "Dries",
     "letter": "D",
-    "clue": "Was in de keuken."
+    "clue": "Was in de keuken.",
+    "portrait": "portraits/62_D.jpg"
    },
    {
     "name": "Eelco",
     "letter": "E",
-    "clue": "Bevond zich in de lounge."
+    "clue": "Bevond zich in de lounge.",
+    "portrait": "portraits/62_E.jpg"
    },
    {
     "name": "Felicia",
     "letter": "F",
-    "clue": "Stond voor een raam. tv"
+    "clue": "Stond voor een raam. tv",
+    "portrait": "portraits/62_F.jpg"
    },
    {
     "name": "Gerald",
     "letter": "G",
-    "clue": "Bevond zich op een tapijt. Er was geen lege ruimte. Weet je het zeker?"
+    "clue": "Bevond zich op een tapijt. Er was geen lege ruimte. Weet je het zeker?",
+    "portrait": "portraits/62_G.jpg"
    },
    {
     "name": "Hiske",
     "letter": "H",
-    "clue": "De enige persoon die op een stoel zat. één persoon naast een kast."
+    "clue": "De enige persoon die op een stoel zat. één persoon naast een kast.",
+    "portrait": "portraits/62_H.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Er bevond zich precies"
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Er bevond zich precies",
+   "portrait": "portraits/62_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -6044,48 +6569,57 @@
    {
     "name": "Anthony",
     "letter": "A",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/63_A.jpg"
    },
    {
     "name": "Bram",
     "letter": "B",
-    "clue": "De enige persoon die op een stoel zat."
+    "clue": "De enige persoon die op een stoel zat.",
+    "portrait": "portraits/63_B.jpg"
    },
    {
     "name": "Clara",
     "letter": "C",
-    "clue": "Was naast een tafel."
+    "clue": "Was naast een tafel.",
+    "portrait": "portraits/63_C.jpg"
    },
    {
     "name": "Dara",
     "letter": "D",
-    "clue": "Bevond zich in de bovenste rij."
+    "clue": "Bevond zich in de bovenste rij.",
+    "portrait": "portraits/63_D.jpg"
    },
    {
     "name": "Ernst",
     "letter": "E",
-    "clue": "Bevond zich naast een stoel. Was alleen met een vrouw."
+    "clue": "Bevond zich naast een stoel. Was alleen met een vrouw.",
+    "portrait": "portraits/63_E.jpg"
    },
    {
     "name": "Fedde",
     "letter": "F",
-    "clue": "Bevond zich in de tweede kolom."
+    "clue": "Bevond zich in de tweede kolom.",
+    "portrait": "portraits/63_F.jpg"
    },
    {
     "name": "Gilbert",
     "letter": "G",
-    "clue": "Bevond zich niet naasteen muur. Hij bevond zich links van Anthony"
+    "clue": "Bevond zich niet naasteen muur. Hij bevond zich links van Anthony",
+    "portrait": "portraits/63_G.jpg"
    },
    {
     "name": "Hessel",
     "letter": "H",
-    "clue": "Bevond zich niet naasteen tafel of een stoel"
+    "clue": "Bevond zich niet naasteen tafel of een stoel",
+    "portrait": "portraits/63_H.jpg"
    }
   ],
   "victim": {
    "name": "Vasco",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Er was geen lege ruimte."
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Er was geen lege ruimte.",
+   "portrait": "portraits/63_V.jpg"
   },
   "rooms": [
    "RECEPTIE",
@@ -6164,48 +6698,57 @@
    {
     "name": "Anna",
     "letter": "A",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/64_A.jpg"
    },
    {
     "name": "Britta",
     "letter": "B",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/64_B.jpg"
    },
    {
     "name": "Charles",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/64_C.jpg"
    },
    {
     "name": "Dave",
     "letter": "D",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/64_D.jpg"
    },
    {
     "name": "Ethan",
     "letter": "E",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/64_E.jpg"
    },
    {
     "name": "Frida",
     "letter": "F",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/64_F.jpg"
    },
    {
     "name": "Georgina",
     "letter": "G",
-    "clue": "Bevond zich op een tapijt en direct naast een lege ruimteStond naast een tvZe was in de gang samen met twee andere vrouwenEr bevond zich precies één persoon op een tapijt."
+    "clue": "Bevond zich op een tapijt en direct naast een lege ruimteStond naast een tvZe was in de gang samen met twee andere vrouwenEr bevond zich precies één persoon op een tapijt.",
+    "portrait": "portraits/64_G.jpg"
    },
    {
     "name": "Hilda",
     "letter": "H",
-    "clue": ". Was alleen met Charles. Bevond zich in een hoek van kamer 1, of. Ze was de enige persoon naast een raam."
+    "clue": ". Was alleen met Charles. Bevond zich in een hoek van kamer 1, of. Ze was de enige persoon naast een raam.",
+    "portrait": "portraits/64_H.jpg"
    }
   ],
   "victim": {
    "name": "Vico",
    "letter": "V",
-   "clue": "De enige persoon die op een stoel zat. Bevond zich naast een tafel. Het slachtoffer. Was samen met de moordenaar. Er was precies één lege ruimte."
+   "clue": "De enige persoon die op een stoel zat. Bevond zich naast een tafel. Het slachtoffer. Was samen met de moordenaar. Er was precies één lege ruimte.",
+   "portrait": "portraits/64_V.jpg"
   },
   "rooms": [
    "GANG",
@@ -6284,48 +6827,57 @@
    {
     "name": "Adriana",
     "letter": "A",
-    "clue": "Was alleen in de eetkamer met een vrouw."
+    "clue": "Was alleen in de eetkamer met een vrouw.",
+    "portrait": "portraits/65_A.jpg"
    },
    {
     "name": "Bodil",
     "letter": "B",
-    "clue": "Bevond zich in de vijfde kolom"
+    "clue": "Bevond zich in de vijfde kolom",
+    "portrait": "portraits/65_B.jpg"
    },
    {
     "name": "Colin",
     "letter": "C",
-    "clue": "Was de enige persoon op een bed."
+    "clue": "Was de enige persoon op een bed.",
+    "portrait": "portraits/65_C.jpg"
    },
    {
     "name": "Dana",
     "letter": "D",
-    "clue": "Was in de grote slaapkamer"
+    "clue": "Was in de grote slaapkamer",
+    "portrait": "portraits/65_D.jpg"
    },
    {
     "name": "Ellen",
     "letter": "E",
-    "clue": "Bevond zich in dezelfde rij als een tv in dezelfde kamer. De enige persoon die op een stoel zat."
+    "clue": "Bevond zich in dezelfde rij als een tv in dezelfde kamer. De enige persoon die op een stoel zat.",
+    "portrait": "portraits/65_E.jpg"
    },
    {
     "name": "Francesca",
     "letter": "F",
-    "clue": "Bevond zich naast een plant."
+    "clue": "Bevond zich naast een plant.",
+    "portrait": "portraits/65_F.jpg"
    },
    {
     "name": "Grad",
     "letter": "G",
-    "clue": "Bevond zich in een hoek. Er was geen lege ruimte."
+    "clue": "Bevond zich in een hoek. Er was geen lege ruimte.",
+    "portrait": "portraits/65_G.jpg"
    },
    {
     "name": "Hester",
     "letter": "H",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/65_H.jpg"
    }
   ],
   "victim": {
    "name": "Vito",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/65_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -6406,48 +6958,57 @@
    {
     "name": "André",
     "letter": "A",
-    "clue": "Zat op een stoel"
+    "clue": "Zat op een stoel",
+    "portrait": "portraits/66_A.jpg"
    },
    {
     "name": "Bettine",
     "letter": "B",
-    "clue": "Bevond zich naast een tv."
+    "clue": "Bevond zich naast een tv.",
+    "portrait": "portraits/66_B.jpg"
    },
    {
     "name": "Clyde",
     "letter": "C",
-    "clue": "Stond voor een raam. Hij zat niet."
+    "clue": "Stond voor een raam. Hij zat niet.",
+    "portrait": "portraits/66_C.jpg"
    },
    {
     "name": "Debbie",
     "letter": "D",
-    "clue": "Ze was niet alleenIedereen in haar ruimte zat op een stoel"
+    "clue": "Ze was niet alleenIedereen in haar ruimte zat op een stoel",
+    "portrait": "portraits/66_D.jpg"
    },
    {
     "name": "Eduardo",
     "letter": "E",
-    "clue": "Hij zat niet. Was niet in het toilet."
+    "clue": "Hij zat niet. Was niet in het toilet.",
+    "portrait": "portraits/66_E.jpg"
    },
    {
     "name": "Felicia",
     "letter": "F",
-    "clue": "Was alleen in de pauzeruimte. van."
+    "clue": "Was alleen in de pauzeruimte. van.",
+    "portrait": "portraits/66_F.jpg"
    },
    {
     "name": "George",
     "letter": "G",
-    "clue": "Bevond zich naast een plantBevond zich rechts van Debbie."
+    "clue": "Bevond zich naast een plantBevond zich rechts van Debbie.",
+    "portrait": "portraits/66_G.jpg"
    },
    {
     "name": "Helena",
     "letter": "H",
-    "clue": "Bevond zich rechts Felicia en links van Debbie"
+    "clue": "Bevond zich rechts Felicia en links van Debbie",
+    "portrait": "portraits/66_H.jpg"
    }
   ],
   "victim": {
    "name": "Vincent",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/66_V.jpg"
   },
   "rooms": [
    "KANTOORTUIN",
@@ -6525,48 +7086,57 @@
    {
     "name": "Adonis",
     "letter": "A",
-    "clue": "Bevond zich in een ruimte samen met een man en een vrouw"
+    "clue": "Bevond zich in een ruimte samen met een man en een vrouw",
+    "portrait": "portraits/67_A.jpg"
    },
    {
     "name": "Brandon",
     "letter": "B",
-    "clue": "Was alleen, of in de grote slaapkamerof in de logeerkamer"
+    "clue": "Was alleen, of in de grote slaapkamerof in de logeerkamer",
+    "portrait": "portraits/67_B.jpg"
    },
    {
     "name": "Cora",
     "letter": "C",
-    "clue": "Bevond zich twee kolom-men links van de enige persoon op een bed. Hij stond voor een raam, net zoals een vrouw."
+    "clue": "Bevond zich twee kolom-men links van de enige persoon op een bed. Hij stond voor een raam, net zoals een vrouw.",
+    "portrait": "portraits/67_C.jpg"
    },
    {
     "name": "Diana",
     "letter": "D",
-    "clue": "Stond op een tapijt."
+    "clue": "Stond op een tapijt.",
+    "portrait": "portraits/67_D.jpg"
    },
    {
     "name": "Emiko",
     "letter": "E",
-    "clue": "Bevond zich in de bovenste of de onderste rijin"
+    "clue": "Bevond zich in de bovenste of de onderste rijin",
+    "portrait": "portraits/67_E.jpg"
    },
    {
     "name": "Franklin",
     "letter": "F",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/67_F.jpg"
    },
    {
     "name": "Guy",
     "letter": "G",
-    "clue": "Er bevond zich een tv zijn kolom, maar in een andere kamer. er is helemaal uitgeteld."
+    "clue": "Er bevond zich een tv zijn kolom, maar in een andere kamer. er is helemaal uitgeteld.",
+    "portrait": "portraits/67_G.jpg"
    },
    {
     "name": "Hada",
     "letter": "H",
-    "clue": "Bevond zich op het middelste vak in haar ruimte.,."
+    "clue": "Bevond zich op het middelste vak in haar ruimte.,.",
+    "portrait": "portraits/67_H.jpg"
    }
   ],
   "victim": {
    "name": "Valentijn",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/67_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -6649,48 +7219,57 @@
    {
     "name": "Aaron",
     "letter": "A",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/68_A.jpg"
    },
    {
     "name": "Bastiaan",
     "letter": "B",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/68_B.jpg"
    },
    {
     "name": "Celia",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/68_C.jpg"
    },
    {
     "name": "Dina",
     "letter": "D",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/68_D.jpg"
    },
    {
     "name": "Elizabeth",
     "letter": "E",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/68_E.jpg"
    },
    {
     "name": "Ferdinand",
     "letter": "F",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/68_F.jpg"
    },
    {
     "name": "Gavin",
     "letter": "G",
-    "clue": "De enige persoon die op een stoel zat. Bevond zich in de kluis of in de gang. Bevond zich naast een tafel. Er was geen lege ruimte."
+    "clue": "De enige persoon die op een stoel zat. Bevond zich in de kluis of in de gang. Bevond zich naast een tafel. Er was geen lege ruimte.",
+    "portrait": "portraits/68_G.jpg"
    },
    {
     "name": "Harry",
     "letter": "H",
-    "clue": "Zat op het toiletEen andere verdachte bevond zich naast een tv in haar kamer. De enige persoon voor een raam"
+    "clue": "Zat op het toiletEen andere verdachte bevond zich naast een tv in haar kamer. De enige persoon voor een raam",
+    "portrait": "portraits/68_H.jpg"
    }
   ],
   "victim": {
    "name": "Vittorio",
    "letter": "V",
-   "clue": ". Was alleen in een kamer met een vrouw die zich op een tapijt bevond. Was alleen. Bevond zich rechts van Aaron. Het slachtoffer. Was samen met de moordenaar."
+   "clue": ". Was alleen in een kamer met een vrouw die zich op een tapijt bevond. Was alleen. Bevond zich rechts van Aaron. Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/68_V.jpg"
   },
   "rooms": [
    "KLUIS",
@@ -6731,48 +7310,57 @@
    {
     "name": "Amelia",
     "letter": "A",
-    "clue": "Er was een tv in haar kamer, in dezelfde rij"
+    "clue": "Er was een tv in haar kamer, in dezelfde rij",
+    "portrait": "portraits/69_A.jpg"
    },
    {
     "name": "Bodil",
     "letter": "B",
-    "clue": "Er was nog iemand in haar kamer die op een stoel zat."
+    "clue": "Er was nog iemand in haar kamer die op een stoel zat.",
+    "portrait": "portraits/69_B.jpg"
    },
    {
     "name": "Cesar",
     "letter": "C",
-    "clue": "Er was iemand met een bril in zijn kamer, onder hem."
+    "clue": "Er was iemand met een bril in zijn kamer, onder hem.",
+    "portrait": "portraits/69_C.jpg"
    },
    {
     "name": "Daan",
     "letter": "D",
-    "clue": "De ruimte direct onder de zijne was bezet."
+    "clue": "De ruimte direct onder de zijne was bezet.",
+    "portrait": "portraits/69_D.jpg"
    },
    {
     "name": "Eddy",
     "letter": "E",
-    "clue": "Bevond zich niet naast een muur"
+    "clue": "Bevond zich niet naast een muur",
+    "portrait": "portraits/69_E.jpg"
    },
    {
     "name": "Fabienne",
     "letter": "F",
-    "clue": "Was alleen met twee vrouwen."
+    "clue": "Was alleen met twee vrouwen.",
+    "portrait": "portraits/69_F.jpg"
    },
    {
     "name": "Guus",
     "letter": "G",
-    "clue": "Zat op een stoel of op een bed."
+    "clue": "Zat op een stoel of op een bed.",
+    "portrait": "portraits/69_G.jpg"
    },
    {
     "name": "Helena",
     "letter": "H",
-    "clue": "Bevond zich in de tweede kolom"
+    "clue": "Bevond zich in de tweede kolom",
+    "portrait": "portraits/69_H.jpg"
    }
   ],
   "victim": {
    "name": "Vincent",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/69_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -6857,53 +7445,63 @@
    {
     "name": "Benny",
     "letter": "A",
-    "clue": "Bevond zich links boven Donna"
+    "clue": "Bevond zich links boven Donna",
+    "portrait": "portraits/70_A.jpg"
    },
    {
     "name": "Caroline",
     "letter": "B",
-    "clue": "Stond voor een raam."
+    "clue": "Stond voor een raam.",
+    "portrait": "portraits/70_B.jpg"
    },
    {
     "name": "Donna",
     "letter": "C",
-    "clue": "Was in de eetkamer."
+    "clue": "Was in de eetkamer.",
+    "portrait": "portraits/70_C.jpg"
    },
    {
     "name": "Emilio",
     "letter": "D",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/70_D.jpg"
    },
    {
     "name": "Frits",
     "letter": "E",
-    "clue": "Was de enige persoon op een bed."
+    "clue": "Was de enige persoon op een bed.",
+    "portrait": "portraits/70_F.jpg"
    },
    {
     "name": "Frits",
     "letter": "F",
-    "clue": "Er zat precies"
+    "clue": "Er zat precies",
+    "portrait": "portraits/70_F.jpg"
    },
    {
     "name": "Grace",
     "letter": "G",
-    "clue": "Stond naast een stoel. Er was precies één lege ruimte."
+    "clue": "Stond naast een stoel. Er was precies één lege ruimte.",
+    "portrait": "portraits/70_G.jpg"
    },
    {
     "name": "Henry",
     "letter": "H",
-    "clue": "Hij was in een hoekEr was geen tv in zijn kamer. één persoon op een stoel."
+    "clue": "Hij was in een hoekEr was geen tv in zijn kamer. één persoon op een stoel.",
+    "portrait": "portraits/70_H.jpg"
    },
    {
     "name": "Jaap",
     "letter": "I",
-    "clue": "Was alleen met een man."
+    "clue": "Was alleen met een man.",
+    "portrait": "portraits/70_I.jpg"
    }
   ],
   "victim": {
    "name": "Vicky",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/70_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -6948,48 +7546,57 @@
    {
     "name": "Alain",
     "letter": "A",
-    "clue": "Bevond zich naast een tafel. Zat niet een stoel."
+    "clue": "Bevond zich naast een tafel. Zat niet een stoel.",
+    "portrait": "portraits/71_A.jpg"
    },
    {
     "name": "Bouke",
     "letter": "B",
-    "clue": "De enige persoon op een tapijt."
+    "clue": "De enige persoon op een tapijt.",
+    "portrait": "portraits/71_B.jpg"
    },
    {
     "name": "Claire",
     "letter": "C",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/71_C.jpg"
    },
    {
     "name": "Diana",
     "letter": "D",
-    "clue": "Bevond zich naast een raam."
+    "clue": "Bevond zich naast een raam.",
+    "portrait": "portraits/71_D.jpg"
    },
    {
     "name": "Ella",
     "letter": "E",
-    "clue": "Bevond zich in de lounge. Zat niet op een stoel."
+    "clue": "Bevond zich in de lounge. Zat niet op een stoel.",
+    "portrait": "portraits/71_E.jpg"
    },
    {
     "name": "Fara",
     "letter": "F",
-    "clue": "Was alleen met twee mannen."
+    "clue": "Was alleen met twee mannen.",
+    "portrait": "portraits/71_F.jpg"
    },
    {
     "name": "Glenn",
     "letter": "G",
-    "clue": "Bevond zich naast een plant. Er was geen lege ruimte. er is op de geheime bijeenkomst, ben je het zelf. op"
+    "clue": "Bevond zich naast een plant. Er was geen lege ruimte. er is op de geheime bijeenkomst, ben je het zelf. op",
+    "portrait": "portraits/71_G.jpg"
    },
    {
     "name": "Hein",
     "letter": "H",
-    "clue": "Bevond zich in de laatste kolom. één persoon op een stoel."
+    "clue": "Bevond zich in de laatste kolom. één persoon op een stoel.",
+    "portrait": "portraits/71_H.jpg"
    }
   ],
   "victim": {
    "name": "Vladimir",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Er zat precies"
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Er zat precies",
+   "portrait": "portraits/71_V.jpg"
   },
   "rooms": [
    "VERGADERRUIMTE",
@@ -7066,48 +7673,57 @@
    {
     "name": "Archie",
     "letter": "A",
-    "clue": "Bevond zich hoger op de berg dan alle andere mannen De rij direct onder hem was leeg."
+    "clue": "Bevond zich hoger op de berg dan alle andere mannen De rij direct onder hem was leeg.",
+    "portrait": "portraits/72_A.jpg"
    },
    {
     "name": "Brigitte",
     "letter": "B",
-    "clue": "op. De enige persoon op de hoge bergrug. Ze bevond zich in het basis-kamp naast een krat."
+    "clue": "op. De enige persoon op de hoge bergrug. Ze bevond zich in het basis-kamp naast een krat.",
+    "portrait": "portraits/72_B.jpg"
    },
    {
     "name": "Chantal",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/72_C.jpg"
    },
    {
     "name": "David",
     "letter": "D",
-    "clue": "Brigitte bevond zich precies vijf rijen boven hem. Bevond zich vier kolommen links van de persoon op de bergtop."
+    "clue": "Brigitte bevond zich precies vijf rijen boven hem. Bevond zich vier kolommen links van de persoon op de bergtop.",
+    "portrait": "portraits/72_D.jpg"
    },
    {
     "name": "Ernst",
     "letter": "E",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/72_E.jpg"
    },
    {
     "name": "Fern",
     "letter": "F",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/72_F.jpg"
    },
    {
     "name": "Gloria",
     "letter": "G",
-    "clue": ". Bevond zich hoger de berg dan alle andere vrouwenBevond zich één kolom rechts van de persoon op de bergtop. Was de enige persoon op een bed."
+    "clue": ". Bevond zich hoger de berg dan alle andere vrouwenBevond zich één kolom rechts van de persoon op de bergtop. Was de enige persoon op een bed.",
+    "portrait": "portraits/72_G.jpg"
    },
    {
     "name": "Haye",
     "letter": "H",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/72_H.jpg"
    }
   ],
   "victim": {
    "name": "Vernon",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/72_V.jpg"
   },
   "rooms": [
    "HOGE BERGRUG",
@@ -7187,48 +7803,57 @@
    {
     "name": "Aria",
     "letter": "A",
-    "clue": "Bevond zich naast een plant"
+    "clue": "Bevond zich naast een plant",
+    "portrait": "portraits/73_A.jpg"
    },
    {
     "name": "Britta",
     "letter": "B",
-    "clue": "Stond naast een stoel."
+    "clue": "Stond naast een stoel.",
+    "portrait": "portraits/73_B.jpg"
    },
    {
     "name": "Caro",
     "letter": "C",
-    "clue": "Bevond zich op de brug, precies één rij onder Hessel."
+    "clue": "Bevond zich op de brug, precies één rij onder Hessel.",
+    "portrait": "portraits/73_C.jpg"
    },
    {
     "name": "Deborah",
     "letter": "D",
-    "clue": "Bevond zich naast een kast."
+    "clue": "Bevond zich naast een kast.",
+    "portrait": "portraits/73_D.jpg"
    },
    {
     "name": "Eveline",
     "letter": "E",
-    "clue": "Was naast een tv"
+    "clue": "Was naast een tv",
+    "portrait": "portraits/73_E.jpg"
    },
    {
     "name": "Fernando",
     "letter": "F",
-    "clue": "Was de enige persoon op een bed."
+    "clue": "Was de enige persoon op een bed.",
+    "portrait": "portraits/73_F.jpg"
    },
    {
     "name": "Gavin",
     "letter": "G",
-    "clue": "Bevond zich in de grote salon alleen met een vrouw. Exact één persoon zat op een stoel."
+    "clue": "Bevond zich in de grote salon alleen met een vrouw. Exact één persoon zat op een stoel.",
+    "portrait": "portraits/73_G.jpg"
    },
    {
     "name": "Hessel",
     "letter": "H",
-    "clue": "Bevond zich niet in kolom 1of. Beide kolommen naast hem waren leeg"
+    "clue": "Bevond zich niet in kolom 1of. Beide kolommen naast hem waren leeg",
+    "portrait": "portraits/73_H.jpg"
    }
   ],
   "victim": {
    "name": "Viggo",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Exact één persoon stond op een tapijt."
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Exact één persoon stond op een tapijt.",
+   "portrait": "portraits/73_V.jpg"
   },
   "rooms": [
    "ZONNEDEK",
@@ -7263,28 +7888,33 @@
    {
     "name": "Arnold",
     "letter": "A",
-    "clue": "De pikeur. Zat op een paardWelke circusacts Brenda, Cecile en Daniël gisteravond hebben uitgevoerd, weten we niet. Om het mysterie op te lossen, moet je uitzoeken wie van hen de ringen-acrobaat, de messenwerper en de leeuwentemmer is."
+    "clue": "De pikeur. Zat op een paardWelke circusacts Brenda, Cecile en Daniël gisteravond hebben uitgevoerd, weten we niet. Om het mysterie op te lossen, moet je uitzoeken wie van hen de ringen-acrobaat, de messenwerper en de leeuwentemmer is.",
+    "portrait": "portraits/74_A.jpg"
    },
    {
     "name": "Brenda",
     "letter": "B",
-    "clue": "Cecile(Act niet bekend.)Zat 4 rijenonder Eddie. Daniël(Act niet bekend.)Was alleen. De kolom direct links van hem was leeg.(Act niet bekend.)De kolom direct rechts van haar was leeg."
+    "clue": "Cecile(Act niet bekend.)Zat 4 rijenonder Eddie. Daniël(Act niet bekend.)Was alleen. De kolom direct links van hem was leeg.(Act niet bekend.)De kolom direct rechts van haar was leeg.",
+    "portrait": "portraits/74_B.jpg"
    },
    {
     "name": "Eddie",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/74_C.jpg"
    },
    {
     "name": "Frederik",
     "letter": "D",
-    "clue": "De vuurspuwer. Bevond zich in de kleedkamer. GeraldToeschouwer. Zat op een stoel rechts van de leeuwentemmer. HeraToeschouwer. Bevond zich drie kolommen links van de ringenacrobaat. Messenwerper bevond zich precieséén rij boven een wapenrek. deLeeuwentemmerbevond zich naast een leeuw. de."
+    "clue": "De vuurspuwer. Bevond zich in de kleedkamer. GeraldToeschouwer. Zat op een stoel rechts van de leeuwentemmer. HeraToeschouwer. Bevond zich drie kolommen links van de ringenacrobaat. Messenwerper bevond zich precieséén rij boven een wapenrek. deLeeuwentemmerbevond zich naast een leeuw. de.",
+    "portrait": "portraits/74_D.jpg"
    }
   ],
   "victim": {
    "name": "Vanessa",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar. Ringenacrobaat debevond zich op een tapijt"
+   "clue": "Het slachtoffer. Was samen met de moordenaar. Ringenacrobaat debevond zich op een tapijt",
+   "portrait": "portraits/74_V.jpg"
   },
   "rooms": [
    "STAL",
@@ -7322,58 +7952,69 @@
    {
     "name": "Allison",
     "letter": "A",
-    "clue": "Stond op een tapijt."
+    "clue": "Stond op een tapijt.",
+    "portrait": "portraits/75_A.jpg"
    },
    {
     "name": "Betty",
     "letter": "B",
-    "clue": "Stond naast een bed. Bevond zich niet bij Edith."
+    "clue": "Stond naast een bed. Bevond zich niet bij Edith.",
+    "portrait": "portraits/75_B.jpg"
    },
    {
     "name": "Cayla",
     "letter": "C",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/75_C.jpg"
    },
    {
     "name": "Danny",
     "letter": "D",
-    "clue": "Bevond zich naast een stoel. HenkVier rijen onderhem bevond zich in de hal een manne-lijke verdachte."
+    "clue": "Bevond zich naast een stoel. HenkVier rijen onderhem bevond zich in de hal een manne-lijke verdachte.",
+    "portrait": "portraits/75_D.jpg"
    },
    {
     "name": "Edith",
     "letter": "E",
-    "clue": "Was de enige persoon op een bed"
+    "clue": "Was de enige persoon op een bed",
+    "portrait": "portraits/75_E.jpg"
    },
    {
     "name": "Fabrice",
     "letter": "F",
-    "clue": "Bevond zich in de woonkamerHij was niet alleen."
+    "clue": "Bevond zich in de woonkamerHij was niet alleen.",
+    "portrait": "portraits/75_F.jpg"
    },
    {
     "name": "Giovanni",
     "letter": "G",
-    "clue": "Bevond zich in een van de vier hoeken van de plaegrond."
+    "clue": "Bevond zich in een van de vier hoeken van de plaegrond.",
+    "portrait": "portraits/75_G.jpg"
    },
    {
     "name": "Isaak",
     "letter": "H",
-    "clue": "Was in de grote slaapkamerBevond zich niet naast een deur"
+    "clue": "Was in de grote slaapkamerBevond zich niet naast een deur",
+    "portrait": "portraits/75_H.jpg"
    },
    {
     "name": "Juultje",
     "letter": "I",
-    "clue": "Bevond zich in de laatste kolom."
+    "clue": "Bevond zich in de laatste kolom.",
+    "portrait": "portraits/75_I.jpg"
    },
    {
     "name": "Kiko",
     "letter": "J",
-    "clue": "Was naast een kast. Was alleen en bevond zich naast een deur."
+    "clue": "Was naast een kast. Was alleen en bevond zich naast een deur.",
+    "portrait": "portraits/75_J.jpg"
    }
   ],
   "victim": {
    "name": "Victor",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/75_V.jpg"
   },
   "rooms": [
    "WOONKAMER",
@@ -7420,63 +8061,75 @@
    {
     "name": "Andy",
     "letter": "A",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/76_A.jpg"
    },
    {
     "name": "Bart",
     "letter": "B",
-    "clue": "Naast een boom zijn ruimte bevond zich een vrouw"
+    "clue": "Naast een boom zijn ruimte bevond zich een vrouw",
+    "portrait": "portraits/76_B.jpg"
    },
    {
     "name": "Clarissa",
     "letter": "C",
-    "clue": "Op het tapijt in haar kamer bevond zich nog iemand."
+    "clue": "Op het tapijt in haar kamer bevond zich nog iemand.",
+    "portrait": "portraits/76_C.jpg"
    },
    {
     "name": "Danika",
     "letter": "D",
-    "clue": "In haar kamer was ze de enige naast een pompoen."
+    "clue": "In haar kamer was ze de enige naast een pompoen.",
+    "portrait": "portraits/76_D.jpg"
    },
    {
     "name": "Esther",
     "letter": "E",
-    "clue": "Was naast een tafel."
+    "clue": "Was naast een tafel.",
+    "portrait": "portraits/76_E.jpg"
    },
    {
     "name": "Frank",
     "letter": "F",
-    "clue": "Bevond zich of in de schuur, of in het zwembad"
+    "clue": "Bevond zich of in de schuur, of in het zwembad",
+    "portrait": "portraits/76_F.jpg"
    },
    {
     "name": "Gregory",
     "letter": "G",
-    "clue": "Hij was alleen met een vrouw in de eetkamer."
+    "clue": "Hij was alleen met een vrouw in de eetkamer.",
+    "portrait": "portraits/76_G.jpg"
    },
    {
     "name": "Hugo",
     "letter": "H",
-    "clue": "In zijn kamer bevond zich minstens één persoon naast een tafel."
+    "clue": "In zijn kamer bevond zich minstens één persoon naast een tafel.",
+    "portrait": "portraits/76_H.jpg"
    },
    {
     "name": "Isolde",
     "letter": "I",
-    "clue": "De enige persoon die op een stoel zat. Bevond zich naast een kast. Hij was niet alleen."
+    "clue": "De enige persoon die op een stoel zat. Bevond zich naast een kast. Hij was niet alleen.",
+    "portrait": "portraits/76_I.jpg"
    },
    {
     "name": "Jeroen",
     "letter": "J",
-    "clue": "Bevond zich naast een muur. De ruimte aan de andere kant was de keukenin."
+    "clue": "Bevond zich naast een muur. De ruimte aan de andere kant was de keukenin.",
+    "portrait": "portraits/76_J.jpg"
    },
    {
     "name": "Kirsten",
     "letter": "K",
-    "clue": "Er was een pompoen in haar kolom, in een andere ruimte"
+    "clue": "Er was een pompoen in haar kolom, in een andere ruimte",
+    "portrait": "portraits/76_K.jpg"
    }
   ],
   "victim": {
    "name": "Vincent",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/76_V.jpg"
   },
   "rooms": [
    "VOORTUIN",
@@ -7526,63 +8179,75 @@
    {
     "name": "Anna",
     "letter": "A",
-    "clue": "De mascotte van de Yeti's. Niemand in haar ruimte zat op een stoel"
+    "clue": "De mascotte van de Yeti's. Niemand in haar ruimte zat op een stoel",
+    "portrait": "portraits/77_A.jpg"
    },
    {
     "name": "Ben",
     "letter": "B",
-    "clue": "Was alleen in een van de twee kleedkamers"
+    "clue": "Was alleen in een van de twee kleedkamers",
+    "portrait": "portraits/77_C.jpg"
    },
    {
     "name": "Ben",
     "letter": "C",
-    "clue": ". Zat op een stoel bij een van de twee teambanken"
+    "clue": ". Zat op een stoel bij een van de twee teambanken",
+    "portrait": "portraits/77_C.jpg"
    },
    {
     "name": "Chris",
     "letter": "D",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/77_D.jpg"
    },
    {
     "name": "Dries",
     "letter": "E",
-    "clue": "Was alleen met twee vrouwen. Die vrouwen zaten in verschillende teams."
+    "clue": "Was alleen met twee vrouwen. Die vrouwen zaten in verschillende teams.",
+    "portrait": "portraits/77_E.jpg"
    },
    {
     "name": "Eugene",
     "letter": "F",
-    "clue": "Was precies vier kolommen links van Henk. IsabelMascoe van de Wolven. Stond naast een kastElke verdachte in kolom 1 t/m 6 zat in Team Yeti’s (als fan, mascotte of speler). Elke verdachte in kolom 7 t/m 12 zat in Team Wolven. de strafbank sturen voor slaan met een stick."
+    "clue": "Was precies vier kolommen links van Henk. IsabelMascoe van de Wolven. Stond naast een kastElke verdachte in kolom 1 t/m 6 zat in Team Yeti’s (als fan, mascotte of speler). Elke verdachte in kolom 7 t/m 12 zat in Team Wolven. de strafbank sturen voor slaan met een stick.",
+    "portrait": "portraits/77_F.jpg"
    },
    {
     "name": "Freya",
     "letter": "G",
-    "clue": "Bevond zich naast een tv."
+    "clue": "Bevond zich naast een tv.",
+    "portrait": "portraits/77_G.jpg"
    },
    {
     "name": "Gino",
     "letter": "H",
-    "clue": "Bevond zich links boven Henk en Kim."
+    "clue": "Bevond zich links boven Henk en Kim.",
+    "portrait": "portraits/77_H.jpg"
    },
    {
     "name": "Henk",
     "letter": "I",
-    "clue": "Was samen met Gino op de ijsbaan. Zaten in verschil-lende teams."
+    "clue": "Was samen met Gino op de ijsbaan. Zaten in verschil-lende teams.",
+    "portrait": "portraits/77_I.jpg"
    },
    {
     "name": "Julia",
     "letter": "J",
-    "clue": "Stond in een hoek Zij zat niet."
+    "clue": "Stond in een hoek Zij zat niet.",
+    "portrait": "portraits/77_J.jpg"
    },
    {
     "name": "Kim",
     "letter": "K",
-    "clue": "Bevond zich in kolom 6 of. Zij en Julia zaten in hetzelfde teamChris"
+    "clue": "Bevond zich in kolom 6 of. Zij en Julia zaten in hetzelfde teamChris",
+    "portrait": "portraits/77_K.jpg"
    }
   ],
   "victim": {
    "name": "Vlad",
    "letter": "V",
-   "clue": "Het slachtoffer. Was samen met de moordenaar."
+   "clue": "Het slachtoffer. Was samen met de moordenaar.",
+   "portrait": "portraits/77_V.jpg"
   },
   "rooms": [
    "TEAMBANK YETI’S",
@@ -7624,33 +8289,39 @@
    {
     "name": "Alice",
     "letter": "A",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/78_A.jpg"
    },
    {
     "name": "Bart",
     "letter": "B",
-    "clue": "Was in de keuken."
+    "clue": "Was in de keuken.",
+    "portrait": "portraits/78_B.jpg"
    },
    {
     "name": "Clementia",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/78_C.jpg"
    },
    {
     "name": "Duncan",
     "letter": "D",
-    "clue": "Zat op een stoel of een paard. Bevond zich onder Clementia en rechts van Victor."
+    "clue": "Zat op een stoel of een paard. Bevond zich onder Clementia en rechts van Victor.",
+    "portrait": "portraits/78_D.jpg"
    },
    {
     "name": "Elias",
     "letter": "E",
-    "clue": "Bevond zich in de eerste kolom."
+    "clue": "Bevond zich in de eerste kolom.",
+    "portrait": "portraits/78_E.jpg"
    }
   ],
   "victim": {
    "name": "Victor",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/78_V.jpg"
   },
   "rooms": [
    "GASTENKAMER",
@@ -7680,43 +8351,51 @@
    {
     "name": "Anna",
     "letter": "A",
-    "clue": "Bevond zich naast een ton."
+    "clue": "Bevond zich naast een ton.",
+    "portrait": "portraits/79_A.jpg"
    },
    {
     "name": "Betsy",
     "letter": "B",
-    "clue": ". Zat op een stoel."
+    "clue": ". Zat op een stoel.",
+    "portrait": "portraits/79_B.jpg"
    },
    {
     "name": "Charles",
     "letter": "C",
-    "clue": ". Bevond zich naast een paard of everzwijn."
+    "clue": ". Bevond zich naast een paard of everzwijn.",
+    "portrait": "portraits/79_C.jpg"
    },
    {
     "name": "Dennis",
     "letter": "D",
-    "clue": "Bevond zich in de rivier"
+    "clue": "Bevond zich in de rivier",
+    "portrait": "portraits/79_D.jpg"
    },
    {
     "name": "Elliot",
     "letter": "E",
-    "clue": "Hij of Betsy lag op een bed."
+    "clue": "Hij of Betsy lag op een bed.",
+    "portrait": "portraits/79_E.jpg"
    },
    {
     "name": "Gideon",
     "letter": "F",
-    "clue": "Was niet alleen"
+    "clue": "Was niet alleen",
+    "portrait": "portraits/79_F.jpg"
    },
    {
     "name": "Viggo",
     "letter": "G",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/79_G.jpg"
    }
   ],
   "victim": {
    "name": "Freya",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/79_V.jpg"
   },
   "rooms": [
    "HUIS",
@@ -7910,43 +8589,51 @@
    {
     "name": "Aldwin",
     "letter": "A",
-    "clue": "Was in Bevond zich niet voor de deur"
+    "clue": "Was in Bevond zich niet voor de deur",
+    "portrait": "portraits/81_A.jpg"
    },
    {
     "name": "Benedict",
     "letter": "B",
-    "clue": "Bevond zich op de onderste rij"
+    "clue": "Bevond zich op de onderste rij",
+    "portrait": "portraits/81_B.jpg"
    },
    {
     "name": "Claude",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/81_C.jpg"
    },
    {
     "name": "Dominic",
     "letter": "D",
-    "clue": "Kijk eens aan wie we hier hebben… Benedict! die cel A. Was de enige op een stoel"
+    "clue": "Kijk eens aan wie we hier hebben… Benedict! die cel A. Was de enige op een stoel",
+    "portrait": "portraits/81_D.jpg"
    },
    {
     "name": "Forrest",
     "letter": "E",
-    "clue": "Bevond zich naast een tafel. Bevond zich voor een deur."
+    "clue": "Bevond zich naast een tafel. Bevond zich voor een deur.",
+    "portrait": "portraits/81_E.jpg"
    },
    {
     "name": "Gordon",
     "letter": "F",
-    "clue": "Bevond zich naast een kruik"
+    "clue": "Bevond zich naast een kruik",
+    "portrait": "portraits/81_F.jpg"
    },
    {
     "name": "Viktor",
     "letter": "G",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/81_G.jpg"
    }
   ],
   "victim": {
    "name": "Elias",
    "letter": "V",
-   "clue": "die zat. Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "die zat. Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/81_V.jpg"
   },
   "rooms": [
    "CEL A",
@@ -8011,48 +8698,57 @@
    {
     "name": "Anthony",
     "letter": "A",
-    "clue": "Bevond zich onder alle dorpelingen. Bevond zich naast een kast."
+    "clue": "Bevond zich onder alle dorpelingen. Bevond zich naast een kast.",
+    "portrait": "portraits/82_A.jpg"
    },
    {
     "name": "Brianna",
     "letter": "B",
-    "clue": "Bevond zich niet naast een bed. Was de enige die op een stoel zat."
+    "clue": "Bevond zich niet naast een bed. Was de enige die op een stoel zat.",
+    "portrait": "portraits/82_B.jpg"
    },
    {
     "name": "Conrad",
     "letter": "C",
-    "clue": "Lag op een bed."
+    "clue": "Lag op een bed.",
+    "portrait": "portraits/82_C.jpg"
    },
    {
     "name": "Donna",
     "letter": "D",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/82_D.jpg"
    },
    {
     "name": "Ellen",
     "letter": "E",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/82_E.jpg"
    },
    {
     "name": "Gary",
     "letter": "F",
-    "clue": "Was de enige die op een tapijt stond."
+    "clue": "Was de enige die op een tapijt stond.",
+    "portrait": "portraits/82_F.jpg"
    },
    {
     "name": "Herbert",
     "letter": "G",
-    "clue": "Was in de grote hal."
+    "clue": "Was in de grote hal.",
+    "portrait": "portraits/82_G.jpg"
    },
    {
     "name": "Vitalis",
     "letter": "H",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/82_H.jpg"
    }
   ],
   "victim": {
    "name": "Ferdinand",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/82_V.jpg"
   },
   "rooms": [
    "WESTELIJKE TOREN",
@@ -8132,43 +8828,51 @@
    {
     "name": "Alfred",
     "letter": "A",
-    "clue": "Precies één persoon zat op een stoel"
+    "clue": "Precies één persoon zat op een stoel",
+    "portrait": "portraits/83_A.jpg"
    },
    {
     "name": "Balthasar",
     "letter": "B",
-    "clue": "Er bevond zich een vrouw één rij boven haar en een andere één rij onder haar."
+    "clue": "Er bevond zich een vrouw één rij boven haar en een andere één rij onder haar.",
+    "portrait": "portraits/83_B.jpg"
    },
    {
     "name": "Diana",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/83_C.jpg"
    },
    {
     "name": "Emma",
     "letter": "D",
-    "clue": "Bevond zich in de vijfde rij."
+    "clue": "Bevond zich in de vijfde rij.",
+    "portrait": "portraits/83_D.jpg"
    },
    {
     "name": "Frederik",
     "letter": "E",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/83_E.jpg"
    },
    {
     "name": "Godfried",
     "letter": "F",
-    "clue": "Was alleen met een andere ridderBevond zich op dezelfde diagonale lijn als Alfred. Bevond zich aan de rand van het raster."
+    "clue": "Was alleen met een andere ridderBevond zich op dezelfde diagonale lijn als Alfred. Bevond zich aan de rand van het raster.",
+    "portrait": "portraits/83_F.jpg"
    },
    {
     "name": "Hugo",
     "letter": "G",
-    "clue": ". Bevond zich op een vak naast de weg, in een ander gebied. CeciliaEr was geen leeg gebied."
+    "clue": ". Bevond zich op een vak naast de weg, in een ander gebied. CeciliaEr was geen leeg gebied.",
+    "portrait": "portraits/83_G.jpg"
    }
   ],
   "victim": {
    "name": "Valère",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar. Bevond zich boven alle edelen."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar. Bevond zich boven alle edelen.",
+   "portrait": "portraits/83_V.jpg"
   },
   "rooms": [
    "HEUVEL",
@@ -8199,43 +8903,51 @@
    {
     "name": "Amelia",
     "letter": "A",
-    "clue": "Was de enige in de beek."
+    "clue": "Was de enige in de beek.",
+    "portrait": "portraits/84_A.jpg"
    },
    {
     "name": "Benoit",
     "letter": "B",
-    "clue": "Bevond zich in de onderste rij"
+    "clue": "Bevond zich in de onderste rij",
+    "portrait": "portraits/84_B.jpg"
    },
    {
     "name": "Cedric",
     "letter": "C",
-    "clue": "Bevond zich rechts van Benoit."
+    "clue": "Bevond zich rechts van Benoit.",
+    "portrait": "portraits/84_C.jpg"
    },
    {
     "name": "Dean",
     "letter": "D",
-    "clue": "Er was geen leeg gebied. Zat op een stoel of een paard."
+    "clue": "Er was geen leeg gebied. Zat op een stoel of een paard.",
+    "portrait": "portraits/84_D.jpg"
    },
    {
     "name": "Gloria",
     "letter": "E",
-    "clue": "Bevond zich in de koninklijke hut of de apothekerswoning"
+    "clue": "Bevond zich in de koninklijke hut of de apothekerswoning",
+    "portrait": "portraits/84_E.jpg"
    },
    {
     "name": "Humphrey",
     "letter": "F",
-    "clue": "Bevond zich naast een boom of struik. EvertLet op: de beek en de één gebied, ook al loopt de In zijn rij stond een everzwijn. Bevond zich rechts van Gloria."
+    "clue": "Bevond zich naast een boom of struik. EvertLet op: de beek en de één gebied, ook al loopt de In zijn rij stond een everzwijn. Bevond zich rechts van Gloria.",
+    "portrait": "portraits/84_F.jpg"
    },
    {
     "name": "Virgilius",
     "letter": "G",
-    "clue": ". open plek vormen elk weg erdoorheen."
+    "clue": ". open plek vormen elk weg erdoorheen.",
+    "portrait": "portraits/84_G.jpg"
    }
   ],
   "victim": {
    "name": "Felicia",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/84_V.jpg"
   },
   "rooms": [
    "WEG",
@@ -8275,43 +8987,51 @@
    {
     "name": "Allan",
     "letter": "A",
-    "clue": "Bevond zich niet naast een tafel."
+    "clue": "Bevond zich niet naast een tafel.",
+    "portrait": "portraits/85_A.jpg"
    },
    {
     "name": "Berend",
     "letter": "B",
-    "clue": "Bevond zich in een hoek van haar gebiedWas niet in het steegjeElizabethEén rij boven hem stond een vrouw op een tapijt."
+    "clue": "Bevond zich in een hoek van haar gebiedWas niet in het steegjeElizabethEén rij boven hem stond een vrouw op een tapijt.",
+    "portrait": "portraits/85_B.jpg"
    },
    {
     "name": "Carissa",
     "letter": "C",
-    "clue": ". Bevond zich aan de rand van het raster."
+    "clue": ". Bevond zich aan de rand van het raster.",
+    "portrait": "portraits/85_C.jpg"
    },
    {
     "name": "Denise",
     "letter": "D",
-    "clue": "Was niet in het steegje."
+    "clue": "Was niet in het steegje.",
+    "portrait": "portraits/85_D.jpg"
    },
    {
     "name": "Falco",
     "letter": "E",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/85_E.jpg"
    },
    {
     "name": "George",
     "letter": "F",
-    "clue": "Elke edele bevond zich in een ander gebiedBevond zich aan de rand van het raster"
+    "clue": "Elke edele bevond zich in een ander gebiedBevond zich aan de rand van het raster",
+    "portrait": "portraits/85_F.jpg"
    },
    {
     "name": "Harry",
     "letter": "G",
-    "clue": ". Bevond zich in een hoek van haar gebied."
+    "clue": ". Bevond zich in een hoek van haar gebied.",
+    "portrait": "portraits/85_G.jpg"
    }
   ],
   "victim": {
    "name": "Vassili",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/85_V.jpg"
   },
   "rooms": [
    "JUWELEN",
@@ -8352,48 +9072,57 @@
    {
     "name": "Alberic",
     "letter": "A",
-    "clue": "Bevond zich niet naast een tafel."
+    "clue": "Bevond zich niet naast een tafel.",
+    "portrait": "portraits/86_A.jpg"
    },
    {
     "name": "Benjamin",
     "letter": "B",
-    "clue": "Bevond zich naast een ton."
+    "clue": "Bevond zich naast een ton.",
+    "portrait": "portraits/86_B.jpg"
    },
    {
     "name": "Camilla",
     "letter": "C",
-    "clue": "Was de enige die op een bed lag."
+    "clue": "Was de enige die op een bed lag.",
+    "portrait": "portraits/86_C.jpg"
    },
    {
     "name": "Dulcie",
     "letter": "D",
-    "clue": "Bevond zich in een hoek van haar gebied"
+    "clue": "Bevond zich in een hoek van haar gebied",
+    "portrait": "portraits/86_D.jpg"
    },
    {
     "name": "Eloise",
     "letter": "E",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/86_E.jpg"
    },
    {
     "name": "Giselle",
     "letter": "F",
-    "clue": "De bard heeft een prachtige stem,. Bevond zich in de vijfde kolom. Zat niet op een stoel"
+    "clue": "De bard heeft een prachtige stem,. Bevond zich in de vijfde kolom. Zat niet op een stoel",
+    "portrait": "portraits/86_F.jpg"
    },
    {
     "name": "Hank",
     "letter": "G",
-    "clue": "Eén rij onder en één rij boven haar bevonden zich edelen."
+    "clue": "Eén rij onder en één rij boven haar bevonden zich edelen.",
+    "portrait": "portraits/86_G.jpg"
    },
    {
     "name": "Valeria",
     "letter": "H",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/86_H.jpg"
    }
   ],
   "victim": {
    "name": "Fabian",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met haar moordenaar."
+   "clue": "Het slachtofferWas alleen met haar moordenaar.",
+   "portrait": "portraits/86_V.jpg"
   },
   "rooms": [
    "KEUKEN",
@@ -8423,58 +9152,69 @@
    {
     "name": "Ambroos",
     "letter": "A",
-    "clue": "Was in de bibliotheek."
+    "clue": "Was in de bibliotheek.",
+    "portrait": "portraits/87_A.jpg"
    },
    {
     "name": "Bernard",
     "letter": "B",
-    "clue": "Zat op een stoelBevond zich rechts van Bernard en Gilbert"
+    "clue": "Zat op een stoelBevond zich rechts van Bernard en Gilbert",
+    "portrait": "portraits/87_B.jpg"
    },
    {
     "name": "Cyrus",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/87_C.jpg"
    },
    {
     "name": "Edmund",
     "letter": "D",
-    "clue": "om zijn gelofte van stilte na te leven. Bevond zich naast. Was met iemand alleen in de kloostergang"
+    "clue": "om zijn gelofte van stilte na te leven. Bevond zich naast. Was met iemand alleen in de kloostergang",
+    "portrait": "portraits/87_D.jpg"
    },
    {
     "name": "Finnegan",
     "letter": "E",
-    "clue": "niet een muur."
+    "clue": "niet een muur.",
+    "portrait": "portraits/87_E.jpg"
    },
    {
     "name": "Gilbert",
     "letter": "F",
-    "clue": ". Bevond zich precies drie rijen boven BernardWas alleen met de enige persoon die op een bed lag. Lorem ipsum"
+    "clue": ". Bevond zich precies drie rijen boven BernardWas alleen met de enige persoon die op een bed lag. Lorem ipsum",
+    "portrait": "portraits/87_F.jpg"
    },
    {
     "name": "Holger",
     "letter": "G",
-    "clue": ". Bevond zich rechts van Virgil."
+    "clue": ". Bevond zich rechts van Virgil.",
+    "portrait": "portraits/87_G.jpg"
    },
    {
     "name": "Isaline",
     "letter": "H",
-    "clue": "Bevond zich in een hoek van de tuin."
+    "clue": "Bevond zich in een hoek van de tuin.",
+    "portrait": "portraits/87_H.jpg"
    },
    {
     "name": "John",
     "letter": "I",
-    "clue": "Bevond zich in de laatste kolom"
+    "clue": "Bevond zich in de laatste kolom",
+    "portrait": "portraits/87_I.jpg"
    },
    {
     "name": "Virgil",
     "letter": "J",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/87_J.jpg"
    }
   ],
   "victim": {
    "name": "Domien",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/87_V.jpg"
   },
   "rooms": [
    "EETKAMER",
@@ -8509,48 +9249,57 @@
    {
     "name": "Aldo",
     "letter": "A",
-    "clue": "Stond in een modderplas."
+    "clue": "Stond in een modderplas.",
+    "portrait": "portraits/88_A.jpg"
    },
    {
     "name": "Bridget",
     "letter": "B",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/88_B.jpg"
    },
    {
     "name": "Christian",
     "letter": "C",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/88_C.jpg"
    },
    {
     "name": "Diana",
     "letter": "D",
-    "clue": "Bevond zich in de eerste of laatste kolom."
+    "clue": "Bevond zich in de eerste of laatste kolom.",
+    "portrait": "portraits/88_D.jpg"
    },
    {
     "name": "Ella",
     "letter": "E",
-    "clue": "Zat op een paard."
+    "clue": "Zat op een paard.",
+    "portrait": "portraits/88_E.jpg"
    },
    {
     "name": "Francis",
     "letter": "F",
-    "clue": "Bevond zich naast een ton."
+    "clue": "Bevond zich naast een ton.",
+    "portrait": "portraits/88_F.jpg"
    },
    {
     "name": "Grace",
     "letter": "G",
-    "clue": "Zat op een stoel. Aldo zat op een stoel rechts van haar."
+    "clue": "Zat op een stoel. Aldo zat op een stoel rechts van haar.",
+    "portrait": "portraits/88_G.jpg"
    },
    {
     "name": "Hagan",
     "letter": "H",
-    "clue": "Er zijn twee lege kolommenElke edele bevond zich meteen links van een lege kolomWas de enige die op een tapijt stond."
+    "clue": "Er zijn twee lege kolommenElke edele bevond zich meteen links van een lege kolomWas de enige die op een tapijt stond.",
+    "portrait": "portraits/88_H.jpg"
    }
   ],
   "victim": {
    "name": "Vince",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/88_V.jpg"
   },
   "rooms": [
    "KONINKLIJK BALKON",
@@ -8620,63 +9369,75 @@
    {
     "name": "Alden",
     "letter": "A",
-    "clue": "Naast elk type bevond zich minstens één persoon. (Dus: naast minstens één koe bevond zich iemand, enzovoort.)Bevond zich linksonder t. o. v. de enige persoon in een modderplas"
+    "clue": "Naast elk type bevond zich minstens één persoon. (Dus: naast minstens één koe bevond zich iemand, enzovoort.)Bevond zich linksonder t. o. v. de enige persoon in een modderplas",
+    "portrait": "portraits/89_A.jpg"
    },
    {
     "name": "Berthild",
     "letter": "B",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/89_B.jpg"
    },
    {
     "name": "Cassia",
     "letter": "C",
-    "clue": "Was alleen."
+    "clue": "Was alleen.",
+    "portrait": "portraits/89_C.jpg"
    },
    {
     "name": "Damien",
     "letter": "D",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/89_D.jpg"
    },
    {
     "name": "Edgar",
     "letter": "E",
-    "clue": "Bevond zich naast minstens één dier (paard, varken of koe). object of dier Bevond zich rechts van Gunther"
+    "clue": "Bevond zich naast minstens één dier (paard, varken of koe). object of dier Bevond zich rechts van Gunther",
+    "portrait": "portraits/89_E.jpg"
    },
    {
     "name": "Florabelle",
     "letter": "F",
-    "clue": "Was op het gangpad, naast Damiens gebiedBevond zich precies één rij boven Irene"
+    "clue": "Was op het gangpad, naast Damiens gebiedBevond zich precies één rij boven Irene",
+    "portrait": "portraits/89_F.jpg"
    },
    {
     "name": "Gunther",
     "letter": "G",
-    "clue": ". Was op het gangpad, naast een leeg gebied. Bevond zich naast precies twee dezelfde objecten of dieren."
+    "clue": ". Was op het gangpad, naast een leeg gebied. Bevond zich naast precies twee dezelfde objecten of dieren.",
+    "portrait": "portraits/89_G.jpg"
    },
    {
     "name": "Herward",
     "letter": "H",
-    "clue": "."
+    "clue": ".",
+    "portrait": "portraits/89_H.jpg"
    },
    {
     "name": "Irene",
     "letter": "I",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/89_I.jpg"
    },
    {
     "name": "Jacob",
     "letter": "J",
-    "clue": "Was de enige persoon op een paard"
+    "clue": "Was de enige persoon op een paard",
+    "portrait": "portraits/89_J.jpg"
    },
    {
     "name": "Kathelijn",
     "letter": "K",
-    "clue": "Bevond zich naast een tafel"
+    "clue": "Bevond zich naast een tafel",
+    "portrait": "portraits/89_K.jpg"
    }
   ],
   "victim": {
    "name": "Valdo",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/89_V.jpg"
   },
   "rooms": [
    "BEELDEN",
@@ -8712,63 +9473,75 @@
    {
     "name": "Anna",
     "letter": "A",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/90_A.jpg"
    },
    {
     "name": "Betsy",
     "letter": "B",
-    "clue": "Bevond zich in de kapel of in Gideons tuin"
+    "clue": "Bevond zich in de kapel of in Gideons tuin",
+    "portrait": "portraits/90_B.jpg"
    },
    {
     "name": "Clarence",
     "letter": "C",
-    "clue": "Bevond zich naast de waterput"
+    "clue": "Bevond zich naast de waterput",
+    "portrait": "portraits/90_C.jpg"
    },
    {
     "name": "Dean",
     "letter": "D",
-    "clue": ". Bevond zich in een hoek van het raster."
+    "clue": ". Bevond zich in een hoek van het raster.",
+    "portrait": "portraits/90_D.jpg"
    },
    {
     "name": "Eli",
     "letter": "E",
-    "clue": "Zat op een paard."
+    "clue": "Zat op een paard.",
+    "portrait": "portraits/90_E.jpg"
    },
    {
     "name": "Florentina",
     "letter": "F",
-    "clue": "en Gideon bevonden gebied. Zat niet op een stoel."
+    "clue": "en Gideon bevonden gebied. Zat niet op een stoel.",
+    "portrait": "portraits/90_F.jpg"
    },
    {
     "name": "Gideon",
     "letter": "G",
-    "clue": "Bevond zich voor een deur."
+    "clue": "Bevond zich voor een deur.",
+    "portrait": "portraits/90_G.jpg"
    },
    {
     "name": "Isolde",
     "letter": "H",
-    "clue": ". Anna, Betsyzich elk in hun eigen Zat op een stoel."
+    "clue": ". Anna, Betsyzich elk in hun eigen Zat op een stoel.",
+    "portrait": "portraits/90_H.jpg"
    },
    {
     "name": "Jerome",
     "letter": "I",
-    "clue": "Was de enige die op een tapijt stond."
+    "clue": "Was de enige die op een tapijt stond.",
+    "portrait": "portraits/90_I.jpg"
    },
    {
     "name": "Katharina",
     "letter": "J",
-    "clue": ". Bevond zich precies één kolom links van Katharina"
+    "clue": ". Bevond zich precies één kolom links van Katharina",
+    "portrait": "portraits/90_J.jpg"
    },
    {
     "name": "Viviana",
     "letter": "K",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/90_K.jpg"
    }
   ],
   "victim": {
    "name": "Henriëtte",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met haar moordenaar."
+   "clue": "Het slachtofferWas alleen met haar moordenaar.",
+   "portrait": "portraits/90_V.jpg"
   },
   "rooms": [
    "ANNA’S HUIS",
@@ -8812,58 +9585,69 @@
    {
     "name": "Alburg",
     "letter": "A",
-    "clue": "Bevond zich in dezelfde rij als een katapult, maar niet ernaast."
+    "clue": "Bevond zich in dezelfde rij als een katapult, maar niet ernaast.",
+    "portrait": "portraits/91_A.jpg"
    },
    {
     "name": "Bertwald",
     "letter": "B",
-    "clue": "Precies één rij boven hem bevond zich een vrouw in een huis"
+    "clue": "Precies één rij boven hem bevond zich een vrouw in een huis",
+    "portrait": "portraits/91_B.jpg"
    },
    {
     "name": "Catherine",
     "letter": "C",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/91_C.jpg"
    },
    {
     "name": "Dulcibel",
     "letter": "D",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/91_D.jpg"
    },
    {
     "name": "Edward",
     "letter": "E",
-    "clue": "Bevond zich naast een hoop steenpuin. Lorem ipsum dolor sit amet, Ivanschreeuwt dan een slagveld in volle strijd. is het. Bevond zich rechts van het standbeeld."
+    "clue": "Bevond zich naast een hoop steenpuin. Lorem ipsum dolor sit amet, Ivanschreeuwt dan een slagveld in volle strijd. is het. Bevond zich rechts van het standbeeld.",
+    "portrait": "portraits/91_E.jpg"
    },
    {
     "name": "Ferald",
     "letter": "F",
-    "clue": "Was in het bosnaast de slotgracht."
+    "clue": "Was in het bosnaast de slotgracht.",
+    "portrait": "portraits/91_F.jpg"
    },
    {
     "name": "Gervais",
     "letter": "G",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/91_G.jpg"
    },
    {
     "name": "Herwig",
     "letter": "H",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/91_H.jpg"
    },
    {
     "name": "Joshua",
     "letter": "I",
-    "clue": "., Bevond zich in de zevende of achtste kolomBevond zich linksonder t. o. v. het standbeeldWas de enige dorpeling in dezelfde kolom als een katapultNaast drie katapulten telkens precies Naast de andere bevond zich"
+    "clue": "., Bevond zich in de zevende of achtste kolomBevond zich linksonder t. o. v. het standbeeldWas de enige dorpeling in dezelfde kolom als een katapultNaast drie katapulten telkens precies Naast de andere bevond zich",
+    "portrait": "portraits/91_I.jpg"
    },
    {
     "name": "Kendrick",
     "letter": "J",
-    "clue": ". Iedereen in zijn gebied had een baard. Bevond zich precies acht rijen boven Herwig. bevond zich één persoon. twee katapulten niemand."
+    "clue": ". Iedereen in zijn gebied had een baard. Bevond zich precies acht rijen boven Herwig. bevond zich één persoon. twee katapulten niemand.",
+    "portrait": "portraits/91_J.jpg"
    }
   ],
   "victim": {
    "name": "Volkert",
    "letter": "V",
-   "clue": "Het slachtofferWas alleen met zijn moordenaar."
+   "clue": "Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/91_V.jpg"
   },
   "rooms": [
    "VELD",
@@ -8953,53 +9737,63 @@
    {
     "name": "Agnes",
     "letter": "A",
-    "clue": "Zat niet op een stoel. Bevond zich linksboven t. o. v. elke edeleWas niet op de stadswallen."
+    "clue": "Zat niet op een stoel. Bevond zich linksboven t. o. v. elke edeleWas niet op de stadswallen.",
+    "portrait": "portraits/92_A.jpg"
    },
    {
     "name": "Blanche",
     "letter": "B",
-    "clue": ". Was op de stadswallenIedereen bevond zich er naast een ton. Bevond zich naast een standbeeldBevond zich in de derde kolom"
+    "clue": ". Was op de stadswallenIedereen bevond zich er naast een ton. Bevond zich naast een standbeeldBevond zich in de derde kolom",
+    "portrait": "portraits/92_B.jpg"
    },
    {
     "name": "Casimir",
     "letter": "C",
-    "clue": ". Zat op een stoel."
+    "clue": ". Zat op een stoel.",
+    "portrait": "portraits/92_C.jpg"
    },
    {
     "name": "David",
     "letter": "D",
-    "clue": "Eén rij bovenhem bevond zich een man die alleen was in de kerker. Bevond zich naast een everzwijn of paard."
+    "clue": "Eén rij bovenhem bevond zich een man die alleen was in de kerker. Bevond zich naast een everzwijn of paard.",
+    "portrait": "portraits/92_D.jpg"
    },
    {
     "name": "Francesca",
     "letter": "E",
-    "clue": "Bevond zich in een hoek van zijn gebied. geen leeg gebied"
+    "clue": "Bevond zich in een hoek van zijn gebied. geen leeg gebied",
+    "portrait": "portraits/92_E.jpg"
    },
    {
     "name": "Griffioen",
     "letter": "F",
-    "clue": "Twee rijen boven haar bevond zich een vrouw in een modderplas"
+    "clue": "Twee rijen boven haar bevond zich een vrouw in een modderplas",
+    "portrait": "portraits/92_F.jpg"
    },
    {
     "name": "Hilda",
     "letter": "G",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/92_G.jpg"
    },
    {
     "name": "Jordan",
     "letter": "H",
-    "clue": ""
+    "clue": "",
+    "portrait": "portraits/92_H.jpg"
    },
    {
     "name": "Katrijn",
     "letter": "I",
-    "clue": "Er was."
+    "clue": "Er was.",
+    "portrait": "portraits/92_I.jpg"
    }
   ],
   "victim": {
    "name": "Vigor",
    "letter": "V",
-   "clue": ". Het slachtofferWas alleen met zijn moordenaar."
+   "clue": ". Het slachtofferWas alleen met zijn moordenaar.",
+   "portrait": "portraits/92_V.jpg"
   },
   "rooms": [
    "STALLEN",

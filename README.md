@@ -35,9 +35,12 @@ Capacitor for a native App Store build.
   column. A manual **✕ tool** marks any cell impossible yourself, **⌫** erases
   one cell (hold to clear the whole grid), and **↺** undoes the last action.
 - **Clues** in the original Dutch, per suspect — shown on parchment suspect
-  cards (silhouette avatar + colour‑coded letter badge) that double as the
-  placement selector, with the victim highlighted red as *het slachtoffer*, the
-  selected suspect outlined, and placed suspects dimmed.
+  cards that double as the placement selector, with the victim highlighted red
+  as *het slachtoffer*, the selected suspect outlined, and placed suspects
+  dimmed. Each card shows the suspect's **portrait** cropped straight from the
+  book's clue‑page artwork (92 cases), which matters because clues sometimes
+  describe a suspect's appearance; cases without a reliably‑mapped portrait use
+  a colour‑coded silhouette + letter badge instead.
 - **Timer** with a saved best time per case.
 - **Hints** — a one‑at‑a‑time hint viewer (paged, "Hint N / total") revealing
   the book's own solution reasoning, with suspect letters shown as coloured
@@ -63,11 +66,13 @@ css/style.css         styles (iPad‑first, theme‑aware)
 js/app.js             app logic (router, play, hints, accuse, settings)
 sw.js                 service worker (offline)
 manifest.webmanifest  PWA manifest
-data/puzzles.json     all 155 cases
+data/puzzles.json     all 155 cases (incl. per‑suspect portrait paths)
 assets/scenes/*.jpg   crime‑scene illustrations
+assets/portraits/*.jpg  per‑suspect portrait crops (<id>_<letter>.jpg)
 icons/                app icons
 tools/extract.py      the EPUB → puzzles.json extraction pipeline
 tools/extract_grids.py  solution-grid recovery from the Oplossingen pages
+tools/extract_portraits.py  crops each suspect's portrait from the clue‑page art
 tools/detect_grid.py  detects each scene's grid box for on-scene placement
 ```
 
@@ -113,14 +118,19 @@ layouts, and maps each case to its murderer and solution steps from the
   corner‑darkness check that rejects irregular/rotated room outlines a plain
   bounding box can't represent. The remaining 40 cases (non‑square or
   irregular layouts) use the separate scratch grid instead.
-- **Suspect portrait photos were investigated but not shipped.** The books'
-  clue pages have a background illustration with each suspect's polaroid
-  photo, and photo *regions* can be detected reliably. But there is no
-  extractable signal linking a given photo to a given *name* — the mapping
-  would rest on an unverified assumption about the book's layout convention,
-  and mislabelling faces in a game about identifying suspects is a real
-  correctness risk. Letter badges (already shown, colour‑coded, tested) remain
-  the shipped suspect identifier.
+- **Suspect portraits are now shipped for 92 cases.** Each clue page draws
+  every suspect as a framed portrait in a grid, with a blank name banner
+  underneath; the suspect's *name* is printed on that banner as absolutely
+  positioned text, so the name span's pixel position identifies which portrait
+  is whose — no guessing. `tools/extract_portraits.py` locates each known
+  suspect name on the page, clusters the names into the portrait grid, and
+  crops the illustration sitting above each banner into `assets/portraits/`.
+  This covers **all 77 book‑1 cases and 15 book‑1‑style book‑2 cases** (794
+  portraits). The remaining ~60 book‑2 cases are in themed sections whose
+  suspect *lists* are themselves only approximately extracted; the pipeline
+  deliberately refuses to place a portrait it can't tie to a verified name
+  (mislabelling a face in a suspect‑ID game is the real risk), so those cases
+  fall back to the colour‑coded silhouette + letter badge.
 
 Puzzle content © Manuel Garand / Uitgeverij Lannoo. This app is a personal
 companion for the print books.
