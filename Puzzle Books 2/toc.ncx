@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta name="dtb:uid" content="isbn9789059969575"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Murdoku - Terug in de tijd</text></docTitle>
+<navMap>
+<navPoint id="nav-1" playOrder="1"><navLabel><text>Omslag</text></navLabel><content src="cover.xhtml"/></navPoint>
+<navPoint id="nav-2" playOrder="2"><navLabel><text>Titelpagina</text></navLabel><content src="page001.xhtml"/></navPoint>
+<navPoint id="nav-3" playOrder="3"><navLabel><text>Colofon</text></navLabel><content src="page002.xhtml"/></navPoint>
+<navPoint id="nav-4" playOrder="4"><navLabel><text>Inhoud</text></navLabel><content src="page003.xhtml"/></navPoint>
+<navPoint id="nav-5" playOrder="5"><navLabel><text>Hoe je de murdoku&#x2019;s oplost</text></navLabel><content src="page004.xhtml"/></navPoint>
+<navPoint id="nav-6" playOrder="6"><navLabel><text>Inleiding</text></navLabel><content src="page008.xhtml"/></navPoint>
+<navPoint id="nav-7" playOrder="7"><navLabel><text>Tips voor gevorderden</text></navLabel><content src="page011.xhtml"/></navPoint>
+<navPoint id="nav-8" playOrder="8"><navLabel><text>Hoofdstuk 1: de middeleeuwen</text></navLabel><content src="page012.xhtml"/></navPoint>
+<navPoint id="nav-9" playOrder="9"><navLabel><text>Hoofdstuk 2: het Wilde Westen</text></navLabel><content src="page046.xhtml"/></navPoint>
+<navPoint id="nav-10" playOrder="10"><navLabel><text>Hoofdstuk 3: de gouden eeuw van de piraterij</text></navLabel><content src="page080.xhtml"/></navPoint>
+<navPoint id="nav-11" playOrder="11"><navLabel><text>Hoofdstuk 4: de steentijd</text></navLabel><content src="page110.xhtml"/></navPoint>
+<navPoint id="nav-12" playOrder="12"><navLabel><text>Hoofdstuk 5: het oude Egypte</text></navLabel><content src="page144.xhtml"/></navPoint>
+<navPoint id="nav-13" playOrder="13"><navLabel><text>Epiloog</text></navLabel><content src="page178.xhtml"/></navPoint>
+<navPoint id="nav-14" playOrder="14"><navLabel><text>Oplossingen</text></navLabel><content src="page184.xhtml"/></navPoint>
+<navPoint id="nav-15" playOrder="15"><navLabel><text>Verantwoording</text></navLabel><content src="page224.xhtml"/></navPoint>
+</navMap>
+</ncx>
