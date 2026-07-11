@@ -370,7 +370,9 @@ function playPeople(p){
 function playGrid(p){
   const n = (p.people ? p.people.length : p.n) || peopleOf(p).length || 6;
   if(p.map && p.mapGrid){
-    return {img:'assets/'+p.map, box:p.mapGrid, rows:n, cols:n};
+    const g=p.mapGrid;
+    return {img:'assets/'+p.map, box:g, rows:g.rows||n, cols:g.cols||n,
+      blocked:new Set(g.blocked||[])};
   }
   if(p.scene && p.grid){
     return {img:'assets/scenes/'+p.scene, box:p.grid, rows:p.grid.rows, cols:p.grid.cols};
@@ -617,9 +619,11 @@ function renderSceneOverlay(){
   ov.style.gridTemplateRows=`repeat(${rows}, 1fr)`;
   ov.innerHTML='';
   const people=T.people;
+  const blocked=T.grid.blocked;
   for(let r=1;r<=rows;r++){
     for(let c=1;c<=cols;c++){
       const key=r+','+c; const cell=el('div','gcell'); cell.dataset.key=key;
+      if(blocked && blocked.has(key)){ cell.classList.add('blocked'); ov.appendChild(cell); continue; }
       const v=cellView(key);
       if(v.kind==='tok'){
         const idx=people.findIndex(x=>x.letter===v.letter);
