@@ -893,6 +893,16 @@ function openSettings(){
   }
   router();
   if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('sw.js').catch(()=>{});
+    // updateViaCache:'none' makes the browser always re-fetch sw.js itself
+    // over the network (bypassing HTTP cache) so a new deploy is detected
+    // promptly instead of silently serving the old cached app indefinitely.
+    navigator.serviceWorker.register('sw.js', {updateViaCache:'none'}).then(reg=>{
+      reg.update().catch(()=>{});
+    }).catch(()=>{});
+    let refreshed = false;
+    navigator.serviceWorker.addEventListener('controllerchange', ()=>{
+      if(refreshed) return; refreshed = true;
+      location.reload();
+    });
   }
 })();

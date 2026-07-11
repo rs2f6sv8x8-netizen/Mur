@@ -1,5 +1,8 @@
 /* Murdoku service worker — offline support */
-const VERSION = 'murdoku-v1';
+// __BUILD__ is replaced with the deploy commit SHA by the GitHub Actions
+// workflow, so every deploy changes this file's bytes and browsers reliably
+// detect the update (a static string here would let old caches serve forever).
+const VERSION = 'murdoku-__BUILD__';
 const SHELL = [
   './', './index.html', './css/style.css', './js/app.js',
   './data/puzzles.json', './manifest.webmanifest',

@@ -23,6 +23,8 @@ jobs:
         run: |
           mkdir -p _site
           cp -r index.html manifest.webmanifest sw.js css js data assets icons _site/
+      - name: Stamp the service worker cache version with this commit
+        run: sed -i "s/__BUILD__/${GITHUB_SHA::12}/" _site/sw.js
       - uses: actions/configure-pages@v5
         with:
           enablement: true
