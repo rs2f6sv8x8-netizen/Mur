@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+<meta name="dtb:uid" content="isbn9789059961487"/>
+<meta name="dtb:depth" content="1"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Murdoku</text></docTitle>
+<navMap>
+<navPoint id="nav-1" playOrder="1"><navLabel><text>Omslag</text></navLabel><content src="cover.xhtml"/></navPoint>
+<navPoint id="nav-2" playOrder="2"><navLabel><text>Titelpagina</text></navLabel><content src="page003.xhtml"/></navPoint>
+<navPoint id="nav-3" playOrder="3"><navLabel><text>Inhoud</text></navLabel><content src="page005.xhtml"/></navPoint>
+<navPoint id="nav-4" playOrder="4"><navLabel><text>Hoe je de murdoku&#x2019;s oplost</text></navLabel><content src="page007.xhtml"/></navPoint>
+<navPoint id="nav-5" playOrder="5"><navLabel><text>Moordmysteries</text></navLabel><content src="page015.xhtml"/></navPoint>
+<navPoint id="nav-6" playOrder="6"><navLabel><text>Oplossingen</text></navLabel><content src="page177.xhtml"/></navPoint>
+<navPoint id="nav-7" playOrder="7"><navLabel><text>Dankwoord en over de auteur</text></navLabel><content src="page220.xhtml"/></navPoint>
+<navPoint id="nav-8" playOrder="8"><navLabel><text>Colofon</text></navLabel><content src="page222.xhtml"/></navPoint>
+</navMap>
+</ncx>
