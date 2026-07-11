@@ -112,28 +112,51 @@ img{max-width:100%}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px;box-shadow:var(--shadow)}
 .card h3{margin:0 0 10px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 
-.scene-wrap{position:relative;border-radius:12px;overflow:hidden;background:var(--panel2);border:1px solid var(--line)}
+.scene-wrap{position:relative;overflow:visible;background:var(--panel2);border:1px solid var(--line);border-radius:12px}
+.scene-wrap .imgclip{border-radius:12px;overflow:hidden}
 .scene-wrap img{display:block;width:100%;cursor:zoom-in}
 .scene-hint{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.55);color:#fff;font-size:11px;padding:4px 8px;border-radius:8px;pointer-events:none}
-.scene-zoom{position:absolute;right:8px;top:8px;width:34px;height:34px;border-radius:9px;background:rgba(0,0,0,.5);color:#fff;font-size:17px;display:grid;place-items:center;z-index:3}
+.scene-zoom{position:absolute;right:8px;top:8px;width:34px;height:34px;border-radius:9px;background:rgba(0,0,0,.5);color:#fff;font-size:17px;display:grid;place-items:center;z-index:4}
 /* interactive grid overlaid on the crime-scene image */
 .grid-overlay{position:absolute;display:grid;z-index:2}
-.gcell{position:relative;cursor:pointer;display:grid;place-items:center;-webkit-tap-highlight-color:transparent}
-.gcell::after{content:"";position:absolute;inset:8%;border-radius:5px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.28)}
-.gcell:active::after{background:rgba(255,255,255,.18)}
+.gcell{position:relative;cursor:pointer;display:grid;place-items:center;-webkit-tap-highlight-color:transparent;
+  touch-action:none;user-select:none}
+.gcell::after{content:"";position:absolute;inset:8%;border-radius:5px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.28);
+  transition:.12s background,.12s box-shadow}
+.gcell.pressing::after{background:rgba(244,185,66,.35);box-shadow:inset 0 0 0 2px var(--gold)}
 .gtok{position:relative;z-index:1;width:74%;height:74%;border-radius:50%;display:grid;place-items:center;
-  color:#fff;font-weight:800;font-size:clamp(11px,2.6vw,20px);box-shadow:0 2px 6px rgba(0,0,0,.45);border:2px solid rgba(255,255,255,.85)}
+  color:#fff;font-weight:800;font-size:clamp(11px,2.6vw,20px);box-shadow:0 2px 6px rgba(0,0,0,.45);border:2px solid rgba(255,255,255,.85);
+  animation:tokpop .18s ease}
+@keyframes tokpop{from{transform:scale(.5);opacity:0}to{transform:none;opacity:1}}
 .gcell.ok .gtok{box-shadow:0 0 0 3px var(--good),0 2px 6px rgba(0,0,0,.4)}
 .gcell.bad .gtok{box-shadow:0 0 0 3px var(--bad),0 2px 6px rgba(0,0,0,.4)}
-.gcell.note{font-weight:700;color:#fff}
-.gcell .pnote{position:absolute;font-size:clamp(8px,1.8vw,12px);color:rgba(255,255,255,.9);font-weight:700;text-shadow:0 1px 2px #000}
+.gcell.marked::after{background:rgba(20,22,30,.5)}
+.gxmark{position:relative;z-index:1;font-weight:900;color:rgba(255,255,255,.92);font-size:clamp(12px,3vw,22px);
+  text-shadow:0 1px 3px rgba(0,0,0,.7)}
+.gnotes{position:relative;z-index:1;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:1px;width:100%;height:100%;padding:6%}
+.gnotes span{font-size:clamp(7px,1.7vw,11px);font-weight:800;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8);line-height:1}
+/* row / column index labels drawn in the image's own padding, around the grid box.
+   A small dark pill keeps them legible regardless of the illustration's own colours. */
+.axis-labels{position:absolute;pointer-events:none;z-index:3;font-weight:800;font-size:11px}
+.axis-labels.cols{display:flex}
+.axis-labels.cols span{flex:1;text-align:center;display:flex;align-items:flex-end;justify-content:center}
+.axis-labels.rows{display:flex;flex-direction:column}
+.axis-labels.rows span{flex:1;display:flex;align-items:center;justify-content:center}
+.axis-labels span{color:#fff}
+.axis-labels span::before{content:attr(data-n);background:rgba(15,17,23,.68);border-radius:5px;
+  padding:1px 5px;line-height:1.5}
+.axis-labels span{font-size:0}
+.axis-labels span::before{font-size:11px}
 
 .rules{margin:0 0 12px;padding:10px 12px;border-left:3px solid var(--gold);background:var(--panel2);border-radius:8px;font-size:14px;color:var(--ink)}
 .rules b{color:var(--gold)}
 
-/* suspects */
+/* suspects — also doubles as the placement selector (tap a card to pick them) */
 .suspects{display:flex;flex-direction:column;gap:8px}
 .susp{display:flex;gap:11px;align-items:flex-start;padding:10px 11px;border:1px solid var(--line);border-radius:12px;background:var(--panel2);transition:.12s}
+.susp.pickable{cursor:pointer}
+.susp.pickable:active{transform:scale(.98)}
 .susp .badge{flex:none;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:800;color:#fff;font-size:15px}
 .susp .who{flex:1;min-width:0}
 .susp .nm{font-weight:700}
@@ -141,6 +164,10 @@ img{max-width:100%}
 .susp.victim{border-color:color-mix(in srgb,var(--accent) 45%,var(--line));background:color-mix(in srgb,var(--accent) 8%,var(--panel2))}
 .susp.victim .nm::after{content:" · slachtoffer";color:var(--accent);font-weight:600;font-size:12px}
 .susp.accused{outline:2px solid var(--gold);outline-offset:1px}
+.susp.selected{border-color:var(--gold);box-shadow:0 0 0 2px color-mix(in srgb,var(--gold) 55%,transparent)}
+.susp.placed{opacity:.5}
+.susp.placed .badge::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.35);border-radius:9px;font-size:15px}
+.susp .badge{position:relative}
 .clueblock{color:var(--ink);font-size:14.5px;line-height:1.55;white-space:pre-wrap}
 
 /* scratch grid */
@@ -151,30 +178,39 @@ img{max-width:100%}
 .board td,.board th{border:1px solid var(--line2);width:var(--cell,46px);height:var(--cell,46px);text-align:center;
   font-weight:800;font-size:calc(var(--cell,46px)*.42);padding:0;position:relative}
 .board th{color:var(--faint);font-size:11px;font-weight:700;border:0;width:22px;height:22px}
-.board td{background:var(--panel2);cursor:pointer;user-select:none}
+.board td{background:var(--panel2);cursor:pointer;user-select:none;touch-action:none}
 .board td.filled{color:#fff}
+.board td.pressing{background:color-mix(in srgb,var(--gold) 30%,var(--panel2))}
+.board td.marked{background:color-mix(in srgb,var(--ink) 12%,var(--panel2))}
+.board td.marked .txmark{font-weight:900;color:var(--faint);font-size:calc(var(--cell,46px)*.48)}
 .board td.sel{outline:2px solid var(--gold);outline-offset:-2px;z-index:1}
 .board td.ok{box-shadow:inset 0 0 0 3px var(--good)}
 .board td.bad{box-shadow:inset 0 0 0 3px var(--bad)}
+.board .tnotes{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0 2px;
+  width:100%;height:100%;font-size:calc(var(--cell,46px)*.22);font-weight:800;color:var(--muted)}
 .check-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
 .check-row .btn{flex:1;min-width:130px}
 .solved-pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--good);
   border:1px solid color-mix(in srgb,var(--good) 45%,var(--line));background:color-mix(in srgb,var(--good) 10%,transparent);
   padding:3px 9px;border-radius:20px;font-weight:700}
 
-.palette{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
-.pchip{min-width:38px;height:38px;padding:0 10px;border-radius:9px;display:inline-flex;align-items:center;gap:6px;
-  border:1px solid var(--line);background:var(--panel2);font-weight:700;font-size:13px}
-.pchip .dot{width:16px;height:16px;border-radius:5px;color:#fff;font-size:11px;font-weight:800;display:grid;place-items:center}
-.pchip.on{outline:2px solid var(--gold);outline-offset:1px}
-.pchip.erase{color:var(--muted)}
-
-/* bottom action bar */
+/* bottom action bar — X tool / eraser / undo / hint / submit */
 .actionbar{position:fixed;left:0;right:0;bottom:0;z-index:8;padding:10px 12px calc(10px + var(--safe-b));
   display:flex;gap:10px;background:color-mix(in srgb,var(--bg) 90%,transparent);
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
-.actionbar .btn{flex:1}
-.actionbar .wrapb{max-width:1100px;margin:0 auto;display:flex;gap:10px;width:100%}
+.actionbar .wrapb{max-width:1100px;margin:0 auto;display:flex;gap:8px;width:100%;align-items:stretch}
+.tool-btn{flex:none;width:48px;min-height:var(--tap);border-radius:12px;display:grid;place-items:center;
+  background:var(--panel2);border:1px solid var(--line);font-size:18px;font-weight:800;color:var(--ink)}
+.tool-btn:active{transform:scale(.95)}
+.tool-btn.on{background:var(--gold);border-color:var(--gold);color:#1a1200}
+.tool-btn:disabled{opacity:.35;pointer-events:none}
+.submit-btn{flex:1;min-height:var(--tap);border-radius:12px;font-weight:800;
+  background:linear-gradient(180deg,var(--accent2),var(--accent));border:1px solid transparent;color:#fff;
+  box-shadow:0 6px 18px rgba(230,57,70,.35)}
+.submit-btn:disabled{opacity:.4;background:var(--panel2);color:var(--muted);box-shadow:none;border-color:var(--line)}
+.hint-btn{flex:none;width:48px;min-height:var(--tap);border-radius:12px;display:grid;place-items:center;
+  background:var(--panel2);border:1px solid var(--line);font-size:18px}
+.hint-btn:active{transform:scale(.95)}
 
 /* modal */
 #modal-root:empty{display:none}
@@ -194,6 +230,13 @@ img{max-width:100%}
 .pick-list{display:flex;flex-direction:column;gap:8px;max-height:52vh;overflow:auto;margin:8px 0}
 .hint-step{padding:11px 13px;border-left:3px solid var(--accent);background:var(--panel2);border-radius:8px;margin:8px 0;font-size:14.5px;line-height:1.5}
 .hint-step .n{color:var(--accent);font-weight:800;margin-right:6px}
+.hint-pager{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.hint-pager .hp-n{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.06em}
+.hint-body{font-size:15px;line-height:1.6;color:var(--ink);min-height:80px}
+.hbadge{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:6px;color:#fff;
+  font-weight:800;font-size:12px;vertical-align:-4px;margin:0 1px}
+.hint-nav{display:flex;gap:8px;margin-top:12px}
+.hint-nav .btn{flex:1}
 .settings-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
 .settings-row:last-child{border:0}
 .toast{position:fixed;left:50%;bottom:calc(90px + var(--safe-b));transform:translateX(-50%);z-index:60;

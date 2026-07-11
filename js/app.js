@@ -153,8 +153,14 @@ function startTimer(){
 function currentElapsed(){ return T.elapsed + (T.tickBase? (Date.now()-T.tickBase)/1000 : 0); }
 function saveState(){
   if(!T) return;
-  store.state[T.id] = { elapsed: currentElapsed(), cells: T.cells, accused: T.accused, hints: T.hintsShown };
+  store.state[T.id] = { elapsed: currentElapsed(), cells: T.cells, notes: T.notes,
+    manualMarks: T.manualMarks, accused: T.accused, hints: T.hintsShown };
   persist();
+}
+function clone(o){ return JSON.parse(JSON.stringify(o)); }
+function pushHistory(){
+  T.history.push({ cells: clone(T.cells), notes: clone(T.notes), manualMarks: clone(T.manualMarks) });
+  if(T.history.length>60) T.history.shift();
 }
 
 function renderPlay(id){
@@ -165,10 +171,16 @@ function renderPlay(id){
     id, p,
     elapsed: store.solved[id]? 0 : (saved.elapsed||0),
     tickBase:null,
-    cells: saved.cells || {},          // "r,c" -> letter
+    cells: saved.cells || {},              // "r,c" -> letter (committed)
+    notes: saved.notes || {},              // "r,c" -> {letter:true,...} (pencil marks)
+    manualMarks: saved.manualMarks || {},  // "r,c" -> true (manual X)
+    history: [],
     accused: saved.accused || null,
     hintsShown: store.solved[id]? (p.hintSteps||[]).length : (saved.hints||0),
+    hintIndex: 0,
     selToken: null,
+    xMode: false,
+    eraseMode: false,
   };
   const app=$('#app'); app.innerHTML='';
   const view = el('div','play');
@@ -194,9 +206,23 @@ function renderPlay(id){
   sceneCard.appendChild(headEl('Plaats delict'));
   if(p.scene){
     const sw=el('div','scene-wrap'); sw.id='sceneboard';
+    const clip=el('div','imgclip');
     const img=el('img'); img.src='assets/scenes/'+p.scene; img.alt='Plaats delict '+p.title; img.loading='lazy';
-    sw.appendChild(img);
+    clip.appendChild(img); sw.appendChild(clip);
     if(p.grid){
+      // row/column index labels, drawn in the image's own padding around the grid box
+      const g=p.grid;
+      const colLbl=el('div','axis-labels cols');
+      colLbl.style.left=(g.left*100)+'%'; colLbl.style.width=(g.width*100)+'%';
+      colLbl.style.top='2px'; colLbl.style.height=(g.top*100)+'%';
+      colLbl.style.alignItems='flex-end';
+      for(let c=1;c<=g.cols;c++){ const sp=el('span'); sp.dataset.n=c; colLbl.appendChild(sp); }
+      sw.appendChild(colLbl);
+      const rowLbl=el('div','axis-labels rows');
+      rowLbl.style.top=(g.top*100)+'%'; rowLbl.style.height=(g.height*100)+'%';
+      rowLbl.style.left='2px'; rowLbl.style.width=(g.left*100)+'%';
+      for(let r=1;r<=g.rows;r++){ const sp=el('span'); sp.dataset.n=r; rowLbl.appendChild(sp); }
+      sw.appendChild(rowLbl);
       // interactive grid overlaid directly on the crime-scene illustration
       const ov=el('div','grid-overlay'); ov.id='gridoverlay'; sw.appendChild(ov);
       const zb=el('button','scene-zoom'); zb.textContent='⤢';
@@ -210,43 +236,19 @@ function renderPlay(id){
     }
     sceneCard.appendChild(sw);
   }
-  if(p.grid){
-    // suspects are placed by tapping directly on the scene, so the palette
-    // (selector) lives right under the scene image, like on murdoku.com
-    const tools=el('div','grid-tools'); tools.style.marginTop='12px';
-    tools.innerHTML=`<span class="mini">Kies een verdachte en tik op een vak in de plattegrond hierboven.</span>`;
-    sceneCard.appendChild(tools);
-    const palette=el('div','palette'); palette.id='palette';
-    sceneCard.appendChild(palette);
-    if(p.solution){
-      const cr=el('div','check-row');
-      const chk=el('button','btn small','✓ Controleer raster'); chk.onclick=checkGrid;
-      const rev=el('button','btn small ghost','Toon oplossing');
-      rev.onclick=()=>{ if(confirm('De volledige oplossing tonen in het raster?')){ revealSolution(); } };
-      cr.append(chk,rev); sceneCard.appendChild(cr);
-    }
-  }
   left.appendChild(sceneCard);
 
   const clueCard = el('div','card'); clueCard.style.marginTop='16px';
-  clueCard.appendChild(headEl('Aanwijzingen'));
+  clueCard.appendChild(headEl('Verdachten'));
   if(p.rules && p.rules.length){
     p.rules.forEach(r=>{ const rr=el('div','rules'); rr.innerHTML='<b>!</b> '+escapeHtml(r); clueCard.appendChild(rr); });
   }
   if(p.clueBlock){
     clueCard.appendChild(Object.assign(el('div','clueblock'),{textContent:p.clueBlock}));
   }
-  const susp = el('div','suspects');
-  const allPeople = peopleOf(p);
-  allPeople.forEach((s,i)=>{
-    const row=el('div','susp'+(s.letter==='V'?' victim':'')+(T.accused===s.name?' accused':''));
-    row.dataset.name=s.name;
-    const b=el('div','badge'); b.style.background=suspColor(s.letter,i); b.textContent=s.letter;
-    const who=el('div','who');
-    who.innerHTML=`<div class="nm">${escapeHtml(s.name)}</div>`+(s.clue?`<div class="cl">${escapeHtml(s.clue)}</div>`:'');
-    row.append(b,who);
-    susp.appendChild(row);
-  });
+  clueCard.appendChild(Object.assign(el('div','mini'),{style:'margin-bottom:8px',
+    textContent:'Tik op een verdachte om te kiezen. Tik op een vak voor een klein potloodnotitie; houd ingedrukt om te plaatsen.'}));
+  const susp = el('div','suspects'); susp.id='suspectlist';
   clueCard.appendChild(susp);
   clueCard.appendChild(Object.assign(el('div','lang-note'),{textContent:'Aanwijzingen in het Nederlands, zoals in het boek.'}));
   left.appendChild(clueCard);
@@ -256,53 +258,40 @@ function renderPlay(id){
   if(!p.grid){
     const right = el('div');
     const gcard = el('div','card');
-    gcard.appendChild(headEl('Kladraster'));
-    const tools=el('div','grid-tools');
-    tools.innerHTML=`<span class="mini">Plaats verdachten in rij/kolom om te redeneren. Kies een letter en tik op een vak.</span>`;
-    gcard.appendChild(tools);
+    gcard.appendChild(headEl('Raster'));
+    gcard.appendChild(Object.assign(el('div','grid-tools'),{innerHTML:
+      '<span class="mini">Tik op een verdachte, kies dan een vak: tik = notitie, ingedrukt houden = plaatsen.</span>'}));
     const board=el('div','board'); board.id='board';
     gcard.appendChild(board);
-    const palette=el('div','palette'); palette.id='palette';
-    gcard.appendChild(palette);
-    if(p.solution){
-      const cr=el('div','check-row');
-      const chk=el('button','btn small','✓ Controleer raster');
-      chk.onclick=checkGrid;
-      const rev=el('button','btn small ghost','Toon oplossing');
-      rev.onclick=()=>{ if(confirm('De volledige oplossing tonen in het raster?')){ revealSolution(); } };
-      cr.append(chk,rev);
-      gcard.appendChild(cr);
-      gcard.appendChild(Object.assign(el('div','mini'),{style:'margin-top:8px',
-        textContent:'Deze zaak heeft een gecontroleerde oplossing: plaats iedereen en controleer je raster.'}));
-    }
     right.appendChild(gcard);
     body.appendChild(right);
   }
 
   view.appendChild(body);
 
-  /* action bar */
+  /* action bar: X-tool / eraser / undo / hint / submit */
   const ab=el('div','actionbar');
   const abw=el('div','wrapb');
-  const hintBtn=el('button','btn','💡 Hint');
+  const xBtn=el('button','tool-btn'); xBtn.id='xtoolbtn'; xBtn.textContent='✕'; xBtn.title='Markeer onmogelijk';
+  xBtn.onclick=()=>{ T.xMode=!T.xMode; T.eraseMode=false; refreshToolbar(); };
+  const eraseBtn=el('button','tool-btn'); eraseBtn.id='erasebtn'; eraseBtn.innerHTML='⌫'; eraseBtn.title='Wissen (ingedrukt = alles wissen)';
+  attachHold(eraseBtn, ()=>{ if(confirm('Het hele raster wissen?')){ pushHistory(); T.cells={}; T.notes={}; T.manualMarks={}; updateBoards(); saveState(); } },
+    ()=>{ T.eraseMode=!T.eraseMode; T.xMode=false; refreshToolbar(); }, 550);
+  const undoBtn=el('button','tool-btn'); undoBtn.id='undobtn'; undoBtn.textContent='↺'; undoBtn.title='Ongedaan maken';
+  undoBtn.onclick=doUndo;
+  const hintBtn=el('button','hint-btn'); hintBtn.textContent='💡'; hintBtn.title='Hint';
   hintBtn.onclick=openHints;
-  const clearBtn=el('button','btn','⌫ Wis raster');
-  clearBtn.onclick=()=>{ T.cells={}; updateBoards(); saveState(); };
-  const accuseBtn=el('button','btn primary','⚖ Beschuldig');
-  accuseBtn.onclick=openAccuse;
-  abw.append(hintBtn,clearBtn,accuseBtn);
+  const submitBtn=el('button','submit-btn'); submitBtn.id='submitbtn'; submitBtn.textContent='✓ Indienen';
+  submitBtn.onclick=onSubmit;
+  abw.append(xBtn,eraseBtn,undoBtn,hintBtn,submitBtn);
   ab.appendChild(abw);
   view.appendChild(ab);
 
   app.appendChild(view);
-  updateBoards(); renderPalette();
+  updateBoards();
   if(!store.solved[id]) startTimer();
   window.scrollTo(0,0);
   if(!store.settings.tutorialDone) openTutorial(0);
-}
-
-function updateBoards(){
-  if(T.p.grid) renderSceneOverlay(); else renderBoard();
 }
 
 function headEl(t){ const h=el('h3'); h.textContent=t; return h; }
@@ -311,55 +300,193 @@ function peopleOf(p){
   if(p.victim) arr.push(p.victim);
   return arr;
 }
+function gridDims(p){ return p.grid ? {rows:p.grid.rows, cols:p.grid.cols} : {rows:gridSize(p), cols:gridSize(p)}; }
+function allSuspectsPlaced(){
+  const placed = new Set(Object.values(T.cells));
+  return (T.p.suspects||[]).every(s=>placed.has(s.letter));
+}
+function autoXSet(){
+  const s = new Set();
+  const {rows,cols} = gridDims(T.p);
+  for(const key in T.cells){
+    const [r,c] = key.split(',').map(Number);
+    for(let cc=1; cc<=cols; cc++){ if(cc!==c) s.add(r+','+cc); }
+    for(let rr=1; rr<=rows; rr++){ if(rr!==r) s.add(rr+','+c); }
+  }
+  return s;
+}
+function isMarked(key, auto){ return !!T.manualMarks[key] || auto.has(key); }
 
-/* ----- scratch board ----- */
-function gridSize(p){ return Math.max(2, Math.min(14, p.n||peopleOf(p).length)); }
+/* ----- shared tap-vs-hold gesture: tap = pencil note, hold = commit ----- */
+function attachHold(elm, onHold, onTap, ms){
+  ms = ms || 480;
+  let timer=null, longPressed=false, startX=0, startY=0, active=false;
+  const start = (e)=>{
+    if(active) return; active=true; longPressed=false;
+    const pt = e.touches? e.touches[0] : e;
+    startX=pt.clientX; startY=pt.clientY;
+    elm.classList.add('pressing');
+    timer=setTimeout(()=>{ longPressed=true; elm.classList.remove('pressing'); onHold(); }, ms);
+  };
+  const cancel = ()=>{ active=false; clearTimeout(timer); elm.classList.remove('pressing'); };
+  const end = (e)=>{
+    if(!active) return; active=false;
+    clearTimeout(timer); elm.classList.remove('pressing');
+    if(!longPressed && onTap) onTap();
+  };
+  const move = (e)=>{
+    if(!active) return;
+    const pt = e.touches? e.touches[0] : e;
+    if(Math.abs(pt.clientX-startX)>10 || Math.abs(pt.clientY-startY)>10) cancel();
+  };
+  elm.addEventListener('pointerdown', start);
+  elm.addEventListener('pointerup', end);
+  elm.addEventListener('pointerleave', cancel);
+  elm.addEventListener('pointercancel', cancel);
+  elm.addEventListener('pointermove', move);
+  elm.addEventListener('contextmenu', e=>e.preventDefault());
+}
+
+function onCellTap(key){
+  if(T.xMode){
+    if(T.cells[key]) return;
+    pushHistory();
+    if(T.manualMarks[key]) delete T.manualMarks[key]; else T.manualMarks[key]=true;
+    updateBoards(); saveState(); return;
+  }
+  if(T.eraseMode){
+    if(!T.cells[key] && !T.notes[key] && !T.manualMarks[key]) return;
+    pushHistory();
+    delete T.cells[key]; delete T.notes[key]; delete T.manualMarks[key];
+    updateBoards(); saveState(); return;
+  }
+  if(!T.selToken){ toast('Kies eerst een verdachte'); return; }
+  const auto = autoXSet();
+  if(isMarked(key, auto)) return;               // can't note an eliminated cell
+  if(T.cells[key]) return;                       // occupied by a commitment
+  pushHistory();
+  T.notes[key] = T.notes[key] || {};
+  if(T.notes[key][T.selToken]) delete T.notes[key][T.selToken];
+  else T.notes[key][T.selToken] = true;
+  if(!Object.keys(T.notes[key]).length) delete T.notes[key];
+  updateBoards(); saveState();
+}
+function onCellHold(key){
+  if(T.xMode || T.eraseMode) return;              // hold only commits in placement mode
+  if(!T.selToken){ toast('Kies eerst een verdachte'); return; }
+  const auto = autoXSet();
+  if(isMarked(key, auto)){ toast('Dit vak is al uitgesloten'); return; }
+  if(T.cells[key] && T.cells[key]===T.selToken){
+    pushHistory(); delete T.cells[key]; updateBoards(); saveState(); return;
+  }
+  if(T.cells[key]) return;                        // occupied by someone else
+  pushHistory();
+  for(const k of Object.keys(T.cells)) if(T.cells[k]===T.selToken) delete T.cells[k];
+  T.cells[key]=T.selToken;
+  delete T.notes[key];
+  updateBoards(); saveState();
+  if(allSuspectsPlaced()) toast('Iedereen geplaatst — klaar om in te dienen');
+}
+function doUndo(){
+  if(!T.history.length){ toast('Niets om ongedaan te maken'); return; }
+  const last = T.history.pop();
+  T.cells=last.cells; T.notes=last.notes; T.manualMarks=last.manualMarks;
+  updateBoards(); saveState();
+}
+
+function updateBoards(){
+  if(T.p.grid) renderSceneOverlay(); else renderBoard();
+  renderSuspectList();
+  refreshToolbar();
+}
+function refreshToolbar(){
+  const x=$('#xtoolbtn'), e=$('#erasebtn'), u=$('#undobtn'), s=$('#submitbtn');
+  if(x) x.classList.toggle('on', T.xMode);
+  if(e) e.classList.toggle('on', T.eraseMode);
+  if(u) u.disabled = !T.history.length;
+  if(s) s.disabled = !allSuspectsPlaced();
+}
+function renderSuspectList(){
+  const susp=$('#suspectlist'); if(!susp) return;
+  susp.innerHTML='';
+  const placedLetters = new Set(Object.values(T.cells));
+  peopleOf(T.p).forEach((s,i)=>{
+    const isVictim = s.letter==='V';
+    const isPlaced = placedLetters.has(s.letter);
+    const row=el('div','susp'
+      +(isVictim?' victim':' pickable')
+      +(T.selToken===s.letter?' selected':'')
+      +(isPlaced?' placed':'')
+      +(T.accused===s.name?' accused':''));
+    row.dataset.name=s.name;
+    const b=el('div','badge'); b.style.background=suspColor(s.letter,i); b.textContent=s.letter;
+    const who=el('div','who');
+    who.innerHTML=`<div class="nm">${escapeHtml(s.name)}</div>`+(s.clue?`<div class="cl">${escapeHtml(s.clue)}</div>`:'');
+    row.append(b,who);
+    if(!isVictim){
+      row.onclick=()=>{
+        T.selToken = T.selToken===s.letter ? null : s.letter;
+        T.xMode=false; T.eraseMode=false;
+        renderSuspectList(); refreshToolbar();
+      };
+    }
+    susp.appendChild(row);
+  });
+}
+
+/* ----- scratch board (table, used when no on-scene grid box was detected) ----- */
+function gridSize(p){ return Math.max(2, Math.min(24, p.n||peopleOf(p).length)); }
+function cellView(key){
+  // returns {kind:'tok'|'x'|'notes'|'empty', letter, letters}
+  if(T.cells[key]) return {kind:'tok', letter:T.cells[key]};
+  const auto = T._auto || (T._auto = autoXSet());
+  if(isMarked(key, auto)) return {kind:'x'};
+  const n = T.notes[key];
+  if(n && Object.keys(n).length) return {kind:'notes', letters:Object.keys(n).sort()};
+  return {kind:'empty'};
+}
 function renderBoard(){
-  const p=T.p, n=gridSize(p);
+  const p=T.p, {rows,cols}=gridDims(p);
   const board=$('#board'); if(!board) return;
-  // responsive cell size
+  T._auto = autoXSet();
   const avail = Math.min(board.clientWidth||360, 460) - 26;
-  const cell = Math.max(30, Math.min(52, Math.floor(avail/n)));
+  const cell = Math.max(28, Math.min(50, Math.floor(avail/Math.max(rows,cols))));
   const tbl=el('table'); tbl.style.setProperty('--cell', cell+'px');
   const head=el('tr'); head.appendChild(el('th',''));
-  for(let c=1;c<=n;c++) head.appendChild(el('th','', String(c)));
+  for(let c=1;c<=cols;c++) head.appendChild(el('th','', String(c)));
   tbl.appendChild(head);
   const people=peopleOf(p);
-  for(let r=1;r<=n;r++){
+  for(let r=1;r<=rows;r++){
     const tr=el('tr'); tr.appendChild(el('th','', String(r)));
-    for(let c=1;c<=n;c++){
+    for(let c=1;c<=cols;c++){
       const key=r+','+c; const td=el('td');
       td.dataset.key=key;
       td.style.setProperty('--cell',cell+'px');
-      const letter=T.cells[key];
-      if(letter){
-        const idx=people.findIndex(x=>x.letter===letter);
-        td.classList.add('filled'); td.textContent=letter;
-        td.style.background=suspColor(letter, idx<0?0:idx);
+      const v=cellView(key);
+      if(v.kind==='tok'){
+        const idx=people.findIndex(x=>x.letter===v.letter);
+        td.classList.add('filled'); td.textContent=v.letter;
+        td.style.background=suspColor(v.letter, idx<0?0:idx);
+      } else if(v.kind==='x'){
+        td.classList.add('marked');
+        td.appendChild(Object.assign(el('span','txmark'),{textContent:'✕'}));
+      } else if(v.kind==='notes'){
+        const wrap=el('div','tnotes');
+        v.letters.forEach(L=>wrap.appendChild(Object.assign(el('span'),{textContent:L})));
+        td.appendChild(wrap);
       }
-      td.onclick=()=>onCell(r,c);
+      attachHold(td, ()=>onCellHold(key), ()=>onCellTap(key));
       tr.appendChild(td);
     }
     tbl.appendChild(tr);
   }
   board.innerHTML=''; board.appendChild(tbl);
 }
-function onCell(r,c){
-  const key=r+','+c;
-  if(T.selToken===null){ toast('Kies eerst een verdachte hieronder'); return; }
-  if(T.selToken==='ERASE'){ delete T.cells[key]; }
-  else if(T.cells[key]===T.selToken){ delete T.cells[key]; }
-  else {
-    // remove this token elsewhere (one token appears once)
-    for(const k of Object.keys(T.cells)) if(T.cells[k]===T.selToken) delete T.cells[k];
-    T.cells[key]=T.selToken;
-  }
-  updateBoards(); saveState();
-}
 
 /* ----- on-scene interactive grid (overlaid directly on the illustration) ----- */
 function renderSceneOverlay(){
   const p=T.p, g=p.grid; const ov=$('#gridoverlay'); if(!ov||!g) return;
+  T._auto = autoXSet();
   ov.style.left=(g.left*100)+'%'; ov.style.top=(g.top*100)+'%';
   ov.style.width=(g.width*100)+'%'; ov.style.height=(g.height*100)+'%';
   ov.style.gridTemplateColumns=`repeat(${g.cols}, 1fr)`;
@@ -369,14 +496,21 @@ function renderSceneOverlay(){
   for(let r=1;r<=g.rows;r++){
     for(let c=1;c<=g.cols;c++){
       const key=r+','+c; const cell=el('div','gcell'); cell.dataset.key=key;
-      const letter=T.cells[key];
-      if(letter){
-        const idx=people.findIndex(x=>x.letter===letter);
-        const tok=el('div','gtok'); tok.textContent=letter;
-        tok.style.background=suspColor(letter, idx<0?0:idx);
+      const v=cellView(key);
+      if(v.kind==='tok'){
+        const idx=people.findIndex(x=>x.letter===v.letter);
+        const tok=el('div','gtok'); tok.textContent=v.letter;
+        tok.style.background=suspColor(v.letter, idx<0?0:idx);
         cell.appendChild(tok);
+      } else if(v.kind==='x'){
+        cell.classList.add('marked');
+        cell.appendChild(Object.assign(el('div','gxmark'),{textContent:'✕'}));
+      } else if(v.kind==='notes'){
+        const wrap=el('div','gnotes');
+        v.letters.forEach(L=>wrap.appendChild(Object.assign(el('span'),{textContent:L})));
+        cell.appendChild(wrap);
       }
-      cell.onclick=()=>onCell(r,c);
+      attachHold(cell, ()=>onCellHold(key), ()=>onCellTap(key));
       ov.appendChild(cell);
     }
   }
@@ -396,45 +530,55 @@ function placementStatus(){
   }
   return {placed, total:letters.length, correct, allCorrect: correct===letters.length};
 }
-function checkGrid(){
-  const sol=T.p.solution; if(!sol) return;
-  const solPos={}; for(const L in sol) solPos[L]=sol[L][0]+','+sol[L][1];
-  let correct=0, placed=0;
-  const cellEls = T.p.grid
-    ? Array.from(document.querySelectorAll('#gridoverlay .gcell')).map(c=>({key:c.dataset.key, el:c}))
-    : Array.from(document.querySelectorAll('#board td[data-key]')).map(c=>({key:c.dataset.key, el:c}));
-  cellEls.forEach(({key,el:ce})=>{
-    ce.classList.remove('ok','bad');
-    const L=T.cells[key]; if(!L) return; placed++;
-    if(solPos[L]===key){ ce.classList.add('ok'); correct++; }
-    else ce.classList.add('bad');
-  });
-  const total=Object.keys(sol).length;
-  if(placed===0) toast('Plaats eerst verdachten in het raster');
-  else if(correct===total) toast('Perfect! Alle '+total+' juist geplaatst ✓');
-  else toast(correct+' van '+total+' juist geplaatst');
+function markCellResult(key, cls){
+  const ce = T.p.grid ? document.querySelector(`#gridoverlay .gcell[data-key="${key}"]`)
+                       : document.querySelector(`#board td[data-key="${key}"]`);
+  if(ce) ce.classList.add(cls);
 }
 function revealSolution(){
   const sol=T.p.solution; if(!sol) return;
-  T.cells={};
+  pushHistory();
+  T.cells={}; T.notes={}; T.manualMarks={};
   for(const L in sol){ T.cells[sol[L][0]+','+sol[L][1]]=L; }
   updateBoards(); saveState();
-  setTimeout(checkGrid,30);
-}
-function renderPalette(){
-  const pal=$('#palette'); if(!pal) return; pal.innerHTML='';
-  const people=peopleOf(T.p);
-  people.forEach((s,i)=>{
-    const chip=el('button','pchip'+(T.selToken===s.letter?' on':''));
-    chip.innerHTML=`<span class="dot" style="background:${suspColor(s.letter,i)}">${s.letter}</span>${escapeHtml(s.name)}`;
-    chip.onclick=()=>{ T.selToken = T.selToken===s.letter?null:s.letter; renderPalette(); };
-    pal.appendChild(chip);
-  });
-  const er=el('button','pchip erase'+(T.selToken==='ERASE'?' on':'')); er.textContent='⌫ Wissen';
-  er.onclick=()=>{ T.selToken = T.selToken==='ERASE'?null:'ERASE'; renderPalette(); };
-  pal.appendChild(er);
 }
 window.addEventListener('resize', ()=>{ if(T && ($('#board')||$('#gridoverlay'))) updateBoards(); });
+
+/* ----- submit ----- */
+function onSubmit(){
+  const p=T.p;
+  if(!allSuspectsPlaced()){ toast('Plaats eerst alle verdachten'); return; }
+  if(p.solution){
+    // only the suspects the player can actually place are checked — the
+    // victim's cell is fully determined once every suspect is correctly
+    // placed (a puzzle has exactly one valid solution), so it's implied
+    // rather than requiring separate placement.
+    const sol=p.solution; const solPos={}; for(const L in sol) solPos[L]=sol[L][0]+','+sol[L][1];
+    const checkLetters = (p.suspects||[]).map(s=>s.letter).filter(L=>L in sol);
+    document.querySelectorAll('.gcell.ok,.gcell.bad,#board td.ok,#board td.bad').forEach(e=>e.classList.remove('ok','bad'));
+    let correct=0; const total=checkLetters.length;
+    for(const L of checkLetters){
+      const key = Object.keys(T.cells).find(k=>T.cells[k]===L);
+      if(key && key===solPos[L]){ correct++; markCellResult(key,'ok'); }
+      else if(key){ markCellResult(key,'bad'); }
+    }
+    if(correct===total){ finishPuzzle(p.murderer || '—', true); }
+    else toast(correct+' van '+total+' juist — pas je raster aan');
+    return;
+  }
+  openAccuse();
+}
+function finishPuzzle(murdererName, gridVerified){
+  const p=T.p;
+  const time = Math.round(currentElapsed());
+  stopTimer();
+  const prev = store.solved[p.id];
+  const best = prev && prev.time ? Math.min(prev.time, time) : time;
+  store.solved[p.id] = { time: best, hints: T.hintsShown };
+  delete store.state[p.id];
+  persist();
+  showResult(true, p.murderer || murdererName, time, !!p.murderer, gridVerified);
+}
 
 /* ===================== MODALS ===================== */
 function modal(node, cls){
@@ -475,15 +619,17 @@ const TUTORIAL=[
   {emoji:'🧩', title:'Zo los je de zaak op',
    body:'Het slachtoffer was alleen met de moordenaar. Zoek precies uit waar elk personage stond. Elke kaart toont de aanwijzing van dat personage.'},
   {emoji:'⚠️', title:'Eén per rij en kolom',
-   body:'Elke rij en elke kolom bevat precies één personage. Als je iemand plaatst, vervallen alle andere vakken in diezelfde rij en kolom.',
+   body:'Elke rij en elke kolom bevat precies één personage. Zodra je iemand plaatst, worden de rest van hun rij en kolom automatisch onmogelijk (✕).',
    fig:()=>miniGrid([[_E,_E,_X,_E],[_X,_X,_A,_X],[_E,_E,_X,_E],[_E,_E,_X,_E]])},
   {emoji:'🧭', title:"Wat 'naast' betekent",
    body:'Naast betekent direct links, rechts, boven of onder — én in dezelfde ruimte. Niet diagonaal.',
    fig:()=>miniGrid([[_E,_OK,_E],[_OK,_O,_X],[_E,_OK,_E]])},
-  {emoji:'👆', title:'Plaats de personages',
-   body:'Tik op een verdachte om die te kiezen, en tik dan op een vak in het raster. Tik nog eens op hetzelfde vak om te wissen. Gebruik het raster om te redeneren.'},
+  {emoji:'👆', title:'Plaatsen: tik of houd ingedrukt',
+   body:'Tik op een verdachte om die te kiezen. Een korte tik op een vak zet een klein potloodnotitie neer. Houd een vak ingedrukt om die verdachte er echt te plaatsen.'},
+  {emoji:'🛠️', title:'Gereedschap',
+   body:'✕ markeert een vak als onmogelijk. ⌫ wist een vak (ingedrukt houden wist alles). ↺ maakt je laatste actie ongedaan.'},
   {emoji:'🕵️', title:'Kraak de zaak',
-   body:'Heb je iedereen geplaatst? Beschuldig dan de moordenaar met de knop ⚖ Beschuldig. Bij zaken met een oplossing kun je je raster ook controleren. Succes!'},
+   body:'Heb je iedereen geplaatst? Dan wordt ✓ Indienen actief. Vast? Gebruik 💡 Hint voor de redenering uit het boek, stap voor stap. Succes!'},
 ];
 function openTutorial(step){
   step = step||0;
@@ -523,9 +669,12 @@ function openHowTo(){
   w.appendChild(Object.assign(el('h4'),{textContent:'Bediening'}));
   const ul2=el('ul');
   ['Tik op een verdachte om die te selecteren.',
-   'Tik op een vak om die verdachte te plaatsen; tik nog eens om te wissen.',
-   'Kies "Wissen" in het palet om vakken leeg te maken.',
-   'Bij zaken met een oplossing: "Controleer raster" of "Toon oplossing".'].forEach(t=>ul2.appendChild(Object.assign(el('li'),{textContent:t})));
+   'Tik op een vak: potloodnotitie (klein). Houd ingedrukt: plaatsen (groot).',
+   'Sleep over meerdere vakken om notities in één keer te schilderen.',
+   '✕ markeert een vak zelf als onmogelijk.',
+   '⌫ wist één vak; houd ingedrukt om het hele raster te wissen.',
+   '↺ maakt je laatste actie ongedaan.',
+   '✓ Indienen wordt actief zodra iedereen geplaatst is.'].forEach(t=>ul2.appendChild(Object.assign(el('li'),{textContent:t})));
   w.appendChild(ul2);
   w.appendChild(Object.assign(el('h4'),{textContent:'Trefwoorden'}));
   const kw=el('div','kw');
@@ -553,32 +702,54 @@ function openHowTo(){
   modal(w);
 }
 
+function hintify(text, p){
+  // wrap standalone suspect letters (e.g. " C " or "(C)") in colored badges
+  const people = peopleOf(p);
+  const idx = {}; people.forEach((s,i)=>idx[s.letter]=i);
+  return escapeHtml(text).replace(/\b([A-Z])\b/g, (m,L)=>{
+    if(!(L in idx)) return m;
+    return `<span class="hbadge" style="background:${suspColor(L, idx[L])}">${L}</span>`;
+  });
+}
 function openHints(){
   const p=T.p;
-  const wrap=el('div');
-  wrap.appendChild(Object.assign(el('h2'),{textContent:'Hints'}));
-  wrap.appendChild(Object.assign(el('p'),{textContent:'Onthul stap voor stap de redenering uit het boek.'}));
-  const list=el('div');
   const steps = (p.hintSteps&&p.hintSteps.length)? p.hintSteps : genericHints(p);
-  function draw(){
-    list.innerHTML='';
-    const show=Math.min(T.hintsShown, steps.length);
-    for(let i=0;i<show;i++){
-      const d=el('div','hint-step'); d.innerHTML=`<span class="n">${i+1}.</span>${escapeHtml(steps[i])}`;
-      list.appendChild(d);
-    }
-    if(show===0){ list.appendChild(Object.assign(el('p'),{textContent:'Nog geen hints onthuld.'})); }
+  let idx = Math.max(0, Math.min(T.hintIndex||0, steps.length-1));
+  const wrap=el('div');
+  wrap.appendChild(Object.assign(el('h2'),{textContent:'Hint'}));
+  const pager=el('div','hint-pager');
+  const pn=el('div','hp-n'); pager.appendChild(pn);
+  wrap.appendChild(pager);
+  const body=el('div','hint-body');
+  wrap.appendChild(body);
+  const nav=el('div','hint-nav');
+  const prev=el('button','btn','‹ Vorige');
+  const next=el('button','btn','Volgende ›');
+  nav.append(prev,next);
+  wrap.appendChild(nav);
+  let solveBtn=null;
+  if(p.solution){
+    solveBtn = el('button','btn','Toon volledige oplossing');
+    solveBtn.onclick=()=>{ if(confirm('De volledige oplossing tonen in het raster?')){ closeModal(); revealSolution(); } };
   }
-  draw();
-  wrap.appendChild(list);
   const row=el('div','row');
-  const more=el('button','btn primary', T.hintsShown>=steps.length?'Alles onthuld':'Onthul volgende hint');
-  more.disabled = T.hintsShown>=steps.length;
-  more.onclick=()=>{ T.hintsShown=Math.min(T.hintsShown+1,steps.length); saveState(); draw();
-    more.disabled=T.hintsShown>=steps.length; if(more.disabled) more.textContent='Alles onthuld'; };
-  const close=el('button','btn','Sluiten'); close.onclick=closeModal;
-  row.append(close,more);
+  const close=el('button','btn primary','Sluiten'); close.onclick=closeModal;
+  row.appendChild(close);
   wrap.appendChild(row);
+  if(solveBtn) wrap.appendChild(solveBtn);
+  function draw(){
+    T.hintIndex = idx;
+    T.hintsShown = Math.max(T.hintsShown, idx+1);
+    saveState();
+    pn.textContent = 'HINT '+(idx+1)+' / '+steps.length;
+    body.innerHTML = hintify(steps[idx], p);
+    prev.disabled = idx===0;
+    next.disabled = idx===steps.length-1;
+    if(solveBtn) solveBtn.style.display = idx===steps.length-1 ? 'flex' : 'none';
+  }
+  prev.onclick=()=>{ idx=Math.max(0,idx-1); draw(); };
+  next.onclick=()=>{ idx=Math.min(steps.length-1,idx+1); draw(); };
+  draw();
   modal(wrap);
 }
 function genericHints(p){
@@ -631,7 +802,7 @@ function resolveAccusation(name){
   }
 }
 
-function showResult(correct, name, time, known){
+function showResult(correct, name, time, known, gridVerified){
   const p=T.p;
   const wrap=el('div');
   const emo = el('div','result-emoji'); emo.textContent = correct? (known?'🕵️':'📝') : '❌';
@@ -639,11 +810,15 @@ function showResult(correct, name, time, known){
   if(correct && known){
     wrap.appendChild(Object.assign(el('h2'),{textContent:'Zaak opgelost!'}));
     let extra='';
-    const ps = placementStatus();
-    if(ps){
-      extra = ps.allCorrect
-        ? `<br><span class="solved-pill">★ Perfect raster — iedereen juist geplaatst</span>`
-        : `<br><span style="color:var(--muted);font-size:13px">Raster: ${ps.correct}/${ps.total} juist geplaatst</span>`;
+    if(gridVerified){
+      extra = `<br><span class="solved-pill">★ Volledig raster geverifieerd</span>`;
+    } else {
+      const ps = placementStatus();
+      if(ps){
+        extra = ps.allCorrect
+          ? `<br><span class="solved-pill">★ Perfect raster — iedereen juist geplaatst</span>`
+          : `<br><span style="color:var(--muted);font-size:13px">Raster: ${ps.correct}/${ps.total} juist geplaatst</span>`;
+      }
     }
     wrap.appendChild(Object.assign(el('p'),{innerHTML:`De moordenaar was <b style="color:var(--ink)">${escapeHtml(name)}</b>.<br>Tijd: <b style="color:var(--ink)">${fmtTime(time)}</b> · Hints: ${T.hintsShown}${extra}`}));
   } else if(correct && !known){

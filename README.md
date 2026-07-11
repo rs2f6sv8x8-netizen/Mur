@@ -20,18 +20,26 @@ Capacitor for a native App Store build.
   original crime‑scene illustration for each case).
 - **Crime scene** — the book's real floor‑plan illustration, tap to zoom.
 - **On‑scene placement** — for 115 cases, the interactive grid is overlaid
-  directly on the crime‑scene illustration (like murdoku.com): pick a suspect,
-  tap their cell right on the floor plan. The grid's pixel position is detected
+  directly on the crime‑scene illustration (like murdoku.com), with row/column
+  index labels drawn around it. The grid's pixel position is detected
   automatically from the image (see below). The other 40 cases fall back to a
   separate scratch grid so every case stays playable.
-- **Clues** in the original Dutch, per suspect, with the victim highlighted.
+- **Tap = note, hold = place** — matching the real site: select a suspect, tap
+  a cell to leave a small pencil mark, or press‑and‑hold to commit them there.
+  Placing someone automatically crosses out (✕) the rest of their row and
+  column. A manual **✕ tool** marks any cell impossible yourself, **⌫** erases
+  one cell (hold to clear the whole grid), and **↺** undoes the last action.
+- **Clues** in the original Dutch, per suspect — the suspect list doubles as
+  the placement selector, with the victim highlighted and placed suspects
+  dimmed.
 - **Timer** with a saved best time per case.
-- **Hints** — reveal the book's own solution reasoning one step at a time.
-- **Accuse** — pick the suspect; the app checks against the real murderer.
-- **Full‑grid check** — for the 48 cases (both books) where the solved grid was
-  recovered, a *Controleer raster* button marks each placed suspect green/red,
-  *Toon oplossing* reveals the full solution, and a correct accusation with a
-  correct grid earns a "Perfect raster".
+- **Hints** — a one‑at‑a‑time hint viewer (paged, "Hint N / total") revealing
+  the book's own solution reasoning, with suspect letters shown as coloured
+  badges inline.
+- **Submit** — enabled once every suspect is placed. For the 48 cases with a
+  recovered solution grid, it validates the whole board (marking cells
+  green/red) and reveals the murderer on a correct solve; for the rest it asks
+  you to name the murderer, checked against the extracted answer.
 - **Difficulty** — a 1–5 skull rating per case.
 - **Progression** — cases unlock in order as you solve them (can be disabled in
   settings); progress, times, and in‑progress boards are saved locally.
